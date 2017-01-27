@@ -1,0 +1,23 @@
+Requirements:
+
+- Clear understanding of project aims
+- Specification of objectives to reach stated aims, including hardware and software spec
+- Overview of background reading and literature search in support of the project
+- Detailed and considered project plan
+- Minimum 4 pages
+
+
+Plan:
+
+Sections -
+	1 - Project Overview and Aims
+	2 - Specification
+	3 - Literature Survey
+	4 - Project Plan
+
+
+1. Project Overview and Aims
+	- Discuss project title
+	- Introduce swarm robotics base concept
+	- Describe need in terms of design problem etc
+	- 

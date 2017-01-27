@@ -1,15 +1,5 @@
 \select@language {UKenglish}
-\contentsline {section}{\numberline {1}Executive Summary}{2}{section.1}
-\contentsline {section}{\numberline {2}DocetOS Modifications}{2}{section.2}
-\contentsline {subsection}{\numberline {2.1}Scheduling}{2}{subsection.2.1}
-\contentsline {subsubsection}{\numberline {2.1.1}Task Sleeping}{3}{subsubsection.2.1.1}
-\contentsline {subsection}{\numberline {2.2}Resource Protection}{4}{subsection.2.2}
-\contentsline {subsubsection}{\numberline {2.2.1}Mutexes}{4}{subsubsection.2.2.1}
-\contentsline {subsubsection}{\numberline {2.2.2}Semaphores}{4}{subsubsection.2.2.2}
-\contentsline {subsubsection}{\numberline {2.2.3}Task Wait and Notify}{5}{subsubsection.2.2.3}
-\contentsline {subsubsection}{\numberline {2.2.4}Notify from ISR}{5}{subsubsection.2.2.4}
-\contentsline {subsection}{\numberline {2.3}Inter-task Communication}{5}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Memory Pools}{6}{subsection.2.4}
-\contentsline {subsection}{\numberline {2.5}Serial Interface}{6}{subsection.2.5}
-\contentsline {section}{\numberline {3}Demonstration Program}{6}{section.3}
-\contentsline {section}{\numberline {4}Conclusion}{7}{section.4}
+\contentsline {section}{\numberline {1}Project Overview and Aims}{1}{section.1}
+\contentsline {section}{\numberline {2}Specification}{1}{section.2}
+\contentsline {section}{\numberline {3}Literature Survey}{1}{section.3}
+\contentsline {section}{\numberline {4}Project Plan}{1}{section.4}
