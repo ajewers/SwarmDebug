@@ -57,7 +57,7 @@ This project, entitled ``Augmented Reality Debugging System for Swarm Robotics''
 
 \begin{multicols*}{2}
 
-In order to be useful in swarm robotics experiments the system must be able to collate data on multiple active robots. The user must then be able to configure the data being displayed according to what is relevant for the current experiment. The user should also be able to access data related to a single robot at a time, as well as the swarm as a whole. 
+In order to be useful in swarm robotics experiments the system must be able to collate data on multiple active robots. The user must then be able to configure the data being displayed according to what is relevant for the current experiment. The user should also be able to access data related to a single robot at a time, as well as the swarm as a whole. The application will aim to make these configuration options available to the user through conventional application interface techniques.
 
 \section{Specification}
 Given the aims stated above, a specification for the system to be developed can be stated as follows. The system:
@@ -74,16 +74,26 @@ Given the aims stated above, a specification for the system to be developed can 
 	\item Should use a modularised structure.
 	\item Should exchange data between modules using a platform-agnostic, extensible protocol.
 	\item Should provide a basis for interoperability with a number of robotics platforms.
+	\item Should allow the user to configure the displayed data.
 \end{enumerate}
 
 \section{Literature Survey}
-A number of key areas of literature have been identified as relevant to this project. A small body of work exists describing similar real time, graphical debugging systems for swarm and other robotics applications. These are primarily bespoke systems targeting single robotics platforms. More general work relating to human-swarm interaction, improvements to human-robot interaction through augmented reality (AR) tools, and swarm behaviour design theory are also considered.
+A number of key areas of literature have been identified as relevant to this project. A small body of work exists describing similar real time, graphical debugging systems for swarm and other robotics applications. These are primarily bespoke systems targeting single robotics platforms. These are considered in Section \ref{SimilarWork}. Some of the key works on swarm intelligence and swarm robotics as a whole are are highlighted in Section \ref{GeneralSR}, as an understanding of the fundamental concepts will be key to producing a useful application.  More specific work relating to human-swarm interaction and improvements to human-robot interaction through augmented reality (AR) tools are also considered, in section \ref{HumanSwarmInteraction}.
+
+\subsection{Similar Work} \label{SimilarWork}
+In their paper `Interactive Augmented Reality for Understanding and Analysing Multi-Robot Systems' Ghiringhelli et al. present a system for augmenting a video feed of an environment containing a number of robots with live information relating to each of the robots\cite{LEDSwarmAR}. The work presented mirrors closely the aims of this project. The authors identify the ability to overlay on to the video feed spatial information exposed by the robots, in the form of graphical representations situated relative to the tracked position of the related robot, as the most important debugging feature of the system.
+
+\subsection{Swarm Intelligence and Robotics Overview} \label{GeneralSR}
+
+\subsection{Human-Swarm and Human-Robot Interaction} \label{HumanSwarmInteraction}
+
 
 \section{Project Plan}
 \begin{thebibliography}{1}
 \bibitem{SwarmRoboticsDefinition} Swarm Robotics: From Sources of
 Inspiration to Domains of Application, E. Sahin, 2005
 \bibitem{SwarmIntelligence} Swarm intelligence. Dorigo M. Birattari M.
+\bibitem{LEDSwarmAR} Interactive Augmented Reality for Understanding and Analyzing Multi-Robot Systems Fabrizio Ghiringhelli
 \end{thebibliography}
 
 \end{multicols*}
