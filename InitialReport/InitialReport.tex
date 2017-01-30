@@ -42,20 +42,22 @@
 
 
 \section{Project Overview and Aims}
-Swarm Robotics is the name given to the nascent field of study focusing on the use of concepts derived from the study of social insect `swarms', such as ants or bees, to design and implement robot behaviours which allow a group of simple actors to achieve a complex, cooperative behaviour. The broader area of study, without the robotics focus, is referred to as Swarm Intelligence (SI), and is described by Dorigo \& Birattari as the \textit{``discipline that deals with natural and artificial systems composed of many individuals that coordinate using decentralized control and self-organization''}, with examples including insect colonies, fish schools, and flocks of birds \cite{SwarmIntelligence}. Whilst the details of this complex area of study are outside the scope of this report, it is of importance to the nature of the project to note that one of the key aims of swarm robotics is decentralised control. To this end, in a swarm robotics system you would not expect to find any master controller or central unit. Instead each robot will likely be acting purely based on information available locally, and there will be no point in the system that is aware of the current state of all the robots. Coupling this with the more general problem in debugging robotics that the state of a robot may change rapidly over time, and be dependent on a large number of environmental or outside factors, it becomes readily apparent that debugging a swarm robotics system effectively may present an enormous challenge. 
+Swarm Robotics is the name given to the nascent field of study focusing on the use of concepts derived from the study of social insects, such as ants or bees, to design and implement behavioural algorithms for multi-robot systems. These behaviours should allow a group of relatively simple robots to achieve a more complex, emergent behaviour, through cooperation\cite{SwarmRoboticsDefinition}. The broader area of study, without the robotics focus, is referred to as Swarm Intelligence (SI), and is described by Dorigo \& Birattari as the \textit{``discipline that deals with natural and artificial systems composed of many individuals that coordinate using decentralized control and self-organization''}, with examples including insect colonies, fish schools, and flocks of birds \cite{SwarmIntelligence}. Whilst the details of this complex area of study are outside the scope of this report, it is of importance to the nature of the project to note that one of the key aims of swarm robotics is decentralised control. To this end, in a swarm robotics system you would not expect to find any master controller or central decision making unit. Instead each robot acts based purely on information available locally, and no point in the system is aware of the current state of all the robots. Another more general problem in robotics debugging is that the state of a robot may change rapidly over time, and be dependent on a large number of environmental or outside factors. Considering these two problems together it becomes readily apparent that debugging a swarm robotics system effectively may present an enormous challenge. 
 
-This project, entitled ``Augmented Reality Debugging System for Swarm Robotics'', focuses on the creation of a computer application and associated back-end for monitoring and debugging swarm robotics systems in real time. This will include the use of an existing video feed based tracking system to monitor the robots position, and overlaying graphical representations of the robots states on top of the video feed. The robots will also communicate information regarding their current state, sensor readings, and other decision critical data to the computer running the application wirelessly. By fusing the data from these two sources and presenting it to the user in a combination of graphical and textual formats the software will aim to allow the user (most likely the researcher running the swarm robotics experiment) to isolate faults in the system more quickly, and determine if the nature of a problem is related to the behaviour under test, or another factor such as sensor/actuator malfunction, incorrect state transition \textit{etc}. Another aim of the project is to provide this debugging facility in a highly modularised way, which can be incorporated into a swarm robotics system with relative ease. The system will initially target the widely used E-Puck\cite{epuck} robotics platform, but will aim to be designed in a way that allows support for other robots to be incorporated without modifying the core system. Figure \ref{fig:SystemArchitecture} shows a logical representation of the expected system architecture, utilising the E-Puck platform. 
+This project, entitled ``Augmented Reality Debugging System for Swarm Robotics'', focuses on the creation of a computer application and associated back-end for monitoring and debugging swarm robotics systems in real time. This will include the use of an existing video based tracking system to monitor the robots position and transmit this data to the computer running the application. The robots will also communicate information regarding their current state, sensor readings, and other decision critical data to the computer wirelessly. Graphical representations of the robots' states and other spatial data will then be overlayed on top of the video feed, whilst non-spatial data will be represented in other forms. By fusing the data from these two sources and presenting it to the user in a combination of graphical and textual formats, the software will aim to allow the user (most likely the researcher running the swarm robotics experiment) to isolate faults in the system more quickly, and determine if the nature of a problem is related to the behaviour under test, or another factor such as sensor/actuator malfunction, incorrect state transition, \textit{etc}. Another aim of the project is to provide this debugging facility in a highly modularised way, which can be incorporated into a swarm robotics system with relative ease. The system will initially target the widely used E-Puck\cite{epuck} robotics platform, but will aim to be designed in a way that allows support for other robots to be incorporated without modifying the core system. Figure \ref{fig:SystemArchitecture} shows a logical representation of the expected system architecture, utilising the E-Puck platform. 
 \end{multicols}
 
 \begin{figure}[H]
 	\begin{center}
-	\includegraphics[scale=1.0]{SystemArchitecture.png}
+	\includegraphics[scale=0.9]{SystemArchitecture.png}
 	\caption{Expected general system architecture}
 	\label{fig:SystemArchitecture}
 	\end{center}
 \end{figure}
 
 \begin{multicols*}{2}
+
+In order to be useful in swarm robotics experiments the system must be able to collate data on multiple active robots. The user must then be able to configure the data being displayed according to what is relevant for the current experiment. The user should also be able to access data related to a single robot at a time, as well as the swarm as a whole. The application will aim to make these configuration options available to the user through conventional application interface techniques.
 
 \section{Specification}
 Given the aims stated above, a specification for the system to be developed can be stated as follows. The system:
@@ -72,6 +74,7 @@ Given the aims stated above, a specification for the system to be developed can 
 	\item Should use a modularised structure.
 	\item Should exchange data between modules using a platform-agnostic, extensible protocol.
 	\item Should provide a basis for interoperability with a number of robotics platforms.
+	\item Should allow the user to configure the displayed data.
 \end{enumerate}
 
 \section{Literature Survey}
@@ -79,6 +82,8 @@ A number of key areas of literature have been identified as relevant to this pro
 
 \section{Project Plan}
 \begin{thebibliography}{1}
+\bibitem{SwarmRoboticsDefinition} Swarm Robotics: From Sources of
+Inspiration to Domains of Application, E. Sahin, 2005
 \bibitem{SwarmIntelligence} Swarm intelligence. Dorigo M. Birattari M.
 \end{thebibliography}
 
