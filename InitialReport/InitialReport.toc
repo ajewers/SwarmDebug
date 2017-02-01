@@ -2,7 +2,7 @@
 \contentsline {section}{\numberline {1}Project Overview and Aims}{2}{section.1}
 \contentsline {section}{\numberline {2}Specification}{3}{section.2}
 \contentsline {section}{\numberline {3}Literature Survey}{3}{section.3}
-\contentsline {subsection}{\numberline {3.1}Similar Work}{3}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Swarm Intelligence and Robotics Overview}{3}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Human-Swarm and Human-Robot Interaction}{3}{subsection.3.3}
-\contentsline {section}{\numberline {4}Project Plan}{3}{section.4}
+\contentsline {subsection}{\numberline {3.1}Swarm Intelligence and Robotics Overview}{3}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Similar Work}{3}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Human-Swarm and Human-Robot Interaction}{4}{subsection.3.3}
+\contentsline {section}{\numberline {4}Project Plan}{4}{section.4}
