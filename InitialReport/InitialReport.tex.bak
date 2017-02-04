@@ -102,6 +102,7 @@ A commonly used technique when developing software is to define a specification 
 	\item Should exchange data between the robot platform and the application using a platform-agnostic, extensible protocol.
 	\item Should provide a basis for interoperability with a number of robotics platforms.
 	\item Should allow the user to configure the displayed data.
+	\item Should employ a model-view-controller (MVC) software architecture.
 \end{enumerate}
 
 \section{Project Plan}
