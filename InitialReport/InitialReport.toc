@@ -5,4 +5,5 @@
 \contentsline {subsection}{\numberline {2.2}Human-Swarm Interaction}{4}{subsection.2.2}
 \contentsline {subsection}{\numberline {2.3}Augmented Reality and Other Graphical Systems for Robotics Interaction}{4}{subsection.2.3}
 \contentsline {section}{\numberline {3}Project Objectives and Specification}{5}{section.3}
-\contentsline {section}{\numberline {4}Project Plan}{5}{section.4}
+\contentsline {section}{\numberline {4}Project Plan}{6}{section.4}
+\contentsline {subsection}{\numberline {4.1}Timeframe}{6}{subsection.4.1}
