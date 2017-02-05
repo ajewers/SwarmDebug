@@ -40,7 +40,7 @@
 
 
 \section{Project Overview and Aims} \label{Overview}
-Swarm Robotics is the name given to the nascent field of study focusing on the use of concepts derived from the study of social insects, such as ants or bees, to design and implement behavioural algorithms for multi-robot systems. These behaviours should allow a group of relatively simple robots to achieve a more complex, emergent behaviour, through cooperation\cite{SwarmRoboticsDefinition}. The broader area of study, without the robotics focus, is referred to as Swarm Intelligence (SI), and is described by Dorigo \& Birattari as the \textit{``discipline that deals with natural and artificial systems composed of many individuals that coordinate using decentralized control and self-organization''}, with examples including insect colonies, fish schools, and flocks of birds \cite{SwarmIntelligence}. Whilst the details of this complex area of study are outside the scope of this report, it is of importance to the nature of the project to note that one of the key aims of swarm robotics is decentralised control. To this end, in a swarm robotics system you would not expect to find any master controller or central decision making unit. Instead each robot acts based purely on information available locally, and no point in the system is aware of the current state of all the robots. Also of note is the fact that the state of a robot may change rapidly over time, and be dependent on a large number of environmental or outside factors. Considering these two statements together, it becomes readily apparent that debugging a swarm robotics system may present an enormous challenge, as the state of the system will be complex and rapidly changing, and no single point in the system can provide the user with the complete state information. 
+Swarm Robotics is the name given to the nascent field of study focusing on the use of concepts derived from the study of social insects, such as ants or bees, to design and implement behavioural algorithms for multi-robot systems. These behaviours should allow a group of relatively simple robots to achieve a more complex, emergent behaviour, through cooperation\cite{SwarmRoboticsDefinition}. The broader area of study, without the robotics focus, is referred to as Swarm Intelligence (SI), and is described by Dorigo \& Birattari as the \textit{``discipline that deals with natural and artificial systems composed of many individuals that coordinate using decentralized control and self-organization''}, with examples including insect colonies, fish schools, and flocks of birds \cite{SwarmIntelligence}. Whilst the details of this complex area of study are outside the scope of this report, it is of importance to the nature of the project to note that one of the key aims of swarm robotics is decentralised control. To this end, in a swarm robotics system you would not expect to find any master controller or central decision making unit. Instead each robot acts based purely on information available locally, and no point in the system is aware of the current state of all the robots. Also of note is the fact that the state of a robot may change rapidly over time, and be dependent on a large number of environmental or outside factors. Considering these two statements together, it becomes readily apparent that debugging a swarm robotics system may present an enormous challenge, as the state of the system will be complex and rapidly changing, and no single point in the system can provide the user with the complete state information of the system. 
 
 This project, entitled `\textit{Augmented Reality Debugging System for Swarm Robotics}', focuses on the design and implementation of a computer application for monitoring and debugging swarm robotics systems in real time. This will include the use of an existing video based tracking system to monitor the robots' positions. The robots will communicate information regarding their current internal state, sensor readings, and other decision critical data to the computer wirelessly. Graphical representations of the spatial elements of the robots' data will then be overlayed on top of the video feed, whilst non-spatial data will be represented in other forms. By fusing the data from these two sources and presenting it to the user in a combination of graphical and textual formats, the software will aim to allow the user (most likely the researcher running the swarm robotics experiment) to isolate faults in the system more quickly, and determine if the nature of a problem is related to the behaviour under test, or another factor such as sensor/actuator malfunction, incorrect state transition, \textit{etc}. Another aim of the project is to provide this debugging facility in a highly modularised way, which can be incorporated into a swarm robotics system with relative ease. The system will initially target the widely used E-Puck\cite{EPuck} robotics platform, but will aim to be designed in a way that allows support for other robots to be incorporated without modifying the core system. Figure \ref{fig:SystemArchitecture} shows a logical representation of the expected system architecture, utilising the E-Puck platform. 
 %\end{multicols}
@@ -73,7 +73,7 @@ T. H. J. Collet and B. A. MacDonald describe in detail the difficulties in debug
 
 Ghiringhelli et al. present a system for augmenting a video feed of an environment containing a number of robots with real time information obtained from each of the robots\cite{LEDSwarmAR}. This is similar in concept to the system described by Collet and MacDonald, but is designed specifically to target a multi-robot system. The authors identify the ability to overlay spatial information exposed by the robots on to the video feed, in the form of situated graphical representations, as the most important debugging feature of the system. Each robot features a coloured LED blinking a unique coded pattern to enable tracking, and the system uses homography techniques to map between the robots' frame of reference and the camera's. This project intends to use a simpler approach, with position and orientation tracking achieved through the use of the AruCo marker-based tracking system, and a birds-eye view position for the camera to simplify mapping by effectively reducing the space to a 2D one.
 
-\section{Project Objectives and Specification} \label{Objectives}
+\section{Project Objectives} \label{Objectives}
 With the idea of the project established in Section \ref{Overview} and an understanding of the surrounding research area provided in Section \ref{LitSurvey}, the overall aim and a set of objectives for the project can be summarised. The aim of the project is to understand the needs of a swarm robotics researcher or system developer when attempting to debug their system, and create a computer application which allows a user to monitor the state and behaviour of a robot swarm system in real time, thus improving the ease and efficiency of this debugging process. The objectives required to achieve this aim are as follows:
 
 \begin{itemize}
@@ -87,6 +87,7 @@ With the idea of the project established in Section \ref{Overview} and an unders
 	\item Design and implement the system in a modular way so as to allow for easy integration with different swarm robotics platforms, tracking systems, and future extensions.
 \end{itemize}
 
+\subsection{Software Specification}
 A commonly used technique when developing software is to define a specification prior to starting development in order to make clear the features the software must have and the things it must be capable of doing, in order to fulfil its purpose\cite{NASAApproach}. The following preliminary specification has been created for the software to be created during this project. Any point within may be revised or removed during the course of the project should it be determined impossible or infeasible.
 
 \begin{enumerate}
@@ -106,8 +107,43 @@ A commonly used technique when developing software is to define a specification 
 \end{enumerate}
 
 \section{Project Plan}
-\subsection{Timeframe}
-This project will take place between Monday 16th January and Thursday 18th May, 2017. In order to complete the necessary work outlined in section \ref{Objectives} within this time, a Project Plan is presented. The work is divided approximately into logical tasks. Any time lengths stated are best-guess estimates. Due to the nature of software development, the time required to complete a given development task is difficult to accurately predict.
+\subsection{Timeframe and Approach}
+This project will take place between Monday 16th January and Thursday 18th May, 2017. In order to complete the necessary work outlined in section \ref{Objectives} within this time, a Project Plan is presented. The work is divided approximately into logical tasks.  Due to the nature of software development, the time required to complete a given development task is difficult to accurately predict. Hence any time lengths stated are best-guess estimates. Throughout the project an approach loosely based on the Agile Development methodology will be adopted. Some Agile concepts such as \textit{stand ups} are not relevant for a single developer project, however general concepts such as frequent requirements review, continuous parallel testing, and flexible task scheduling will be incorporated. Version control and issue tracking tools will be used to organise the development process.
+
+\subsection{Tasks}\label{Tasks}
+Table \ref{DevTaskTable} gives a breakdown of the individual software development tasks required to complete the project. This list may not be exhaustive, as unforeseen or unexpected requirements may present themselves as the project continues.
+
+\begin{table}[H]
+\begin{tabular}[h]{ |>{\raggedright}p{5cm}|>{\raggedright}p{7cm}|p{3cm}| }
+  \hline
+  Task & Objective & Approximate Time \\\hline
+  Read and Understand Existing Code & To understand existing code related to the tracking camera and networking on the E-Pucks. & 14 Days (Alongside other development)\\ \hline
+  Learn to Re-Program E-Puck Robots & To understand the cross compilation process for the E-Pucks. & 1 Day \\ \hline
+  Establish Development Environment and Toolchain & To enable organised development by establishing a tool set and workflow. & 1 Day \\ \hline
+  Outline Software Architecture & To design a coherent code structure in order for code to remain organised and modular. & 2 Days \\ \hline
+  Design General User Interface & To create a high level design of the basic UI. & 2 Day \\ \hline
+  Create a Skeleton Application & To implement a 'skeleton' framework of the application, including the basic UI, on to which features can be added. & 1 Day \\ \hline
+  Incorporate Tracking Camera Code & To incorporate existing low-level code for acquiring images from the tracking camera and performing tag detection. & 2 Days \\ \hline
+  Implement Tracking Camera Controller & To implement code to create a layer of abstraction between the application code and the tracking code. & 2 Days \\ \hline
+  Implement Wireless Data Receive & To implement code to allow the application to receive data wirelessly. & 2 Days \\ \hline
+  Separate Application Modules into Threads & To improve performance by separating sections of the application into concurrent threads. & 1 Day \\ \hline
+  Determine Robot Data Types & To establish an initial set of data types that will be supported by default, and a packet format for these. & 1 Day \\ \hline
+  Design Application Data Model & To design the back end data model of the application. & 1 Day \\ \hline
+  Implement Data Model & To implement code based on the data model design. & 4 Days \\ \hline
+  Implement Mapping Received Data to Model & To implement code to store received robot and tracking data in the application data model. & 3 days \\ \hline
+  Design UI Data Representation & To establish a design for the representation of the different data types. & 2 Days \\ \hline
+  Implement Basic Visualiser & To implement code for displaying the video feed and augmenting it with basic geometric primitives. & 5 Days \\ \hline
+  Implement Graphical and Textual Data Visualisation & To implement code to convert the data in the data model into relevant visualisations. & 10 Days \\ \hline
+  Implement Data Visualisation Filtering & To implement code to allow the user to filter out unnecessary visualisation elements. & 5 Days \\ \hline
+  Implement Robot Data Comparison & To implement code to allow the user to compare the data of specific robots. & 3 Days \\ \hline
+\end{tabular}
+\caption{Development Tasks\label{DevTaskTable}}
+\end{table}
+
+\subsection{Gantt Chart}\label{GanttChart}
+Appendix ?? provides a Gantt with the development tasks outlined in Section \ref{Tasks} shown in the context of the wider project. 
+
+
 \begin{thebibliography}{1}
 \bibitem{SwarmRoboticsDefinition} Swarm Robotics: From Sources of
 Inspiration to Domains of Application, E. Sahin, 2005

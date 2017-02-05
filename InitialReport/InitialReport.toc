@@ -4,6 +4,9 @@
 \contentsline {subsection}{\numberline {2.1}Swarm Intelligence and Swarm Robotics Overview}{3}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Human-Swarm Interaction}{4}{subsection.2.2}
 \contentsline {subsection}{\numberline {2.3}Augmented Reality and Other Graphical Systems for Robotics Interaction}{4}{subsection.2.3}
-\contentsline {section}{\numberline {3}Project Objectives and Specification}{5}{section.3}
+\contentsline {section}{\numberline {3}Project Objectives}{5}{section.3}
+\contentsline {subsection}{\numberline {3.1}Software Specification}{5}{subsection.3.1}
 \contentsline {section}{\numberline {4}Project Plan}{6}{section.4}
-\contentsline {subsection}{\numberline {4.1}Timeframe}{6}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.1}Timeframe and Approach}{6}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Tasks}{6}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Gantt Chart}{7}{subsection.4.3}
