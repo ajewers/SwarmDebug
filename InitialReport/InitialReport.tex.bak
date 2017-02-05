@@ -106,7 +106,7 @@ A commonly used technique when developing software is to define a specification 
 
 \section{Project Plan}
 \subsection{Timeframe and Approach}
-This project will take place between Monday 16th January and Thursday 18th May, 2017. In order to complete the necessary work outlined in section \ref{Objectives} within this time, a Project Plan is presented. The work is divided approximately into logical tasks.  Due to the nature of software development, the time required to complete a given development task is difficult to accurately predict. Hence any time lengths stated are best-guess estimates. Throughout the project an approach loosely based on the Agile Development methodology will be adopted. Some Agile concepts such as \textit{stand ups} are not relevant for a single developer project, however general concepts such as frequent requirements review, continuous parallel testing, and flexible task scheduling will be incorporated. Version control and issue tracking tools will be used to organise the development process.
+This project will take place between Monday 16th January and Thursday 18th May, 2017. In order to complete the necessary work outlined in section \ref{Objectives} within this time, a Project Plan is presented. The work is divided approximately into logical tasks.  Due to the nature of software development, the time required to complete a given development task is difficult to accurately predict. Hence any time lengths stated are best-guess estimates. Throughout the project an approach loosely based on `Agile' development methodologies will be adopted\cite{Agile}. Some Agile concepts such as \textit{stand ups} are not relevant for a single developer project, however general concepts such as frequent requirements review, continuous parallel testing, and flexible task scheduling will be incorporated. Version control and issue tracking tools will be used to organise the development process.
 
 \subsection{Tasks}\label{Tasks}
 Table \ref{DevTaskTable} gives a breakdown of the individual software development tasks required to complete the project. This list may not be exhaustive, as unforeseen or unexpected requirements may present themselves as the project continues.
@@ -161,9 +161,7 @@ Appendix ?? provides a Gantt with the development tasks outlined in Section \ref
 \bibitem{ARForPlayer} T. H. J. Collett and B. A. MacDonald, ``Augmented reality visualisation for player,'' \textit{Proceedings 2006 IEEE International Conference on Robotics and Automation}, 2006. ICRA 2006., Orlando, FL, 2006, pp. 3954-3959.
 \bibitem{LEDSwarmAR} F. Ghiringhelli et al., ``Interactive Augmented Reality for understanding and analyzing multi-robot systems,'' \textit{2014 IEEE/RSJ International Conference on Intelligent Robots and Systems}, Chicago, IL, 2014, pp. 1195-1201.
 \bibitem{NASAApproach} NASA Software Engineering Laboratory, \textit{Recommended Approach to Software Development}. Goddard Space Flight Center, Greenbelt, MD, USA: National Aeronautics and Space Administration; 1992. [Online]. Available: http://homepages.inf.ed.ac.uk/dts/pm/Papers/nasa-approach.pdf. Accessed: Feb. 5, 2017.
-\bibitem{Agile} "Agile Software Developmentt:
-The Business of
-Innovation
+\bibitem{Agile} J. Highsmith and A. Cockburn, ``Agile software development: the business of innovation,'' in Computer, vol. 34, no. 9, pp. 120-127, Sep 2001.
 \end{thebibliography}
 
 \end{document}
