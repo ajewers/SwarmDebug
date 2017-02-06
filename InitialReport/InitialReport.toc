@@ -10,3 +10,4 @@
 \contentsline {subsection}{\numberline {4.1}Timeframe and Approach}{6}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Tasks}{6}{subsection.4.2}
 \contentsline {subsection}{\numberline {4.3}Gantt Chart}{7}{subsection.4.3}
+\contentsline {section}{\numberline {A}Gantt Chart}{10}{appendix.A}

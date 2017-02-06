@@ -115,33 +115,43 @@ Table \ref{DevTaskTable} gives a breakdown of the individual software developmen
 \begin{tabular}[h]{ |>{\raggedright}p{5cm}|>{\raggedright}p{7cm}|p{3cm}| }
   \hline
   Task & Objective & Approximate Time \\\hline
-  Read and Understand Existing Code & To understand existing code related to the tracking camera and networking on the E-Pucks. & 14 Days (Alongside other development)\\ \hline
-  Learn to Re-Program E-Puck Robots & To understand the cross compilation process for the E-Pucks. & 1 Day \\ \hline
-  Establish Development Environment and Toolchain & To enable organised development by establishing a tool set and workflow. & 1 Day \\ \hline
-  Outline Software Architecture & To design a coherent code structure in order for code to remain organised and modular. & 2 Days \\ \hline
-  Design General User Interface & To create a high level design of the basic UI. & 2 Day \\ \hline
-  Create a Skeleton Application & To implement a 'skeleton' framework of the application, including the basic UI, on to which features can be added. & 1 Day \\ \hline
-  Incorporate Tracking Camera Code & To incorporate existing low-level code for acquiring images from the tracking camera and performing tag detection. & 2 Days \\ \hline
-  Implement Tracking Camera Controller & To implement code to create a layer of abstraction between the application code and the tracking code. & 2 Days \\ \hline
-  Implement Wireless Data Receive & To implement code to allow the application to receive data wirelessly. & 2 Days \\ \hline
-  Separate Application Modules into Threads & To improve performance by separating sections of the application into concurrent threads. & 1 Day \\ \hline
-  Determine Robot Data Types & To establish an initial set of data types that will be supported by default, and a packet format for these. & 1 Day \\ \hline
-  Design Application Data Model & To design the back end data model of the application. & 1 Day \\ \hline
-  Implement Data Model & To implement code based on the data model design. & 4 Days \\ \hline
-  Implement Mapping Received Data to Model & To implement code to store received robot and tracking data in the application data model. & 3 days \\ \hline
-  Design UI Data Representation & To establish a design for the representation of the different data types. & 2 Days \\ \hline
-  Implement Basic Visualiser & To implement code for displaying the video feed and augmenting it with basic geometric primitives. & 5 Days \\ \hline
-  Implement Graphical and Textual Data Visualisation & To implement code to convert the data in the data model into relevant visualisations. & 10 Days \\ \hline
-  Implement Data Visualisation Filtering & To implement code to allow the user to filter out unnecessary visualisation elements. & 5 Days \\ \hline
-  Implement Robot Data Comparison & To implement code to allow the user to compare the data of specific robots. & 3 Days \\ \hline
+  Read and Understand Existing Code 				& To understand existing code related to the tracking camera and networking on the E-Pucks. 							& 14 Days (Alongside other development)\\ \hline
+  Establish Development Environment and Toolchain 	& To enable organised development by establishing a tool set and workflow. 												& 3 Days \\ \hline
+  Learn to Re-Program E-Puck Robots 				& To understand the cross compilation process for the E-Pucks. 															& 2 Days \\ \hline
+  Outline Software Architecture 					& To design a coherent code structure in order for code to remain organised and modular. 								& 2 Days \\ \hline
+  Design General User Interface 					& To create a high level design of the basic UI. 																		& 2 Days \\ \hline
+  Create a Skeleton Application 					& To implement a 'skeleton' framework of the application, including the basic UI, on to which features can be added. 	& 1 Day \\ \hline
+  Incorporate Tracking Camera Code 					& To incorporate existing low-level code for acquiring images from the tracking camera and performing tag detection. 	& 2 Days \\ \hline
+  Implement Tracking Camera Controller 				& To implement code to create a layer of abstraction between the application code and the tracking code. 				& 2 Days \\ \hline
+  Implement Wireless Data Receive 					& To implement code to allow the application to receive data wirelessly. 												& 2 Days \\ \hline
+  Separate Application Modules into Threads 		& To improve performance by separating sections of the application into concurrent threads. 							& 1 Day \\ \hline
+  Determine Robot Data Types 						& To establish an initial set of data types that will be supported by default, and a packet format for these. 			& 1 Day \\ \hline
+  Design Application Data Model 					& To design the back end data model of the application. 																& 1 Day \\ \hline
+  Implement Data Model 								& To implement code based on the data model design. 																	& 5 Days \\ \hline
+  Implement Mapping Received Data to Model 			& To implement code to store received robot and tracking data in the application data model. 							& 3 days \\ \hline
+  Implement Basic Visualiser 						& To implement code for displaying the video feed and augmenting it with basic geometric primitives. 					& 5 Days \\ \hline
+  Design UI Data Representation 					& To establish a design for the representation of the different data types. 											& 2 Days \\ \hline
+  Implement Graphical and Textual Data Visualisation & To implement code to convert the data in the data model into relevant visualisations. 								& 10 Days \\ \hline
+  Implement Data Visualisation Filtering 			& To implement code to allow the user to filter out unnecessary visualisation elements. 								& 5 Days \\ \hline
+  Implement Robot Data Comparison 					& To implement code to allow the user to compare the data of specific robots. 											& 3 Days \\ \hline
 \end{tabular}
 \caption{Development Tasks\label{DevTaskTable}}
 \end{table}
 
 \subsection{Gantt Chart}\label{GanttChart}
-Appendix ?? provides a Gantt with the development tasks outlined in Section \ref{Tasks} shown in the context of the wider project. 
+Appendix \ref{app:GantChart} provides a Gantt Chart with the development tasks outlined in Section \ref{Tasks} shown in the context of the wider project. The chart includes a section on testing, which shows continuous integration testing running in parallel to development, as per the agile development mentioned previously. A section is also included for the creation of a user survey to be distributed to some potential users of the system. This will give insight into the application features they believe will be useful. The chart includes weekends as potential working days, but where possible development tasks have been scheduled to primarily fall on working days. As stated previously timings are approximate, and development tasks may incur slippage time due to unforeseen difficulties. The development completion date is therefore approximate, however the demonstration date is fixed, and therefore slippage time will be accounted for where necessary by a reduction in testing time. The use of continuous integration testing should help to mitigate this risk. The final report will be written alongside the development work, with the aim of having the bulk of the report drafted prior to the demonstration date. This then leaves approximately three weeks for completing the report, including conclusion, editing and proof reading.
+\begin{appendix}
+\section{Gantt Chart}\label{app:GantChart}
+\begin{figure}[H]
+	\begin{center}
+	\includegraphics[scale=0.5]{Gant90.png}
+	\caption{Gant Chart}
+	\label{fig:GantChart}
+	\end{center}
+\end{figure}
 
-
+\end{appendix}
+\newpage
 \begin{thebibliography}{1}
 \bibitem{InspirationToApplication} E. Sahin, ``Swarm Robotics: From Sources of Inspiration to Domains of Application,'' in \textit{Swarm Robotics WS 2004}, E. S¸ahin and W.M. Spears, Eds. Berlin: Springer-Verlag Berlin Heidelberg, 2005, LNCS 3342, pp. 10–20.
 \bibitem{SwarmIntelligence} M. Dorigo and M. Birattari, ``Swarm intelligence,'' \textit{Scholarpedia}, vol. 2, no. 9, p. 1462, Sep. 2007. [Online]. Available: http://www.scholarpedia.org/article/Swarm\_intelligence. Accessed: Feb. 5, 2017.
@@ -161,7 +171,7 @@ Appendix ?? provides a Gantt with the development tasks outlined in Section \ref
 \bibitem{ARForPlayer} T. H. J. Collett and B. A. MacDonald, ``Augmented reality visualisation for player,'' \textit{Proceedings 2006 IEEE International Conference on Robotics and Automation}, 2006. ICRA 2006., Orlando, FL, 2006, pp. 3954-3959.
 \bibitem{LEDSwarmAR} F. Ghiringhelli et al., ``Interactive Augmented Reality for understanding and analyzing multi-robot systems,'' \textit{2014 IEEE/RSJ International Conference on Intelligent Robots and Systems}, Chicago, IL, 2014, pp. 1195-1201.
 \bibitem{NASAApproach} NASA Software Engineering Laboratory, \textit{Recommended Approach to Software Development}. Goddard Space Flight Center, Greenbelt, MD, USA: National Aeronautics and Space Administration; 1992. [Online]. Available: http://homepages.inf.ed.ac.uk/dts/pm/Papers/nasa-approach.pdf. Accessed: Feb. 5, 2017.
-\bibitem{Agile} J. Highsmith and A. Cockburn, ``Agile software development: the business of innovation,'' in Computer, vol. 34, no. 9, pp. 120-127, Sep 2001.
+\bibitem{Agile} J. Highsmith and A. Cockburn, ``Agile software development: the business of innovation,'' in \textit{Computer}, vol. 34, no. 9, pp. 120-127, Sep 2001.
 \end{thebibliography}
 
 \end{document}
