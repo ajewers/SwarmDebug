@@ -162,24 +162,42 @@ Appendix \ref{app:GantChart} provides a Gantt Chart with the development tasks o
 \newpage
 
 \begin{thebibliography}{1}
-\bibitem{InspirationToApplication} E. Sahin, ``Swarm Robotics: From Sources of Inspiration to Domains of Application,'' in \textit{Swarm Robotics WS 2004}, E. S¸ahin and W.M. Spears, Eds. Springer, Berlin, 2005, LNCS 3342, pp. 10–20.
+\bibitem{InspirationToApplication} E. Sahin, ``Swarm Robotics: From Sources of Inspiration to Domains of Application,'' in \textit{Swarm Robotics WS 2004}, E. S¸ahin and W.M. Spears, Eds. Springer, Berlin, LNCS 3342, 2005, pp. 10–20.
+
 \bibitem{SwarmIntelligence} M. Dorigo and M. Birattari, ``Swarm intelligence,'' \textit{Scholarpedia}, vol. 2, no. 9, p. 1462, Sep. 2007. [Online]. Available: http://www.scholarpedia.org/article/Swarm\_intelligence. Accessed: Feb. 5, 2017.
+
 \bibitem{EPuck} F. Mondada et al., ``The e-puck, a robot designed for education in engineering,'' in \textit{Proceedings of the 9th Conference on Autonomous Robot Systems and Competitions}, vol. 1, IPCB: Instituto Politécnico de Castelo Branco, 2009, pp. 59–65.
+
 \bibitem{SelfOrganizing} M. Dorigo et al., ``Evolving self-organizing behaviors for a Swarm-Bot,'' \textit{Autonomous Robots}, vol. 17, no. 2/3, pp. 223–245, 2004.
+
 \bibitem{PathFormation} S. Nouyan, ``Path formation and goal search in swarm robotics,'' DEA thesis, Faculty of Applied Sciences, Universite Libre de Bruxelles, Brussels, 2004.
-\bibitem{FromSIToSR}G. Beni, ``From Swarm Intelligence to Swarm Robotics,'' in \textit{Swarm Robotics WS 2004}, E. S¸ahin and W.M. Spears, Eds. Berlin: Springer-Verlag Berlin Heidelberg, 2005, LNCS 3342, pp. 1–9.
+
+\bibitem{FromSIToSR}G. Beni, ``From Swarm Intelligence to Swarm Robotics,'' in \textit{Swarm Robotics WS 2004}, E. S¸ahin and W.M. Spears, Eds. Springer, Berlin, LNCS 3342, 2005, pp. 1–9.
+
 \bibitem{FromNaturaltoArtificial} E. Bonabeau, M. Dorigo, and G. Theraulaz, \textit{Swarm intelligence: From natural to artificial systems}. Oxford University Press, 1999.
-\bibitem{HumanSwarmInteractionSurvey} A. Kolling, P. Walker, N. Chakraborty, K. Sycara and M. Lewis, ``Human Interaction With Robot Swarms: A Survey,'' in \textit{IEEE Transactions on Human-Machine Systems}, vol. 46, no. 1, pp. 9-26, Feb. 2016. [Online]. Available: http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=\&arnumber=7299280\&isnumber=7389462. Accessed: Feb. 5, 2017.
-\bibitem{DesginingInterfaces} A. Rule and J. Forlizzi, ``Designing interfaces for multi-user, multi-robot systems,'' \textit{Proceedings of the seventh annual ACM/IEEE international conference on Human-Robot Interaction}, pp. 97–104, May 2012. [Online]. Available: http://dl.acm.org/citation.cfm?id=2157705. Accessed: Feb. 5, 2017. 
+
+\bibitem{HumanSwarmInteractionSurvey} A. Kolling, P. Walker, N. Chakraborty, K. Sycara and M. Lewis, ``Human Interaction With Robot Swarms: A Survey,'' in \textit{IEEE Transactions on Human-Machine Systems}, vol. 46, no. 1, 2016, pp. 9-26.
+
+\bibitem{DesginingInterfaces} A. Rule and J. Forlizzi, ``Designing interfaces for multi-user, multi-robot systems,'' \textit{Proceedings of the seventh annual ACM/IEEE international conference on Human-Robot Interaction}, 2012, pp. 97–104.
+
 \bibitem{InterfaceColour} R.E. Christ, ``Research for evaluating visual display codes: An emphasis on colour coding,'' in \textit{Information design: The design and evaluation of signs and printed materials}, R. Easterby and H. Zwaga, Eds. John Wiley and Sons, 1984, pp. 209-228.
-\bibitem{InterfaceText} C. Carney, J. L. Campbell and E. A. Mitchell, \textit{In vehicle display icons and other information elements: Literature review}. McLean, VA: U.S. Department of Transportation, Federal Highway Administration; 1998. [Online]. Available: https://www.fhwa.dot.gov/publications/research/safety/98164/index.cfm. Accessed: Feb. 5, 2017.
-\bibitem{AugmentedRealityDebuggingSystem} T. H. J. Collett and B. A. MacDonald, ``An augmented reality Debugging system for mobile robot software engineers,'' \textit{Journal of Software Engineering for Robotics}, vol. 1, no. 1, pp. 18–32, Jan. 2010. [Online]. Available: http://joser.unibg.it/index.php?journal=joser\&page=article\&op=view\&path\%5B\%5D=7. Accessed: Feb. 5, 2017.
-\bibitem{Player} B. P. Gerkey, R. T. Vaughan, A. Howard, ``The Player/Stage Project: Tools for Multi-Robot and Distributed Sensor Systems,'' \textit{Proceedings of the 11th International Conference on Advanced Robotics}, 2003, pp. 317-323. [Online]. Available: http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.8.3914. Accessed: Feb. 5, 2017.
-\bibitem{ARForPlayer} T. H. J. Collett and B. A. MacDonald, ``Augmented reality visualisation for player,'' \textit{Proceedings 2006 IEEE International Conference on Robotics and Automation}, 2006. ICRA 2006., Orlando, FL, 2006, pp. 3954-3959.
-\bibitem{LEDSwarmAR} F. Ghiringhelli et al., ``Interactive Augmented Reality for understanding and analyzing multi-robot systems,'' \textit{2014 IEEE/RSJ International Conference on Intelligent Robots and Systems}, Chicago, IL, 2014, pp. 1195-1201.
+
+\bibitem{InterfaceText} C. Carney, J. L. Campbell and E. A. Mitchell, \textit{In vehicle display icons and other information elements: Literature review}. U.S. Department of Transportation, Federal Highway Administration, USA; 1998.
+
+\bibitem{AugmentedRealityDebuggingSystem} T. H. J. Collett and B. A. MacDonald, ``An augmented reality Debugging system for mobile robot software engineers,'' \textit{Journal of Software Engineering for Robotics}, vol. 1, no. 1, 2010, pp. 18–32.
+
+\bibitem{Player} B. P. Gerkey, R. T. Vaughan, A. Howard, ``The Player/Stage Project: Tools for Multi-Robot and Distributed Sensor Systems,'' \textit{Proceedings of the 11th International Conference on Advanced Robotics}, 2003, pp. 317-323.
+
+\bibitem{ARForPlayer} T. H. J. Collett and B. A. MacDonald, ``Augmented reality visualisation for player,'' \textit{Proceedings 2006 IEEE International Conference on Robotics and Automation}, 2006, pp. 3954-3959.
+
+\bibitem{LEDSwarmAR} F. Ghiringhelli et al., ``Interactive Augmented Reality for understanding and analyzing multi-robot systems,'' \textit{2014 IEEE/RSJ International Conference on Intelligent Robots and Systems}, 2014, pp. 1195-1201.
+
 \bibitem{AruCo} S. Garrido-Jurado et al., ``Automatic generation and Detection of Highly Reliable Fiducial Markers Under Occlusion'', \textit{Pattern Recognition}, vol. 47, no. 6, 2014, pp. 228 - 2292.
-\bibitem{NASAApproach} NASA Software Engineering Laboratory, \textit{Recommended Approach to Software Development}. Goddard Space Flight Center, Greenbelt, MD, USA: National Aeronautics and Space Administration; 1992. [Online]. Available: http://homepages.inf.ed.ac.uk/dts/pm/Papers/nasa-approach.pdf. Accessed: Feb. 5, 2017.
-\bibitem{Agile} J. Highsmith and A. Cockburn, ``Agile software development: the business of innovation,'' in \textit{Computer}, vol. 34, no. 9, pp. 120-127, Sep 2001.
+
+\bibitem{NASAApproach} NASA Software Engineering Laboratory, \textit{Recommended Approach to Software Development}. National Aeronautics and Space Administration, MD, USA; 1992. [Online]. Available: http://homepages.inf.ed.ac.uk/dts/pm/Papers/nasa-approach.pdf. Accessed: Feb. 5, 2017.
+
+\bibitem{Agile} J. Highsmith and A. Cockburn, ``Agile software development: the business of innovation,'' in \textit{Computer}, vol. 34, no. 9, 2001, pp. 120-127.
+
 \end{thebibliography}
 
 \end{document}
