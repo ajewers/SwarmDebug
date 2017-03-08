@@ -1,0 +1,22 @@
+% Chapter 4
+
+\chapter[Aim and Objectives]{Aim and Objectives} % Main chapter title
+
+\label{Chapter4} % For referencing the chapter elsewhere, use \ref{Chapter1} 
+
+%----------------------------------------------------------------------------------------
+
+
+
+%----------------------------------------------------------------------------------------
+
+\section{Project Aim}
+Summarise the project aim as a statement.
+
+%----------------------------------------------------------------------------------------
+
+\section{Objectives}
+Itemize the objectives.
+
+\section{Revision Since Initial Report}
+Comment on any updates to the objectives following the initial report.
