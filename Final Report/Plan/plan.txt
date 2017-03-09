@@ -1,0 +1,87 @@
+Abstract
+
+Introduction
+  - Opening paragraph for context (recent advances in robotics, the birth of swarm)
+  - Topic introduction (Swarm robotics, the difficulties of debugging real time systems)
+  - Project introduction (Idea, purpose)
+  - Report structure
+  
+Literature Survey
+  - Introduce literature survey
+  - Background SI and SR survey
+  - Human robot/swarm interaction
+  - VR, AR and robotics
+  - Debugging theory / real-time system debugging
+  - Debugging for multi robot systems
+  - Augmented reality debugging systems for swarm robotics
+  - Summarise key points relevant to project
+  - Broaden back out to comment on effect of success on the wider area
+  
+Aims and Objectives
+  - Project aim as a statement
+  - Other aims
+  - Specific objectives
+  - Functional specification
+  - Revisions since initial report
+  
+Project Plan
+  - Work Breakdown
+  - Timing
+  - Risk mitigation
+  - A note on software development timing predictions
+  
+E-Puck Platform
+  - Overview
+  - Sensors
+  - Actuators
+  - Linux extension board & networking capabilities
+  
+Tracking system
+  - Overview
+  - Camera
+  - ARuCo tags
+  - Linux server
+  
+Initial User Survey
+  - Purpose
+  - Questions
+  - Response data
+  - Analysis and effect on project
+  
+Application Design
+  - Overview
+  - Software architecture design
+  - - Data Model
+  - - Components & threading
+  - UI Design
+  - - Qt
+  
+Application Implementation
+  - Code structure
+  - Tracking system integration
+  - WiFi communication
+  - Robot side code
+  - Data packets / protocol
+  
+Testing and Evaluation
+  - Continuous integration testing
+  - Validation testing
+  - Informal / Pilot user evaluation
+  - Structured user evaluation
+  - Results & Analysis
+  
+Project Demonstrations?
+  
+Future Work
+  - Use in the YRL
+  - Possible extensions
+  - - Robot control
+  - - Video output
+  - - User scripting for visualiser
+  - Integration with tablet application
+  - Integration with ARGoS simulator
+  
+Conclusion
+  - Evaluation of success in meeting the aims and objectives
+  - Evaluation of the merit of the system in the context of the YRL
+  - Evaluation of the merit of the system in SR research as a whole
