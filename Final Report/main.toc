@@ -7,28 +7,28 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.14}
 \contentsline {section}{\numberline {1.1}Overview}{1}{section.15}
 \contentsline {section}{\numberline {1.2}Project Concept}{1}{section.16}
-\contentsline {chapter}{\numberline {2}Literature Survey}{3}{chapter.17}
-\contentsline {section}{\numberline {2.1}Swarm Intelligence and Robotics}{3}{section.18}
-\contentsline {section}{\numberline {2.2}Human Swarm Interaction}{3}{section.19}
-\contentsline {section}{\numberline {2.3}Debugging Robotics}{3}{section.20}
-\contentsline {section}{\numberline {2.4}AR and swarm}{3}{section.21}
-\contentsline {section}{\numberline {2.5}AR Debugging for Swarm Robotics}{3}{section.22}
-\contentsline {chapter}{\numberline {3}Problem Analysis}{5}{chapter.23}
-\contentsline {section}{\numberline {3.1}Problem Outline}{5}{section.24}
-\contentsline {section}{\numberline {3.2}Proposed Approach}{5}{section.25}
-\contentsline {chapter}{\numberline {4}Aim and Objectives}{7}{chapter.26}
-\contentsline {section}{\numberline {4.1}Project Aim}{7}{section.27}
-\contentsline {section}{\numberline {4.2}Objectives}{7}{section.28}
-\contentsline {section}{\numberline {4.3}Revision Since Initial Report}{7}{section.29}
-\contentsline {chapter}{\numberline {5}Pre-implementation Survey}{9}{chapter.30}
-\contentsline {section}{\numberline {5.1}Survey Overview}{9}{section.31}
-\contentsline {section}{\numberline {5.2}Questions}{9}{section.32}
-\contentsline {section}{\numberline {5.3}Response Data}{9}{section.33}
-\contentsline {section}{\numberline {5.4}Analysis and Comment}{9}{section.34}
-\contentsline {chapter}{\numberline {6}Implementation}{11}{chapter.35}
-\contentsline {section}{\numberline {6.1}Plan}{11}{section.36}
-\contentsline {subsection}{\numberline {6.1.1}Revisions Since Initial Report}{11}{subsection.37}
-\contentsline {section}{\numberline {6.2}Organisation}{11}{section.38}
-\contentsline {section}{\numberline {6.3}Implementation Details}{11}{section.39}
-\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{13}{appendix.40}
-\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{13}{section.41}
+\contentsline {chapter}{\numberline {2}Literature Survey}{3}{chapter.18}
+\contentsline {section}{\numberline {2.1}Swarm Intelligence and Robotics}{3}{section.19}
+\contentsline {section}{\numberline {2.2}Human Swarm Interaction}{3}{section.20}
+\contentsline {section}{\numberline {2.3}Debugging Robotics}{3}{section.21}
+\contentsline {section}{\numberline {2.4}AR and swarm}{3}{section.22}
+\contentsline {section}{\numberline {2.5}AR Debugging for Swarm Robotics}{3}{section.23}
+\contentsline {chapter}{\numberline {3}Problem Analysis}{5}{chapter.24}
+\contentsline {section}{\numberline {3.1}Problem Outline}{5}{section.25}
+\contentsline {section}{\numberline {3.2}Proposed Approach}{5}{section.26}
+\contentsline {chapter}{\numberline {4}Aim and Objectives}{7}{chapter.27}
+\contentsline {section}{\numberline {4.1}Project Aim}{7}{section.28}
+\contentsline {section}{\numberline {4.2}Objectives}{7}{section.29}
+\contentsline {section}{\numberline {4.3}Revision Since Initial Report}{7}{section.30}
+\contentsline {chapter}{\numberline {5}Pre-implementation Survey}{9}{chapter.31}
+\contentsline {section}{\numberline {5.1}Survey Overview}{9}{section.32}
+\contentsline {section}{\numberline {5.2}Questions}{9}{section.33}
+\contentsline {section}{\numberline {5.3}Response Data}{9}{section.34}
+\contentsline {section}{\numberline {5.4}Analysis and Comment}{9}{section.35}
+\contentsline {chapter}{\numberline {6}Implementation}{11}{chapter.36}
+\contentsline {section}{\numberline {6.1}Plan}{11}{section.37}
+\contentsline {subsection}{\numberline {6.1.1}Revisions Since Initial Report}{11}{subsection.38}
+\contentsline {section}{\numberline {6.2}Organisation}{11}{section.39}
+\contentsline {section}{\numberline {6.3}Implementation Details}{11}{section.40}
+\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{13}{appendix.41}
+\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{13}{section.42}
