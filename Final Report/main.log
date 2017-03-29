@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2017.3.29)  29 MAR 2017 11:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2017.3.29)  29 MAR 2017 15:01
 entering extended mode
 **./main.tex
 (main.tex
@@ -1353,7 +1353,7 @@ Package biblatex Info: ... file 'blx-dm.def' found.
 
 (C:\TEX\MiKTeX\tex\latex\biblatex\blx-dm.def)
 Package biblatex Info: Trying to load biblatex style data model...
-Package biblatex Info: ... file 'authoryear.dbx' not found.
+Package biblatex Info: ... file 'numeric-comp.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \c@afterword=\count193
@@ -1463,11 +1463,16 @@ Package biblatex Info: ... file 'blx-natbib.def' found.
 (C:\TEX\MiKTeX\tex\latex\biblatex\blx-natbib.def
 File: blx-natbib.def 2016/05/14 v3.4 biblatex compatibility (PK/JW/AB)
 )
-Package biblatex Info: Trying to load bibliography style 'authoryear'...
-Package biblatex Info: ... file 'authoryear.bbx' found.
+Package biblatex Info: Trying to load bibliography style 'numeric-comp'...
+Package biblatex Info: ... file 'numeric-comp.bbx' found.
 
-(C:\TEX\MiKTeX\tex\latex\biblatex\bbx\authoryear.bbx
-File: authoryear.bbx 2016/05/14 v3.4 biblatex bibliography style (PK/JW/AB)
+(C:\TEX\MiKTeX\tex\latex\biblatex\bbx\numeric-comp.bbx
+File: numeric-comp.bbx 2016/05/14 v3.4 biblatex bibliography style (PK/JW/AB)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+
+(C:\TEX\MiKTeX\tex\latex\biblatex\bbx\numeric.bbx
+File: numeric.bbx 2016/05/14 v3.4 biblatex bibliography style (PK/JW/AB)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
 
@@ -1475,19 +1480,25 @@ Package biblatex Info: ... file 'standard.bbx' found.
 File: standard.bbx 2016/05/14 v3.4 biblatex bibliography style (PK/JW/AB)
 \c@bbx:relatedcount=\count332
 \c@bbx:relatedtotal=\count333
-))
-Package biblatex Info: Trying to load citation style 'authoryear'...
-Package biblatex Info: ... file 'authoryear.cbx' found.
+)))
+Package biblatex Info: Trying to load citation style 'numeric-comp'...
+Package biblatex Info: ... file 'numeric-comp.cbx' found.
 
-(C:\TEX\MiKTeX\tex\latex\biblatex\cbx\authoryear.cbx
-File: authoryear.cbx 2016/05/14 v3.4 biblatex citation style (PK/JW/AB)
+(C:\TEX\MiKTeX\tex\latex\biblatex\cbx\numeric-comp.cbx
+File: numeric-comp.cbx 2016/05/14 v3.4 biblatex citation style (PK/JW/AB)
+\c@cbx@tempcnta=\count334
+\c@cbx@tempcntb=\count335
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
 Package biblatex Info: Redefining '\footcitetext'.
 Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
 Package biblatex Info: Redefining '\textcite'.
 Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
@@ -1497,12 +1508,12 @@ File: biblatex.cfg
 ))
 (C:\TEX\MiKTeX\tex\latex\csquotes\csquotes.sty
 Package: csquotes 2016/01/31 v5.1g context-sensitive quotations (JAW)
-\csq@reset=\count334
-\csq@gtype=\count335
-\csq@glevel=\count336
-\csq@qlevel=\count337
-\csq@maxlvl=\count338
-\csq@tshold=\count339
+\csq@reset=\count336
+\csq@gtype=\count337
+\csq@glevel=\count338
+\csq@qlevel=\count339
+\csq@maxlvl=\count340
+\csq@tshold=\count341
 \csq@ltx@everypar=\toks21
 
 (C:\TEX\MiKTeX\tex\latex\csquotes\csquotes.def
@@ -1522,24 +1533,24 @@ Package: blindtext 2012/01/06 V2.0 blindtext-Package
 (C:\TEX\MiKTeX\tex\latex\tools\xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-\c@blindtext=\count340
-\c@Blindtext=\count341
-\c@blind@countparstart=\count342
-\blind@countxx=\count343
-\blindtext@numBlindtext=\count344
-\blind@countyy=\count345
-\c@blindlist=\count346
-\c@blindlistlevel=\count347
-\c@blindlist@level=\count348
-\blind@listitem=\count349
-\c@blind@listcount=\count350
-\c@blind@levelcount=\count351
-\blind@mathformula=\count352
-\blind@Mathformula=\count353
-\c@blind@randomcount=\count354
-\c@blind@randommax=\count355
-\c@blind@pangramcount=\count356
-\c@blind@pangrammax=\count357
+\c@blindtext=\count342
+\c@Blindtext=\count343
+\c@blind@countparstart=\count344
+\blind@countxx=\count345
+\blindtext@numBlindtext=\count346
+\blind@countyy=\count347
+\c@blindlist=\count348
+\c@blindlistlevel=\count349
+\c@blindlist@level=\count350
+\blind@listitem=\count351
+\c@blind@listcount=\count352
+\c@blind@levelcount=\count353
+\blind@mathformula=\count354
+\blind@Mathformula=\count355
+\c@blind@randomcount=\count356
+\c@blind@randommax=\count357
+\c@blind@pangramcount=\count358
+\c@blind@pangrammax=\count359
 )
 .................................................
 . LaTeX info: "xparse/redefine-command"
@@ -1651,15 +1662,15 @@ Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
 \@linkdim=\dimen181
-\Hy@linkcounter=\count358
-\Hy@pagecounter=\count359
+\Hy@linkcounter=\count360
+\Hy@pagecounter=\count361
 
 (C:\TEX\MiKTeX\tex\latex\hyperref\pd1enc.def
 File: pd1enc.def 2016/06/24 v6.83q Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count360
+\Hy@SavedSpaceFactor=\count362
 
 (C:\TEX\MiKTeX\tex\latex\00miktex\hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -1671,10 +1682,10 @@ Package hyperref Info: Plain pages OFF on input line 4501.
 Package hyperref Info: Backreferencing OFF on input line 4506.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4735.
-\c@Hy@tempcnt=\count361
+\c@Hy@tempcnt=\count363
 LaTeX Info: Redefining \url on input line 5088.
 \XeTeXLinkMargin=\dimen182
-\Fld@menulength=\count362
+\Fld@menulength=\count364
 \Field@Width=\dimen183
 \Fld@charsize=\dimen184
 Package hyperref Info: Hyper figures OFF on input line 6342.
@@ -1686,21 +1697,21 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6367.
 Package hyperref Info: PDF/A mode OFF on input line 6372.
 LaTeX Info: Redefining \ref on input line 6412.
 LaTeX Info: Redefining \pageref on input line 6416.
-\Hy@abspage=\count363
-\c@Item=\count364
-\c@Hfootnote=\count365
+\Hy@abspage=\count365
+\c@Item=\count366
+\c@Hfootnote=\count367
 )
 Package scrhack Info: hyperref hack deactivated because of
 (scrhack)             detection of hyperref version, that doesn't
-(scrhack)             need that hack, on input line 92.
+(scrhack)             need that hack, on input line 93.
 
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 (C:\TEX\MiKTeX\tex\latex\hyperref\hpdftex.def
 File: hpdftex.def 2016/06/24 v6.83q Hyperref driver for pdfTeX
-\Fld@listcount=\count366
-\c@bookmark@seq@number=\count367
+\Fld@listcount=\count368
+\c@bookmark@seq@number=\count369
 
 (C:\TEX\MiKTeX\tex\latex\oberdiek\rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
@@ -1709,17 +1720,17 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip74
 )
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 92.
-Package hyperref Info: Option `hypertexnames' set `false' on input line 92.
-Package hyperref Info: Option `colorlinks' set `true' on input line 92.
-Package hyperref Info: Option `unicode' set `true' on input line 92.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 93.
+Package hyperref Info: Option `hypertexnames' set `false' on input line 93.
+Package hyperref Info: Option `colorlinks' set `true' on input line 93.
+Package hyperref Info: Option `unicode' set `true' on input line 93.
 
 (C:\TEX\MiKTeX\tex\latex\hyperref\puenc.def
 File: puenc.def 2016/06/24 v6.83q Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Option `breaklinks' set `true' on input line 92.
+Package hyperref Info: Option `breaklinks' set `true' on input line 93.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
@@ -1734,23 +1745,23 @@ Package csquotes Info: ... found 'babel' package.
 (Appendices/AppendixA.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 92.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 93.
  (C:\TEX\MiKTeX\tex\latex\psnfss\t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
@@ -1838,16 +1849,16 @@ File: siunitx-abbreviations.cfg 2016/03/01 v2.6q siunitx: Abbreviated units
 )
 (C:\TEX\MiKTeX\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count368
+\scratchcounter=\count370
 \scratchdimen=\dimen185
 \scratchbox=\box53
-\nofMPsegments=\count369
-\nofMParguments=\count370
+\nofMPsegments=\count371
+\nofMParguments=\count372
 \everyMPshowfont=\toks22
-\MPscratchCnt=\count371
+\MPscratchCnt=\count373
 \MPscratchDim=\dimen186
-\MPnumerator=\count372
-\makeMPintoPDFobject=\count373
+\MPnumerator=\count374
+\makeMPintoPDFobject=\count375
 \everyMPtoPDFconversion=\toks23
 ) (C:\TEX\MiKTeX\tex\latex\oberdiek\epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -1902,14 +1913,14 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package scrlayer Info: Setting magic \footheight to \baselineskip while
-(scrlayer)             \begin{document} on input line 92.
-Package scrbase Info: activating english \abbrevname on input line 92.
-Package scrbase Info: activating english \byname on input line 92.
-Package scrbase Info: activating english \acknowledgementname on input line 92.
+(scrlayer)             \begin{document} on input line 93.
+Package scrbase Info: activating english \abbrevname on input line 93.
+Package scrbase Info: activating english \byname on input line 93.
+Package scrbase Info: activating english \acknowledgementname on input line 93.
 
-Package scrbase Info: activating english \authorshipname on input line 92.
-Package scrbase Info: activating english \constantsname on input line 92.
-Package scrbase Info: activating english \symbolsname on input line 92.
+Package scrbase Info: activating english \authorshipname on input line 93.
+Package scrbase Info: activating english \constantsname on input line 93.
+Package scrbase Info: activating english \symbolsname on input line 93.
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
@@ -1919,51 +1930,52 @@ Package biblatex Info: Data encoding 'utf8' specified.
 \openout4 = `main-blx.bib'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'main.bbl' not found.
-No file main.bbl.
-Package biblatex Info: Reference section=0 on input line 92.
-Package biblatex Info: Reference segment=0 on input line 92.
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ttitle' on input line 92.
+Package biblatex Info: ... file 'main.bbl' found.
+(main.bbl)
+Package biblatex Info: Reference section=0 on input line 93.
+Package biblatex Info: Reference segment=0 on input line 93.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\authorname' on input line 92.
+(hyperref)                removing `\ttitle' on input line 93.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\keywordnames' on input line 92.
+(hyperref)                removing `\authorname' on input line 93.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\keywordnames' on input line 93.
 
 \AtBeginShipoutBox=\box54
-Package hyperref Info: Link coloring ON on input line 92.
+Package hyperref Info: Link coloring ON on input line 93.
 (C:\TEX\MiKTeX\tex\latex\hyperref\nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
 (C:\TEX\MiKTeX\tex\generic\oberdiek\gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count374
+\c@section@level=\count376
 )
-LaTeX Info: Redefining \ref on input line 92.
-LaTeX Info: Redefining \pageref on input line 92.
-LaTeX Info: Redefining \nameref on input line 92.
+LaTeX Info: Redefining \ref on input line 93.
+LaTeX Info: Redefining \pageref on input line 93.
+LaTeX Info: Redefining \nameref on input line 93.
  (main.out) (main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
-\c__siunitx_mathsf_int=\count375
+\c__siunitx_mathsf_int=\count377
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 92.
+(Font)              <10.95> on input line 93.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 92.
+(Font)              <8> on input line 93.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 92.
-\c__siunitx_mathtt_int=\count376
+(Font)              <6> on input line 93.
+\c__siunitx_mathtt_int=\count378
 
 1: section
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 110.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 111.
 [1
 
 
@@ -1974,15 +1986,15 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
 --------------------
  Declaration of Authorship
 --------------------
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 151.
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 152.
 
 (C:\TEX\MiKTeX\tex\latex\psnfss\omsppl.fd
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 151.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 152.
 
-Underfull \hbox (badness 10000) in paragraph at lines 156--157
+Underfull \hbox (badness 10000) in paragraph at lines 157--158
 
  []
 
@@ -1996,7 +2008,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 156--157
  Abstract
 --------------------
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 182.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 183.
 1: section
 [7] [8
 
@@ -2009,7 +2021,7 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
 
 ]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 200.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 201.
  (main.toc)
 \tf@toc=\write6
 \openout6 = `main.toc'.
@@ -2068,7 +2080,7 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
 
 
 ]
-<Figures/RobotDebuggingInformationAbstraction.png, id=292, 415.5525pt x 216.81p
+<Figures/RobotDebuggingInformationAbstraction.png, id=302, 415.5525pt x 216.81p
 t>
 File: Figures/RobotDebuggingInformationAbstraction.png Graphic file (type png)
  <use Figures/RobotDebuggingInformationAbstraction.png>
@@ -2086,16 +2098,21 @@ Overfull \hbox (11.5224pt too wide) in paragraph at lines 34--36
 
 (Chapters/Chapter2.tex
 Chapter 2.
-)
 1: section
 [3
 
 
 
 ]
+Overfull \hbox (13.08878pt too wide) in paragraph at lines 31--32
+[]\T1/ppl/m/n/10.95 The book `\T1/ppl/m/it/10.95 Swarm In-tel-li-gence: From Na
+t-u-ral to Ar-ti-fi-cial Sys-tems\T1/ppl/m/n/10.95 ' writ-ten by Bonabeau,
+ []
+
+[4]) [5]
 \openout2 = `Chapters/Chapter3.aux'.
 
- (Chapters/Chapter3.tex [4
+ (Chapters/Chapter3.tex [6
 
 
 
@@ -2103,10 +2120,10 @@ Chapter 2.
 Chapter 3.
 )
 1: section
-[5]
+[7]
 \openout2 = `Chapters/Chapter4.aux'.
 
- (Chapters/Chapter4.tex [6
+ (Chapters/Chapter4.tex [8
 
 
 
@@ -2114,10 +2131,10 @@ Chapter 3.
 Chapter 4.
 )
 1: section
-[7]
+[9]
 \openout2 = `Chapters/Chapter5.aux'.
 
- (Chapters/Chapter5.tex [8
+ (Chapters/Chapter5.tex [10
 
 
 
@@ -2125,10 +2142,10 @@ Chapter 4.
 Chapter 5.
 )
 1: section
-[9]
+[11]
 \openout2 = `Chapters/Chapter6.aux'.
 
- (Chapters/Chapter6.tex [10
+ (Chapters/Chapter6.tex [12
 
 
 
@@ -2138,10 +2155,10 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 16.
 )
 1: section
-[11]
+[13]
 \openout2 = `Appendices/AppendixA.aux'.
 
- (Appendices/AppendixA.tex [12
+ (Appendices/AppendixA.tex [14
 
 
 
@@ -2152,31 +2169,38 @@ LaTeX Font Info:    Try loading font information for T1+pcr on input line 11.
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 ))
 1: section
-[13] [14]
-
-LaTeX Warning: Empty bibliography on input line 288.
-
+[15] [16]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 291.
+
+1: section
+[17
+
+
+]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 291.
-(main.aux (Chapters/Chapter1.aux) (Chapters/Chapter2.aux)
+ (main.aux (Chapters/Chapter1.aux) (Chapters/Chapter2.aux)
 (Chapters/Chapter3.aux) (Chapters/Chapter4.aux) (Chapters/Chapter5.aux)
 (Chapters/Chapter6.aux) (Appendices/AppendixA.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 291.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 291.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 4A910C5225F552AF4B926CE339523F60;4551.
+(rerunfilecheck)             Checksum: 77617317D719813CB43F1C00235A62B6;4666.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32058 strings out of 493334
- 642665 string characters out of 3145290
- 848645 words of memory out of 3000000
- 35140 multiletter control sequences out of 15000+200000
+ 32233 strings out of 493334
+ 645876 string characters out of 3145290
+ 849344 words of memory out of 3000000
+ 35303 multiletter control sequences out of 15000+200000
  49357 words of font info for 80 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 52i,20n,75p,10379b,1757s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 56i,20n,82p,10379b,1757s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/TEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<C:/TEX/MiKTeX/fonts/type1/pub
 lic/amsfonts/cm/cmmi10.pfb><C:/TEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.
 pfb><C:/TEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/TEX/MiKTeX/fonts
@@ -2185,9 +2209,9 @@ pfb><C:/TEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/TEX/MiKTeX/fonts
 fonts/type1/urw/palatino/uplb8a.pfb><C:/TEX/MiKTeX/fonts/type1/urw/palatino/upl
 r8a.pfb><C:/TEX/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/TEX/MiKTeX/fonts
 /type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (38 pages, 215544 bytes).
+Output written on main.pdf (41 pages, 229948 bytes).
 PDF statistics:
- 404 PDF objects out of 1000 (max. 8388607)
- 81 named destinations out of 1000 (max. 500000)
- 254 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 438 PDF objects out of 1000 (max. 8388607)
+ 88 named destinations out of 1000 (max. 500000)
+ 270 words of extra memory for PDF output out of 10000 (max. 10000000)
 

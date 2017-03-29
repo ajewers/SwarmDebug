@@ -10,28 +10,40 @@
 
 %----------------------------------------------------------------------------------------
 
-%\section{Overview}
-Although a relatively young field, Swarm Robotics has already generated a substantial body of research and literature. This section presents an overview of that literature, and highlights specific pieces of research identified as relevant to this project, with the aim of providing the reader with the base of knowledge required to better understand the project. This research informed the project direction significantly, and formed the basis for many of the design and implementation decisions made later. 
+\section{Overview}
+Although a relatively young field, Swarm Robotics has already generated a substantial body of research and literature. This section presents an overview of that literature, and highlights specific pieces of research identified as relevant to this project, with the aim of providing the reader with the base of knowledge required to better understand the project. This research informed the project direction significantly, and formed the basis for many of the design and implementation decisions made later. The literature covered in this section can be separated into several broad topics, each informing a different element of the project work. 
+
+Firstly an understanding of the fundamental concepts of Swarm Robotics, and to a lesser extent Swarm Intelligence, was deemed key to producing an application that is useful in practice, and will help a reader to better understand the purpose and aims of the project. An overview of the core concepts as well as some key publications are presented in Section \ref{GeneralSwarmRobotics}. A deep understanding of the technical details of specific swarm systems, such as specific behavioural algorithms or implementation details, is not a priority for understanding this project, as the application aims to be more broadly applicable to a wide range of swarm systems. Emphasis was instead placed on understanding the general classification of swarm robotic systems, relevant problem domains, and recurring concepts, so that the software might better serve researchers in the field.
+
+This project focuses on a piece of software which forms an interface between a human operator and a robot swarm. A relevant area of current research is therefore Human-Swarm Interaction (HSI). This topic focuses specifically on the different roles humans take whilst interacting with robot swarms, and contains research into the best practices for facilitating this interaction given different aims, and different types of user (Developer, researcher, end user, etc.). The two key challenges of HSI are control - how best to allow a human operator to direct the behaviour of a decentralised swarm - and monitoring - how to retrieve data from a swarm and present it in a useful, human readable manner. This project focuses on the latter problem. An overview of the relevant Human-Swarm Interaction literature is presented in Section \ref{HumanSwarmInteraction}.
+
+Recent advances in virtual-reality (VR) and augmented-reality (AR) technologies have led to an increased interest in using these technologies in conjunction with robotics. AR specifically presents a powerful tool for human-robotic interaction (HRI), including HSI, as a digitally augmented space can be readily understood by both humans and robots. Research relating to the use of AR with robotic systems is summarized in Section \ref{AugmentedReality}.
+
+A number of systems exist which utilize a range of the concepts previously discussed in the context of multi-robot systems, and this work is summarised in section \ref{SimilarWork}. This includes other real time, graphical debugging systems which bear similarities to the aims of this project .
 
 %----------------------------------------------------------------------------------------
 
-\section{Swarm Intelligence and Robotics}
-General swarm robotics literature
+\section{Swarm Intelligence and Robotics} \label{GeneralSwarmRobotics}
+Sahin \cite{Sahin:2004} presents a summary of the key concepts of swarm robotics, and attempts to offer a coherent description of the topic. He notes that a key difference from other multi-robot systems is the lack of centralised control, and the idea that desired behaviour should emerge from simple local interactions between robots, and between the robots and their environment. He also notes some of the key motivators behind Swarm Robotics research, stating that a swarm robotics system would ideally have ``\textit{robustness}'', ``\textit{flexibility}'' and ``\textit{scalability}'' \cite{Sahin:2004}. Robustness refers to the swarm's ability to continue to function should one or more individual swarm members suffer a failure of some kind. Flexibility refers to the swarm's ability to adapt to changes in the environment without the need for re-programming. Scalability describes the idea that a swarm should be functional at a range of sizes, and that ideally the number of robots in the swarm could be increased or decreased depending on the demands of the task. Sahin \cite{Sahin:2004} goes on to describe several classes of application where Swarm Robotics systems might be well suited. Tasks that cover a region could benefit from a swarm's ability to distribute physically in a space according to need. Dangerous tasks could benefit from the relative dispensability of individual robots in the swarm; should one be damaged or destroyed the swarm could continue to function, and it would be less costly that the loss of a single, complex, expensive robot. Tasks requiring scalability are good candidates, as discussed before, and tasks that require redundancy are also highlighted, as swarm systems should have the ability to degrade gracefully, rather than suffering a single catastrophic failure. Through this generalisation of the application areass, insight can be gained into the kinds of work swarm robotics researchers are likely to be doing, and this should inform the design of the application. This paper \cite{Sahin:2004} provides a coherent, succinct overview of the field, and although it is now over a decade old the concepts covered remain relevant.
+
+%The paper also contains a wealth of further reading, including papers on developing specifc behavioural paradigms such as self-organisation \cite{SelfOrganizing} and path-formation \cite{PathFormation}, which give insight into the kinds of information and data that swarm robots use to make decisions, and that a swarm researcher might therefore be interested in monitoring. Beni \cite{FromSIToSR} presents a relatively informal but useful overview of the terminology used in the field, which may serve as useful additional reading to Sahin's overview.
+
+The book `\textit{Swarm Intelligence: From Natural to Artificial Systems}' written by Bonabeau, Dorigo and Theraulaz \cite{Bonabeau:1999} provides in its introductory chapter a good overview of the biological concepts and animal behaviours which inspire the field of swarm intelligence. The later chapters provide a detailed look at several of these behaviours, and how mathematical models and algorithms can be derived from them. Although more detailed than this project requires, an understanding of these behaviours and models can offer insight into what information the application might need to expose to the user to allow them to validate the correct operation of a system based on these concepts.
 
 %----------------------------------------------------------------------------------------
 
-\section{Human Swarm Interaction}
+\section{Human Swarm Interaction} \label{HumanSwarmInteraction}
 HRI, HSI
 
 %----------------------------------------------------------------------------------------
 
-\section{Debugging Robotics}
+\section{Debugging Robotics} \label{RoboticsDebugging}
 Debugging is hard
 
 %----------------------------------------------------------------------------------------
 
-\section{AR and swarm}
+\section{AR and Robotics} \label{AugmentedReality}
 Augmented reality is cool, robots live in AR
 
-\section{AR Debugging for Swarm Robotics}
+\section{Similar Work} \label{SimilarWork}
 The real stuff
