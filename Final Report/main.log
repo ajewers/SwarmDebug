@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2017.3.30)  30 MAR 2017 15:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2017.3.30)  30 MAR 2017 21:25
 entering extended mode
 **./main.tex
 (main.tex
@@ -207,6 +207,9 @@ File: bk11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 . Defining command \addsec with sig. ' s o m ' on line 127.
 .................................................
 
+(C:\TEX\MiKTeX\tex\latex\ltxmisc\parskip.sty
+Package: parskip 2001/04/09 non-zero parskip adjustments
+)
 (C:\TEX\MiKTeX\tex\generic\babel\babel.sty
 Package: babel 2016/04/23 3.9r The Babel package
 
@@ -1703,7 +1706,7 @@ LaTeX Info: Redefining \pageref on input line 6416.
 )
 Package scrhack Info: hyperref hack deactivated because of
 (scrhack)             detection of hyperref version, that doesn't
-(scrhack)             need that hack, on input line 93.
+(scrhack)             need that hack, on input line 90.
 
 
 Package hyperref Message: Driver (autodetected): hpdftex.
@@ -1720,17 +1723,17 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip74
 )
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 93.
-Package hyperref Info: Option `hypertexnames' set `false' on input line 93.
-Package hyperref Info: Option `colorlinks' set `true' on input line 93.
-Package hyperref Info: Option `unicode' set `true' on input line 93.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 90.
+Package hyperref Info: Option `hypertexnames' set `false' on input line 90.
+Package hyperref Info: Option `colorlinks' set `true' on input line 90.
+Package hyperref Info: Option `unicode' set `true' on input line 90.
 
 (C:\TEX\MiKTeX\tex\latex\hyperref\puenc.def
 File: puenc.def 2016/06/24 v6.83q Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Option `breaklinks' set `true' on input line 93.
+Package hyperref Info: Option `breaklinks' set `true' on input line 90.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
@@ -1745,23 +1748,23 @@ Package csquotes Info: ... found 'babel' package.
 (Appendices/AppendixA.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 93.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 90.
  (C:\TEX\MiKTeX\tex\latex\psnfss\t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
@@ -1913,14 +1916,14 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package scrlayer Info: Setting magic \footheight to \baselineskip while
-(scrlayer)             \begin{document} on input line 93.
-Package scrbase Info: activating english \abbrevname on input line 93.
-Package scrbase Info: activating english \byname on input line 93.
-Package scrbase Info: activating english \acknowledgementname on input line 93.
+(scrlayer)             \begin{document} on input line 90.
+Package scrbase Info: activating english \abbrevname on input line 90.
+Package scrbase Info: activating english \byname on input line 90.
+Package scrbase Info: activating english \acknowledgementname on input line 90.
 
-Package scrbase Info: activating english \authorshipname on input line 93.
-Package scrbase Info: activating english \constantsname on input line 93.
-Package scrbase Info: activating english \symbolsname on input line 93.
+Package scrbase Info: activating english \authorshipname on input line 90.
+Package scrbase Info: activating english \constantsname on input line 90.
+Package scrbase Info: activating english \symbolsname on input line 90.
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
@@ -1932,24 +1935,11 @@ Package biblatex Info: Data encoding 'utf8' specified.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
 (main.bbl)
-Package biblatex Info: Reference section=0 on input line 93.
-Package biblatex Info: Reference segment=0 on input line 93.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ttitle' on input line 93.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\authorname' on input line 93.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\keywordnames' on input line 93.
-
+Package biblatex Info: Reference section=0 on input line 90.
+Package biblatex Info: Reference segment=0 on input line 90.
 \AtBeginShipoutBox=\box54
-Package hyperref Info: Link coloring ON on input line 93.
-(C:\TEX\MiKTeX\tex\latex\hyperref\nameref.sty
+Package hyperref Info: Link coloring ON on input line 90.
+ (C:\TEX\MiKTeX\tex\latex\hyperref\nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
 (C:\TEX\MiKTeX\tex\generic\oberdiek\gettitlestring.sty
@@ -1957,25 +1947,25 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count376
 )
-LaTeX Info: Redefining \ref on input line 93.
-LaTeX Info: Redefining \pageref on input line 93.
-LaTeX Info: Redefining \nameref on input line 93.
+LaTeX Info: Redefining \ref on input line 90.
+LaTeX Info: Redefining \pageref on input line 90.
+LaTeX Info: Redefining \nameref on input line 90.
  (main.out) (main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
 \c__siunitx_mathsf_int=\count377
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 93.
+(Font)              <10.95> on input line 90.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 93.
+(Font)              <8> on input line 90.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 93.
+(Font)              <6> on input line 90.
 \c__siunitx_mathtt_int=\count378
 
 1: section
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 111.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 108.
 [1
 
 
@@ -1986,15 +1976,15 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
 --------------------
  Declaration of Authorship
 --------------------
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 152.
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 149.
 
 (C:\TEX\MiKTeX\tex\latex\psnfss\omsppl.fd
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 152.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 149.
 
-Underfull \hbox (badness 10000) in paragraph at lines 157--158
+Underfull \hbox (badness 10000) in paragraph at lines 154--155
 
  []
 
@@ -2008,7 +1998,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 157--158
  Abstract
 --------------------
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 183.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 180.
 1: section
 [7] [8
 
@@ -2021,22 +2011,22 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
 
 ]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 201.
- (main.toc)
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 198.
+ (main.toc
+1: section
+[11])
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
-
-1: section
-[11] [12
-
-] (main.lof)
+ [12] (main.lof)
 \tf@lof=\write7
 \openout7 = `main.lof'.
 
 
 1: section
-[13] [14
+[13
+
+] [14
 
 ] (main.lot)
 \tf@lot=\write8
@@ -2080,64 +2070,65 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
 
 
 ]
-<Figures/RobotDebuggingInformationAbstraction.png, id=312, 415.5525pt x 216.81p
+<Figures/RobotDebuggingInformationAbstraction.png, id=329, 415.5525pt x 216.81p
 t>
 File: Figures/RobotDebuggingInformationAbstraction.png Graphic file (type png)
  <use Figures/RobotDebuggingInformationAbstraction.png>
 Package pdftex.def Info: Figures/RobotDebuggingInformationAbstraction.png used 
-on input line 34.
+on input line 32.
 (pdftex.def)             Requested size: 415.55148pt x 216.80946pt.
 
-Overfull \hbox (11.5224pt too wide) in paragraph at lines 34--36
+Overfull \hbox (11.5224pt too wide) in paragraph at lines 32--34
  [][] 
  []
 
-) [2 <./Figures/RobotDebuggingInformationAbstraction.png>]
+[2 <./Figures/RobotDebuggingInformationAbstraction.png>]
+<Figures/SystemArchitecture.png, id=335, 393.6306pt x 199.2243pt>
+File: Figures/SystemArchitecture.png Graphic file (type png)
+
+<use Figures/SystemArchitecture.png>
+Package pdftex.def Info: Figures/SystemArchitecture.png used on input line 47.
+(pdftex.def)             Requested size: 314.9049pt x 159.37965pt.
+ [3 <./Figures/SystemArchitecture.png>]
+[4]) [5]
 \openout2 = `Chapters/Chapter2.aux'.
 
-
-(Chapters/Chapter2.tex
-Chapter 2.
-1: section
-[3
+ (Chapters/Chapter2.tex [6
 
 
 
 ]
-Overfull \hbox (13.08878pt too wide) in paragraph at lines 31--32
-[]\T1/ppl/m/n/10.95 The book `\T1/ppl/m/it/10.95 Swarm In-tel-li-gence: From Na
-t-u-ral to Ar-ti-fi-cial Sys-tems\T1/ppl/m/n/10.95 ' writ-ten by Bonabeau,
- []
-
-[4] [5] [6] <Figures/Sonar.png, id=373, 487.8225pt x 375.65344pt>
+Chapter 2.
+1: section
+[7] [8] [9] [10] <Figures/Sonar.png, id=429, 487.8225pt x 375.65344pt>
 File: Figures/Sonar.png Graphic file (type png)
 
 <use Figures/Sonar.png>
 Package pdftex.def Info: Figures/Sonar.png used on input line 56.
 (pdftex.def)             Requested size: 292.69576pt x 225.3938pt.
- [7 <./Figures/Sonar.png>]
-<Figures/SpatiallySituatedData.png, id=386, 386.19281pt x 242.40562pt>
+ [11 <./Figures/Sonar.png>]
+<Figures/SpatiallySituatedData.png, id=441, 386.19281pt x 242.40562pt>
 File: Figures/SpatiallySituatedData.png Graphic file (type png)
 
 <use Figures/SpatiallySituatedData.png>
 Package pdftex.def Info: Figures/SpatiallySituatedData.png used on input line 7
 0.
 (pdftex.def)             Requested size: 308.95465pt x 193.92474pt.
-) [8 <./Figures/SpatiallySituatedData.png>]
+) [12 <./Figures/SpatiallySituatedData.png>]
 \openout2 = `Chapters/Chapter3.aux'.
 
  (Chapters/Chapter3.tex
 Chapter 3.
 )
 1: section
-[9
+[13
 
 
 
 ]
 \openout2 = `Chapters/Chapter4.aux'.
 
- (Chapters/Chapter4.tex [10
+ (Chapters/Chapter4.tex [14
 
 
 
@@ -2145,10 +2136,10 @@ Chapter 3.
 Chapter 4.
 )
 1: section
-[11]
+[15]
 \openout2 = `Chapters/Chapter5.aux'.
 
- (Chapters/Chapter5.tex [12
+ (Chapters/Chapter5.tex [16
 
 
 
@@ -2156,10 +2147,10 @@ Chapter 4.
 Chapter 5.
 )
 1: section
-[13]
+[17]
 \openout2 = `Chapters/Chapter6.aux'.
 
- (Chapters/Chapter6.tex [14
+ (Chapters/Chapter6.tex [18
 
 
 
@@ -2169,10 +2160,10 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 16.
 )
 1: section
-[15]
+[19]
 \openout2 = `Appendices/AppendixA.aux'.
 
- (Appendices/AppendixA.tex [16
+ (Appendices/AppendixA.tex [20
 
 
 
@@ -2183,44 +2174,34 @@ LaTeX Font Info:    Try loading font information for T1+pcr on input line 11.
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 ))
 1: section
-[17] [18]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 291.
+[21] [22]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 288.
 
 1: section
-[19
+[23
 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 291.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 288.
  (main.aux (Chapters/Chapter1.aux) (Chapters/Chapter2.aux)
 (Chapters/Chapter3.aux) (Chapters/Chapter4.aux) (Chapters/Chapter5.aux)
 (Chapters/Chapter6.aux) (Appendices/AppendixA.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 291.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 291.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 9D916CAEE806FD6A09439ED52B06E0FC;4699
-(rerunfilecheck)             After:  083AC555DBCB9C36C6ECC0189BAEB66A;4699.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 288.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 288.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 9C452DB5534BC0CF767BDF5B2AF398FA;5174.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32279 strings out of 493334
- 647134 string characters out of 3145290
- 850203 words of memory out of 3000000
- 35334 multiletter control sequences out of 15000+200000
+ 32325 strings out of 493334
+ 647807 string characters out of 3145290
+ 851371 words of memory out of 3000000
+ 35351 multiletter control sequences out of 15000+200000
  49357 words of font info for 80 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 53i,19n,76p,10379b,2308s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 58i,19n,77p,10379b,2310s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/TEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<C:/TEX/MiKTeX/fonts/type1/pub
 lic/amsfonts/cm/cmmi10.pfb><C:/TEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.
 pfb><C:/TEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/TEX/MiKTeX/fonts
@@ -2229,9 +2210,9 @@ pfb><C:/TEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/TEX/MiKTeX/fonts
 fonts/type1/urw/palatino/uplb8a.pfb><C:/TEX/MiKTeX/fonts/type1/urw/palatino/upl
 r8a.pfb><C:/TEX/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/TEX/MiKTeX/fonts
 /type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (43 pages, 953207 bytes).
+Output written on main.pdf (47 pages, 1022897 bytes).
 PDF statistics:
- 499 PDF objects out of 1000 (max. 8388607)
- 101 named destinations out of 1000 (max. 500000)
- 280 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 559 PDF objects out of 1000 (max. 8388607)
+ 126 named destinations out of 1000 (max. 500000)
+ 309 words of extra memory for PDF output out of 10000 (max. 10000000)
 

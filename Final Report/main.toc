@@ -5,32 +5,35 @@
 \contentsline {chapter}{Abstract}{vii}{section*.2}
 \contentsline {chapter}{Acknowledgements}{ix}{section*.3}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.14}
-\contentsline {section}{\numberline {1.1}Overview}{1}{section.15}
+\contentsline {section}{\numberline {1.1}Background}{1}{section.15}
 \contentsline {section}{\numberline {1.2}Project Context}{1}{section.16}
-\contentsline {chapter}{\numberline {2}Literature Survey}{3}{chapter.18}
-\contentsline {section}{\numberline {2.1}Overview}{3}{section.19}
-\contentsline {section}{\numberline {2.2}Swarm Intelligence and Swarm Robotics}{4}{section.20}
-\contentsline {section}{\numberline {2.3}Human Swarm Interaction}{4}{section.21}
-\contentsline {section}{\numberline {2.4}Debugging Robotics}{5}{section.22}
-\contentsline {section}{\numberline {2.5}AR and Robotics}{6}{section.23}
-\contentsline {section}{\numberline {2.6}Similar Work}{8}{section.25}
-\contentsline {chapter}{\numberline {3}Problem Analysis}{9}{chapter.27}
-\contentsline {section}{\numberline {3.1}Problem Outline}{9}{section.28}
-\contentsline {section}{\numberline {3.2}Proposed Approach}{9}{section.29}
-\contentsline {chapter}{\numberline {4}Aim and Objectives}{11}{chapter.30}
-\contentsline {section}{\numberline {4.1}Project Aim}{11}{section.31}
-\contentsline {section}{\numberline {4.2}Objectives}{11}{section.32}
-\contentsline {section}{\numberline {4.3}Revision Since Initial Report}{11}{section.33}
-\contentsline {chapter}{\numberline {5}Pre-implementation Survey}{13}{chapter.34}
-\contentsline {section}{\numberline {5.1}Survey Overview}{13}{section.35}
-\contentsline {section}{\numberline {5.2}Questions}{13}{section.36}
-\contentsline {section}{\numberline {5.3}Response Data}{13}{section.37}
-\contentsline {section}{\numberline {5.4}Analysis and Comment}{13}{section.38}
-\contentsline {chapter}{\numberline {6}Implementation}{15}{chapter.39}
-\contentsline {section}{\numberline {6.1}Plan}{15}{section.40}
-\contentsline {subsection}{\numberline {6.1.1}Revisions Since Initial Report}{15}{subsection.41}
-\contentsline {section}{\numberline {6.2}Organisation}{15}{section.42}
-\contentsline {section}{\numberline {6.3}Implementation Details}{15}{section.43}
-\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{17}{appendix.44}
-\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{17}{section.45}
-\contentsline {chapter}{Bibliography}{19}{appendix*.46}
+\contentsline {section}{\numberline {1.3}Project Concept}{2}{section.18}
+\contentsline {section}{\numberline {1.4}Aim and Objectives}{3}{section.20}
+\contentsline {section}{\numberline {1.5}Functional Specification}{4}{section.21}
+\contentsline {chapter}{\numberline {2}Literature Survey}{7}{chapter.39}
+\contentsline {section}{\numberline {2.1}Overview}{7}{section.40}
+\contentsline {section}{\numberline {2.2}Swarm Intelligence and Swarm Robotics}{8}{section.41}
+\contentsline {section}{\numberline {2.3}Human Swarm Interaction}{9}{section.42}
+\contentsline {section}{\numberline {2.4}Debugging Robotics}{9}{section.43}
+\contentsline {section}{\numberline {2.5}AR and Robotics}{10}{section.44}
+\contentsline {section}{\numberline {2.6}Similar Work}{12}{section.46}
+\contentsline {chapter}{\numberline {3}Problem Analysis}{13}{chapter.48}
+\contentsline {section}{\numberline {3.1}Problem Outline}{13}{section.49}
+\contentsline {section}{\numberline {3.2}Proposed Approach}{13}{section.50}
+\contentsline {chapter}{\numberline {4}Aim and Objectives}{15}{chapter.51}
+\contentsline {section}{\numberline {4.1}Project Aim}{15}{section.52}
+\contentsline {section}{\numberline {4.2}Objectives}{15}{section.53}
+\contentsline {section}{\numberline {4.3}Revision Since Initial Report}{15}{section.54}
+\contentsline {chapter}{\numberline {5}Pre-implementation Survey}{17}{chapter.55}
+\contentsline {section}{\numberline {5.1}Survey Overview}{17}{section.56}
+\contentsline {section}{\numberline {5.2}Questions}{17}{section.57}
+\contentsline {section}{\numberline {5.3}Response Data}{17}{section.58}
+\contentsline {section}{\numberline {5.4}Analysis and Comment}{17}{section.59}
+\contentsline {chapter}{\numberline {6}Implementation}{19}{chapter.60}
+\contentsline {section}{\numberline {6.1}Plan}{19}{section.61}
+\contentsline {subsection}{\numberline {6.1.1}Revisions Since Initial Report}{19}{subsection.62}
+\contentsline {section}{\numberline {6.2}Organisation}{19}{section.63}
+\contentsline {section}{\numberline {6.3}Implementation Details}{19}{section.64}
+\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{21}{appendix.65}
+\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{21}{section.66}
+\contentsline {chapter}{Bibliography}{23}{appendix*.67}
