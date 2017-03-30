@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2017.3.30)  30 MAR 2017 11:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2017.3.30)  30 MAR 2017 15:05
 entering extended mode
 **./main.tex
 (main.tex
@@ -2080,7 +2080,7 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
 
 
 ]
-<Figures/RobotDebuggingInformationAbstraction.png, id=308, 415.5525pt x 216.81p
+<Figures/RobotDebuggingInformationAbstraction.png, id=312, 415.5525pt x 216.81p
 t>
 File: Figures/RobotDebuggingInformationAbstraction.png Graphic file (type png)
  <use Figures/RobotDebuggingInformationAbstraction.png>
@@ -2109,27 +2109,35 @@ Overfull \hbox (13.08878pt too wide) in paragraph at lines 31--32
 t-u-ral to Ar-ti-fi-cial Sys-tems\T1/ppl/m/n/10.95 ' writ-ten by Bonabeau,
  []
 
-[4] [5] <Figures/Sonar.png, id=359, 487.8225pt x 375.65344pt>
+[4] [5] [6] <Figures/Sonar.png, id=373, 487.8225pt x 375.65344pt>
 File: Figures/Sonar.png Graphic file (type png)
 
 <use Figures/Sonar.png>
-Package pdftex.def Info: Figures/Sonar.png used on input line 52.
+Package pdftex.def Info: Figures/Sonar.png used on input line 56.
 (pdftex.def)             Requested size: 292.69576pt x 225.3938pt.
-) [6 <./Figures/Sonar.png>]
+ [7 <./Figures/Sonar.png>]
+<Figures/SpatiallySituatedData.png, id=386, 386.19281pt x 242.40562pt>
+File: Figures/SpatiallySituatedData.png Graphic file (type png)
+
+<use Figures/SpatiallySituatedData.png>
+Package pdftex.def Info: Figures/SpatiallySituatedData.png used on input line 7
+0.
+(pdftex.def)             Requested size: 308.95465pt x 193.92474pt.
+) [8 <./Figures/SpatiallySituatedData.png>]
 \openout2 = `Chapters/Chapter3.aux'.
 
  (Chapters/Chapter3.tex
 Chapter 3.
 )
 1: section
-[7
+[9
 
 
 
 ]
 \openout2 = `Chapters/Chapter4.aux'.
 
- (Chapters/Chapter4.tex [8
+ (Chapters/Chapter4.tex [10
 
 
 
@@ -2137,10 +2145,10 @@ Chapter 3.
 Chapter 4.
 )
 1: section
-[9]
+[11]
 \openout2 = `Chapters/Chapter5.aux'.
 
- (Chapters/Chapter5.tex [10
+ (Chapters/Chapter5.tex [12
 
 
 
@@ -2148,10 +2156,10 @@ Chapter 4.
 Chapter 5.
 )
 1: section
-[11]
+[13]
 \openout2 = `Chapters/Chapter6.aux'.
 
- (Chapters/Chapter6.tex [12
+ (Chapters/Chapter6.tex [14
 
 
 
@@ -2161,10 +2169,10 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 16.
 )
 1: section
-[13]
+[15]
 \openout2 = `Appendices/AppendixA.aux'.
 
- (Appendices/AppendixA.tex [14
+ (Appendices/AppendixA.tex [16
 
 
 
@@ -2175,15 +2183,11 @@ LaTeX Font Info:    Try loading font information for T1+pcr on input line 11.
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 ))
 1: section
-[15] [16]
-Overfull \hbox (1.43272pt too wide) in paragraph at lines 288--288
-\T1/ppl/m/n/10.95 colour cod-ing. In: \T1/ppl/m/it/10.95 In-for-ma-tion de-sig
-n: The de-sign and eval-u-a-tion of signs and printed
- []
-
+[17] [18]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 291.
+
 1: section
-[17
+[19
 
 
 ]
@@ -2193,17 +2197,27 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 291.
 (Chapters/Chapter6.aux) (Appendices/AppendixA.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 291.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 291.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: E5C3361193E7EAD20AEC3EDC5DD1A07A;4699.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: 9D916CAEE806FD6A09439ED52B06E0FC;4699
+(rerunfilecheck)             After:  083AC555DBCB9C36C6ECC0189BAEB66A;4699.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32261 strings out of 493334
- 646604 string characters out of 3145290
- 849843 words of memory out of 3000000
- 35323 multiletter control sequences out of 15000+200000
+ 32279 strings out of 493334
+ 647134 string characters out of 3145290
+ 850203 words of memory out of 3000000
+ 35334 multiletter control sequences out of 15000+200000
  49357 words of font info for 80 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  53i,19n,76p,10379b,2308s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2215,9 +2229,9 @@ pfb><C:/TEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/TEX/MiKTeX/fonts
 fonts/type1/urw/palatino/uplb8a.pfb><C:/TEX/MiKTeX/fonts/type1/urw/palatino/upl
 r8a.pfb><C:/TEX/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/TEX/MiKTeX/fonts
 /type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (41 pages, 736705 bytes).
+Output written on main.pdf (43 pages, 953207 bytes).
 PDF statistics:
- 470 PDF objects out of 1000 (max. 8388607)
- 95 named destinations out of 1000 (max. 500000)
- 275 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 499 PDF objects out of 1000 (max. 8388607)
+ 101 named destinations out of 1000 (max. 500000)
+ 280 words of extra memory for PDF output out of 10000 (max. 10000000)
 
