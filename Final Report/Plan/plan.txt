@@ -29,6 +29,9 @@ Project Plan
   - Timing
   - Risk mitigation
   - A note on software development timing predictions
+
+Statement of Ethics
+  - Single section on Ethics
   
 E-Puck Platform
   - Overview
