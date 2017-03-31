@@ -11,35 +11,91 @@ This project was completed between Monday 16th January and Thursday 18th May, 20
 %----------------------------------------------------------------------------------------
 
 \section{Work Breakdown}
-At the start of the project the work was divided into the logical tasks shown in table . This includes tasks specifically related to the software development process, as well as other tertiary tasks required to complete the project.
+At the start of the project the software development and software testing work was divided into the logical tasks shown in tables \ref{tab:DevTasks} and \ref{tab:TestingTasks} respectively. The timings given for each development task are approximate, and based on prior experience with software work. Other tasks, not related specifically to the software development, are listed in table .
 
-\begin{table}
-	\caption{Development tasks.}
+\begin{longtable}{ >{\raggedright}p{5cm}>{\raggedright}p{6cm}p{3cm} }
+	\caption{Development tasks.}\\
+	\toprule
+	\tabhead{Task} & \tabhead{Objective} & \tabhead{Approximate Time} \\
+	\midrule
+	
+Read and Understand Existing Code & To understand existing code related to the tracking camera and networking on the e-pucks. & 14 Days (Alongside other development)
+\\
+Establish Development Environment and Toolchain & To enable organised development by establishing a tool set and workflow. & 3 Days 
+\\
+Learn to Re-Program e-puck Robots & To understand the cross compilation process for the e-pucks. & 2 Days 
+\\ 
+Outline Software Architecture & To design a coherent code structure in order for code to remain organised and modular. & 2 Days 
+\\
+Design General User Interface & To create a high level design of the basic UI and implement a skeleton framework of this UI. & 3 Days
+\\ 
+Incorporate Tracking Camera Code & To incorporate existing low-level code for acquiring images from the tracking camera and performing tag detection. & 2 Days
+\\
+Implement Tracking Camera Controller & To implement code to create a layer of abstraction between the application code and the tracking code. & 2 Days 
+\\
+Implement Wireless Data Receive & To implement code to allow the application to receive data wirelessly. & 3 Days
+\\
+Determine Robot Data Types & To establish an initial set of data types that will be supported by default, and a packet format for these. & 2 Days 
+\\
+Design and Implement Data Model & To design the back end data model of the application and implement it in code. & 6 Days 
+\\
+Implement Mapping Received Data to Model & To implement code to store received robot and tracking data in the application data model. & 3 days 
+\\
+Implement Basic Visualiser & To implement code for displaying the video feed and augmenting it with basic geometric primitives. & 5 Days 
+\\
+Design UI Data Representation & To establish a design for the representation of the different data types. & 2 Days
+\\
+Implement Graphical and Textual Data Visualisation & To implement code to convert the data in the data model into relevant visualisations. & 10 Days 
+\\
+Implement Data Visualisation Filtering & To implement code to allow the user to filter out unnecessary visualisation elements. & 5 Days 
+\\
+Implement Robot Data Comparison & To implement code to allow the user to compare the data of specific robots. & 3 Days
+\\
+	\bottomrule\\
+	
 	\label{tab:DevTasks}
-	\centering
-	\begin{tabular}{ >{\raggedright}p{5cm}>{\raggedright}p{7cm}p{3cm} }
-		\toprule
-		\tabhead{Task} & \tabhead{Objective} & \tabhead{Approximate Time} \\
-		\midrule
-  Read and Understand Existing Code 				& To understand existing code related to the tracking camera and networking on the e-pucks. 							& 14 Days (Alongside other development)\\
-  Establish Development Environment and Toolchain 	& To enable organised development by establishing a tool set and workflow. 												& 3 Days \\
-  Learn to Re-Program e-puck Robots 				& To understand the cross compilation process for the e-pucks. 															& 2 Days \\ 
-  Outline Software Architecture 					& To design a coherent code structure in order for code to remain organised and modular. 								& 2 Days \\
-  Design General User Interface 					& To create a high level design of the basic UI and implement a skeleton framework of this UI.							& 3 Days \\ 
-  Incorporate Tracking Camera Code 					& To incorporate existing low-level code for acquiring images from the tracking camera and performing tag detection. 	& 2 Days \\
-  Implement Tracking Camera Controller 				& To implement code to create a layer of abstraction between the application code and the tracking code. 				& 2 Days \\
-  Implement Wireless Data Receive 					& To implement code to allow the application to receive data wirelessly. 												& 3 Days \\
-  Determine Robot Data Types 						& To establish an initial set of data types that will be supported by default, and a packet format for these. 			& 2 Days \\
-  Design and Implement Data Model 					& To design the back end data model of the application and implement it in code.										& 6 Days \\
-  Implement Mapping Received Data to Model 			& To implement code to store received robot and tracking data in the application data model. 							& 3 days \\
-  Implement Basic Visualiser 						& To implement code for displaying the video feed and augmenting it with basic geometric primitives. 					& 5 Days \\
-  Design UI Data Representation 					& To establish a design for the representation of the different data types. 											& 2 Days \\
-  Implement Graphical and Textual Data Visualisation & To implement code to convert the data in the data model into relevant visualisations. 								& 10 Days \\
-  Implement Data Visualisation Filtering 			& To implement code to allow the user to filter out unnecessary visualisation elements. 								& 5 Days \\
-  Implement Robot Data Comparison 					& To implement code to allow the user to compare the data of specific robots. 											& 3 Days \\
-		\bottomrule\\
-	\end{tabular}
-\end{table}
+\end{longtable}
+
+\begin{longtable}{ >{\raggedright}p{5cm}>{\raggedright}p{6cm}p{3cm} }
+	\caption{Testing tasks.}\\
+	\toprule
+	\tabhead{Task} & \tabhead{Objective} & \tabhead{Approximate Time} \\
+	\midrule
+	
+Continuous Integration Testing & To continually test newly implemented features with the system as a whole during the implementation process. & Throughout development
+\\
+Manual Verification Testing & To verify the correct operation of the software through manual testing. Specific focus on the UI. & 10 Days
+\\
+Verification Fixes and Changes & To make the necessary changes to correct issues identified in the verification testing. & 5 Days
+\\ 
+Final Fixes and Changes & Some leeway time is available to make any final changes or fixes based on the results of the user evaluation sessions. & Remaining time 
+\\ 
+	\bottomrule\\
+	
+	\label{tab:TestingTasks}
+\end{longtable}
+
+\begin{longtable}{ p{5cm}p{9cm} }
+	\caption{Other tasks.}\\
+	\toprule
+	\tabhead{Task} & \tabhead{Objective} \\
+	\midrule
+	
+Initial Report & To produce an initial report in the early stages of the project, outlining the preliminary research completed and the project plan at this stage.
+\\
+Create Initial User Survey & To create a survey to be answered by potential users of the system such as robotics researchers to gauge interest levels for the proposed system and specific individual features.
+\\
+Distribute Initial User Survey and Collate Results & Distribute the survey and collate and analyse the responses.
+\\
+Create a System Evaluation and User Testing Plan & To devise a plan for evaluating the effectiveness of the system including a detailed description of the user testing procedure.
+\\
+User Evaluation Sessions & To evaluate the system by allowing a number of users to use it in a structured evaluation session.
+\\
+	\bottomrule\\
+	
+	\label{tab:OtherTasks}
+\end{longtable}
+
 
 %----------------------------------------------------------------------------------------
 
