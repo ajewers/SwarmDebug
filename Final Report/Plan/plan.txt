@@ -1,11 +1,11 @@
 Abstract
 
 Introduction
-  - Opening paragraph for context (recent advances in robotics, the birth of swarm)
-  - Topic introduction (Swarm robotics, the difficulties of debugging real time systems)
-  - Project introduction (Idea, purpose)
-  - Aim and Objectives
-  - Functional Specification
+  - Opening paragraph for context (recent advances in robotics, the birth of swarm)             x
+  - Topic introduction (Swarm robotics, the difficulties of debugging real time systems)        x
+  - Project introduction (Idea, purpose)                                                        x
+  - Aim and Objectives                                                                          x
+  - Functional Specification                                                                    x
   - Revisions since initial report
   - Report structure
   
