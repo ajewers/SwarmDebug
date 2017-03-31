@@ -4,6 +4,9 @@ Introduction
   - Opening paragraph for context (recent advances in robotics, the birth of swarm)
   - Topic introduction (Swarm robotics, the difficulties of debugging real time systems)
   - Project introduction (Idea, purpose)
+  - Aim and Objectives
+  - Functional Specification
+  - Revisions since initial report
   - Report structure
   
 Literature Survey
@@ -16,13 +19,6 @@ Literature Survey
   - Augmented reality debugging systems for swarm robotics
   - Summarise key points relevant to project
   - Broaden back out to comment on effect of success on the wider area
-  
-Aims and Objectives
-  - Project aim as a statement
-  - Other aims
-  - Specific objectives
-  - Functional specification
-  - Revisions since initial report
   
 Project Plan
   - Work Breakdown

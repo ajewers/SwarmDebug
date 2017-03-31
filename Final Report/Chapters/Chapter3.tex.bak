@@ -1,19 +1,56 @@
 % Chapter 3
 
-\chapter[Problem Analysis]{Problem Analysis} % Main chapter title
+\chapter[Project Plan]{Project Plan} % Main chapter title
 
 \label{Chapter3} % For referencing the chapter elsewhere, use \ref{Chapter1} 
 
 %----------------------------------------------------------------------------------------
 
+This project was completed between Monday 16th January and Thursday 18th May, 2017. A well defined break down of the tasks required to complete this project, and an organised plan for completing these tasks was instrumental in ensuring that this project was completed in the available time. However, as with almost all modern software development, accurately predicting the time required to implement every piece of code was a virtually impossible task, as the development process led to the discovery of unforeseen issues and a deeper understanding of the problem constraints. Hence wherever possible an `\textit{agile}' methodology and approach was employed, including frequent re-assessment of the remaining work and feasibility of individual features. This is discussed in more detail in section \ref{Agile}.
+
+%----------------------------------------------------------------------------------------
+
+\section{Work Breakdown}
+At the start of the project the work was divided into the logical tasks shown in table . This includes tasks specifically related to the software development process, as well as other tertiary tasks required to complete the project.
+
+\begin{table}
+	\caption{Development tasks.}
+	\label{tab:DevTasks}
+	\centering
+	\begin{tabular}{ >{\raggedright}p{5cm}>{\raggedright}p{7cm}p{3cm} }
+		\toprule
+		\tabhead{Task} & \tabhead{Objective} & \tabhead{Approximate Time} \\
+		\midrule
+  Read and Understand Existing Code 				& To understand existing code related to the tracking camera and networking on the e-pucks. 							& 14 Days (Alongside other development)\\
+  Establish Development Environment and Toolchain 	& To enable organised development by establishing a tool set and workflow. 												& 3 Days \\
+  Learn to Re-Program e-puck Robots 				& To understand the cross compilation process for the e-pucks. 															& 2 Days \\ 
+  Outline Software Architecture 					& To design a coherent code structure in order for code to remain organised and modular. 								& 2 Days \\
+  Design General User Interface 					& To create a high level design of the basic UI and implement a skeleton framework of this UI.							& 3 Days \\ 
+  Incorporate Tracking Camera Code 					& To incorporate existing low-level code for acquiring images from the tracking camera and performing tag detection. 	& 2 Days \\
+  Implement Tracking Camera Controller 				& To implement code to create a layer of abstraction between the application code and the tracking code. 				& 2 Days \\
+  Implement Wireless Data Receive 					& To implement code to allow the application to receive data wirelessly. 												& 3 Days \\
+  Determine Robot Data Types 						& To establish an initial set of data types that will be supported by default, and a packet format for these. 			& 2 Days \\
+  Design and Implement Data Model 					& To design the back end data model of the application and implement it in code.										& 6 Days \\
+  Implement Mapping Received Data to Model 			& To implement code to store received robot and tracking data in the application data model. 							& 3 days \\
+  Implement Basic Visualiser 						& To implement code for displaying the video feed and augmenting it with basic geometric primitives. 					& 5 Days \\
+  Design UI Data Representation 					& To establish a design for the representation of the different data types. 											& 2 Days \\
+  Implement Graphical and Textual Data Visualisation & To implement code to convert the data in the data model into relevant visualisations. 								& 10 Days \\
+  Implement Data Visualisation Filtering 			& To implement code to allow the user to filter out unnecessary visualisation elements. 								& 5 Days \\
+  Implement Robot Data Comparison 					& To implement code to allow the user to compare the data of specific robots. 											& 3 Days \\
+		\bottomrule\\
+	\end{tabular}
+\end{table}
+
+%----------------------------------------------------------------------------------------
+
+\section{Timing}
 
 
 %----------------------------------------------------------------------------------------
 
-\section{Problem Outline}
-Summarise the problem
+\section{Risk Analysis and Mitigation}
+
 
 %----------------------------------------------------------------------------------------
 
-\section{Proposed Approach}
-Explain the proposed approach
+\section{Application of Agile Methodologies} \label{Agile}
