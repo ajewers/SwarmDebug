@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2017.4.2)  2 APR 2017 12:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2017.4.2)  2 APR 2017 15:26
 entering extended mode
 **./main.tex
 (main.tex
@@ -2058,7 +2058,7 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
 
 
 ]
-<Figures/RobotDebuggingInformationAbstraction.png, id=315, 415.5525pt x 216.81p
+<Figures/RobotDebuggingInformationAbstraction.png, id=329, 415.5525pt x 216.81p
 t>
 File: Figures/RobotDebuggingInformationAbstraction.png Graphic file (type png)
  <use Figures/RobotDebuggingInformationAbstraction.png>
@@ -2070,7 +2070,7 @@ Overfull \hbox (11.5224pt too wide) in paragraph at lines 32--34
  [][] 
  []
 
-[2] <Figures/SystemArchitecture.png, id=320, 393.6306pt x 199.2243pt>
+[2] <Figures/SystemArchitecture.png, id=334, 393.6306pt x 199.2243pt>
 File: Figures/SystemArchitecture.png Graphic file (type png)
 
 <use Figures/SystemArchitecture.png>
@@ -2088,14 +2088,14 @@ Chapter 2.
 
 
 
-] [8] [9] [10] [11] <Figures/Sonar.png, id=419, 487.8225pt x 375.65344pt>
+] [8] [9] [10] [11] <Figures/Sonar.png, id=433, 487.8225pt x 375.65344pt>
 File: Figures/Sonar.png Graphic file (type png)
 
 <use Figures/Sonar.png>
 Package pdftex.def Info: Figures/Sonar.png used on input line 56.
 (pdftex.def)             Requested size: 292.69576pt x 225.3938pt.
  [12 <./Figures/Sonar.png>]
-<Figures/SpatiallySituatedData.png, id=431, 386.19281pt x 242.40562pt>
+<Figures/SpatiallySituatedData.png, id=445, 386.19281pt x 242.40562pt>
 File: Figures/SpatiallySituatedData.png Graphic file (type png)
 
 <use Figures/SpatiallySituatedData.png>
@@ -2160,16 +2160,29 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
 
  (Chapters/Chapter5.tex
 Chapter 5.
-)
+<Figures/EPuck.png, id=489, 401.5pt x 301.125pt>
+File: Figures/EPuck.png Graphic file (type png)
+ <use Figures/EPuck.png>
+Package pdftex.def Info: Figures/EPuck.png used on input line 14.
+(pdftex.def)             Requested size: 240.90184pt x 180.67638pt.
+
 1: section
 [21
 
 
 
-]
+] [22 <./Figures/EPuck.png>]
+<Figures/EPuckIRSensors.png, id=501, 602.25pt x 602.25pt>
+File: Figures/EPuckIRSensors.png Graphic file (type png)
+
+<use Figures/EPuckIRSensors.png>
+Package pdftex.def Info: Figures/EPuckIRSensors.png used on input line 41.
+(pdftex.def)             Requested size: 240.89572pt x 240.89572pt.
+) [23 <./Figures/EPuckIRSensors.png>]
 \openout2 = `Chapters/Chapter6.aux'.
 
- (Chapters/Chapter6.tex [22
+
+(Chapters/Chapter6.tex [24
 
 
 
@@ -2177,10 +2190,10 @@ Chapter 5.
 Chapter 6.
 )
 1: section
-[23]
+[25]
 \openout2 = `Appendices/AppendixA.aux'.
 
- (Appendices/AppendixA.tex [24
+ (Appendices/AppendixA.tex [26
 
 
 
@@ -2191,14 +2204,14 @@ LaTeX Font Info:    Try loading font information for T1+pcr on input line 11.
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 ))
 1: section
-[25] [26]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 290.
-
+[27] [28]
 1: section
-[27
+[29
 
 
 ]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 290.
+ [30]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 290.
  (main.aux (Chapters/Chapter1.aux) (Chapters/Chapter2.aux)
 (Chapters/Chapter3.aux) (Chapters/Chapter4.aux) (Chapters/Chapter5.aux)
@@ -2206,16 +2219,16 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 290.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 290.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 290.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 6EEBB12E0DEB1D9ABB9931D4E2DB6B2A;5865.
+(rerunfilecheck)             Checksum: 7964F5559B5E925C5DF69A9A8885F7FA;5982.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32328 strings out of 493334
- 647885 string characters out of 3145291
- 859601 words of memory out of 3000000
- 35356 multiletter control sequences out of 15000+200000
+ 32356 strings out of 493334
+ 648469 string characters out of 3145291
+ 859818 words of memory out of 3000000
+ 35373 multiletter control sequences out of 15000+200000
  47027 words of font info for 76 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,20n,77p,10379b,2310s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2224,9 +2237,9 @@ lic/amsfonts/cm/cmsy10.pfb><C:/TEX/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C
 :/TEX/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/TEX/MiKTeX/fonts/type1/urw
 /palatino/uplr8a.pfb><C:/TEX/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/TEX
 /MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (45 pages, 997791 bytes).
+Output written on main.pdf (48 pages, 1085203 bytes).
 PDF statistics:
- 554 PDF objects out of 1000 (max. 8388607)
- 124 named destinations out of 1000 (max. 500000)
- 333 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 592 PDF objects out of 1000 (max. 8388607)
+ 133 named destinations out of 1000 (max. 500000)
+ 359 words of extra memory for PDF output out of 10000 (max. 10000000)
 

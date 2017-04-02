@@ -7,10 +7,10 @@ Introduction
   - Aim and Objectives                                                                          x
   - Functional Specification                                                                    x
   - Revisions since initial report
-  - Report structure
+  - Report structure                                                                            x
   
 Literature Survey
-  - Introduce literature survey
+  - Introduce literature survey                                                                 x
   - Background SI and SR survey
   - Human robot/swarm interaction
   - VR, AR and robotics
@@ -21,7 +21,7 @@ Literature Survey
   - Broaden back out to comment on effect of success on the wider area
   
 Project Plan
-  - Work Breakdown
+  - Work Breakdown                                                                              x
   - Timing
   - Risk mitigation
   - A note on software development timing predictions
