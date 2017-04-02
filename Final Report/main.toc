@@ -23,10 +23,10 @@
 \contentsline {section}{\numberline {3.2}Timing}{18}{section.48}
 \contentsline {section}{\numberline {3.3}Risk Analysis and Mitigation}{18}{section.49}
 \contentsline {section}{\numberline {3.4}Application of Agile Methodologies}{18}{section.50}
-\contentsline {chapter}{\numberline {4}Aim and Objectives}{19}{chapter.51}
-\contentsline {section}{\numberline {4.1}Project Aim}{19}{section.52}
-\contentsline {section}{\numberline {4.2}Objectives}{19}{section.53}
-\contentsline {section}{\numberline {4.3}Revision Since Initial Report}{19}{section.54}
+\contentsline {chapter}{\numberline {4}Statement of Ethics}{19}{chapter.51}
+\contentsline {section}{\numberline {4.1}Human Participant Consideration}{19}{section.52}
+\contentsline {subsection}{\numberline {4.1.1}Initial User Survey}{19}{subsection.53}
+\contentsline {subsection}{\numberline {4.1.2}User Testing and Evaluation Sessions}{19}{subsection.54}
 \contentsline {chapter}{\numberline {5}Pre-implementation Survey}{21}{chapter.55}
 \contentsline {section}{\numberline {5.1}Survey Overview}{21}{section.56}
 \contentsline {section}{\numberline {5.2}Questions}{21}{section.57}

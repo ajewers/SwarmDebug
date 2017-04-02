@@ -1,22 +1,18 @@
 % Chapter 4
 
-\chapter[Aim and Objectives]{Aim and Objectives} % Main chapter title
+\chapter[Statement of Ethics]{Statement of Ethics} % Main chapter title
 
 \label{Chapter4} % For referencing the chapter elsewhere, use \ref{Chapter1} 
 
 %----------------------------------------------------------------------------------------
 
-
-
-%----------------------------------------------------------------------------------------
-
-\section{Project Aim}
-Summarise the project aim as a statement.
+The ethics considerations affecting this project were minimal, as the work did not involve other humans, animals or potentially unethical practice, and the system does not have direct applicability to military or defence work, or other potentially unethical uses. The system has some potential for indirect use in military or defence work - for example in debugging a military swarm system - however this is an extremely unlikely scenario, and the potential is no greater than for any other robotics software tool. The evaluation process for the project did involve human participants and data collection, and the steps taken to ensure this participation was ethically sound are discussed in section \ref{HumanParticipant}.
 
 %----------------------------------------------------------------------------------------
 
-\section{Objectives}
-Itemize the objectives.
+\section{Human Participant Consideration} \label{HumanParticipant}
+\subsection{Initial User Survey}
+The initial user survey was a short questionnaire created to gauge the interest of potential users in the system as a whole and individual features. Participants provided responses voluntarily, and the responses were anonymous by default. Participants were optionally given the chance to add their name and email address, so that they might be contacted regarding the later user testing if they were interested. This data was stored in a password protected fashion. This identifying data is not presented as part of this report, and the response data is presented in an aggregated fashion, ensuring anonymity.
 
-\section{Revision Since Initial Report}
-Comment on any updates to the objectives following the initial report.
+\subsection{User Testing and Evaluation Sessions}
+The final user testing and evaluation involved an observed testing session, where participants used the system in context whilst under observation, and a final questionnaire. Participants took part voluntarily, and consented to both the observation process and to the use of their questionnaire responses in an anonymous fashion. The data collected does not include any personal or private information, and is purely related to each participants experience and opinion of the system. Once again the questionnaire data is presented in an aggregated fashion to preserve anonymity. Anecdotal information obtained through observation does not include any identifying information about the participant, and is also fully anonymous. 
