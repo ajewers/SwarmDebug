@@ -45,11 +45,11 @@ The e-puck robot features a number of different sensor sets, of which only some 
 	\end{center}
 \end{figure}
 
-The robot also features three microphones, a 3 axis accelerometer and a camera. The bandwidth required to use the microphones and camera place them somewhat outside of the scope of this project.
+The robot also features three microphones, a 3 axis accelerometer and a camera. Due to the bandwidth required to use the microphones and camera they were considered a low priority for this project. [ACCELEROMETER?] 
 
 %----------------------------------------------------------------------------------------
 
 \section{Linux Extension Board} \label{LinuxExtensionBoard}
-
+For this project the e-pucks were fitted with an extension board featuring a 32-bit ARM9 processor running a modified Linux operating system \cite{LinuxExtensionBoard}, developed by Wenguo Liu, and Alan F.T. Winfield. In this configuration the ARM processor, an Atmel AT91, takes charge of the high level robot control logic, as well as any intensive data processing operations. The dsPIC processor is then used to control the low level actuator and sensor control, running in parallel with the ARM processor and communicating via UART. The extension board provides a USB port, and for this project a WiFi adapter was connected to each robot. The controller code running on each robot could then make use of the standard IP network layer protocol, and the standard transport protocols TCP and UDP.
 
 %----------------------------------------------------------------------------------------
