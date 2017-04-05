@@ -1,0 +1,33 @@
+Project Presentation Plan
+
+- Title Slide (1)
+    Project title, name, supervisor, image(?)
+    
+- Introduction (2, 3, 4, 5)
+    Brief SR introduction
+    The need for more complex tools in robotics dev
+    AR (and VR)
+    Project concept & how it meets these needs
+    
+- Background (6, 7)
+    YRL Hardware, e-puck robots
+    Tracking camera set up
+    
+- Design (8, 9, 10)
+    System architecture
+    Software architecture
+    UI design
+    
+- Work so far (11, 12, 13)
+    Applicatin progress with screenshots, 2 slides
+    Robot code progress
+    
+- Future work (14, 15, 16)
+    Remaining features
+    Testing and evaluation strategy
+    Potential for future development into full swarm robotics platform/toolbox
+    
+- Conclusion (17)
+    Short summary, successes and setbacks
+    
+- Any Questions? (18)
