@@ -7,13 +7,11 @@
 %----------------------------------------------------------------------------------------
 
 \section{Overview}
-In order to determine how best to implement the system in order to be useful in practice a survey waas carried out at the YRL. Those asked were all actively engaged in robotics work, either in a research capacity or as a technician. The survey aimed to determine first if a level on interest existed for such a system, and then which specific features were most desired. This would go on to influence design choices and inform priorities during development.
+In order to determine how best to implement the system in a fashion that is useful in, practice a survey was carried out at the YRL. Those asked were all actively engaged in robotics work, either in a research capacity or as a technician, and some experience and understanding of swarm robotics specifically. The survey aimed to determine first if a level on interest existed for such a system, and then which specific features were most desired. This would go on to influence design choices and inform priorities during development.
 
 %----------------------------------------------------------------------------------------
 
 \section{Data}
-The questions and results of the survey are presented here.
-
 \textbf{Question 1: Do you believe that a system for displaying internal robot data for a swarm of robots in real time would be useful when debugging swarm robotics behaviours and/or conducting swarm robotics experiments?}
 
 \begin{center}
@@ -67,20 +65,18 @@ On the questionnaire the values of one to five were qualified as `\textit{Not im
 
 \vspace{1cm}
 
-\textbf{Question 4: Please briefly describe any additional features you believe would be useful, based on your experiences working with swarm robotics systems}
+\textbf{Question 4: Please briefly describe any additional features you believe would be useful, based on your experiences working with swarm robotics systems.}
 
 \begin{itemize}
 \item ``macro-level behavioural data on the swarm; e.g., number of robots in different behavioural states (color coded accordingly).''
 \item ``I think the system (already potentially very useful) could be improved/expanded further to add the option of more post-processing/extraction of data. The ability to create video of the over-lay, and perform statistical analysis on the complete run, would begin to turn the system in not only a very useful debugging system but a complete package allow researchers to gather high-quality, publication ready analysis of swarm experiments.''
 \end{itemize}
 
-\vspace{2cm}
-
 \textbf{Question 5: Which of the following aspects of the robot data do you believe should be made available by the application to aid in debugging and testing? Tick all that apply. Please add any more you may think of.}
 
 \begin{center}
 \begin{tabular}{ p{10cm} c }
- Feature & Votes\\ 
+ Data Type & Votes\\ 
  \hline
  Position & 4\\
  Orientation / direction & 4\\
@@ -101,9 +97,7 @@ Additional responses:
 \item ``A simple API to add user-defined variables/statuses''
 \end{itemize}
 
-\vspace{1cm}
-
-\textbf{Please add any additional comments you have about the proposed application in relation to your experiences working with swarm robotics systems}
+\textbf{Please add any additional comments you have about the proposed application in relation to your experiences working with swarm robotics systems.}
 
 \begin{itemize}
 \item ``A client-server model between back-end (camera) and remote client would potentially be very useful; also the system should be flexible and not reliant on a specific camera/server setup. Would be very interesting to see if it will work on a R-Pi 3 + camera combination, as this would allow for portable tracking setups.''
@@ -113,6 +107,21 @@ Additional responses:
 %----------------------------------------------------------------------------------------
 
 \section{Analysis}
-The response to question one indicates a reasonable level of interest in the system amongst those surveyed. 
+The positive response to question one indicates a reasonable level of interest in the system amongst those surveyed. The similarly positive response to question two adds more weight to the idea that graphical debugging tools have the potential to be particularly useful in a robotics context, as established during the literature review. The responses to these two questions indicate that interest exists for the system, and that it is worthwhile implementing it. This satisfies the first aim of the survey.
+
+The remainder of the survey focuses on establishing which features are most desirable, and the results were used when considering implementation priorities. The response to question three indicates that the majority of the core features were thought to be potentially useful, especially those related to the video feed and overlay. Tertiary features such as customising the colours and sizes of the overlays showed less interest. This was as expected, as these kinds of features do not aid directly in the debugging process. Considerable interest was expressed in the ability to log data and events, a feature which was not considered a major priority at the outset. Conversely, the ability to compare two robots was the only feature to receive a vote lower than neutral, despite being initially thought a key feature of the system. As a result the implementation of logging was moved up to a main priority, and the comparison feature was reduced to non-essential.
+
+The respondents were then given the chance to optionally suggest additional features in question four. The first of the two responses suggests `macro-level behavioural data', a concept considered during the project's inception. It was not included in the initial plan or survey partly because at the outset it was not clear what form the feature would take, or whether it would be feasible in the time frame, and partly because it was seen as a feature related more to analysing swarm experiments and results rather than debugging. As a result of this answer displaying macro level swarm data was considered a desirable but not essential feature, to be implemented if time allowed. The second response offers a broader vision for the system as a whole. This report agrees with the observation of the systems potentially to become a complete package for analysing swarm experiments and extracting data, however the majority of the features mentioned are considered beyond the scope of this project. This includes video extraction and post processing of data. These are however considered in section [??] regarding future work, as they present significant potential expansions of the system.
+
+Question five attempts to establish which specific data types are most desirable in the system. Note that one respondent did not answer this question at all, leading to the lower vote counts. None of the data elements listed received a significant deficit in votes, suggesting that all the data types listed should be included. Respondents were asked to optionally suggest other data types, and the two responses received both independently identified user-defined data or 'variables' as a desirable data  type. The inclusion of custom user defined data was a planned part of the system from the beginning, and is mentioned in question 3, but these responses confirmed that it should be a priority feature of the system.
+
+The final section gave respondents the opportunity to add any additional comments about the system. The first response notes that designing the system in a way which does not make it `reliant on a specific camera/server setup' would improve its usability. This thinking matches the stated objective of making the system in a modular way that is easily extensible with different camera set-ups and different robots.
+
+%----------------------------------------------------------------------------------------
+
+\section{Shortcomings}
+This survey provided a useful tool for gathering a general impression of relevant opinions regarding the project and the system. However it also had a number of issues in its execution which might somewhat diminish the value of the data. Firstly due to the highly specific nature of the desired participants, the sample size is extremely small. Care must therefore be taken in analysing to deeply the results; for example any statistical analysis performed would likely be flawed.
+- small sample size
+- data types question not near exhaustive
 
 %----------------------------------------------------------------------------------------
