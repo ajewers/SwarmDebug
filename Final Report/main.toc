@@ -42,7 +42,7 @@
 \contentsline {section}{\numberline {7.1}Overview}{27}{section.70}
 \contentsline {section}{\numberline {7.2}Data}{27}{section.71}
 \contentsline {section}{\numberline {7.3}Analysis}{29}{section.72}
-\contentsline {section}{\numberline {7.4}Shortcomings}{31}{section.73}
+\contentsline {section}{\numberline {7.4}Issues and Shortcomings}{31}{section.73}
 \contentsline {chapter}{\numberline {8}Application Design}{33}{chapter.74}
 \contentsline {section}{\numberline {8.1}Overview}{33}{section.75}
 \contentsline {section}{\numberline {8.2}Software Architecture Design}{33}{section.76}
