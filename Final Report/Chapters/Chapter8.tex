@@ -30,10 +30,26 @@ With these two principles in mind, the software design process could begin. Firs
 \item Code relating to producing logs of the data and events
 \end{itemize}
 
-Once separated into functional components, these components could be organised into a structure, and the data path of the application examined. Figure . shows this structural arrangement, with boxes for each of the functional objects and arrows indicating data flow. 
+Once separated into functional components, these components could be organised into a structure, and the data path of the application examined. Figure \ref{fig:SoftwareArchitecture} shows this structural arrangement, with boxes for each of the functional objects and arrows indicating data flow. The three layers of the MVC design pattern are shown by the vertical partitioning. The horizontal partitioning is used to show another key design consideration - threading. In order to maximise performance and ensure responsiveness, functionality which has the potential to `block' execution whilst waiting for a result or response should be run in a separate thread. This application was therefore designed with three threads in mind. The main thread handles the core of the application, including all data model access and GUI operations. The network thread handles communicating with the robots via WiFi. It was anticipated that this networking would involve low level socket code, which meant the potential for blocking socket-read operations, therefore requiring a separate thread. The camera thread handles reading the machine vision camera and performing the tag tracking using the ARuCo library. It was anticipated that the camera read operation could block until the next frame was available in the camera driver's buffer. Tracking the robots in the image using the ARuCo library also had the potential to be CPU intensive, so keeping this off the main thread was considered a potential performance benefit.
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.7]{Figures/SoftwareArchitecture.png}
+	\decoRule
+	\caption[Software Architecture Diagram]{A diagram of the software architecture design.}
+	\label{fig:SoftwareArchitecture}
+\end{figure}
 
 \subsection{Data Model}
-\subsection{Components and Threading}
+Figure \ref{fig:SoftwareArchitecture} also shows that the model layer contains the application settings and the data model. The data model itself was designed to be comprised of a number of smaller components. The primary function of the data model is to maintain a record of all the robots the system is aware of, and the most up to date data related to the state of each robot. As such the data model was designed to use a hierarchical structure. The larger data model object would maintain a collection of smaller objects, each containing the data related to a single robot. These would in turn maintain a collection of different data objects relating to the robot's state and sensor data. Figure \ref{fig:DataModel} illustrates this hierarchical data model design using the IR sensor data of a single robot as an example.
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.7]{Figures/DataModel.png}
+	\decoRule
+	\caption[Data Model Diagram]{A diagram of the data model design.}
+	\label{fig:DataModel}
+\end{figure}
 
 
 %----------------------------------------------------------------------------------------
