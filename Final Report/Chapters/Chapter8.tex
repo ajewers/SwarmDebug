@@ -7,11 +7,30 @@
 %----------------------------------------------------------------------------------------
 
 \section{Overview}
-
+This section describes the design of the application, and gives details on the reasoning behind some of the design decisions. This design work was done mostly prior to implementation. Some elements of the design were re-factored as implementation progressed, in adherence to the agile development methodology being followed. The design process was broken down into two key areas. Firstly the design of the software architecture, including the breakdown of the different components and the path of data through the system. This served as a road map during the implementation stage. The second key design area was the user interface. This involved sketching out the window layout and deciding how best to provide the user with access to the various features.
 
 %----------------------------------------------------------------------------------------
 
 \section{Software Architecture Design}
+The guiding principles of the software architecture design were the ideas of `Object Oriented Programming' (OOP), and the `model-view-controller' (MVC) software architecture pattern. OOP [OOP REFERENCE] is an extremely widespread concept in software development theory. The basic idea is that code should be organised into units based on individual functionalities, commonly referred to as classes, where the data that describes an object and the routines to perform actions with and on that data are collected together. An object usually refers to a single instance of a class. OOP aims to reduce duplication in code, make code easier to understanding and maintain, and increase re-usability and modularity. Designing software in an OOP fashion is standard practice for most modern programming tasks, and modern languages are often designed around OOP concepts. C++ was selected as the development language for this application for several reasons. The majority of the existing software infrastructure in the YRL has been implemented in C++, hence following suit would help with maintainability in the future. C++ also offers much of the low level control and efficiency of the C language, whilst also supporting OOP practices natively. Considering the project's requirements for interfacing with low level hardware such as the tracking camera via the camera drivers and the robots via network sockets, and for performing image processing, the speed and low level capabilities of C++ seemed beneficial. Higher level languages such as Java were considered, as they offered a number of different benefits such as better portability and resource management, but this was ultimately deemed less valuable.
+
+The MVC software architecture design pattern is another widespread concept in software development theory. It primarily relates to the programming of application user interfaces. The three words that give the pattern its name define the three 'layers' into which code components are organised. The model refers to the application's data, and includes all of the information that defines the application in its current state. The view refers to the code used to produce the user interface from the data in the model. It acts as the method by which the user 'views' the data, thus getting its name. Finally the controller layer acts as the intermediary between the two, retrieving data from the model and processing it if necessary before passing it to the view for display. The controller also responds to data input events and changes the model accordingly. This includes data input via the user through the view, as well as data from other sources. In the case of this application these other sources include peripherals, such as the tracking camera, and the robots via the WiFi network. Adhering to an MVC pattern helps to keep code structured and organised, making it easier to understand, maintain and extend. It ensures that state data is not maintained by the UI, and that one true `gold standard' version of the application data exists within the model. 
+
+With these two principles in mind, the software design process could begin. First the application was broken down into individual components based on the functionalities expressed in the functional specification. The following key areas were identified:
+
+\begin{itemize}
+\item Code relating to communicating with the camera
+\item Code relating to performing the robot tracking
+\item Code relating to handling networking and receiving data from the robots
+\item Code relating to storing the robot data
+\item Code relating to augmenting the video feed based on the stored data
+\item Code relating to displaying the video feed to the user
+\item Code relating to other elements of the user interface
+\item Code relating to storing user settings
+\item Code relating to producing logs of the data and events
+\end{itemize}
+
+
 
 \subsection{Data Model}
 \subsection{Components and Threading}

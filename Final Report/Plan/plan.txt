@@ -73,12 +73,14 @@ Project Demonstrations?
   
 Future Work
   - Use in the YRL
+  - Full swarm robotics platform
   - Possible extensions
   - - Robot control
-  - - Video output
+  - - Video output + data output / extraction for experiments
   - - User scripting for visualiser
   - Integration with tablet application
   - Integration with ARGoS simulator
+  - Integration with actual AR - Microsoft hololens - shared robot/human space
   
 Conclusion
   - Evaluation of success in meeting the aims and objectives
