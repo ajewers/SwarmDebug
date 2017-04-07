@@ -36,7 +36,7 @@ Once separated into functional components, these components could be organised i
 	\centering
 	\includegraphics[scale=0.7]{Figures/SoftwareArchitecture.png}
 	\decoRule
-	\caption[Software Architecture Diagram]{A diagram of the software architecture design.}
+	\caption[Software Architecture Diagram]{A diagram of the software architecture design and data flow.}
 	\label{fig:SoftwareArchitecture}
 \end{figure}
 
@@ -64,9 +64,9 @@ The second main area of consideration during the design phase was the Graphical 
 	\label{fig:UILayout}
 \end{figure}
 
-The visualiser window, highlighted in blue, takes primary place in the layout. In order to maximise the readability of the augmented video feed it was determined that this window should occupy as much space as possible. A number of tabs would then be contained in this window to give access to various settings, including settings for the visualiser. The robot list window is highlighted in green on the right hand side. This window requires less width, as it's main function is simply to display the robot list. A number of tabs would also be added here, to allow access to functionality related to the robots such as settings for the network connection. Finally the data window is highlighted in yellow at the bottom of the layout. The tabs would be used to provide more detailed info on each type of data collected about the selected robot, as well as a tab for a general overview, and a console-style log of application events. It was noted that the data displayed in this window 
+The visualiser window, highlighted in blue, takes primary place in the layout. In order to maximise the readability of the augmented video feed it was determined that this window should occupy as much space as possible. A number of tabs would then be contained in this window to give access to various settings, including settings for the visualiser. The robot list window is highlighted in green on the right hand side. This window requires less width, as it's main function is simply to display the robot list. A number of tabs would also be added here, to allow access to functionality related to the robots such as settings for the network connection. Finally the data window is highlighted in yellow at the bottom of the layout. The tabs would be used to provide more detailed info on each type of data collected about the selected robot, as well as a tab for a general overview, and a console-style log of application events. It was noted that when displaying data in this window it should be formatted to maximise the use of the available space. This means using the full width of the window and limiting the height to avoid scrolling. The design also includes a toolbar at the top of the window, another standard feature of window-based software applications.
 
 \subsection{The Qt Framework}
-
+In order to make creating this interface feasible, a GUI framework needed to be selected. Many GUI frameworks exist, each with various benefits. For this application the Qt Application User Interface framework for desktop was selected. This framework provides a comprehensive library of classes and an application programming interface (API) for implementing desktop user interfaces, with support for all the standard features of window-based applications. The Qt framework was chosen for a number of reasons. The framework is fairly widely used, and therefore has a well-tested, refined, and mature API, with a good body of documentation available. Previous experience with Qt outside of this project had been positive, and meant a smaller learning curve would be necessary to get started developing with it. For non-commercial projects Qt is also available free of charge, making it a good fit for an academic project such as this.
 
 %----------------------------------------------------------------------------------------

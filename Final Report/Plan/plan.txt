@@ -1,16 +1,16 @@
 Abstract
 
 Introduction
-  - Opening paragraph for context (recent advances in robotics, the birth of swarm)             x
-  - Topic introduction (Swarm robotics, the difficulties of debugging real time systems)        x
-  - Project introduction (Idea, purpose)                                                        x
-  - Aim and Objectives                                                                          x
-  - Functional Specification                                                                    x
+  x Opening paragraph for context (recent advances in robotics, the birth of swarm)
+  x Topic introduction (Swarm robotics, the difficulties of debugging real time systems)
+  x Project introduction (Idea, purpose)
+  x Aim and Objectives
+  x Functional Specification
   - Revisions since initial report
-  - Report structure                                                                            x
+  x Report structure
   
 Literature Survey
-  - Introduce literature survey                                                                 x
+  x Introduce literature survey
   - Background SI and SR survey
   - Human robot/swarm interaction
   - VR, AR and robotics
@@ -21,39 +21,38 @@ Literature Survey
   - Broaden back out to comment on effect of success on the wider area
   
 Project Plan
-  - Work Breakdown                                                                              x
+  x Work Breakdown
   - Timing
   - Risk mitigation
   - A note on software development timing predictions
 
 Statement of Ethics
-  - Single section on Ethics
+  x Single section on Ethics
   
 E-Puck Platform
-  - Overview
-  - Sensors
-  - Actuators
-  - Linux extension board & networking capabilities
+  x Overview
+  x Sensors
+  x Actuators
+  x Linux extension board & networking capabilities
   
 Tracking system
-  - Overview
+  x Overview
   - Camera
-  - ARuCo tags
+  x ARuCo tags
   - Linux server
   
 Initial User Survey
-  - Purpose
-  - Questions
-  - Response data
-  - Analysis and effect on project
+  x Purpose
+  x Questions
+  x Response data
+  x Analysis and effect on project
   
 Application Design
-  - Overview
-  - Software architecture design
-  - - Data Model
-  - - Components & threading
-  - UI Design
-  - - Qt
+  x Overview
+  x Software architecture design
+  x - Data Model
+  x UI Design
+  x - Qt
   
 Application Implementation
   - Code structure

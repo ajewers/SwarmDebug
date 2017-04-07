@@ -7,11 +7,21 @@
 %----------------------------------------------------------------------------------------
 
 \section{Overview}
-
+This section gives details of the implementation phase of the project, including descriptions of how parts of the system function, information regarding the development process and explanations for some of the key decisions made regarding the implementation. 
 
 %----------------------------------------------------------------------------------------
 
 \section{Code Structure}
+The system is implemented in two parts; a collection of C++ source and header files which make up the main application, and a smaller collection of C++ source and header files which handle the robot-side portion of the system. In addition to the source files the main application also contains a number of other files which are used by the Qt system to define the user interface and manage the build process. Table  details the names and purposes of all files.
+
+\begin{longtable}{ l p{10cm} }
+ File & Purpose\\ 
+ \hline
+ main.cpp & The entry point for the application. Instantiates the MainWindow class.\\
+ mainwindow.cpp, .h & The core class, contains the entry point for the application and controls the set up and tear down processes and handles UI events within the main window.\\
+ mainwindow.ui & Describes the user interface layout in a XML-like format. Used by the Qt framework to construct the UI.
+
+\end{longtable}
 
 
 %----------------------------------------------------------------------------------------
