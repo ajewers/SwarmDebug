@@ -51,10 +51,20 @@ Figure \ref{fig:SoftwareArchitecture} also shows that the model layer contains t
 	\label{fig:DataModel}
 \end{figure}
 
-
 %----------------------------------------------------------------------------------------
 
-\section{UI Design}
+\section{User Interface Design}
+The second main area of consideration during the design phase was the Graphical User Interface (GUI). It was determined that a well designed, intuitive interface would be essential to satisfying the objective of providing the user with data in a 'human readable' form, in real time. Having real time data would be useless if the user cannot also parse the data displayed in approximately real time. The first decision made was to try and keep the interface familiar to a computer user, through the use of standard, widely understood user interface elements. There exists a well defined `language' in computer interface design, using constructs such as windows, tabs, buttons, text fields and other elements which have well understood functions. It was thought that basing the user interface design on this well established standard would minimize the time for a new user to become accustomed to the system. The next step was determining how many windows would be necessary for the intended functionality to be possible, and how best to lay these out and organise the other elements within each. Three main windows were determined to be necessary. The first would display the video feed and visual overlay, the key component of the application. A second window would be used to display a list of the robots known to the system, so that they could be selected without obscuring the visualiser. Finally a third window would be used to display more detailed information about the selected robot in a number of different tabs. Figure \ref{fig:UILayout} shows the basic layout decided on for these three windows.
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=1]{Figures/UILayout.png}
+	\decoRule
+	\caption[UI Layout]{The design of the basic user interface layout.}
+	\label{fig:UILayout}
+\end{figure}
+
+The visualiser window, highlighted in blue, takes primary place in the layout. In order to maximise the readability of the augmented video feed it was determined that this window should occupy as much space as possible. A number of tabs would then be contained in this window to give access to various settings, including settings for the visualiser. The robot list window is highlighted in green on the right hand side. This window requires less width, as it's main function is simply to display the robot list. A number of tabs would also be added here, to allow access to functionality related to the robots such as settings for the network connection. Finally the data window is highlighted in yellow at the bottom of the layout. The tabs would be used to provide more detailed info on each type of data collected about the selected robot, as well as a tab for a general overview, and a console-style log of application events. It was noted that the data displayed in this window 
 
 \subsection{The Qt Framework}
 
