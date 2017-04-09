@@ -16,4 +16,43 @@ Project Presentation Script
   Bearing in mind the three elements I've just discussed, this project aims to develop a software tool for monitoring and debugging robot swarms in real time. To do this it will include a live video feed of the robot swarm, and connect to each of the robots wirelessly to retrieve internal data. This can then be combined using techniques similar to data and sensor fusion, to create graphical representations of the data which can be used to augment the video feed.
   
 6: Background - Hardware
-  The practical work for this project is being carried out at the York Robotics Laboratory on the Hes East campus, and we are hopeful that once completed this tool can be used in practical research work within the lab. For the first version of the system, the initial target platform will be the e-puck robot. This is a widely used, small robot platform for education and research purposes, often used for swarm robotics research. For this projects the e-pucks have been configured with a Linux extension board, which runs a Debian-based operating system on an ARM9 chip, and a WiFi adapter. In this configuration the ARM chip controls the robot's higher level decision making and processing, and interaces with the robots default dsPIC chip which handles the low level sensor and actuator control. The YRL has some existing infrastructure in the form of a robot arena and a machine vision camera
+  The practical work for this project is being carried out at the York Robotics Laboratory on the Hes East campus, and we are hopeful that once completed this tool can be used in practical research work within the lab. For the first version of the system, the initial target platform will be the e-puck robot. This is a widely used, small robot platform for education and research purposes, often used for swarm robotics research. For this projects the e-pucks have been configured with a Linux extension board, which runs a Debian-based operating system on an ARM9 chip, and a WiFi adapter. In this configuration the ARM chip controls the robot's higher level decision making and processing, and interaces with the robots default dsPIC chip which handles the low level sensor and actuator control. The YRL has some existing infrastructure in the form of a robot arena equipped with a machine vision camera for doing robot tracking. This project incorporates this hardware, and uses the ARuCo marker based tag detection system to track the robots within the video feed, in order to situate and orient the graphical overlays.
+  
+7: Backtground - Hardware Images
+  Here we have some images of the hardware, including the e-puck robot, the linux extension board, the ARuCo tracking tags, and the robot arena and tracking camera set up.
+  
+8: Design - System Architecture
+  This diagram shows the general system architecture. The robots will communicated data regarding their internal variables, such as state, sensor readings, and other user defined variables, to the application via WiFi. The application back-end handles the server role. The tracking camera will send the video feed to the application via ethernet as raw image frames. The application handles running the tag detection algorithm to track the robots' positions and orientations. This data is combined, and the graphical overlay generated, and then presented to the user via the application GUI.
+  
+9: Design - Software Architecture
+  The software has been designed following a Model View Controller architecture pattern. The model layer stores all the data, including data about each individual robot. The view layer displays this data through the UI and the augmented video feed, and handles user inputs. The controller layer sits in between the two and controls all the data processing. This includes receiving data from the robots and the images from the camera, running the tracking algorithm, updating the data model with the latest information and passing data to the UI for update. The application is serperated into threads to help with responsiveness and performance. The three key threads are shown here, with the two tasks likely to block exectuion (receiving data over the network and reading the camera) seperated from the main thread. Overall the software has been designed with modular, object oriented practices in mind, to improve extensibility and maintainability in the future.
+
+10: Design - UI
+  When designing the UI established application interface paradigms were considered, and the layout shown here was developed. The interface has been created using the Qt GUI framework, and the image processing is handled using the OpenCV library.
+  
+11: Progress - Application
+  The application is being implemented in C++, as this offers low level control and good performance with native object-oriented features, as well as being the native language for both Qt and OpenCV, and already widely used within the YRL for other systems. The core of the application has been implemented, including robot tracking and video feed augmentation as shown here...
+  
+12: Progress - Application
+  ... and data display for several data types, as shown here. This includes custom user data. All of these data types have been incorporated into the data model. The code for receiving data from the robots via WiFi has also been implemented, as well as the controller layer code for inserting this data into the model.
+  
+13: Progress - Robot Code
+  On the robot side a small single-class API has been written which handles some basic networking functionality to send data to the application as UDP packets. This is also implemented in C++, and is designed to be platform agnostic and portable to other robot platforms running Linux operating systems.
+  
+14: Future Work - Remaining Features
+
+
+15: Future Work - Testing and Evaluation Strategy
+  A portion of the remaining work is to properly test the system. This will involve manually testing the user interface, as well as potentially using unit testing techniques to verify the data model and data processing elements. Some verification testing of the system as a whole will also be necessary. Once tested the system will be evaluated through observation of user trials. This will involve a user monitoring a swarm while it enacts a common swarm behaviour, and attempting to locate a deliberately planted bug or issue. This will then be followed by a questionnaire about the users experience of the system, including how easy it was to use, how intuitive the interface was, and whether they believed it to be beneficial in completing their task.
+  
+16: Potential Future Development
+  An initial user survey carried out on a number of potential users from within the YRL showed that there was an interest in the system, and the potential to develop it into a full swarm robotics platform. This would involve a number of extra features, such as recording and exporting data and video from experiments, performing data processing and macro-level swarm analysis, and bi-directional communication with the robots, so that instructions could be sent such as start and stop commands, or high level task directions. The system could also be extended to interface with more robot platforms. This might require that support for Bluetooth communication be implemented in addition to WiFi. Another, more grand development could be to port the whole system to a true augmeneted reality platform, such as microsoft hololens, and full 3D graphical augmentation. This would allow for more immersive and intuitve human-robot interaction.
+  
+17: Conclusion
+  In conclusion, to summarise what we've just heard, this is a system that has been developed to tackle some of the difficulties in debugging robot swarms using a graphical, real time approach. The design focused on modularity and extensibility, as well as well established practices such as Model View Controller architecture and Object Oriented programming. The implementation stage is very nearly complete, and formal testing and evaluation will begin soon. The system has the potential to be developed in future into a fully fledged swarm robotics platform, which could be useful within the YRL and in the wider robotics community.
+  
+18: Thanks
+  Thank you very much for listening, I would be happy to answer any questions you have.
+  
+  
+  
