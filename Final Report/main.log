@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2017.4.7)  7 APR 2017 15:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2017.4.9)  9 APR 2017 11:12
 entering extended mode
 **./main.tex
 (main.tex
@@ -2060,7 +2060,7 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
 
 
 ]
-<Figures/RobotDebuggingInformationAbstraction.png, id=540, 415.5525pt x 216.81p
+<Figures/RobotDebuggingInformationAbstraction.png, id=542, 415.5525pt x 216.81p
 t>
 File: Figures/RobotDebuggingInformationAbstraction.png Graphic file (type png)
  <use Figures/RobotDebuggingInformationAbstraction.png>
@@ -2072,7 +2072,7 @@ Overfull \hbox (11.5224pt too wide) in paragraph at lines 32--34
  [][] 
  []
 
-[2] <Figures/SystemArchitecture.png, id=545, 393.6306pt x 199.2243pt>
+[2] <Figures/SystemArchitecture.png, id=547, 393.6306pt x 199.2243pt>
 File: Figures/SystemArchitecture.png Graphic file (type png)
 
 <use Figures/SystemArchitecture.png>
@@ -2090,14 +2090,14 @@ Chapter 2.
 
 
 
-] [8] [9] [10] [11] <Figures/Sonar.png, id=645, 487.8225pt x 375.65344pt>
+] [8] [9] [10] [11] <Figures/Sonar.png, id=647, 487.8225pt x 375.65344pt>
 File: Figures/Sonar.png Graphic file (type png)
 
 <use Figures/Sonar.png>
 Package pdftex.def Info: Figures/Sonar.png used on input line 56.
 (pdftex.def)             Requested size: 292.69576pt x 225.3938pt.
  [12 <./Figures/Sonar.png>]
-<Figures/SpatiallySituatedData.png, id=657, 386.19281pt x 242.40562pt>
+<Figures/SpatiallySituatedData.png, id=659, 386.19281pt x 242.40562pt>
 File: Figures/SpatiallySituatedData.png Graphic file (type png)
 
 <use Figures/SpatiallySituatedData.png>
@@ -2162,7 +2162,7 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
 
  (Chapters/Chapter5.tex
 Chapter 5.
-<Figures/EPuck.png, id=700, 401.5pt x 301.125pt>
+<Figures/EPuck.png, id=702, 401.5pt x 301.125pt>
 File: Figures/EPuck.png Graphic file (type png)
  <use Figures/EPuck.png>
 Package pdftex.def Info: Figures/EPuck.png used on input line 14.
@@ -2174,7 +2174,7 @@ Package pdftex.def Info: Figures/EPuck.png used on input line 14.
 
 
 ] [22 <./Figures/EPuck.png>]
-<Figures/EPuckIRSensors.png, id=712, 602.25pt x 602.25pt>
+<Figures/EPuckIRSensors.png, id=714, 602.25pt x 602.25pt>
 File: Figures/EPuckIRSensors.png Graphic file (type png)
 
 <use Figures/EPuckIRSensors.png>
@@ -2190,7 +2190,7 @@ Package pdftex.def Info: Figures/EPuckIRSensors.png used on input line 41.
 
 ]
 Chapter 6.
-<Figures/CameraLayout.png, id=727, 1052.43187pt x 830.35219pt>
+<Figures/CameraLayout.png, id=729, 1052.43187pt x 830.35219pt>
 File: Figures/CameraLayout.png Graphic file (type png)
 
 <use Figures/CameraLayout.png>
@@ -2224,7 +2224,7 @@ Overfull \hbox (16.6094pt too wide) in paragraph at lines 72--73
 ]
 Chapter 8.
 1: section
-[33] [34] <Figures/SoftwareArchitecture.png, id=774, 605.1408pt x 415.5525pt>
+[33] [34] <Figures/SoftwareArchitecture.png, id=776, 605.1408pt x 415.5525pt>
 File: Figures/SoftwareArchitecture.png Graphic file (type png)
 
 <use Figures/SoftwareArchitecture.png>
@@ -2237,14 +2237,14 @@ Overfull \hbox (19.56657pt too wide) in paragraph at lines 37--39
  []
 
 [35 <./Figures/SoftwareArchitecture.png>]
-<Figures/DataModel.png, id=782, 542.025pt x 280.4076pt>
+<Figures/DataModel.png, id=784, 542.025pt x 280.4076pt>
 File: Figures/DataModel.png Graphic file (type png)
 
 <use Figures/DataModel.png>
 Package pdftex.def Info: Figures/DataModel.png used on input line 48.
 (pdftex.def)             Requested size: 379.4149pt x 196.28397pt.
  [36 <./Figures/DataModel.png>]
-<Figures/UILayout.png, id=788, 433.62pt x 325.215pt>
+<Figures/UILayout.png, id=790, 433.62pt x 325.215pt>
 File: Figures/UILayout.png Graphic file (type png)
 
 <use Figures/UILayout.png>
@@ -2261,31 +2261,35 @@ Overfull \hbox (29.58986pt too wide) in paragraph at lines 61--63
  (Chapters/Chapter9.tex
 Chapter 9.
 
-Overfull \hbox (4.03302pt too wide) in alignment at lines 17--24
+Overfull \hbox (20.91736pt too wide) in alignment at lines 17--39
  [] [] 
  []
 
-)
+
+Overfull \hbox (20.91736pt too wide) in alignment at lines 39--42
+ [] [] 
+ []
+
 1: section
 [39
 
 
 
-] [40]
+]) [40] [41]
 \openout2 = `Chapters/Chapter10.aux'.
 
- (Chapters/Chapter10.tex
-Chapter 10.
-)
-1: section
-[41
+ (Chapters/Chapter10.tex [42
 
 
 
 ]
+Chapter 10.
+)
+1: section
+[43]
 \openout2 = `Chapters/Chapter11.aux'.
 
- (Chapters/Chapter11.tex [42
+ (Chapters/Chapter11.tex [44
 
 
 
@@ -2293,10 +2297,10 @@ Chapter 10.
 Chapter 11.
 )
 1: section
-[43]
+[45]
 \openout2 = `Chapters/Chapter12.aux'.
 
- (Chapters/Chapter12.tex [44
+ (Chapters/Chapter12.tex [46
 
 
 
@@ -2304,10 +2308,10 @@ Chapter 11.
 Chapter 12.
 )
 1: section
-[45]
+[47]
 \openout2 = `Appendices/AppendixA.aux'.
 
- (Appendices/AppendixA.tex [46
+ (Appendices/AppendixA.tex [48
 
 
 
@@ -2318,14 +2322,14 @@ LaTeX Font Info:    Try loading font information for T1+pcr on input line 11.
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 ))
 1: section
-[47] [48]
+[49] [50]
 1: section
-[49
+[51
 
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 296.
- [50]
+ [52]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 296.
  (main.aux (Chapters/Chapter1.aux) (Chapters/Chapter2.aux)
 (Chapters/Chapter3.aux) (Chapters/Chapter4.aux) (Chapters/Chapter5.aux)
@@ -2341,10 +2345,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32559 strings out of 493334
- 651777 string characters out of 3145291
- 876052 words of memory out of 3000000
- 35464 multiletter control sequences out of 15000+200000
+ 32562 strings out of 493334
+ 651806 string characters out of 3145291
+ 876091 words of memory out of 3000000
+ 35465 multiletter control sequences out of 15000+200000
  47027 words of font info for 76 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,20n,77p,10379b,2310s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2353,9 +2357,9 @@ lic/amsfonts/cm/cmsy10.pfb><C:/TEX/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C
 :/TEX/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/TEX/MiKTeX/fonts/type1/urw
 /palatino/uplr8a.pfb><C:/TEX/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/TEX
 /MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (70 pages, 1277396 bytes).
+Output written on main.pdf (72 pages, 1281263 bytes).
 PDF statistics:
- 916 PDF objects out of 1000 (max. 8388607)
- 199 named destinations out of 1000 (max. 500000)
+ 926 PDF objects out of 1000 (max. 8388607)
+ 201 named destinations out of 1000 (max. 500000)
  691 words of extra memory for PDF output out of 10000 (max. 10000000)
 
