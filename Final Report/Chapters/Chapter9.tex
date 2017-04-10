@@ -12,10 +12,10 @@ This section gives details of the implementation phase of the project, including
 %----------------------------------------------------------------------------------------
 
 \section{Code Structure}
-The system is implemented in two parts; a collection of C++ source and header files which make up the main application, and a smaller collection of C++ source and header files which handle the robot-side portion of the system. In addition to the source files the main application also contains a number of other files which are used by the Qt system to define the user interface and manage the build process. Table \ref{tab:CodeFiles} details the names and purposes of all files.
+The system is implemented in two parts; a collection of C++ source and header files which make up the main application, and a smaller collection of C++ source and header files which handle the robot-side portion of the system. In addition to the source files the main application also contains a number of other files which are used by the Qt system to define the user interface and manage the build process. Table \ref{tab:CodeFiles} details the names and purposes of all files within the main application. Table \ref{tab:RobotCodeFiles} details the files that make up the robot side API.
 
 \begin{longtable}{ l p{10cm} }
-\caption[Code Files]{The name and purpose of the different code files that make up the application.}\\
+\caption[Application Code Files]{Source code and tertiary files that make up the main application.}\\
  File & Purpose\\ 
  \hline
  main.cpp & The entry point for the application. Instantiates the MainWindow class.\\
@@ -41,6 +41,16 @@ The system is implemented in two parts; a collection of C++ source and header fi
  \label{tab:CodeFiles}
 \end{longtable}
 
+\begin{longtable}{ l p{10cm} }
+\caption[Robot-side Code Files]{Source code files that make up the robot side API.}\\
+ File & Purpose\\
+ \hline
+ debug\_network.cpp & This file encapsulates networking functionality for communicating with the debugging system. Contains routines for sending data of specific types, as well as for sending raw packets.\\
+ debug\_network.h & Header file for the debugging system network interface. Also contains definitions for data type identifiers.\\
+ \bottomrule\\
+	
+ \label{tab:RobotCodeFiles}
+\end{longtable}
 
 %----------------------------------------------------------------------------------------
 
@@ -55,7 +65,7 @@ The system is implemented in two parts; a collection of C++ source and header fi
 %----------------------------------------------------------------------------------------
 
 \section{Data Transfer Formats}
-
+In order to retrieve data from the robots in a usable fashion a common format for exchanging data needed to be defined, and used by both ends of the communication link. A number of different options were considered for achieving this, ranging from super-lightweight custom packets using the minimum number of bytes to established existing solutions such as the JSON data interchange standard.
 
 %----------------------------------------------------------------------------------------
 
