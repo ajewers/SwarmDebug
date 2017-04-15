@@ -1,0 +1,142 @@
+1: Title Slide
+  - Good afternoon; name; title;
+  - Start background swarm robotics
+  
+2: Introduction - SR
+  - New
+  - Multi-robot-system
+  - General concept
+  - Dstinguishing feature
+  - Individual behaviour
+  - Emergent result
+  - Social insects
+  - Decreasing cost
+  - Unique challenge; many robots; no central point
+  
+3: Introduction - Debugging Tools
+  - When programming robotic
+  - Real world
+  - More inputs
+  - Continuous
+  - Impossible to rep. faults
+  - Noise bugs
+  - Problem amplified
+  - Traditional debugging text based
+  - New tools
+  
+4: Introduction - Augmented Reality
+  - AR techologies emerging
+  - Augmeneted space combines
+  - Humans understand 3D
+  - Robots undersand digital augments
+  - Allowing to share broaden comms
+  
+5: Introduction - Project Concept
+  - Considering three topics; aims
+  - Live video feed
+  - Wireless data
+  - Combine in AR fashion
+  - Improve human debugging of SR
+  
+6: Background - Hardware (Robot)
+  - Hardware elements
+  - Practical work YRL
+  - Target robot EPuck
+  - Widely used small educational
+  - Linux extension board
+  - Linux high level control
+  
+7: Background - Hardware (Camera)
+  - Infrastructure arena + camera
+  - Project incorporates this existing hardware
+  - Uses ARuCo to track + do overlays
+  
+8: Background - Hardware (ARuCo)
+  - Marker examples
+  - Mounting
+  
+9: Design - System Architecture
+  - Diagram shows general system architecture
+  - Robots (green) communicate WiFi
+  - Camera sends video
+  - Application (blue) back end combines
+  - Presents to user in GUI
+  
+10: Design - Software Architecture
+  - MVC
+  - Model stores
+  - View displays + handles input
+  - Controller in between; all data processing
+  - Receives robot data and camera feed
+  - Updates data model and redraws UI
+  - Application is threaded
+  - Three key threads
+  - Overall design; modular, OOP, extensible
+  
+11: Design - UI
+  - Part of the design processing
+  - Basic layout here
+  - Three main panels with extra tabs
+  - Blue visualiser shows video + tabs settings
+  - Green robot list
+  - Yellow details tabs for data types
+  
+12: Design - UI Image
+  - Translated
+  - Qt
+  - Open CV
+  
+13: Progress - Application
+  - Implemented in C++; 
+  - low level control; performance; native Qt/CV API
+  - Existing YRL code
+  - Core features all implemented; robot tracking, video augmentation
+  
+14: Progress - Application (2)
+  - Data display
+  - IR data
+
+15: Progress - Application (3)
+  - State transition
+  - Custom user data
+  - Back end code complete
+  - Data model and data receive
+  
+16: Progress - Robot Code
+  - On robot side single class API
+  - Handles basic networking
+  - Implemented in C++
+  - Designed platform agnostic, portable
+  
+17: Future Work - Remaining Features
+  - Look into additional data types to support
+  - Accelerometer
+  - Battery level
+  - Develop overlays
+  - More user configuration
+  - Data logging
+
+18: Future Work - Testing and Evaulation strategy
+  - Portion of remaining work
+  - Manual UI testing
+  - Unit test data model
+  - Holistic verification testing
+  - Evaluation through observed user trials
+  - User monitors swarm, tries to identify an issue
+  - Survey of experience
+  
+19: Future Work - Potential Future Development
+  - Initial survey showed interest
+  - Potential to develop into a full SR platform
+  - Extra features
+  - Extended to support more robot platforms
+  - Bluetooth as well as wifi
+  - Port to real AR platform; hololens
+  - More immersive interaction
+ 
+ 20: Conclusion
+  - Tackle SR problems with graphical real time tool
+  - Modular extensible design
+  - Implementation nearly complete
+  - Potential for future development
+  - Hopefully useful within the YRL and wider SR field
