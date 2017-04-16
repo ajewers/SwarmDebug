@@ -74,7 +74,7 @@
   - Overall design; modular, OOP, extensible
   
 11: Design - UI
-  - Part of the design processing
+  - Part of the design process
   - Basic layout here
   - Three main panels with extra tabs
   - Blue visualiser shows video + tabs settings
