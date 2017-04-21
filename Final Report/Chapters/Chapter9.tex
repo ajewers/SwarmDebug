@@ -73,6 +73,8 @@ The code relating to retrieving images from the machine vision camera and runnin
 
 The \textit{MachineVision} class handles the lower level operations related to the camera and the tracking system, including setting up the camera driver, retrieving and resizing individual images from the camera and running the ARuCo tag detection algorithm. For each tag detected in the image the ARuCo algorithm returns the pixel coordinates of the four corners of the tag. The \textit{MachineVision} class includes code to average out these four coordinates to get a center point, and then convert this pixel coordinate to a 'proportional' coordinate; two numbers between 0 and 1 which represent the horizontal and vertical components of the position as a proportion of the full height and width of the image respectively. This ensures that the robot positions can still be correctly displayed after the image has been resized, without having to maintain information related to the resizing operation.
 
+[TALK ABOUT ARUCO]
+
 %----------------------------------------------------------------------------------------
 
 \section{Networking}
@@ -191,7 +193,11 @@ As well as this data the class also maintains a list of recent state transitions
 %----------------------------------------------------------------------------------------
 
 \section{Visualiser}
+The 'visualiser' is the name given to the custom user interface component that renders the augmented video feed. Implementing this component was key to satisfying the portion of the project aims related to augmented reality, and it forms one of the most visible elements of the system. The main visualiser component is defined in the \textit{Visualiser} class (\textit{visualiser.cpp / .h}), and a number of extra classes are used to define the associated settings and routines for visualising specific data types (\textit{VisConfig, VisID, VisName, VisState, VisPosition, VisDirection, VisProximity, VisPath}). Section \ref{VideoFeedAndTrackingSystem} describes the process of retrieving images from the camera and tracking the robots. The image data then arrives at the visualiser via a Qt slot function. At this stage the image is augmented based on the data in the data model, by iterating over the list of robots, and for each one iterating over the list of data visualisations, calling the render function for each. These render functions take the image and the current robot's data as arguments, and then add the relevant graphical representation to the image using the drawing functions within the OpenCV image processing library.
 
+It was decided that an individual class would be implemented for each type of data visualisation, derived from the abstract class \textit{VisElement}. The aim was to make the visualisation process simpler to manage, and to follow object oriented practices, making it easier for new visualisation types to be added without modifying the underlying system. This also allows each data visualisation object to maintain its own settings, so that the visualiser component itself need not be aware of the details of the configuration of each data visualisation element. Instead each data visualisation element simply checks it's own configuration when it's render function is called.
+
+The rest of the code in the \textit{Visualiser} class relates to embedding the OpenCV image within a Qt UI widget, and tertiary functionality such as detecting clicks within the image frame, and retrieving the frame's size. The OpenCV to Qt image conversion is done by instantiating a QImage instance directly from the internal pixel data of the OpenCv image. This QImage is then drawn onto the widget. 
 
 %----------------------------------------------------------------------------------------
 

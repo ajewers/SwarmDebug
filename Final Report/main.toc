@@ -56,7 +56,7 @@
 \contentsline {section}{\numberline {9.4}Networking}{43}{section.90}
 \contentsline {section}{\numberline {9.5}Data Transfer Format}{44}{section.94}
 \contentsline {section}{\numberline {9.6}Data Model}{46}{section.97}
-\contentsline {section}{\numberline {9.7}Visualiser}{48}{section.99}
+\contentsline {section}{\numberline {9.7}Visualiser}{47}{section.99}
 \contentsline {section}{\numberline {9.8}User Interface}{48}{section.100}
 \contentsline {section}{\numberline {9.9}Robot Code}{48}{section.101}
 \contentsline {chapter}{\numberline {10}Testing and Evaluation}{49}{chapter.102}
