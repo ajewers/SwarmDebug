@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2017.4.10)  10 APR 2017 11:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2017.4.21)  21 APR 2017 09:25
 entering extended mode
 **./main.tex
 (main.tex
@@ -2162,11 +2162,11 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
 
  (Chapters/Chapter5.tex
 Chapter 5.
-<Figures/EPuck.png, id=704, 401.5pt x 301.125pt>
+<Figures/EPuck.png, id=704, 459.21562pt x 410.2828pt>
 File: Figures/EPuck.png Graphic file (type png)
  <use Figures/EPuck.png>
 Package pdftex.def Info: Figures/EPuck.png used on input line 14.
-(pdftex.def)             Requested size: 240.90184pt x 180.67638pt.
+(pdftex.def)             Requested size: 275.5315pt x 246.17157pt.
 
 1: section
 [21
@@ -2174,23 +2174,19 @@ Package pdftex.def Info: Figures/EPuck.png used on input line 14.
 
 
 ] [22 <./Figures/EPuck.png>]
-<Figures/EPuckIRSensors.png, id=716, 602.25pt x 602.25pt>
+<Figures/EPuckIRSensors.png, id=717, 602.25pt x 602.25pt>
 File: Figures/EPuckIRSensors.png Graphic file (type png)
 
 <use Figures/EPuckIRSensors.png>
 Package pdftex.def Info: Figures/EPuckIRSensors.png used on input line 41.
 (pdftex.def)             Requested size: 240.89572pt x 240.89572pt.
-) [23 <./Figures/EPuckIRSensors.png>]
+ [23 <./Figures/EPuckIRSensors.png>]) [24]
 \openout2 = `Chapters/Chapter6.aux'.
 
 
-(Chapters/Chapter6.tex [24
-
-
-
-]
+(Chapters/Chapter6.tex
 Chapter 6.
-<Figures/CameraLayout.png, id=731, 1052.43187pt x 830.35219pt>
+<Figures/CameraLayout.png, id=732, 1052.43187pt x 830.35219pt>
 File: Figures/CameraLayout.png Graphic file (type png)
 
 <use Figures/CameraLayout.png>
@@ -2198,7 +2194,11 @@ Package pdftex.def Info: Figures/CameraLayout.png used on input line 14.
 (pdftex.def)             Requested size: 315.732pt x 249.10757pt.
 
 1: section
-[25]) [26 <./Figures/CameraLayout.png>]
+[25
+
+
+
+]) [26 <./Figures/CameraLayout.png>]
 \openout2 = `Chapters/Chapter7.aux'.
 
  (Chapters/Chapter7.tex
@@ -2224,7 +2224,7 @@ Overfull \hbox (16.6094pt too wide) in paragraph at lines 72--73
 ]
 Chapter 8.
 1: section
-[33] [34] <Figures/SoftwareArchitecture.png, id=778, 605.1408pt x 415.5525pt>
+[33] [34] <Figures/SoftwareArchitecture.png, id=779, 605.1408pt x 415.5525pt>
 File: Figures/SoftwareArchitecture.png Graphic file (type png)
 
 <use Figures/SoftwareArchitecture.png>
@@ -2237,14 +2237,14 @@ Overfull \hbox (19.56657pt too wide) in paragraph at lines 37--39
  []
 
 [35 <./Figures/SoftwareArchitecture.png>]
-<Figures/DataModel.png, id=786, 542.025pt x 280.4076pt>
+<Figures/DataModel.png, id=787, 542.025pt x 280.4076pt>
 File: Figures/DataModel.png Graphic file (type png)
 
 <use Figures/DataModel.png>
 Package pdftex.def Info: Figures/DataModel.png used on input line 48.
 (pdftex.def)             Requested size: 379.4149pt x 196.28397pt.
  [36 <./Figures/DataModel.png>]
-<Figures/UILayout.png, id=792, 433.62pt x 325.215pt>
+<Figures/UILayout.png, id=793, 433.62pt x 325.215pt>
 File: Figures/UILayout.png Graphic file (type png)
 
 <use Figures/UILayout.png>
@@ -2362,9 +2362,9 @@ lic/amsfonts/cm/cmsy10.pfb><C:/TEX/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C
 :/TEX/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/TEX/MiKTeX/fonts/type1/urw
 /palatino/uplr8a.pfb><C:/TEX/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/TEX
 /MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (72 pages, 1282340 bytes).
+Output written on main.pdf (72 pages, 1872914 bytes).
 PDF statistics:
- 929 PDF objects out of 1000 (max. 8388607)
+ 930 PDF objects out of 1000 (max. 8388607)
  202 named destinations out of 1000 (max. 500000)
  691 words of extra memory for PDF output out of 10000 (max. 10000000)
 
