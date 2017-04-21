@@ -40,7 +40,7 @@ Once separated into functional components, these components could be organised i
 	\label{fig:SoftwareArchitecture}
 \end{figure}
 
-\subsection{Data Model}
+\subsection{Data Model} \label{DataModelDesign}
 Figure \ref{fig:SoftwareArchitecture} also shows that the model layer contains the application settings and the data model. The data model itself was designed to be comprised of a number of smaller components. The primary function of the data model is to maintain a record of all the robots the system is aware of, and the most up to date data related to the state of each robot. As such the data model was designed to use a hierarchical structure. The larger data model object would maintain a collection of smaller objects, each containing the data related to a single robot. These would in turn maintain a collection of different data objects relating to the robot's state and sensor data. Figure \ref{fig:DataModel} illustrates this hierarchical data model design using the IR sensor data of a single robot as an example.
 
 \begin{figure}

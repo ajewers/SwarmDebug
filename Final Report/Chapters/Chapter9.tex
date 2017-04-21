@@ -93,16 +93,100 @@ Within the robot side API, the networking functionality is implemented in a very
 %----------------------------------------------------------------------------------------
 
 \section{Data Transfer Format} \label{DataTransferFormat}
-In order to retrieve data from the robots in a usable fashion a common format for exchanging data needed to be defined, and used by both ends of the communication link. A number of different options were considered for achieving this, ranging from super-lightweight custom packets using the minimum number of bytes to established existing solutions such as the JSON data interchange standard. The primary concerns when making this decision were a desire to minimise any overhead in terms of extra code needed on the robot side, as the robots have limited memory, and to ensure the format remained as simple as possible, so that future extensions to the system, such as implementations for other robots, could be programmed with relative ease. It was ultimately decided not to use JSON, to avoid the need for any additional code libraries to be stored in the robot's memory, and to instead use a custom simple string-based packet format. All data to be transmitted from the robot to the application is therefore converted to a simple string which is then transmitted in the data packet. As well as containing the data, the string must identify the robot and describe the type of data within. The format for these strings was defined as
+In order to retrieve data from the robots in a usable fashion a common format for exchanging data needed to be defined, and used by both ends of the communication link. A number of different options were considered for achieving this, ranging from super-lightweight custom packets using the minimum number of bytes to established existing solutions such as the JSON data interchange standard. The primary concerns when making this decision were a desire to minimise any overhead in terms of extra code needed on the robot side, as the robots have limited memory, and to ensure the format remained as simple as possible, so that future extensions to the system, such as implementations for other robots, could be programmed with relative ease. It was ultimately decided not to use JSON, to avoid the need for any additional code libraries to be stored in the robot's memory, and to instead use a custom simple string-based packet format. All data to be transmitted from the robot to the application is therefore converted to a simple string which is then transmitted in the data packet. As well as containing the data, the string must identify the robot and describe the type of data within. The format for these strings is defined as three sections separated by space characters. The first section contains the numerical ID of the robot sending the packet. The second contains a number identifying the type of data contained in the packet. The last section contains the packet data, and has a variable format, depending on the packet's type. Figure \ref{fig:DataFormat} gives a visual representation of this format. Table \ref{tab:DataFormat} describes the purpose of each packet type, and describes the format of the `packet data' section for each.
 
-\begin{center}
-[ROBOT ID] [PACKET TYPE] [DATA]
-\end{center}
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.3]{Figures/DataFormat.png}
+	\decoRule
+	\caption[Data Format]{The general format for each data packet.}
+	\label{fig:DataFormat}
+\end{figure}
+
+\begin{longtable}{ l p{12cm} }
+\caption[Data Format]{The format of the data section and the purpose of each packet type.}\\
+ \hline
+ \multicolumn{2}{p{12cm}}{\textbf{Watchdog Packet}}\\
+ \hline
+ Type ID & 0 \\
+ Format & [ROBOT NAME]\\
+ Purpose & Sent periodically to inform the application that the robot is still active. Also contains the robot's name, as should be displayed in the application.\\
+ 
+ \hline
+ \multicolumn{2}{p{12cm}}{\textbf{State}}\\
+ \hline
+ Type ID & 1 \\
+ Format & [CURRENT STATE]\\
+ Purpose & Informs the application of the robots current state.\\
+ 
+ \hline
+ \multicolumn{2}{p{12cm}}{\textbf{Position}}\\
+ \hline
+ Type ID & 2 \\
+ Format & [X POSITION] \_ [Y POSITION] \_ [ANGLE]\\
+ Purpose & Provides the application with a robot's position and orientation. This data is not sent by the robot, but instead comes from the tracking code.\\
+ 
+ \hline
+ \multicolumn{2}{p{12cm}}{\textbf{IR}}\\
+ \hline
+ Type ID & 3 \\
+ Format & [SENSOR 1 DATA] [SENSOR 2 DATA] ... [SENSOR N DATA] \\
+ Purpose & Contains a robot's infra-red sensor readings. Each sensor value is separated by a space, and the packet can contain as many values as the robot has IR sensors. \\
+ 
+ \hline
+ \multicolumn{2}{p{12cm}}{\textbf{Background IR}}\\
+ \hline
+ Type ID & 4 \\
+ Format & [SENSOR 1 DATA] [SENSOR 2 DATA] ... [SENSOR N DATA]\\
+ Purpose & Contains a robot's background infra-red sensor readings. Formatted the same as the standard IR data packet.\\
+ 
+ \hline
+ \multicolumn{2}{p{12cm}}{\textbf{Message}}\\
+ \hline
+ Type ID & 5 \\
+ Format & [MESSAGE STRING]\\
+ Purpose & This packet allows any general message to be sent from the robot to the application, and will be displayed in the application console and recorded in the logs. \\
+ 
+ \hline
+ \multicolumn{2}{p{12cm}}{\textbf{Custom Data}}\\
+ \hline
+ Type ID & 6 \\
+ Format & [KEY] \_ [VALUE]\\
+ Purpose & Contains a piece of custom user data, in the form of a key value pair. \\
+	
+ \label{tab:DataFormat}
+\end{longtable}
 
 %----------------------------------------------------------------------------------------
 
 \section{Data Model}
+The purpose of the data model component is to store all the information related to the robots being tracked by the system in an ordered fashion. The data model is updated whenever new data arrives and consulted when rendering the user interface. Section \ref{DataModelDesign} describes the design of the data model and it's hierarchical structure. The implementation follows this design, with the \textit{DataModel} class contained in \textit{datamodel.cpp / .h} encapsulating the top level data model container, and the individual robot data object encapsulated in the \textit{RobotData} class in \textit{robotdata.cpp / .h}. 
 
+The \textit{DataModel} class uses a standard C++ vector to maintain a list of \textit{RobotData} objects, each describing a known robots. The list is sorted by robot ID after each new insertion. This class provides access to higher level functionality related to the data model, such as retrieving a robot's data given it's ID, as well as a function for entering new data into the model. This function is named \textit{newData} and takes the form of a slot within the Qt framework, allowing it to be called with data from other threads. New data received from the network is routed to this slot function, as well as position data obtained from the tracking camera. This function takes a single argument, which is a string in one of the packet formats described in section \ref{DataTransferFormat}. The process of adding new \textit{RobotData} objects to the list is handled automatically when new data arrives from a previously unknown robot.
+
+The \textit{RobotData} class encapsulates the data for a single robot. This includes a large number of individual data points, in a number of different formats. Table \ref{} describes these data points.
+
+\clearpage
+\begin{longtable}{ l l p{8cm} }
+\caption[Robot Data Contents]{The contents of the \textit{RobotData} class.}\\
+ \hline
+ Data Point & Type & Description\\
+ \hline\\
+ Robot ID & Integer & The numerical ID of the robot, used by the tracking system and when transmitting data.\\
+ Robot Name & String & The name associated with this robot. Set by the user when programming the robot, and reported in watchdog packets. \\
+ State & String & The current state of the robot. \\
+ Known States & List of strings & A list of all states the robot has previously reported. \\
+ Position & 2D Vector & The current position of the robot expressed as a proportional coordinate vector. \\
+ Angle & Integer & The current angle of the robot in degrees. \\
+ Colour & OpenCV Scalar & The colour used for this robot in the visualiser, if colours are enabled, expressed as an OpenCV Scalar struct in RGB format. \\
+ IR Data & Array of Integer & The most recent IR sensor readings for this robot. One value per sensor. \\
+ Background IR Data & Array of Integer & The most recent background IR sensor readings. One value per sensor. \\
+ Custom Data & Key Value Map & A map of custom data values. Stored as a map of key value pairs. \\
+ 
+ \label{tab:RobotDataContents}
+\end{longtable}
+
+As well as this data the class also maintains a list of recent state transitions, and a short term history of the robot's position. The state transition list uses a custom structure to store the state before the transition, the state after the transition, and the time the transition occurred. A fixed size array of these custom structures is maintained and updated each time a transition occurs. The position history is stored in a similar fashion, using a fixed size array of coordinate pairs, which is updated after a set interval of position values. This interval can be configured by the user, with a lower interval giving a higher resolution but a shorter history, and vice versa for a higher interval.
 
 %----------------------------------------------------------------------------------------
 
