@@ -9,9 +9,9 @@
 \section{Overview}
 This section gives details of the implementation phase of the project, including descriptions of how parts of the system function, information regarding the development process and explanations for some of the key decisions made regarding the implementation.
 
-The system was implemented closely following the design discussed in chapter \ref{Chapter8}, and is comprised of two parts; a full computer software application (referred to henceforth as `the application') and a collection of software classes and routines which form an `application programming interface' (API) and are designed to be included within the code a developer or researcher programs onto their robots. This API (referred to as the 'robot side code' or 'robot side API') presents the developer with functions to send data from the robot back to the application, and contains routines for handling the networking requirements to achieve this, and for correctly formatting the data. Both parts of the system implementation are fully independent. The application can be run on its own and receive data from another source, provided that this data correctly follows the format outlined in section \ref{DataTransferFormat}. The application is the much larger of the two system parts, and therefore will be the focus of the majority of this implementation chapter. 
+The system was implemented closely following the design discussed in chapter \ref{Chapter8}, and is comprised of two parts; a full computer software application (referred to henceforth as `the application') and a collection of software classes and routines which form an `application programming interface' (API) and are designed to be included within the code a developer or researcher programs onto their robots. This API (referred to as the 'robot side code' or 'robot side API') presents the developer with functions to send data from the robot back to the application, and contains routines for handling the networking requirements to achieve this, and for correctly formatting the data. Details of this robot side API are provided in section \ref{RobotSide}. Both parts of the system implementation are fully independent. The application can be run on its own and receive data from another source, provided that this data correctly follows the format outlined in section \ref{DataTransferFormat}. The application is the much larger of the two system parts, and therefore will be the focus of the majority of this implementation chapter.
 
-Figure \ref{fig:UI} shows the user interface for the application as it is seen at start-up, and can be compared to figure \ref{fig:UILayout} in chapter \ref{Chapter8} to relate it with the user interface design. The key features of the application can be seen in this image. This includes the video feed augmented with information about the three visible robots, including position, direction, ID number, and for the selected robot name and current state. The robot list panel is also visible on the right hand side, showing the IDs and names of the known robots, and which is currently selected. Finally the data panel can be seen at the bottom of the application, currently set to the overview tab, providing more detailed information about the selected robot.
+Figure \ref{fig:UI} shows the user interface for the application as it is seen at start-up, and can be compared to figure \ref{fig:UILayout} to see the relationship to the user interface design. The key features of the application can be seen in this image. This includes the video feed augmented with information about the three visible robots, including position, direction, ID number, and for the selected robot name and current state. The robot list panel is also visible on the right hand side, showing the IDs and names of the known robots, and which is currently selected. Finally the data panel can be seen at the bottom of the application, currently set to the overview tab, providing more detailed information about the selected robot.
 
 \begin{figure}
 	\centering
@@ -71,7 +71,7 @@ The code files for the system exist in two groups; a collection of C++ source an
 \section{Video Feed and Tracking System} \label{VideoFeedAndTrackingSystem}
 The code relating to retrieving images from the machine vision camera and running the ARuCo tag tracking algorithm can be found in the files \textit{cameracontroller.cpp / .h} and \textit{machinevision.cpp / .h}. This code is run on the separate camera thread, in order to maximise application performance and ensure responsiveness in the event that the camera driver blocks execution whilst retrieving the next frame. The \textit{CameraController} class handles the higher level operations such as running a timer to periodically poll the camera driver for the next image, supplying the driver with the correct dimensions for the image to be resized to in order to fit within the available space in the UI, and converting the image itself and the tracking data into formats which can be passed back to the main thread and used in the UI and data model respectively. The application threading is handled through the use of the Qt framework's \textit{QThread} API, and communication between threads utilises the framework's `\textit{signals} and \textit{slots}' feature, which allows components on different threads to send and receive data in a managed, thread-safe manner. The \textit{CameraController} class therefore utilises two signals; one for emitting the camera image data, and another for emitting the robot position data. At initialisation time the application's core class, \textit{MainWindow}, connects these signals to matching slots within the \textit{Visualiser} and \textit{DataModel} classes respectively.
 
-The \textit{MachineVision} class handles the lower level operations related to the camera and the tracking system, including setting up the camera driver, retrieving and resizing individual images from the camera and running the ARuCo tag detection algorithm. For each tag detected in the image the ARuCo algorithm returns the pixel coordinates of the four corners of the tag. The \textit{MachineVision} class includes code to average out these four coordinates to get a center point, and then convert this pixel coordinate to a 'proportional' coordinate; two numbers between 0 and 1 which represent the horizontal and vertical components of the position as a proportion of the full height and width of the image respectively. This ensures that the robot positions can still be correctly displayed after the image has been resized, without having to maintain information related to the resizing operation.
+The \textit{MachineVision} class handles the lower level operations related to the camera and the tracking system, including setting up the camera driver, retrieving and resizing individual images from the camera and running the ARuCo tag detection algorithm. The ARuCo software is included as an additional component of the OpenCV image processing library, and provides the function `\textit{aruco::detectMarkers}' which will run the algorithm on a given OpenCV image. For each tag detected in the image the ARuCo algorithm returns the pixel coordinates of the four corners of the tag. The \textit{MachineVision} class includes code to average out these four coordinates to get a center point, and then convert this pixel coordinate to a 'proportional' coordinate; two numbers between 0 and 1 which represent the horizontal and vertical components of the position as a proportion of the full height and width of the image respectively. This ensures that the robot positions can still be correctly displayed after the image has been resized, without having to maintain information related to the resizing operation.
 
 [TALK ABOUT ARUCO]
 
@@ -132,14 +132,14 @@ In order to retrieve data from the robots in a usable fashion a common format fo
  \multicolumn{2}{p{12cm}}{\textbf{IR}}\\
  \hline
  Type ID & 3 \\
- Format & [SENSOR 1 DATA] [SENSOR 2 DATA] ... [SENSOR N DATA] \\
+ Format & [SENSOR 1 DATA] \_ [SENSOR 2 DATA] \_ ... [SENSOR N DATA] \\
  Purpose & Contains a robot's infra-red sensor readings. Each sensor value is separated by a space, and the packet can contain as many values as the robot has IR sensors. \\
  
  \hline
  \multicolumn{2}{p{12cm}}{\textbf{Background IR}}\\
  \hline
  Type ID & 4 \\
- Format & [SENSOR 1 DATA] [SENSOR 2 DATA] ... [SENSOR N DATA]\\
+ Format & [SENSOR 1 DATA] \_ [SENSOR 2 DATA] \_ ... [SENSOR N DATA] \\
  Purpose & Contains a robot's background infra-red sensor readings. Formatted the same as the standard IR data packet.\\
  
  \hline
@@ -183,12 +183,12 @@ The \textit{RobotData} class encapsulates the data for a single robot. This incl
  Colour & OpenCV Scalar & The colour used for this robot in the visualiser, if colours are enabled, expressed as an OpenCV Scalar struct in RGB format. \\
  IR Data & Array of Integer & The most recent IR sensor readings for this robot. One value per sensor. \\
  Background IR Data & Array of Integer & The most recent background IR sensor readings. One value per sensor. \\
- Custom Data & Key Value Map & A map of custom data values. Stored as a map of key value pairs. \\
+ Custom Data & Key Value Map & All custom user data. Stored as a map of key value pairs. \\
  
  \label{tab:RobotDataContents}
 \end{longtable}
 
-As well as this data the class also maintains a list of recent state transitions, and a short term history of the robot's position. The state transition list uses a custom structure to store the state before the transition, the state after the transition, and the time the transition occurred. A fixed size array of these custom structures is maintained and updated each time a transition occurs. The position history is stored in a similar fashion, using a fixed size array of coordinate pairs, which is updated after a set interval of position values. This interval can be configured by the user, with a lower interval giving a higher resolution but a shorter history, and vice versa for a higher interval.
+In addition to this data, the class also maintains a list of recent state transitions, and a short term history of the robot's position. The state transition list uses a custom structure to store the state before the transition, the state after the transition, and the time the transition occurred. A fixed size array of these custom structures is maintained and updated each time a state transition occurs, acting as a first-in first-out (FIFO) queue. The position history is stored in a similar fashion, using a fixed size array of coordinate pairs, which is updated every Nth position update. This interval can be configured by the user, with a lower interval giving a higher resolution but a shorter history, and vice versa for a higher interval.
 
 %----------------------------------------------------------------------------------------
 
@@ -197,16 +197,54 @@ The 'visualiser' is the name given to the custom user interface component that r
 
 It was decided that an individual class would be implemented for each type of data visualisation, derived from the abstract class \textit{VisElement}. The aim was to make the visualisation process simpler to manage, and to follow object oriented practices, making it easier for new visualisation types to be added without modifying the underlying system. This also allows each data visualisation object to maintain its own settings, so that the visualiser component itself need not be aware of the details of the configuration of each data visualisation element. Instead each data visualisation element simply checks it's own configuration when it's render function is called.
 
-The rest of the code in the \textit{Visualiser} class relates to embedding the OpenCV image within a Qt UI widget, and tertiary functionality such as detecting clicks within the image frame, and retrieving the frame's size. The OpenCV to Qt image conversion is done by instantiating a QImage instance directly from the internal pixel data of the OpenCv image. This QImage is then drawn onto the widget. 
+The rest of the code in the \textit{Visualiser} class relates to embedding the OpenCV image within a Qt UI widget, and tertiary functionality such as detecting clicks within the image frame, and retrieving the frame's size. The OpenCV to Qt image conversion is done by instantiating a QImage instance directly from the internal pixel data of the OpenCv image. This QImage is then drawn onto the widget.
+
+\subsection{Data Visualisations}
+[DESCRIBE EACH VISUALISER ELEMENT]
+[SCREENSHOTS FOR EACH]
 
 %----------------------------------------------------------------------------------------
 
 \section{User Interface}
+The user interface has been implemented using the Qt GUI framework. The layout for the interface is defined in \textit{mainwindow.ui}, a file generated by the Qt interface designer application to describe the structure and layout of the interface components in an XML based format. The Qt framework uses a standard event-driven interface paradigm, where events are generated when the user interacts with the interface, and code is used to define specific routines to execute in response to relevant events. The routines for handling interface events can be found in \textit{mainwindow.cpp / .h}, and are usually prefixed with the term `\textit{on\_}'. For example, the function `\textit{on\_actionExit\_triggered}' is called when the `Exit' action is selected from the menu, and instructs the application to close.
 
+[INDIVIDUAL UI ELEMENTS w/ SCREENSHOTS]
+
+In addition to the main user interface, a number of extra `dialog' windows are used to provide the user with access to the settings of each visualisation element, if settings are available. These dialog windows are defined in the files  \textit{idsettingsdialog.cpp / .h, pathsettingsdialog.cpp / .h} and \textit{proximitysettingsdialog.cpp / .h}. Dialog windows are a commonly used tool within application programming. They act as pop-up windows which usually require the user to either confirm or cancel some change. In this case the dialog windows present controls for changing specific visualisation settings, and the user can then either apply their changes or cancel them using the standard accept/reject buttons at the bottom of the window.
 
 %----------------------------------------------------------------------------------------
 
-\section{Robot Code}
+\section{Robot Side API} \label{RobotSide}
+The robot side API is defined in `\textit{debug\_network.cpp / .h}' as a single class, \textit{DebugNetwork}. The contents of the \textit{DebugNetwork} class are described in table \ref{tab:RobotAPI}.
 
+\begin{longtable}{ l l p{8cm} }
+\caption[Robot API]{The contents of the \textit{DebugNetwork} class the forms the robot side API.}\\
+ \hline
+ \multicolumn{3}{l}{\textbf{Variables}} \\
+ \hline
+ Name & Type & Purpose\\
+ \hline\\
+ socket\_ready & Boolean & Indicates whether the socket has been created successfully, and it ready to be used.\\
+ sock\_in & Struct & A structure defining the target socket.\\
+ sock\_fd & Integer & Identifies the socket on the local machine (robot).\\
+ robot\_id & Integer & The numerical ID of this robot. Set at initialisation time. Inserted to the header of each packet to identify the sender.\\
+ \hline
+ \multicolumn{3}{l}{\textbf{Functions}} \\
+ \hline
+ Name & Return Type & Purpose\\
+ \hline\\
+ init & Void & Initialises the class by setting up the socket and setting the ID for this robot. Requires a port number, a target host IP address and the robot ID as arguments. \\
+ destroy & Void & Shuts down the socket. \\
+ sendData & Void & Sends a given string as a raw data packet. \\
+ sendWatchdogPacket & Void & Constructs and sends a watchdog packet. Requires the robot name to be provided as an argument. \\
+ sendStatePacket & Void & Constructs and sends a state packet. Requires the current state to be provided as an argument string. \\
+ sendIRDataPacket & Void & Constructs and sends an IR data packet. Requires the data be arranged into an array, and takes a pointer to the first element and a size value as parameters. Also takes an extra boolean parameter which can be set to true to indicate that this packet should be identified as backgroud IR data.\\
+ sendLogMessage & Void & Constructs and sends a message packet to display a message in the application console and logs. The message string is supplied as an argument.\\
+ sendCustomData & Void & Constructs and sends a custom data packet. The key value pair are supplied to this function as two argument strings.\\
+ getRobotID & Integer & Returns the numerical robot ID, as currently set. \\
+ setRobotID & Void & Sets the numerical robot ID based on an integer argument. \\
+ 
+ \label{tab:RobotAPI}
+\end{longtable}
 
 %----------------------------------------------------------------------------------------
