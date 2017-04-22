@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2017.4.22)  22 APR 2017 15:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2017.4.22)  22 APR 2017 15:37
 entering extended mode
 **./main.tex
 (main.tex
@@ -2412,15 +2412,9 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 296.
 (Chapters/Chapter12.aux) (Appendices/AppendixA.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 296.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 296.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 1B5FCB667A53706FEB244F095E054FE1;12237.
 
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: DFB86662F276AB5D323972DA47F03233;12237
-(rerunfilecheck)             After:  1B5FCB667A53706FEB244F095E054FE1;12237.
 
 LaTeX Warning: There were undefined references.
 
@@ -2441,7 +2435,7 @@ lic/amsfonts/cm/cmsy10.pfb><C:/TEX/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C
 :/TEX/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/TEX/MiKTeX/fonts/type1/urw
 /palatino/uplr8a.pfb><C:/TEX/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/TEX
 /MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (84 pages, 2390590 bytes).
+Output written on main.pdf (84 pages, 2391054 bytes).
 PDF statistics:
  1036 PDF objects out of 1200 (max. 8388607)
  231 named destinations out of 1000 (max. 500000)
