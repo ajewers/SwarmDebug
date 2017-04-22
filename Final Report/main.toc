@@ -56,29 +56,30 @@
 \contentsline {section}{\numberline {9.4}Networking}{43}{section.90}
 \contentsline {section}{\numberline {9.5}Data Transfer Format}{44}{section.94}
 \contentsline {section}{\numberline {9.6}Data Model}{46}{section.97}
-\contentsline {section}{\numberline {9.7}Visualiser}{47}{section.99}
-\contentsline {subsection}{\numberline {9.7.1}Data Visualisations}{48}{subsection.100}
-\contentsline {section}{\numberline {9.8}User Interface}{48}{section.101}
-\contentsline {section}{\numberline {9.9}Robot Side API}{49}{section.102}
-\contentsline {chapter}{\numberline {10}Testing and Evaluation}{51}{chapter.104}
-\contentsline {section}{\numberline {10.1}Overview}{51}{section.105}
-\contentsline {section}{\numberline {10.2}Continuous Integration Testing}{51}{section.106}
-\contentsline {section}{\numberline {10.3}Validation Testing}{51}{section.107}
-\contentsline {section}{\numberline {10.4}User Evaluation}{51}{section.108}
-\contentsline {subsection}{\numberline {10.4.1}Method}{51}{subsection.109}
-\contentsline {subsection}{\numberline {10.4.2}Results}{51}{subsection.110}
-\contentsline {subsection}{\numberline {10.4.3}Analysis}{51}{subsection.111}
-\contentsline {chapter}{\numberline {11}Future Work}{53}{chapter.112}
-\contentsline {section}{\numberline {11.1}Use within the York Robotics Laboratory}{53}{section.113}
-\contentsline {section}{\numberline {11.2}Platform Development}{53}{section.114}
-\contentsline {section}{\numberline {11.3}Integration with Tablet Application}{53}{section.115}
-\contentsline {section}{\numberline {11.4}Integration with ARGoS Simulator}{53}{section.116}
-\contentsline {section}{\numberline {11.5}Integration with Augmented Reality Hardware}{53}{section.117}
-\contentsline {chapter}{\numberline {12}Conclusion}{55}{chapter.118}
-\contentsline {section}{\numberline {12.1}Overview}{55}{section.119}
-\contentsline {section}{\numberline {12.2}Evaluation Against Aims and Objectives}{55}{section.120}
-\contentsline {section}{\numberline {12.3}Value Within the York Robotics Laboratory}{55}{section.121}
-\contentsline {section}{\numberline {12.4}Value Within the Swarm Robotics Space}{55}{section.122}
-\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{57}{appendix.123}
-\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{57}{section.124}
-\contentsline {chapter}{Bibliography}{59}{appendix*.125}
+\contentsline {section}{\numberline {9.7}User Interface}{48}{section.99}
+\contentsline {section}{\numberline {9.8}Visualiser}{48}{section.100}
+\contentsline {subsection}{\numberline {9.8.1}Data Visualisations}{49}{subsection.101}
+\contentsline {section}{\numberline {9.9}Robot Side API}{50}{section.109}
+\contentsline {chapter}{\numberline {10}Testing and Evaluation}{53}{chapter.111}
+\contentsline {section}{\numberline {10.1}Overview}{53}{section.112}
+\contentsline {section}{\numberline {10.2}Continuous Integration Testing}{53}{section.113}
+\contentsline {section}{\numberline {10.3}Validation Testing}{53}{section.114}
+\contentsline {section}{\numberline {10.4}User Evaluation}{53}{section.115}
+\contentsline {subsection}{\numberline {10.4.1}Method}{53}{subsection.116}
+\contentsline {subsection}{\numberline {10.4.2}Results}{53}{subsection.117}
+\contentsline {subsection}{\numberline {10.4.3}Analysis}{53}{subsection.118}
+\contentsline {chapter}{\numberline {11}Future Work}{55}{chapter.119}
+\contentsline {section}{\numberline {11.1}Additional Debugging Features}{55}{section.120}
+\contentsline {section}{\numberline {11.2}Platform Development}{55}{section.121}
+\contentsline {section}{\numberline {11.3}Expansion of Target Platforms}{56}{section.122}
+\contentsline {section}{\numberline {11.4}Integration with Augmented Reality Hardware}{57}{section.123}
+\contentsline {section}{\numberline {11.5}Use within the York Robotics Laboratory}{57}{section.124}
+\contentsline {section}{\numberline {11.6}Integration with Tablet Application}{57}{section.125}
+\contentsline {chapter}{\numberline {12}Conclusion}{59}{chapter.126}
+\contentsline {section}{\numberline {12.1}Overview}{59}{section.127}
+\contentsline {section}{\numberline {12.2}Evaluation Against Aims and Objectives}{59}{section.128}
+\contentsline {section}{\numberline {12.3}Value Within the York Robotics Laboratory}{59}{section.129}
+\contentsline {section}{\numberline {12.4}Value Within the Swarm Robotics Space}{59}{section.130}
+\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{61}{appendix.131}
+\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{61}{section.132}
+\contentsline {chapter}{Bibliography}{63}{appendix*.133}

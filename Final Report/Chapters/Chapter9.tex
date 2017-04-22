@@ -71,9 +71,9 @@ The code files for the system exist in two groups; a collection of C++ source an
 \section{Video Feed and Tracking System} \label{VideoFeedAndTrackingSystem}
 The code relating to retrieving images from the machine vision camera and running the ARuCo tag tracking algorithm can be found in the files \textit{cameracontroller.cpp / .h} and \textit{machinevision.cpp / .h}. This code is run on the separate camera thread, in order to maximise application performance and ensure responsiveness in the event that the camera driver blocks execution whilst retrieving the next frame. The \textit{CameraController} class handles the higher level operations such as running a timer to periodically poll the camera driver for the next image, supplying the driver with the correct dimensions for the image to be resized to in order to fit within the available space in the UI, and converting the image itself and the tracking data into formats which can be passed back to the main thread and used in the UI and data model respectively. The application threading is handled through the use of the Qt framework's \textit{QThread} API, and communication between threads utilises the framework's `\textit{signals} and \textit{slots}' feature, which allows components on different threads to send and receive data in a managed, thread-safe manner. The \textit{CameraController} class therefore utilises two signals; one for emitting the camera image data, and another for emitting the robot position data. At initialisation time the application's core class, \textit{MainWindow}, connects these signals to matching slots within the \textit{Visualiser} and \textit{DataModel} classes respectively.
 
-The \textit{MachineVision} class handles the lower level operations related to the camera and the tracking system, including setting up the camera driver, retrieving and resizing individual images from the camera and running the ARuCo tag detection algorithm. The ARuCo software is included as an additional component of the OpenCV image processing library, and provides the function `\textit{aruco::detectMarkers}' which will run the algorithm on a given OpenCV image. For each tag detected in the image the ARuCo algorithm returns the pixel coordinates of the four corners of the tag. The \textit{MachineVision} class includes code to average out these four coordinates to get a center point, and then convert this pixel coordinate to a 'proportional' coordinate; two numbers between 0 and 1 which represent the horizontal and vertical components of the position as a proportion of the full height and width of the image respectively. This ensures that the robot positions can still be correctly displayed after the image has been resized, without having to maintain information related to the resizing operation.
+The \textit{MachineVision} class handles the lower level operations related to the camera and the tracking system, including setting up the camera driver, retrieving and resizing individual images from the camera and running the ARuCo tag detection algorithm. The ARuCo software is included as an additional component of the OpenCV image processing library, and provides the function `\textit{aruco::detectMarkers}' which will run the tag detection algorithm on a given OpenCV image. For each tag detected in the image the ARuCo algorithm returns the pixel coordinates of the four corners of the tag. The \textit{MachineVision} class includes code to average out these four coordinates to get a center point, and then convert this pixel coordinate to a 'proportional' coordinate; two numbers between 0 and 1 which represent the horizontal and vertical components of the position as a proportion of the full height and width of the image respectively. This ensures that the robot positions can still be correctly displayed after the image has been resized, without having to maintain information related to the resizing operation.
 
-[TALK ABOUT ARUCO]
+[TALK ABOUT ARUCO?]
 
 %----------------------------------------------------------------------------------------
 
@@ -161,14 +161,13 @@ In order to retrieve data from the robots in a usable fashion a common format fo
 
 %----------------------------------------------------------------------------------------
 
-\section{Data Model}
+\section{Data Model} \label{DataModel}
 The purpose of the data model component is to store all the information related to the robots being tracked by the system in an ordered fashion. The data model is updated whenever new data arrives and consulted when rendering the user interface. Section \ref{DataModelDesign} describes the design of the data model and it's hierarchical structure. The implementation follows this design, with the \textit{DataModel} class contained in \textit{datamodel.cpp / .h} encapsulating the top level data model container, and the individual robot data object encapsulated in the \textit{RobotData} class in \textit{robotdata.cpp / .h}. 
 
 The \textit{DataModel} class uses a standard C++ vector to maintain a list of \textit{RobotData} objects, each describing a known robots. The list is sorted by robot ID after each new insertion. This class provides access to higher level functionality related to the data model, such as retrieving a robot's data given it's ID, as well as a function for entering new data into the model. This function is named \textit{newData} and takes the form of a slot within the Qt framework, allowing it to be called with data from other threads. New data received from the network is routed to this slot function, as well as position data obtained from the tracking camera. This function takes a single argument, which is a string in one of the packet formats described in section \ref{DataTransferFormat}. The process of adding new \textit{RobotData} objects to the list is handled automatically when new data arrives from a previously unknown robot.
 
 The \textit{RobotData} class encapsulates the data for a single robot. This includes a large number of individual data points, in a number of different formats. Table \ref{} describes these data points.
 
-\clearpage
 \begin{longtable}{ l l p{8cm} }
 \caption[Robot Data Contents]{The contents of the \textit{RobotData} class.}\\
  \hline
@@ -192,6 +191,15 @@ In addition to this data, the class also maintains a list of recent state transi
 
 %----------------------------------------------------------------------------------------
 
+\section{User Interface}
+The user interface has been implemented using the Qt GUI framework. The layout for the interface is defined in \textit{mainwindow.ui}, a file generated by the Qt interface designer application to describe the structure and layout of the interface components in an XML based format. The Qt framework uses a standard event-driven interface paradigm, where events are generated when the user interacts with the interface, and code is used to define specific routines to execute in response to relevant events. The routines for handling interface events can be found in \textit{mainwindow.cpp / .h}, and are usually prefixed with the term `\textit{on\_}'. For example, the function `\textit{on\_actionExit\_triggered}' is called when the `Exit' action is selected from the menu, and instructs the application to close.
+
+[INDIVIDUAL UI ELEMENTS w/ SCREENSHOTS]
+
+In addition to the main user interface, a number of extra `dialog' windows are used to provide the user with access to the settings of each visualisation element, if settings are available. These dialog windows are defined in the files  \textit{idsettingsdialog.cpp / .h, pathsettingsdialog.cpp / .h} and \textit{proximitysettingsdialog.cpp / .h}. Dialog windows are a commonly used tool within application programming. They act as pop-up windows which usually require the user to either confirm or cancel some change. In this case the dialog windows present controls for changing specific visualisation settings, and the user can then either apply their changes or cancel them using the standard accept/reject buttons at the bottom of the window.
+
+%----------------------------------------------------------------------------------------
+
 \section{Visualiser}
 The 'visualiser' is the name given to the custom user interface component that renders the augmented video feed. Implementing this component was key to satisfying the portion of the project aims related to augmented reality, and it forms one of the most visible elements of the system. The main visualiser component is defined in the \textit{Visualiser} class (\textit{visualiser.cpp / .h}), and a number of extra classes are used to define the associated settings and routines for visualising specific data types (\textit{VisConfig, VisID, VisName, VisState, VisPosition, VisDirection, VisProximity, VisPath}). Section \ref{VideoFeedAndTrackingSystem} describes the process of retrieving images from the camera and tracking the robots. The image data then arrives at the visualiser via a Qt slot function. At this stage the image is augmented based on the data in the data model, by iterating over the list of robots, and for each one iterating over the list of data visualisations, calling the render function for each. These render functions take the image and the current robot's data as arguments, and then add the relevant graphical representation to the image using the drawing functions within the OpenCV image processing library.
 
@@ -200,17 +208,21 @@ It was decided that an individual class would be implemented for each type of da
 The rest of the code in the \textit{Visualiser} class relates to embedding the OpenCV image within a Qt UI widget, and tertiary functionality such as detecting clicks within the image frame, and retrieving the frame's size. The OpenCV to Qt image conversion is done by instantiating a QImage instance directly from the internal pixel data of the OpenCv image. This QImage is then drawn onto the widget.
 
 \subsection{Data Visualisations}
-[DESCRIBE EACH VISUALISER ELEMENT]
-[SCREENSHOTS FOR EACH]
+The visualiser supports a number of specific data visualisations:
 
-%----------------------------------------------------------------------------------------
+\begin{enumerate}
+ \item Displaying robot positions.
+ \item Displaying robot 'orientations' by highlighting their forward directions.
+ \item Displaying the ID of a robot as text close to its position.
+ \item Displaying the name of a robot as text close to its position.
+ \item Displaying the current state of a robot as text close to its position.
+ \item Displaying a graphical representation of a robot's IR sensor data.
+ \item Displaying the recent path a robot has taken as a line behind the robot.
+\end{enumerate}
 
-\section{User Interface}
-The user interface has been implemented using the Qt GUI framework. The layout for the interface is defined in \textit{mainwindow.ui}, a file generated by the Qt interface designer application to describe the structure and layout of the interface components in an XML based format. The Qt framework uses a standard event-driven interface paradigm, where events are generated when the user interacts with the interface, and code is used to define specific routines to execute in response to relevant events. The routines for handling interface events can be found in \textit{mainwindow.cpp / .h}, and are usually prefixed with the term `\textit{on\_}'. For example, the function `\textit{on\_actionExit\_triggered}' is called when the `Exit' action is selected from the menu, and instructs the application to close.
+Each visualiser element can be enabled and disabled via the settings tab. Some of the visualisations have more complex settings, which can be accessed be double clicking the specific element in the visualisations list, also in the settings tab. Figure  shows the text based visualisations. Figure  shows the position and orientation visualisations. The IR sensor data visualisation is more complex, and offers a number of configuration options. The visualisation can either display in 'proximity mode' or 'heat mode'. In proximity mode lines are drawn in the direction each sensor is facing to approximate the proximity of the surface reflecting the IR pulses. This line therefore varies inversely with the value of the sensor. This mode can be seen in figure . In heat mode the IR sensors are represented as small blocks positioned around the perimeter of the robot. The size of the blocks and their colour varies in relation to their corresponding sensor value, as can be seen in figure . Both modes position their visualisations to correspond with the individual sensor positions, and this can be adjusted by the user via the IR visualisation settings dialog. The settings dialog also allows the user to decide whether IR data should be displayed for all the robots, which can overwhelm the display, or just the selected robot. The path visualisation can be seen in figure , and can also be configured to display for all robots or only the selected one. The user can also configure the interval between the position samples (as discussed in section \ref{DataModel}) via the settings dialog, which effects the smoothness and length of the path line.
 
-[INDIVIDUAL UI ELEMENTS w/ SCREENSHOTS]
-
-In addition to the main user interface, a number of extra `dialog' windows are used to provide the user with access to the settings of each visualisation element, if settings are available. These dialog windows are defined in the files  \textit{idsettingsdialog.cpp / .h, pathsettingsdialog.cpp / .h} and \textit{proximitysettingsdialog.cpp / .h}. Dialog windows are a commonly used tool within application programming. They act as pop-up windows which usually require the user to either confirm or cancel some change. In this case the dialog windows present controls for changing specific visualisation settings, and the user can then either apply their changes or cancel them using the standard accept/reject buttons at the bottom of the window.
+[SCREENSHOTS]
 
 %----------------------------------------------------------------------------------------
 
@@ -246,5 +258,7 @@ The robot side API is defined in `\textit{debug\_network.cpp / .h}' as a single 
  
  \label{tab:RobotAPI}
 \end{longtable}
+
+In order to utilize this API a user can modify their robot controller code to include the \textit{debug\_network.h} header file, call the \textit{init} function at start-up time, and then call the various packet and data functions whenever necessary. The user is therefore in charge of how frequently data is transmitted, and can decide whether to simply send updates to the application when the robot's data changes, or to transmit a fixed quantity of data every control step. It was potentially possible for the API to handle all data reporting in the background, without requiring the user to specify when to transmit data in the controller code, however this approach was not taken for a number of reasons. Firstly it limits the control and flexibility available to the user. Each swarm system is different, and may have different requirements, hence the API should allow the developer to make decisions regarding data reporting which are right for their specific case. It would also limit the portability of the API, as a more automatic system would likely have to hook into the lower level robot drivers, meaning much greater changes would be necessary to port the code to a different robot. Furthermore by allowing the user to have complete control over when and how frequently data is transmitted they are able to manage the amount of traffic they are putting on their network, potentially mitigating congestion issues with very large swarms. Finally allowing users to control the moments within the code when data is reported to the debugging system was deemed to be a more intuitive system, especially as many developers are already familiar with the concept of using `print' statements within code to display debugging messages in a console.
 
 %----------------------------------------------------------------------------------------
