@@ -30,9 +30,9 @@
 
 1. Examine UI element. Is it visually correct? Does it contain all elements to satisfy its purpose?
 2. Check all text within for meaning or spelling errors if necessary
-3. Check that all actionable sub elements operate correctly. Do they satisfy the stated functionality?
-3a. Check that functionality responds quickly to user input.
-3b. Check that functionality does not degrade in extreme cases (actionable elements used very quickly, large number of times, etc).
+3. Check that all actionable components operate correctly. Do they satisfy the stated functionality?
+3a. Check that components respond quickly to user input.
+3b. Check that component actions do not degrade with extreme use (rapid clicking, large number of times, etc).
 4. Check that all data displayed by the element is visible, readable, correctly arranged, correctly labelled.
 5. Check that the element behaves sensibly when risizing occurs, and it remains usable and readable whenever possible.
 6. Check that the element updates promptly when responding to changes in the data.

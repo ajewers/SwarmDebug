@@ -6,22 +6,111 @@
 
 %----------------------------------------------------------------------------------------
 
-\section{Overview}
+Once the implementation phase of the project was complete it was important to thoroughly test the software in order to verify its correct implementation and operation, and identify any remaining issues that needed to be fixed or mitigated. Some testing was also carried out during the implementation phase in order to verify the correct operation of individual components as they were completed, and to ensure that different components would work correctly together. This is referred to here as continuous integration testing. This was done to reduce the chances of issues stacking up and becoming layered or entrenched as development continued. A more rigorous testing process was then applied once the implementation was complete, and included testing of both the user interface and the system back end, as well as testing the system as a whole. Once these testing processes had been completed, and any issues addressed, an evaluation process was undertaken to determine whether the system was useful in practice, and to gauge what benefits it provided the user, whether it succeeded in meeting the aims of the project, and how it might be improved in the future. The evaluation process involved carrying out observed trials with a number of potential users of the system, as well as a questionnaire completed by participants after having used the system. This section gives details of the different testing stages and the evaluation process.
+
+%----------------------------------------------------------------------------------------
+
+\section{Continuous Integration Testing} \label{ContinuousIntegrationTesting}
 
 
 %----------------------------------------------------------------------------------------
 
-\section{Continuous Integration Testing}
+\section{Manual User Interface Testing} \label{ManualUserInterfaceTesting}
+The purpose of any graphical user interface is to present information to a human user and collect their input. It is therefore important that user interfaces be tested manually by a human user, as automated testing methods are often not sufficient for or not capable of verifying that information is displayed legibly and correctly, and that user input functions properly. The user interface of the system is one of the most important parts of the project, and therefore a thorough manual user interface testing process was undertaken.
+
+\subsection{Method}
+The general approach taken to the user interface testing can be summarised as follows:
+
+\begin{enumerate}
+ \item Separate UI into individual elements.
+ \item State the purpose and required functionality of each elements.
+ \item Define a general test strategy for a single UI element as a series of checks.
+ \item Identify any special case components, and define different test strategies where necessary.
+ \item Apply the relevant strategy to each interface element in turn.
+\end{enumerate}
+
+\vspace{0.5cm}
+
+The user interface was separated into the elements described in table \ref{tab:UserInterfaceElements}. Special case elements requiring different test strategies are highlighted in bold.
+
+\begin{longtable}{ l c }
+\caption[User Interface Elements]{Individual user interface elements that require testing.}\\
+ Element & Test Strategy\\
+ \hline
+ Visualiser Panel Tab System & A \\
+ \textbf{Visualiser} & \textbf{B} \\
+ Visualiser Settings Tab & A \\
+ Individual Visulisation Settings Dialogs & A \\
+ Camera Settings Tab & A \\
+ Robot List Panel Tab System & A \\
+ Robot List Element & A \\
+ Network Settings Tab & A \\
+ Logging Settings Tab & A \\
+ Data Panel Tab System & A \\
+ Console Data Tab & A \\
+ Overview Data Tab & A \\
+ State Data Tab & A \\
+ IR Data Tab & A \\
+ Custom Data Tab & A \\
+ Toolbar Menus & A \\
+ \bottomrule
+ \label{tab:UserInterfaceElements}
+\end{longtable}
+
+The following test strategies were then devised for the different element categories.
+
+\textbf{Test Strategy A - Standard UI Elements:}
+
+\begin{enumerate}
+ \item Examine UI element visually. Verify that it appears correct. Verify that it contains all elements necessary to satisfy its purpose.
+ \item Examine all text within the element. Check for errors in both meaning and spelling.
+ \item Verify that all components within the element which perform actions in response to user input operate correctly.
+ \item Verify that the actions completed by the components within the element satisfy the stated functionality of the element.
+ \item Verify that all components respond quickly to user input.
+ \item Verify that component actions and functionality do not degrade with extreme use (sustained rapid input, large numbers of input changes, etc).
+ \item Verify that all data displayed within the element is visible, readable, correctly arranged and correctly labeled.
+ \item Verify that all data displayed correctly matches the data in the model.
+ \item Verify that the element behaves sensibly when window resizing occurs, and that it remains usable and data remains visible whenever possible.
+ \item Verify that the element updates promptly when responding to changes in data.
+\end{enumerate}
+
+\textbf{Test Strategy B - Visualiser:}
+
+\begin{enumerate}
+ \item For each data visualisation type:
+ \begin{enumerate}
+  \item Define a set of input data and the expected representation of this data.
+  \item Supply the input data.
+  \item Verify the representation is as expected.
+  \item Check that the visualisation is clear and any text is legible.
+  \item Repeat for 3 different sets of input data.
+  \item Verify that visualisation updates immediately in response to changes in the data.
+  \item Verify that integrity is maintained with extreme data, corner cases and zero data, wherever possible.
+  \item Verify that integrity is maintained at a range of window sizes, within reasonable limits.
+ \end{enumerate}
+ \item Verify that user clicks within the visualiser space are located correctly, at a number of different window sizes.
+ \item Verify that robots can be selected via clicking correctly.
+\end{enumerate}
+
+
+\subsection{Results}
+
+
+\subsection{Fixes Implemented}
+
+%----------------------------------------------------------------------------------------
+
+\section{Back End Unit Testing} \label{BackEndUnitTesting}
 
 
 %----------------------------------------------------------------------------------------
 
-\section{Validation Testing}
+\section{Validation Testing} \label{VerificationTesting}
 
 
 %----------------------------------------------------------------------------------------
 
-\section{User Evaluation}
+\section{Evaluation} \label{Evaluation}
 
 \subsection{Method}
 \subsection{Results}
