@@ -1,0 +1,800 @@
+---- Manual UI Testing ----
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+UI Element:                     Visualiser Panel Tab System
+
+Purpose:                        Allows access to the different tabs within the visualiser panel.
+
+Statement of Functionality:     Must display the names of the different tabs. 
+                                Must allow user to click on the tabs to change between them.
+                                
+Testing Strategy:               A
+
+
+1. Examine UI element. Is it visually correct? Does it contain all elements to satisfy its purpose?
+
+  -
+
+  
+2. Check all text within for meaning or spelling errors if necessary
+
+  -
+
+
+3. Check that all actionable sub elements operate correctly. Do they satisfy the stated functionality?
+
+  -
+  
+  
+3a. Check that functionality responds quickly to user input.
+
+  -
+  
+  
+3b. Check that functionality does not degrade in extreme cases (actionable elements used very quickly, large number of times, etc).
+
+  -
+  
+  
+4. Check that all data displayed by the element is visible, readable, correctly arranged, correctly labelled.
+
+  -
+  
+  
+5. Check that the element behaves sensibly when risizing occurs, and it remains usable and readable whenever possible.
+
+  -
+  
+  
+6. Check that the element updates promptly when responding to changes in the data.
+
+  -
+  
+  
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+UI Element:                     Visualiser Settings Tab
+
+Purpose:                        Displays the current settings for the visualiser and allows the user to change them.
+
+Statement of Functionality:     Must correctly display the current visualiser settings.
+                                Must allow the user to adjust the general visualiser settings.
+                                Must allow the user access to the settings dialogs for specific visualisations.
+                                
+Testing Strategy:               A
+
+
+1. Examine UI element. Is it visually correct? Does it contain all elements to satisfy its purpose?
+
+  -
+
+  
+2. Check all text within for meaning or spelling errors if necessary
+
+  -
+
+
+3. Check that all actionable sub elements operate correctly. Do they satisfy the stated functionality?
+
+  -
+  
+  
+3a. Check that functionality responds quickly to user input.
+
+  -
+  
+  
+3b. Check that functionality does not degrade in extreme cases (actionable elements used very quickly, large number of times, etc).
+
+  -
+  
+  
+4. Check that all data displayed by the element is visible, readable, correctly arranged, correctly labelled.
+
+  -
+  
+  
+5. Check that the element behaves sensibly when risizing occurs, and it remains usable and readable whenever possible.
+
+  -
+  
+  
+6. Check that the element updates promptly when responding to changes in the data.
+
+  -
+  
+  
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+UI Element:                     Camera Settings Tab
+
+Purpose:                        Allows the user to see and change the current camera settings.
+
+Statement of Functionality:     Must display the current camera settings.
+                                Must allow a user to change the camera settings.
+                                
+Testing Strategy:               A
+
+
+1. Examine UI element. Is it visually correct? Does it contain all elements to satisfy its purpose?
+
+  -
+
+  
+2. Check all text within for meaning or spelling errors if necessary
+
+  -
+
+
+3. Check that all actionable sub elements operate correctly. Do they satisfy the stated functionality?
+
+  -
+  
+  
+3a. Check that functionality responds quickly to user input.
+
+  -
+  
+  
+3b. Check that functionality does not degrade in extreme cases (actionable elements used very quickly, large number of times, etc).
+
+  -
+  
+  
+4. Check that all data displayed by the element is visible, readable, correctly arranged, correctly labelled.
+
+  -
+  
+  
+5. Check that the element behaves sensibly when risizing occurs, and it remains usable and readable whenever possible.
+
+  -
+  
+  
+6. Check that the element updates promptly when responding to changes in the data.
+
+  -
+  
+  
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+UI Element:                     Robot List Panel Tab System
+
+Purpose:                        Allows access to the different tabs within the robot list panel.
+
+Statement of Functionality:     Must display the names of the different tabs.
+                                Must allow user to click on the tabs to change between them.
+                                
+Testing Strategy:               A
+
+
+1. Examine UI element. Is it visually correct? Does it contain all elements to satisfy its purpose?
+
+  -
+
+  
+2. Check all text within for meaning or spelling errors if necessary
+
+  -
+
+
+3. Check that all actionable sub elements operate correctly. Do they satisfy the stated functionality?
+
+  -
+  
+  
+3a. Check that functionality responds quickly to user input.
+
+  -
+  
+  
+3b. Check that functionality does not degrade in extreme cases (actionable elements used very quickly, large number of times, etc).
+
+  -
+  
+  
+4. Check that all data displayed by the element is visible, readable, correctly arranged, correctly labelled.
+
+  -
+  
+  
+5. Check that the element behaves sensibly when risizing occurs, and it remains usable and readable whenever possible.
+
+  -
+  
+  
+6. Check that the element updates promptly when responding to changes in the data.
+
+  -
+  
+  
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+UI Element:                     Robot List
+
+Purpose:                        Allows the user to select a robot from the current known robots.
+
+Statement of Functionality:     Must display the ID numbers and names of all robots currently known to the system.
+                                Must allow user to select one robot by clicking on its row in the list.
+                                Must not allow for multiple selection.
+                                
+Testing Strategy:               A
+
+
+1. Examine UI element. Is it visually correct? Does it contain all elements to satisfy its purpose?
+
+  -
+
+  
+2. Check all text within for meaning or spelling errors if necessary
+
+  -
+
+
+3. Check that all actionable sub elements operate correctly. Do they satisfy the stated functionality?
+
+  -
+  
+  
+3a. Check that functionality responds quickly to user input.
+
+  -
+  
+  
+3b. Check that functionality does not degrade in extreme cases (actionable elements used very quickly, large number of times, etc).
+
+  -
+  
+  
+4. Check that all data displayed by the element is visible, readable, correctly arranged, correctly labelled.
+
+  -
+  
+  
+5. Check that the element behaves sensibly when risizing occurs, and it remains usable and readable whenever possible.
+
+  -
+  
+  
+6. Check that the element updates promptly when responding to changes in the data.
+
+  -
+  
+  
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+UI Element:                     Network Settings Tab
+
+Purpose:                        Allows the user to configure the network.
+
+Statement of Functionality:     Must display the current network settings.
+                                Must allow user to change the network settings.
+                                Must allow a user to start and stop the process of listening for packets on the network.
+                                
+Testing Strategy:               A
+
+
+1. Examine UI element. Is it visually correct? Does it contain all elements to satisfy its purpose?
+
+  -
+
+  
+2. Check all text within for meaning or spelling errors if necessary
+
+  -
+
+
+3. Check that all actionable sub elements operate correctly. Do they satisfy the stated functionality?
+
+  -
+  
+  
+3a. Check that functionality responds quickly to user input.
+
+  -
+  
+  
+3b. Check that functionality does not degrade in extreme cases (actionable elements used very quickly, large number of times, etc).
+
+  -
+  
+  
+4. Check that all data displayed by the element is visible, readable, correctly arranged, correctly labelled.
+
+  -
+  
+  
+5. Check that the element behaves sensibly when risizing occurs, and it remains usable and readable whenever possible.
+
+  -
+  
+  
+6. Check that the element updates promptly when responding to changes in the data.
+
+  -
+  
+  
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+UI Element:                     Data Logging Tab
+
+Purpose:                        Allows the user to configure the data logging functionality.
+
+Statement of Functionality:     Must display the current data logging settings.
+                                Must allow user to change the data logging settings.
+                                Must allow a user to start and stop the process of data logging.
+                                
+Testing Strategy:               A
+
+
+1. Examine UI element. Is it visually correct? Does it contain all elements to satisfy its purpose?
+
+  -
+
+  
+2. Check all text within for meaning or spelling errors if necessary
+
+  -
+
+
+3. Check that all actionable sub elements operate correctly. Do they satisfy the stated functionality?
+
+  -
+  
+  
+3a. Check that functionality responds quickly to user input.
+
+  -
+  
+  
+3b. Check that functionality does not degrade in extreme cases (actionable elements used very quickly, large number of times, etc).
+
+  -
+  
+  
+4. Check that all data displayed by the element is visible, readable, correctly arranged, correctly labelled.
+
+  -
+  
+  
+5. Check that the element behaves sensibly when risizing occurs, and it remains usable and readable whenever possible.
+
+  -
+  
+  
+6. Check that the element updates promptly when responding to changes in the data.
+
+  -
+  
+  
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+UI Element:                     Data Panel Tab System
+
+Purpose:                        Allows access to the different tabs within the data panel.
+
+Statement of Functionality:     Must display the names of the different tabs.
+                                Must allow user to click on the tabs to change between them.
+                                
+Testing Strategy:               A
+
+
+1. Examine UI element. Is it visually correct? Does it contain all elements to satisfy its purpose?
+
+  -
+
+  
+2. Check all text within for meaning or spelling errors if necessary
+
+  -
+
+
+3. Check that all actionable sub elements operate correctly. Do they satisfy the stated functionality?
+
+  -
+  
+  
+3a. Check that functionality responds quickly to user input.
+
+  -
+  
+  
+3b. Check that functionality does not degrade in extreme cases (actionable elements used very quickly, large number of times, etc).
+
+  -
+  
+  
+4. Check that all data displayed by the element is visible, readable, correctly arranged, correctly labelled.
+
+  -
+  
+  
+5. Check that the element behaves sensibly when risizing occurs, and it remains usable and readable whenever possible.
+
+  -
+  
+  
+6. Check that the element updates promptly when responding to changes in the data.
+
+  -
+  
+  
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+UI Element:                     Console Data Tab
+
+Purpose:                        Displays a text based console which reports messages about the application and directly from the robots.
+
+Statement of Functionality:     Must contain a text console.
+                                Must display messages in order.
+                                Must display messages regarding the application.
+                                Must display messages from the robots.
+                                Must identify the source of any robot messages.
+                                Must update immediately when a message is received from either source.
+                                
+Testing Strategy:               A
+
+
+1. Examine UI element. Is it visually correct? Does it contain all elements to satisfy its purpose?
+
+  -
+
+  
+2. Check all text within for meaning or spelling errors if necessary
+
+  -
+
+
+3. Check that all actionable sub elements operate correctly. Do they satisfy the stated functionality?
+
+  -
+  
+  
+3a. Check that functionality responds quickly to user input.
+
+  -
+  
+  
+3b. Check that functionality does not degrade in extreme cases (actionable elements used very quickly, large number of times, etc).
+
+  -
+  
+  
+4. Check that all data displayed by the element is visible, readable, correctly arranged, correctly labelled.
+
+  -
+  
+  
+5. Check that the element behaves sensibly when risizing occurs, and it remains usable and readable whenever possible.
+
+  -
+  
+  
+6. Check that the element updates promptly when responding to changes in the data.
+
+  -
+  
+  
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+UI Element:                     Overview Tab
+
+Purpose:                        Displays an overview of the data for the selected robot. 
+
+Statement of Functionality:     Must display data related to the selected robot.
+                                Must display the robots ID, name, current state, numerical position and orientation.
+                                Must update immediately when new data is received.
+                                
+Testing Strategy:               A
+
+
+1. Examine UI element. Is it visually correct? Does it contain all elements to satisfy its purpose?
+
+  -
+
+  
+2. Check all text within for meaning or spelling errors if necessary
+
+  -
+
+
+3. Check that all actionable sub elements operate correctly. Do they satisfy the stated functionality?
+
+  -
+  
+  
+3a. Check that functionality responds quickly to user input.
+
+  -
+  
+  
+3b. Check that functionality does not degrade in extreme cases (actionable elements used very quickly, large number of times, etc).
+
+  -
+  
+  
+4. Check that all data displayed by the element is visible, readable, correctly arranged, correctly labelled.
+
+  -
+  
+  
+5. Check that the element behaves sensibly when risizing occurs, and it remains usable and readable whenever possible.
+
+  -
+  
+  
+6. Check that the element updates promptly when responding to changes in the data.
+
+  -
+  
+  
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+UI Element:                     State Tab
+
+Purpose:                        Displays information regarding the robots recent states.
+
+Statement of Functionality:     Must display state data related to the selected robot.
+                                Must display a list of the known states the robot has previously occupied.
+                                Must display a list of recent state transitions, including both before and after states aswell as the time of the transition.
+                                Must update immediately when new data is received.
+                                
+Testing Strategy:               A
+
+
+1. Examine UI element. Is it visually correct? Does it contain all elements to satisfy its purpose?
+
+  -
+
+  
+2. Check all text within for meaning or spelling errors if necessary
+
+  -
+
+
+3. Check that all actionable sub elements operate correctly. Do they satisfy the stated functionality?
+
+  -
+  
+  
+3a. Check that functionality responds quickly to user input.
+
+  -
+  
+  
+3b. Check that functionality does not degrade in extreme cases (actionable elements used very quickly, large number of times, etc).
+
+  -
+  
+  
+4. Check that all data displayed by the element is visible, readable, correctly arranged, correctly labelled.
+
+  -
+  
+  
+5. Check that the element behaves sensibly when risizing occurs, and it remains usable and readable whenever possible.
+
+  -
+  
+  
+6. Check that the element updates promptly when responding to changes in the data.
+
+  -
+  
+  
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+UI Element:                     IR Data Tab
+
+Purpose:                        Displays the IR sensor data for the selected robot.
+
+Statement of Functionality:     Must display the IR data of the selected robot.
+                                Must provide a visual display of all of the selected robot's IR sensor values.
+                                Must provide a numerical display of all of the selected robot's IR sensor values.
+                                Must include both active and background IR values.
+                                Must update immediately when new data is received.
+                                
+Testing Strategy:               A
+
+
+1. Examine UI element. Is it visually correct? Does it contain all elements to satisfy its purpose?
+
+  -
+
+  
+2. Check all text within for meaning or spelling errors if necessary
+
+  -
+
+
+3. Check that all actionable sub elements operate correctly. Do they satisfy the stated functionality?
+
+  -
+  
+  
+3a. Check that functionality responds quickly to user input.
+
+  -
+  
+  
+3b. Check that functionality does not degrade in extreme cases (actionable elements used very quickly, large number of times, etc).
+
+  -
+  
+  
+4. Check that all data displayed by the element is visible, readable, correctly arranged, correctly labelled.
+
+  -
+  
+  
+5. Check that the element behaves sensibly when risizing occurs, and it remains usable and readable whenever possible.
+
+  -
+  
+  
+6. Check that the element updates promptly when responding to changes in the data.
+
+  -
+  
+  
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+UI Element:                     Custom Data Tab
+
+Purpose:                        Displays the custom user data reported by the selected robot.
+
+Statement of Functionality:     Must display the custom user data of the selected robot.
+                                Must display both the key and value for each data point.
+                                Must update immediately when new data is received.
+                                
+Testing Strategy:               A
+
+
+1. Examine UI element. Is it visually correct? Does it contain all elements to satisfy its purpose?
+
+  -
+
+  
+2. Check all text within for meaning or spelling errors if necessary
+
+  -
+
+
+3. Check that all actionable sub elements operate correctly. Do they satisfy the stated functionality?
+
+  -
+  
+  
+3a. Check that functionality responds quickly to user input.
+
+  -
+  
+  
+3b. Check that functionality does not degrade in extreme cases (actionable elements used very quickly, large number of times, etc).
+
+  -
+  
+  
+4. Check that all data displayed by the element is visible, readable, correctly arranged, correctly labelled.
+
+  -
+  
+  
+5. Check that the element behaves sensibly when risizing occurs, and it remains usable and readable whenever possible.
+
+  -
+  
+  
+6. Check that the element updates promptly when responding to changes in the data.
+
+  -
+  
+  
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+UI Element:                     Toolbar Menus
+
+Purpose:                        Allows quick access to specific functionality.
+
+Statement of Functionality:     Must display the names of the functions avaliable.
+                                Must peform these functions when they are clicked by the user.
+                                
+Testing Strategy:               A
+
+
+1. Examine UI element. Is it visually correct? Does it contain all elements to satisfy its purpose?
+
+  -
+
+  
+2. Check all text within for meaning or spelling errors if necessary
+
+  -
+
+
+3. Check that all actionable sub elements operate correctly. Do they satisfy the stated functionality?
+
+  -
+  
+  
+3a. Check that functionality responds quickly to user input.
+
+  -
+  
+  
+3b. Check that functionality does not degrade in extreme cases (actionable elements used very quickly, large number of times, etc).
+
+  -
+  
+  
+4. Check that all data displayed by the element is visible, readable, correctly arranged, correctly labelled.
+
+  -
+  
+  
+5. Check that the element behaves sensibly when risizing occurs, and it remains usable and readable whenever possible.
+
+  -
+  
+  
+6. Check that the element updates promptly when responding to changes in the data.
+
+  -
+  
+  
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+UI Element:                     Individual Visualisation Element Settings Dialogs
+
+Purpose:                        Allows the user to change settings for some of the data visualisations.
+
+Statement of Functionality:     Must display the settings available for the related visualisation type.
+                                Must allow the user to change these settings.
+                                Must provide the user with the ability to apply or cancel the changes.
+                                Must obtain a modal focus over the main window.
+                                
+Testing Strategy:               A
+
+
+1. Examine UI element. Is it visually correct? Does it contain all elements to satisfy its purpose?
+
+  -
+
+  
+2. Check all text within for meaning or spelling errors if necessary
+
+  -
+
+
+3. Check that all actionable sub elements operate correctly. Do they satisfy the stated functionality?
+
+  -
+  
+  
+3a. Check that functionality responds quickly to user input.
+
+  -
+  
+  
+3b. Check that functionality does not degrade in extreme cases (actionable elements used very quickly, large number of times, etc).
+
+  -
+  
+  
+4. Check that all data displayed by the element is visible, readable, correctly arranged, correctly labelled.
+
+  -
+  
+  
+5. Check that the element behaves sensibly when risizing occurs, and it remains usable and readable whenever possible.
+
+  -
+  
+  
+6. Check that the element updates promptly when responding to changes in the data.
+
+  -
+  
+  
+-----------------------------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,53 @@
+---- Manual User Interface Testing Strategy ----
+
+- Separate UI into individual components
+- List the purpose and required function of each element
+- Define general test strategy for a UI component as a series of operations
+- Identify special cases (visualiser) and define specific strategy for these
+- Apply appropriate strategy to each element systematically
+
+
+-- UI Elements Requiring Test --        -- Strategy --
+- Visualiser Panel Tab System                 A
+- Visualiser Element                          B
+- Visualiser Settings Tab                     A
+- Individual Visulisation Settings Dialogs    A
+- Camera Settings Tab                         A
+- Robot List Panel Tab System                 A
+- Robot List Element                          A
+- Network Settings Tab                        A
+- Logging Settings Tab                        A
+- Data Panel Tab System                       A
+- Console Data Tab                            A
+- Overview Data Tab                           A
+- State Data Tab                              A
+- IR Data Tab                                 A
+- Custom Data Tab                             A
+- Toolbar Menus                               A
+
+
+-- Test Strategy A : General Element Testing --
+
+1. Examine UI element. Is it visually correct? Does it contain all elements to satisfy its purpose?
+2. Check all text within for meaning or spelling errors if necessary
+3. Check that all actionable sub elements operate correctly. Do they satisfy the stated functionality?
+3a. Check that functionality responds quickly to user input.
+3b. Check that functionality does not degrade in extreme cases (actionable elements used very quickly, large number of times, etc).
+4. Check that all data displayed by the element is visible, readable, correctly arranged, correctly labelled.
+5. Check that the element behaves sensibly when risizing occurs, and it remains usable and readable whenever possible.
+6. Check that the element updates promptly when responding to changes in the data.
+
+
+-- Test Strategy B: Visualiser Testing --
+
+- For each data visualisation type:
+  - Define input data and expected representation
+  - Supply input data
+  - Verify representation is as expected
+  - Check that visualisation is clear and any text is legible
+  - Repeat for 3 different sets of input data
+  - Verify that integrity is maintained with extreme data, corner cases, and zero data, where necessary
+  - Verify that integrity is maintained at a range of sizes, as far as possible
+
+- Check that clicks within the visualiser space are located correctly
+- Check that selecting robots via clicking functions correctly
