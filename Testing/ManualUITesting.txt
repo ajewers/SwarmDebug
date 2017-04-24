@@ -8,48 +8,54 @@ Purpose:                        Allows access to the different tabs within the v
 
 Statement of Functionality:     Must display the names of the different tabs. 
                                 Must allow user to click on the tabs to change between them.
+								Required tabs are Visualiser, Settings, and Camera
                                 
 Testing Strategy:               A
 
 
 1. Examine UI element. Is it visually correct? Does it contain all elements to satisfy its purpose?
 
-  -
+  - Visually correct, all tabs visible.
 
   
 2. Check all text within for meaning or spelling errors if necessary
 
-  -
+  - All spelling correct. Meaning is satisfactory, although 'Settings' is ambiguous, relation to visualiser infered through context.
 
 
 3. Check that all actionable sub elements operate correctly. Do they satisfy the stated functionality?
 
-  -
+  - All tabs accessable, the panel changes tab with each click. Satisfies functionality requirements. 
   
   
 3a. Check that functionality responds quickly to user input.
 
-  -
+  - Response is immediate.
   
   
 3b. Check that functionality does not degrade in extreme cases (actionable elements used very quickly, large number of times, etc).
 
-  -
+  - Rapidly changing tabs does not have any detrimental affect.
   
   
 4. Check that all data displayed by the element is visible, readable, correctly arranged, correctly labelled.
 
-  -
+  - n/a
   
   
 5. Check that the element behaves sensibly when risizing occurs, and it remains usable and readable whenever possible.
 
-  -
+  - Tabs are not affected by resizing. All tabs fit within the panels minimum size. Tabs are hidden if the panel is dragged below its minimum size, causing it to be minimized. Satisfactory behaviour.
   
   
 6. Check that the element updates promptly when responding to changes in the data.
 
-  -
+  - n/a
+  
+
+Fixes Required: 
+
+  - No urgent fixes required. Consider renaming the settings tab to make its purpose clearer.
   
   
 -----------------------------------------------------------------------------------------------------------------------------------------------
@@ -67,43 +73,47 @@ Testing Strategy:               A
 
 1. Examine UI element. Is it visually correct? Does it contain all elements to satisfy its purpose?
 
-  -
+  - Panel layout is correct. Contains sufficient components to satisfy the intented functionality. 
 
   
 2. Check all text within for meaning or spelling errors if necessary
 
-  -
+  - All spelling correct. All meanings clear. Headings look very similar to other labels, could use bold font or similar to improve clarity.
 
 
 3. Check that all actionable sub elements operate correctly. Do they satisfy the stated functionality?
 
-  -
+  - All settings controls work correctly. Each visualiser config element can be double clicked to display relevent extra settings. Double clicking on elements with no extra settings has no effect / no error thrown.
   
   
 3a. Check that functionality responds quickly to user input.
 
-  -
+  - Response is immediate.
   
   
 3b. Check that functionality does not degrade in extreme cases (actionable elements used very quickly, large number of times, etc).
 
-  -
+  - Rapidly enabling / disabling elements has no adverse effects. Rapidly opening and closing further settings windows has no adverse effect as windows are displayed modally. UI appears robust. Each time robot colours are disabled and re-enabled a different colour set is used. This behaviour should be formalised to avoid confusion; robot colours should remain the same unless the user wishes to change them.
   
   
 4. Check that all data displayed by the element is visible, readable, correctly arranged, correctly labelled.
 
-  -
+  - Information regarding the current settings is readable, clear, well arranged and clearly labeled. Detailed settings for each visualisation element are described in text.
   
   
 5. Check that the element behaves sensibly when risizing occurs, and it remains usable and readable whenever possible.
 
-  -
+  - All text fits within the minimum panel width. When the height of the panel is reduce scroll bars are added to allow access to each item in the visualiser config list. All components are hidden when the window is reduced below its minimum size and minimized. Satisfatory behaviour.
   
   
 6. Check that the element updates promptly when responding to changes in the data.
 
-  -
+  - Changes to the visualisation settings are reflected immediately. Changes to the general settings are reflected immediately.
   
+
+Fixes Required:
+  
+  - None
   
 -----------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -119,43 +129,47 @@ Testing Strategy:               A
 
 1. Examine UI element. Is it visually correct? Does it contain all elements to satisfy its purpose?
 
-  -
+  - UI is visually correct.
 
   
 2. Check all text within for meaning or spelling errors if necessary
 
-  -
+  - Spelling correct. Meaning clear.
 
 
 3. Check that all actionable sub elements operate correctly. Do they satisfy the stated functionality?
 
-  -
+  - Camera image dimension boxes work correctly. Do not accept non numerical input. Update dimension settings immediately.
   
   
 3a. Check that functionality responds quickly to user input.
 
-  -
+  - Response is immediate.
   
   
 3b. Check that functionality does not degrade in extreme cases (actionable elements used very quickly, large number of times, etc).
 
-  -
+  - Max values are limited at 10000. Minimum values are limited at 1.
   
   
 4. Check that all data displayed by the element is visible, readable, correctly arranged, correctly labelled.
 
-  -
+  - n/a
   
   
 5. Check that the element behaves sensibly when risizing occurs, and it remains usable and readable whenever possible.
 
-  -
+  - All components fit within minimum width and height, and are hidden when resizing below minimum size causing the panel to be minimized.
   
   
 6. Check that the element updates promptly when responding to changes in the data.
 
-  -
+  - n/a
   
+
+Fixes Required: 
+  
+  - None
   
 -----------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -165,49 +179,54 @@ Purpose:                        Allows access to the different tabs within the r
 
 Statement of Functionality:     Must display the names of the different tabs.
                                 Must allow user to click on the tabs to change between them.
+								Required tabs: Robots, Network, Logging
                                 
 Testing Strategy:               A
 
 
 1. Examine UI element. Is it visually correct? Does it contain all elements to satisfy its purpose?
 
-  -
+  - All tabs displayed correctly. Required tabs are present.
 
   
 2. Check all text within for meaning or spelling errors if necessary
 
-  -
+  - Spelling and meaning clear.
 
 
 3. Check that all actionable sub elements operate correctly. Do they satisfy the stated functionality?
 
-  -
+  - All tabs working well, changing with each click.
   
   
 3a. Check that functionality responds quickly to user input.
 
-  -
+  - Response is immediate.
   
   
 3b. Check that functionality does not degrade in extreme cases (actionable elements used very quickly, large number of times, etc).
 
-  -
+  - Rapidly changing tabs has no detrimental effect.
   
   
 4. Check that all data displayed by the element is visible, readable, correctly arranged, correctly labelled.
 
-  -
+  - n/a
   
   
 5. Check that the element behaves sensibly when risizing occurs, and it remains usable and readable whenever possible.
 
-  -
+  - All tabs fit within minimum height. If the panel width is less than the required width scroll arrows are displayed. Tabs are hidden when panel is minimized. 
   
   
 6. Check that the element updates promptly when responding to changes in the data.
 
-  -
+  - n/a
   
+
+Fixes Required: 
+  
+  - None
   
 -----------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -224,43 +243,47 @@ Testing Strategy:               A
 
 1. Examine UI element. Is it visually correct? Does it contain all elements to satisfy its purpose?
 
-  -
+  - Robot list displays correctly. Displays all known robots.
 
   
 2. Check all text within for meaning or spelling errors if necessary
 
-  -
+  - n/a
 
 
 3. Check that all actionable sub elements operate correctly. Do they satisfy the stated functionality?
 
-  -
+  - Roots can be selected correctly.
   
   
 3a. Check that functionality responds quickly to user input.
 
-  -
+  - Response is immediate.
   
   
 3b. Check that functionality does not degrade in extreme cases (actionable elements used very quickly, large number of times, etc).
 
-  -
+  - Rapidly changing selected robot has no detrimental effect.
   
   
 4. Check that all data displayed by the element is visible, readable, correctly arranged, correctly labelled.
 
-  -
+  - Robot names and IDs are visible, readable, well arranged and correctly presented. Purpose is clear. Data presented is correct.
   
   
 5. Check that the element behaves sensibly when risizing occurs, and it remains usable and readable whenever possible.
 
-  -
+  - Resizing has no negative effect on the panel. Minimizes correctly.
   
   
 6. Check that the element updates promptly when responding to changes in the data.
 
-  -
+  - New robots are reflected in the list immediately. Changes to name data are reflected in the list immediately.
   
+
+Fixes Required: 
+  
+  - None
   
 -----------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -277,43 +300,47 @@ Testing Strategy:               A
 
 1. Examine UI element. Is it visually correct? Does it contain all elements to satisfy its purpose?
 
-  -
+  - Panel is visually correct, contains all required components.
 
   
 2. Check all text within for meaning or spelling errors if necessary
 
-  -
+  - All spelling correct. Meanings clear.
 
 
 3. Check that all actionable sub elements operate correctly. Do they satisfy the stated functionality?
 
-  -
+  - Port number box can be changed correctly. Only accepts numerical input. Button operates correctly, changes text as necessary, disables port box when required.
   
   
 3a. Check that functionality responds quickly to user input.
 
-  -
+  - Response is immediate.
   
   
 3b. Check that functionality does not degrade in extreme cases (actionable elements used very quickly, large number of times, etc).
 
-  -
+  - Rapidly and repeatedly pressing the start/stop listening button appears to have no detrimental effect. Port number box does not have a maximum value, as some computers support extremely high port numbers.
   
   
 4. Check that all data displayed by the element is visible, readable, correctly arranged, correctly labelled.
 
-  -
+  - n/a
   
   
 5. Check that the element behaves sensibly when risizing occurs, and it remains usable and readable whenever possible.
 
-  -
+  - Resizing has no detrimental effect on the panels functionality. At minimum size all controls are readable and usable.
   
   
 6. Check that the element updates promptly when responding to changes in the data.
 
-  -
+  - n/a
   
+
+Fixes Required: 
+  
+  - None
   
 -----------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -330,43 +357,47 @@ Testing Strategy:               A
 
 1. Examine UI element. Is it visually correct? Does it contain all elements to satisfy its purpose?
 
-  -
+  - Visually correct, all elements required are present.
 
   
 2. Check all text within for meaning or spelling errors if necessary
 
-  -
+  - Log file directory path can be extremely long, and overrun the available width. Long paths should be truncated and only the final portion shown. All spelling and meanings correct.
 
 
 3. Check that all actionable sub elements operate correctly. Do they satisfy the stated functionality?
 
-  -
+  - All components operate correctly. File path dialog allows path to be set. Logging button toggles between start and stop.
   
   
 3a. Check that functionality responds quickly to user input.
 
-  -
+  - Response is immediate.
   
   
 3b. Check that functionality does not degrade in extreme cases (actionable elements used very quickly, large number of times, etc).
 
-  -
+  - Rapid use of the buttons has no detrimental effect. 
   
   
 4. Check that all data displayed by the element is visible, readable, correctly arranged, correctly labelled.
 
-  -
+  - Log directory is not always readable, as previously explained.
   
   
 5. Check that the element behaves sensibly when risizing occurs, and it remains usable and readable whenever possible.
 
-  -
+  - All controls fit within minimum width and height, panel minimizes correctly below these values.
   
   
 6. Check that the element updates promptly when responding to changes in the data.
 
-  -
+  - n/a
   
+
+Fixes Required: 
+  
+  - Handle long directory paths more gracefully.
   
 -----------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -376,49 +407,54 @@ Purpose:                        Allows access to the different tabs within the d
 
 Statement of Functionality:     Must display the names of the different tabs.
                                 Must allow user to click on the tabs to change between them.
+								Required tabs: Console, Overview, State, IR, Custom Data
                                 
 Testing Strategy:               A
 
 
 1. Examine UI element. Is it visually correct? Does it contain all elements to satisfy its purpose?
 
-  -
+  - Tabs are all visually corerct. All necessary tabs are present.
 
   
 2. Check all text within for meaning or spelling errors if necessary
 
-  -
+  - All spelling correct and meanings clear.
 
 
 3. Check that all actionable sub elements operate correctly. Do they satisfy the stated functionality?
 
-  -
+  - All tabs can be selected. Clicking the tabs works properly.
   
   
 3a. Check that functionality responds quickly to user input.
 
-  -
+  - Responses are immediate.
   
   
 3b. Check that functionality does not degrade in extreme cases (actionable elements used very quickly, large number of times, etc).
 
-  -
+  - Changing tabs rapidly has no detrimental affect.
   
   
 4. Check that all data displayed by the element is visible, readable, correctly arranged, correctly labelled.
 
-  -
+  - n/a
   
   
 5. Check that the element behaves sensibly when risizing occurs, and it remains usable and readable whenever possible.
 
-  -
+  - All tabs fit within minimum width and height. Hidden when panel is minimized.
   
   
 6. Check that the element updates promptly when responding to changes in the data.
 
-  -
+  - n/a
   
+
+Fixes Required: 
+  
+  - None
   
 -----------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -438,43 +474,46 @@ Testing Strategy:               A
 
 1. Examine UI element. Is it visually correct? Does it contain all elements to satisfy its purpose?
 
-  -
+  - Console is visually correct, althogh most recent text is placed on the top line, counterintuitively. Contains the required text area. Scrollable.
 
   
 2. Check all text within for meaning or spelling errors if necessary
 
-  -
-
+  - n/a
 
 3. Check that all actionable sub elements operate correctly. Do they satisfy the stated functionality?
 
-  -
+  - Messages (both from application and robots) are presented correctly and in order. Robot messages are identified. 
   
   
 3a. Check that functionality responds quickly to user input.
 
-  -
+  - n/a
   
   
 3b. Check that functionality does not degrade in extreme cases (actionable elements used very quickly, large number of times, etc).
 
-  -
+  - Long messages and large numbers of messages are readable using the scroll bars.
   
   
 4. Check that all data displayed by the element is visible, readable, correctly arranged, correctly labelled.
 
-  -
+  - Messages are all readable and robot messages are clearly labeled. Appear in non intuitive order, with latest at the top, as discussed.
   
   
 5. Check that the element behaves sensibly when risizing occurs, and it remains usable and readable whenever possible.
 
-  -
+  - Resizing has no detrimental effect on the console.
   
   
 6. Check that the element updates promptly when responding to changes in the data.
 
-  -
+  - New messages are displayed immediately.
   
+
+Fixes Required: 
+  
+  - Reverse console ordering so that messages read from top to bottom in order.
   
 -----------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -491,43 +530,47 @@ Testing Strategy:               A
 
 1. Examine UI element. Is it visually correct? Does it contain all elements to satisfy its purpose?
 
-  -
+  - Potentially nnecessary double heading. Otherwise visually correct, all required fields present.
 
   
 2. Check all text within for meaning or spelling errors if necessary
 
-  -
+  - Spelling correct and meaning clear.
 
 
 3. Check that all actionable sub elements operate correctly. Do they satisfy the stated functionality?
 
-  -
+  - n/a
   
   
 3a. Check that functionality responds quickly to user input.
 
-  -
+  - n/a
   
   
 3b. Check that functionality does not degrade in extreme cases (actionable elements used very quickly, large number of times, etc).
 
-  -
+  - n/a
   
   
 4. Check that all data displayed by the element is visible, readable, correctly arranged, correctly labelled.
 
-  -
+  - Data is visible, readable, clear, correctly arranged, and labeled.
   
   
 5. Check that the element behaves sensibly when risizing occurs, and it remains usable and readable whenever possible.
 
-  -
+  - Resizing has no detrimental effect, all data remains visible down to the minimum size.
   
   
 6. Check that the element updates promptly when responding to changes in the data.
 
-  -
+  - new data is updated immediately.
   
+
+Fixes Required: 
+  
+  - Possibly remove 'overview' heading, as the tab label clearly states the purpose
   
 -----------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -545,43 +588,47 @@ Testing Strategy:               A
 
 1. Examine UI element. Is it visually correct? Does it contain all elements to satisfy its purpose?
 
-  -
+  - Visually correct, both lists present and labeled.
 
   
 2. Check all text within for meaning or spelling errors if necessary
 
-  -
+  - All spelling correct and meanings clear.
 
 
 3. Check that all actionable sub elements operate correctly. Do they satisfy the stated functionality?
 
-  -
+  - Lists operate correctly, do not allow selection as there is no need.
   
   
 3a. Check that functionality responds quickly to user input.
 
-  -
+  - n/a
   
   
 3b. Check that functionality does not degrade in extreme cases (actionable elements used very quickly, large number of times, etc).
 
-  -
+  - Large numbers of states and transitions handled with scroll bars.
   
   
 4. Check that all data displayed by the element is visible, readable, correctly arranged, correctly labelled.
 
-  -
+  - Known states are readable and clear. Transitions are readable but not immediately clear, as the timestamp is put first. Clarity of transitions could be improved. Labels correct.
   
   
 5. Check that the element behaves sensibly when risizing occurs, and it remains usable and readable whenever possible.
 
-  -
+  - Reszing has no detrimental effect on the element. Scroll bars used where necessary.
   
   
 6. Check that the element updates promptly when responding to changes in the data.
 
-  -
+  - New states and transitions are displayed immediately.
   
+
+Fixes Required: 
+  
+  - Improve clarity of state transition information by rearranging / clarifying time stamp
   
 -----------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -600,43 +647,50 @@ Testing Strategy:               A
 
 1. Examine UI element. Is it visually correct? Does it contain all elements to satisfy its purpose?
 
-  -
+  - Lacking clear heading. Bars in graph visually correct. Numbering correct but taking up a lot of space.
 
   
 2. Check all text within for meaning or spelling errors if necessary
 
-  -
+  - Meaning of heading unclear (robot name)
 
 
 3. Check that all actionable sub elements operate correctly. Do they satisfy the stated functionality?
 
-  -
+  - n/a
   
   
 3a. Check that functionality responds quickly to user input.
 
-  -
+  - n/a
   
   
 3b. Check that functionality does not degrade in extreme cases (actionable elements used very quickly, large number of times, etc).
 
-  -
+  - n/a
   
   
 4. Check that all data displayed by the element is visible, readable, correctly arranged, correctly labelled.
 
-  -
+  - IR data is not labelled. 
   
   
 5. Check that the element behaves sensibly when risizing occurs, and it remains usable and readable whenever possible.
 
-  -
+  - Some data hidden when width resized down.
   
   
 6. Check that the element updates promptly when responding to changes in the data.
 
-  -
+  - Updating is immediate.
   
+
+Fixes Required: 
+  
+  - Add clear headings to clarify meanings of values.
+  - Rarrange to maximize the user of space, better arrange numerical labels.
+  - Add scroll bar to handle resizing issues.
+  - Generally improve IR data display for clarity.
   
 -----------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -653,43 +707,47 @@ Testing Strategy:               A
 
 1. Examine UI element. Is it visually correct? Does it contain all elements to satisfy its purpose?
 
-  -
+  - Visually correct. Table of custom values present.
 
   
 2. Check all text within for meaning or spelling errors if necessary
 
-  -
+  - Spelling correct and meanings clear.
 
 
 3. Check that all actionable sub elements operate correctly. Do they satisfy the stated functionality?
 
-  -
+  - Selecting data has no effec as intended.
   
   
 3a. Check that functionality responds quickly to user input.
 
-  -
+  - n/a
   
   
 3b. Check that functionality does not degrade in extreme cases (actionable elements used very quickly, large number of times, etc).
 
-  -
+  - n/a
   
   
 4. Check that all data displayed by the element is visible, readable, correctly arranged, correctly labelled.
 
-  -
+  - All data points are readable and visible. Scroll bars appear if data exceeds avaialble space.
   
   
 5. Check that the element behaves sensibly when risizing occurs, and it remains usable and readable whenever possible.
 
-  -
+  - Table scales to fit available space.
   
   
 6. Check that the element updates promptly when responding to changes in the data.
 
-  -
+  - Table updates immediately when new values are received.
   
+
+Fixes Required: 
+
+  - None  
   
 -----------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -705,43 +763,47 @@ Testing Strategy:               A
 
 1. Examine UI element. Is it visually correct? Does it contain all elements to satisfy its purpose?
 
-  -
+  - Toolbar appearance is correct, sub menus working.
 
   
 2. Check all text within for meaning or spelling errors if necessary
 
-  -
+  - Spelling correct and meanings clear.
 
 
 3. Check that all actionable sub elements operate correctly. Do they satisfy the stated functionality?
 
-  -
+  - All menu items working correctly.
   
   
 3a. Check that functionality responds quickly to user input.
 
-  -
+  - Responses are immediate.
   
   
 3b. Check that functionality does not degrade in extreme cases (actionable elements used very quickly, large number of times, etc).
 
-  -
+  - Rapid use of the menu sometimes causes it to not be displayed or dissapear correctly. This is a known bug in ubuntu, and not related to the application.
   
   
 4. Check that all data displayed by the element is visible, readable, correctly arranged, correctly labelled.
 
-  -
+  - Settings are correctly displayed in the menus.
   
   
 5. Check that the element behaves sensibly when risizing occurs, and it remains usable and readable whenever possible.
 
-  -
+  - Resizing has no effect on the toolbar or menus.
   
   
 6. Check that the element updates promptly when responding to changes in the data.
 
-  -
+  - Menu is updated immediately with changes to the settings.
   
+
+Fixes Required:
+
+  - None
   
 -----------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -759,42 +821,64 @@ Testing Strategy:               A
 
 1. Examine UI element. Is it visually correct? Does it contain all elements to satisfy its purpose?
 
-  -
+  - All settings dialogs visually correct. Required elements to change all settings present.
 
   
 2. Check all text within for meaning or spelling errors if necessary
 
-  -
+  - All spellings correct and meanings clear.
 
 
 3. Check that all actionable sub elements operate correctly. Do they satisfy the stated functionality?
 
-  -
+  - All settings controls working correctly.
   
   
 3a. Check that functionality responds quickly to user input.
 
-  -
+  - Settings changes are applied immediately after pressing apply.
   
   
 3b. Check that functionality does not degrade in extreme cases (actionable elements used very quickly, large number of times, etc).
 
-  -
+  - Repeated use of the windows has no detrimental affect on functionality. Repeated use of settings controls has no detrimental affect as changes are only applied after apply button is pressed.
   
   
 4. Check that all data displayed by the element is visible, readable, correctly arranged, correctly labelled.
 
-  -
+  - All settings are displayed correctly when the windows are openened. All settings are correctly labeled.
   
   
 5. Check that the element behaves sensibly when risizing occurs, and it remains usable and readable whenever possible.
 
-  -
+  - Dialog windows cannot be resized.
   
   
 6. Check that the element updates promptly when responding to changes in the data.
 
-  -
+  - n/a
+  
+
+Fixes Required:
+
+  - None
   
   
 -----------------------------------------------------------------------------------------------------------------------------------------------
+
+Results:
+
+Most tests were successful, and the UI is largely functional and robust, with no serious issues. Some minor aesthetic fixes needed, as listed below.
+
+Required Fixes:
+
+  - Consider renaming the settings tab on the visualiser panel to make its purpose clearer.
+  - Handle long directory paths on the logging tab more gracefully.
+  - Reverse the ordering of messages in the console so that they read from top to bottom in order, as is intuitive.
+  - The overview tab has the heading overview at the top which duplicates the labeling on the tab itself and can be removed.
+  - Improve clarity of state transition information by rearranging / clarifying time stamp.
+  - The IR data tab needs a number of improvements:
+    - Add clear headings to clarify meanings of values.
+    - Rarrange to maximize the user of space, better arrange numerical labels.
+    - Add scroll bar to handle resizing issues.
+    - Generally improve IR data display for clarity.
