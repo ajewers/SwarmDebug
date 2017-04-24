@@ -1,0 +1,415 @@
+---- Visualiser UI Testing ----
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+General Tests:
+
+1. Check that clicks within the visualiser space are located correctly
+
+  - 
+
+2. Check that selecting robots via clicking functions correctly
+
+  - 
+  
+3. Check that colours are working correctly
+
+  -
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Data Visualisation Type:        Robot ID
+
+Purpose:                        Overlay the numerical ID of the robot on to the video feed
+
+Features:                       Numerical ID as text string
+                                Adjacent to each known robot
+                                Same relative positioning for all robots
+
+Settings:                       On / off (toggle)
+                                Display for all robots or the selected robot only (toggle)
+
+Test Strategy:                  B
+
+
+1. Define input data and expected representation
+
+  -
+
+2. Supply input data
+
+  -
+
+3. Verify representation is as expected
+
+  -
+
+4. Check that visualisation is clear and any text is legible
+
+  -
+ 
+5. Repeat for 3 different sets of input data
+
+  -
+
+6. Verify that integrity is maintained with extreme data, corner cases, and zero data, where necessary
+
+  -
+ 
+7. Verify that integrity is maintained at a range of sizes, as far as possible  
+
+  -
+  
+
+Fixes Required: 
+
+  -
+  
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Data Visualisation Type:        Robot Name
+
+Purpose:                        Overlay the name of the robot on to the video feed
+
+Features:                       Name as text string, as defined in the data model
+                                Adjacent to each known robot
+                                Same relative positioning for all robots
+
+Settings:                       On / off (toggle)
+                                Display for all robots or the selected robot only (toggle)
+
+Test Strategy:                  B
+
+
+1. Define input data and expected representation
+
+  -
+
+2. Supply input data
+
+  -
+
+3. Verify representation is as expected
+
+  -
+
+4. Check that visualisation is clear and any text is legible
+
+  -
+ 
+5. Repeat for 3 different sets of input data
+
+  -
+
+6. Verify that integrity is maintained with extreme data, corner cases, and zero data, where necessary
+
+  -
+ 
+7. Verify that integrity is maintained at a range of sizes, as far as possible  
+
+  -
+  
+
+Fixes Required: 
+
+  -
+  
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Data Visualisation Type:        Robot State
+
+Purpose:                        Overlay the current state of the robot on to the video feed
+
+Features:                       Curernt state as text string, as currently defined in the data model
+                                Adjacent to each known robot
+                                Same relative positioning for all robots
+                                Update whenever state changes
+
+Settings:                       On / off (toggle)
+                                Display for all robots or the selected robot only (toggle)
+
+Test Strategy:                  B
+
+
+1. Define input data and expected representation
+
+  -
+
+2. Supply input data
+
+  -
+
+3. Verify representation is as expected
+
+  -
+
+4. Check that visualisation is clear and any text is legible
+
+  -
+ 
+5. Repeat for 3 different sets of input data
+
+  -
+
+6. Verify that integrity is maintained with extreme data, corner cases, and zero data, where necessary
+
+  -
+ 
+7. Verify that integrity is maintained at a range of sizes, as far as possible  
+
+  -
+  
+
+Fixes Required: 
+
+  -
+  
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Data Visualisation Type:        Position
+
+Purpose:                        Overlay a small circle around the robot's current position in the video, highlighting it
+
+Features:                       Graphical representation as a circle
+                                Outline, not filled
+
+Settings:                       On / off (toggle)
+
+Test Strategy:                  B
+
+
+1. Define input data and expected representation
+
+  -
+
+2. Supply input data
+
+  -
+
+3. Verify representation is as expected
+
+  -
+
+4. Check that visualisation is clear and any text is legible
+
+  -
+ 
+5. Repeat for 3 different sets of input data
+
+  -
+
+6. Verify that integrity is maintained with extreme data, corner cases, and zero data, where necessary
+
+  -
+ 
+7. Verify that integrity is maintained at a range of sizes, as far as possible  
+
+  -
+  
+
+Fixes Required: 
+
+  -
+  
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Data Visualisation Type:        Direction
+
+Purpose:                        Overlay a small line from the center of a robot outward, in the direction it is facing
+
+Features:                       Graphical representation as a line
+                                Adjusts to match robots orientation as it changes
+
+Settings:                       On / off (toggle)
+
+Test Strategy:                  B
+
+
+1. Define input data and expected representation
+
+  -
+
+2. Supply input data
+
+  -
+
+3. Verify representation is as expected
+
+  -
+
+4. Check that visualisation is clear and any text is legible
+
+  -
+ 
+5. Repeat for 3 different sets of input data
+
+  -
+
+6. Verify that integrity is maintained with extreme data, corner cases, and zero data, where necessary
+
+  -
+ 
+7. Verify that integrity is maintained at a range of sizes, as far as possible  
+
+  -
+  
+
+Fixes Required: 
+
+  -
+  
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Data Visualisation Type:        IR Sensor Data
+
+Purpose:                        Overlay a graphical representation of the robots most recent infra-red sensor data
+
+Features:                       Graphical representation of IR data values
+                                Positioned to match IR sensor locations / angles on robot
+                                Proximity display mode - renders a line of length inversely proportional to the sensor value, from the center of the robot outwards, at the angle of each sensor.
+                                'Heat' display mode - renders a box adjacent to the robot, positioned to match the sensor layout, that grows larger and changes colour with increasing sensor value
+                                Adjusted to match robot orientation as it moves
+
+Settings:                       On / off (toggle)
+                                Display for all robots or the selected robot only (toggle)
+                                Proximity or heat mode (toggle)
+                                Angles for sensors 1-8 (numerical)
+
+Test Strategy:                  B
+
+
+1. Define input data and expected representation
+
+  -
+
+2. Supply input data
+
+  -
+
+3. Verify representation is as expected
+
+  -
+
+4. Check that visualisation is clear and any text is legible
+
+  -
+ 
+5. Repeat for 3 different sets of input data
+
+  -
+
+6. Verify that integrity is maintained with extreme data, corner cases, and zero data, where necessary
+
+  -
+ 
+7. Verify that integrity is maintained at a range of sizes, as far as possible  
+
+  -
+  
+
+Fixes Required: 
+
+  -
+  
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Data Visualisation Type:        Path
+
+Purpose:                        Display the robots recent movement as a trail behind it in the form of a line overlayed onto the video feed
+
+Features:                       Renders robot's position history as a sequence of points linked by lines
+                                Adjustable sampling interval
+
+Settings:                       On / off (toggle)
+                                Display for all robots or the selected robot only (toggle)
+                                Sampling interval (numerical)
+
+Test Strategy:                  B
+
+
+1. Define input data and expected representation
+
+  -
+
+2. Supply input data
+
+  -
+
+3. Verify representation is as expected
+
+  -
+
+4. Check that visualisation is clear and any text is legible
+
+  -
+ 
+5. Repeat for 3 different sets of input data
+
+  -
+
+6. Verify that integrity is maintained with extreme data, corner cases, and zero data, where necessary
+
+  -
+ 
+7. Verify that integrity is maintained at a range of sizes, as far as possible  
+
+  -
+  
+
+Fixes Required: 
+
+  -
+  
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Data Visualisation Type:        Custom Data
+
+Purpose:                        Display a specific element of the robot's custom data as text on the video feed
+
+Features:                       Curernt value of given data point as text string, as currently defined in the data model
+                                Adjacent to each known robot
+                                Same relative positioning for all robots
+                                Update whenever value changes
+                                Target data point can be set by user
+
+Settings:                       On / off (toggle)
+                                Display for all robots or the selected robot only (toggle)
+                                Custom data point to be displayed (string)
+
+Test Strategy:                  B
+
+
+1. Define input data and expected representation
+
+  -
+
+2. Supply input data
+
+  -
+
+3. Verify representation is as expected
+
+  -
+
+4. Check that visualisation is clear and any text is legible
+
+  -
+ 
+5. Repeat for 3 different sets of input data
+
+  -
+
+6. Verify that integrity is maintained with extreme data, corner cases, and zero data, where necessary
+
+  -
+ 
+7. Verify that integrity is maintained at a range of sizes, as far as possible  
+
+  -
+  
+
+Fixes Required: 
+
+  -
+  
+-----------------------------------------------------------------------------------------------------------------------------------------------
