@@ -882,3 +882,4 @@ Required Fixes:
     - Rarrange to maximize the user of space, better arrange numerical labels.
     - Add scroll bar to handle resizing issues.
     - Generally improve IR data display for clarity.
+  - When closing the IR or path settings dialogs all of the visualiser settings toggles appear to be forgotten by the UI
