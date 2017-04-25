@@ -6,15 +6,20 @@ General Tests:
 
 1. Check that clicks within the visualiser space are located correctly
 
-  - 
+  - Crosshairs show that clicks are being correctly located. Click position values appear correct at a range of image dimensions / aspect ratios.
 
 2. Check that selecting robots via clicking functions correctly
 
-  - 
+  - Robots can be click selected correctly. Tolerance is appropriate. Selecting a robot with ID 1 caused one with ID 1000 to be selected instead.
   
 3. Check that colours are working correctly
 
-  -
+  - When clours are enabled each robot is displayed in its own colour. Many of these are hard to see on dark backgrounds though. Would be more effective if the user could set a desired colour.
+  
+Fixes Required:
+
+  - Investigate selection bug. Clicked one #1, selected #1000.
+  - Look at ways to improve robot colour system to work on dark and light backgrounds. Maybe allow user to set colours manually.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -34,36 +39,37 @@ Test Strategy:                  B
 
 1. Define input data and expected representation
 
-  -
+  - Five active robots using ID's 0, 1, 5, 7 and 8. Expect to see the ID numbers rendered adjacent to the robots. Numbers should be positioned to the left of the robot, slightly above its center line.
 
 2. Supply input data
 
-  -
+  - Placed the five robots in the arena in view of the camera with their tags attached. Programmed the robots to report sample data of all types.
 
 3. Verify representation is as expected
 
-  -
+  - Numerical ID's appear correctly next to each robot. Positioned to the left and slightly up from the center. Potentially slightly too far to the left. In crowded arenas ID's  overlap, becoming hard to read.
+  - Can be correctly toggled on and off.
 
 4. Check that visualisation is clear and any text is legible
 
-  -
+  - ID numbers are legibile, provided that the colour is not too similar to the background.
  
 5. Repeat for 3 different sets of input data
 
-  -
+  - Tested with 5 robots of different ID's.
 
 6. Verify that integrity is maintained with extreme data, corner cases, and zero data, where necessary
 
-  -
+  - Long robot ID's (greater than 99) collide with position visualisation, become hard to read. Although swarms of greater than 99 robots are not anticipated, a potential fix could be allowing the user to configure the offset of the ID number from the robot's center.
  
 7. Verify that integrity is maintained at a range of sizes, as far as possible  
 
-  -
+  - IDs remain legible for all possible visualiser sizes, however at very small sizes the text occupies an excessive portion of the window. However making teh visualiser very small makes it relatively useless anyway, so this is not a major concern.
   
 
 Fixes Required: 
 
-  -
+  - Look into allowing the user to customise the positioning of the ID labels.
   
 -----------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -83,36 +89,38 @@ Test Strategy:                  B
 
 1. Define input data and expected representation
 
-  -
+  - Five robots, names 'Robot_1' 'Robot_2' 'Robot_6' 'Robot_8' 'Robot_9'. Expect to see name displayed as text to the right of each robot, vertically aligned with the ID text.
 
 2. Supply input data
 
-  -
+  - Programmed each robot to report its name in a watchdg packet ever 50 control steps.
 
 3. Verify representation is as expected
 
-  -
+  - All robot names displayed correctly, to the right of each robot and vertically aligned with the ID text.
+  - Can be correctly toggled on and off.
+  - Can be correctly set to display for all robots or selected robot only.
 
 4. Check that visualisation is clear and any text is legible
 
-  -
+  - Names are legible. Long names will not collide with other visualisations for their own robot
  
 5. Repeat for 3 different sets of input data
 
-  -
+  - Tested with 5 robots.
 
 6. Verify that integrity is maintained with extreme data, corner cases, and zero data, where necessary
 
-  -
+  - Long names are legible provided the robot is sufficiently far enough from the right hand edge of the image. When a name is not present it displays as 'Unknown'.
  
 7. Verify that integrity is maintained at a range of sizes, as far as possible  
 
-  -
+  - Names remain legible for all usable sizes of the visualiser.
   
 
 Fixes Required: 
 
-  -
+  - None
   
 -----------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -133,36 +141,36 @@ Test Strategy:                  B
 
 1. Define input data and expected representation
 
-  -
+  - Five robots all oscillating between STATE1 and STATE2. States should be rendered as text to the right of the robot, below the name text.
 
 2. Supply input data
 
-  -
+  - Programmed the robots to report a new state every 50 control steps. First state is STATE1, then STATE2, then repeat.
 
 3. Verify representation is as expected
 
-  -
+  - Currect state renders correctly for all robots. Positioned below name text. Updates immediately when changes occur.
 
 4. Check that visualisation is clear and any text is legible
 
-  -
+  - States are legible.
  
 5. Repeat for 3 different sets of input data
 
-  -
+  - Tested with 5 robots, changing state frequently.
 
 6. Verify that integrity is maintained with extreme data, corner cases, and zero data, where necessary
 
-  -
+  - Long state names remain legible provided there is sufficient space to render them. 
  
 7. Verify that integrity is maintained at a range of sizes, as far as possible  
 
-  -
+  - Legible at all usable visualiser sizes.
   
 
 Fixes Required: 
 
-  -
+  - None
   
 -----------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -180,36 +188,37 @@ Test Strategy:                  B
 
 1. Define input data and expected representation
 
-  -
+  - Five robots moving around the arena. Expect to see a circle drawn at each robots position.
 
 2. Supply input data
 
-  -
+  - Programmed the robots ro move in circles, placed them all around the arena.
 
 3. Verify representation is as expected
 
-  -
+  - Circles rendered for all robots, correctly positioned. Update as robot moves with good precision.
 
 4. Check that visualisation is clear and any text is legible
 
-  -
+  - All circles are clear and legible, provided the color is sufficiently different to the background. See notes on robot colour.
+  - Can be correctly toggled on and off.
  
 5. Repeat for 3 different sets of input data
 
-  -
+  - Tested with 5 robots.
 
 6. Verify that integrity is maintained with extreme data, corner cases, and zero data, where necessary
 
-  -
+  - Robots at the very edge of the image are still located, but the full position cirle cannot be rendered.
  
 7. Verify that integrity is maintained at a range of sizes, as far as possible  
 
-  -
+  - Position circles are visible at all usable visualiser sizes.
   
 
 Fixes Required: 
 
-  -
+  - None.
   
 -----------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -227,36 +236,37 @@ Test Strategy:                  B
 
 1. Define input data and expected representation
 
-  -
+  - Five robots moving around the arena. Expect to see a line drawn for each robot, from its center pointing outwards iin the direction it is facing.
 
 2. Supply input data
 
-  -
+  - Programmed the five robots to move in circles. Placed them around the arena.
 
 3. Verify representation is as expected
 
-  -
+  - Direction lines drawn for all robots. Pointing in the correct directions. Updated with movement.
+  - Can be correctly toggled on and off.
 
 4. Check that visualisation is clear and any text is legible
 
-  -
+  - lines are clear although small. Highlighted when the robot is selected. User could configure line length and thickness.
  
 5. Repeat for 3 different sets of input data
 
-  -
+  - Tested with 5 robots.
 
 6. Verify that integrity is maintained with extreme data, corner cases, and zero data, where necessary
 
-  -
+  - Direction lines remain visible and correct even at the edges of the image.
  
 7. Verify that integrity is maintained at a range of sizes, as far as possible  
 
-  -
+  - Visible at all usable visualiser sizes.
   
 
 Fixes Required: 
 
-  -
+  - None
   
 -----------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -280,36 +290,36 @@ Test Strategy:                  B
 
 1. Define input data and expected representation
 
-  -
+  - Five robots reporting their IR sensor data. Using a white sheet of paper placed perpendicular to the sensor direction at varying distance to vary sensor value. Expect to see each of the sensor lines vary length accordingly in proximity mode, and each of the sensor blocks vary size and colour accordingly in heat mode.
 
 2. Supply input data
 
-  -
+  - Programmed the robots to report their IR data every control step. Used the paper method to test each sensor on each robot.
 
 3. Verify representation is as expected
 
-  -
+  - IR data is displayed in both modes. Display varies correctly with varying values. Proximity lines reduce in length for higher values. Their length at values close to zero is much longer than perhaps necessary. In heat mode the boxes respond well to input, but are black for values close to zero and therefore hard to see on a dark background. Look into different colour schemes.
 
 4. Check that visualisation is clear and any text is legible
 
-  -
+  - Rendering is clear.
  
 5. Repeat for 3 different sets of input data
 
-  -
+  - Tested for 5 robots.
 
 6. Verify that integrity is maintained with extreme data, corner cases, and zero data, where necessary
 
-  -
+  - n/a
  
 7. Verify that integrity is maintained at a range of sizes, as far as possible  
 
-  -
+  - The size of the visualisation does not change with the size of the image.  The proximity lines were only ever meant to be representative, so this is not a massive issue.
   
 
 Fixes Required: 
 
-  -
+  - Look into better sizing for the proximity lines, and better mapping between non linear sensor values and the line length. Look into better colours for heat mode.
   
 -----------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -329,36 +339,37 @@ Test Strategy:                  B
 
 1. Define input data and expected representation
 
-  -
+  - Five robots moving around the arena along different circular paths. Expect to see a trail line behind each robot showing the path it has taken.
 
 2. Supply input data
 
-  -
+  - Programmed the robots to move in large cricles, place them around the arena for good coverage.
 
 3. Verify representation is as expected
 
-  -
+  - Trails shown for all robots, accurate to their approximate task. Varying the sampling interval allows for longer, lower resolution paths.  Robots that leave the image acquire large straight sections on their path when they reenter. 
+  - Can be correctly toggled on and off.
 
 4. Check that visualisation is clear and any text is legible
 
-  -
+  - Trails are clear. 
  
 5. Repeat for 3 different sets of input data
 
-  -
+  - Tested with 5 robots.
 
 6. Verify that integrity is maintained with extreme data, corner cases, and zero data, where necessary
 
-  -
+  - Using excessively large sampling intervals gives jagged, innacurate paths, as expected. Very low sampling intervals give very short paths, but they remain accurate.
  
 7. Verify that integrity is maintained at a range of sizes, as far as possible  
 
-  -
+  - Paths remain visible and accurate at all usable visualiser sizes.
   
 
 Fixes Required: 
 
-  -
+  - None
   
 -----------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -381,35 +392,35 @@ Test Strategy:                  B
 
 1. Define input data and expected representation
 
-  -
+  - Five robots each reporting custom data. Expect to see custom data key and value as text below state text.
 
 2. Supply input data
 
-  -
+  - Programmed the five robots to report custom data with the key 'ControlStep', their control step value as a string every 100th control step. Retried with a different key.
 
 3. Verify representation is as expected
 
-  -
+  - Key and value displayed as text below state text correctly. Can be toggled on and off correctly, and set for selected robot or all robots. Correctly handled different target keys.
 
 4. Check that visualisation is clear and any text is legible
 
-  -
+  - Text is clear and legible.
  
 5. Repeat for 3 different sets of input data
 
-  -
+  - Tested on 5 robots, 2 keys.
 
 6. Verify that integrity is maintained with extreme data, corner cases, and zero data, where necessary
 
-  -
+  - n/a
  
 7. Verify that integrity is maintained at a range of sizes, as far as possible  
 
-  -
+  - Visible at all usable visualiser sizes.
   
 
 Fixes Required: 
 
-  -
+  - None.
   
 -----------------------------------------------------------------------------------------------------------------------------------------------
