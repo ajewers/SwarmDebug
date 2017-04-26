@@ -64,26 +64,28 @@
 \contentsline {section}{\numberline {10.1}Continuous Integration Testing}{53}{section.112}
 \contentsline {section}{\numberline {10.2}Manual User Interface Testing}{53}{section.113}
 \contentsline {subsection}{\numberline {10.2.1}Method}{54}{subsection.114}
-\contentsline {subsection}{\numberline {10.2.2}Results}{56}{subsection.142}
-\contentsline {subsection}{\numberline {10.2.3}Fixes Implemented}{56}{subsection.143}
-\contentsline {section}{\numberline {10.3}Back End Unit Testing}{56}{section.144}
-\contentsline {section}{\numberline {10.4}Validation Testing}{56}{section.145}
-\contentsline {section}{\numberline {10.5}Evaluation}{56}{section.146}
-\contentsline {subsection}{\numberline {10.5.1}Method}{56}{subsection.147}
-\contentsline {subsection}{\numberline {10.5.2}Results}{56}{subsection.148}
-\contentsline {subsection}{\numberline {10.5.3}Analysis}{56}{subsection.149}
-\contentsline {chapter}{\numberline {11}Future Work}{57}{chapter.150}
-\contentsline {section}{\numberline {11.1}Additional Debugging Features}{57}{section.151}
-\contentsline {section}{\numberline {11.2}Platform Development}{57}{section.152}
-\contentsline {section}{\numberline {11.3}Expansion of Target Platforms}{58}{section.153}
-\contentsline {section}{\numberline {11.4}Integration with Augmented Reality Hardware}{59}{section.154}
-\contentsline {section}{\numberline {11.5}Use within the York Robotics Laboratory}{59}{section.155}
-\contentsline {section}{\numberline {11.6}Integration with Tablet Application}{59}{section.156}
-\contentsline {chapter}{\numberline {12}Conclusion}{61}{chapter.157}
-\contentsline {section}{\numberline {12.1}Overview}{61}{section.158}
-\contentsline {section}{\numberline {12.2}Evaluation Against Aims and Objectives}{61}{section.159}
-\contentsline {section}{\numberline {12.3}Value Within the York Robotics Laboratory}{61}{section.160}
-\contentsline {section}{\numberline {12.4}Value Within the Swarm Robotics Space}{61}{section.161}
-\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{63}{appendix.162}
-\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{63}{section.163}
-\contentsline {chapter}{Bibliography}{65}{appendix*.164}
+\contentsline {subsection}{\numberline {10.2.2}Results}{55}{subsection.140}
+\contentsline {subsection}{\numberline {10.2.3}Fixes Implemented}{57}{subsection.143}
+\contentsline {section}{\numberline {10.3}Data Model and Back End Unit Testing}{57}{section.144}
+\contentsline {subsection}{\numberline {10.3.1}Results}{61}{subsection.146}
+\contentsline {subsection}{\numberline {10.3.2}Issues with this Approach}{61}{subsection.147}
+\contentsline {section}{\numberline {10.4}Validation Testing}{62}{section.148}
+\contentsline {section}{\numberline {10.5}Evaluation}{62}{section.149}
+\contentsline {subsection}{\numberline {10.5.1}Method}{62}{subsection.150}
+\contentsline {subsection}{\numberline {10.5.2}Results}{62}{subsection.151}
+\contentsline {subsection}{\numberline {10.5.3}Analysis}{62}{subsection.152}
+\contentsline {chapter}{\numberline {11}Future Work}{63}{chapter.153}
+\contentsline {section}{\numberline {11.1}Additional Debugging Features}{63}{section.154}
+\contentsline {section}{\numberline {11.2}Platform Development}{63}{section.155}
+\contentsline {section}{\numberline {11.3}Expansion of Target Platforms}{64}{section.156}
+\contentsline {section}{\numberline {11.4}Integration with Augmented Reality Hardware}{65}{section.157}
+\contentsline {section}{\numberline {11.5}Use within the York Robotics Laboratory}{65}{section.158}
+\contentsline {section}{\numberline {11.6}Integration with Tablet Application}{65}{section.159}
+\contentsline {chapter}{\numberline {12}Conclusion}{67}{chapter.160}
+\contentsline {section}{\numberline {12.1}Overview}{67}{section.161}
+\contentsline {section}{\numberline {12.2}Evaluation Against Aims and Objectives}{67}{section.162}
+\contentsline {section}{\numberline {12.3}Value Within the York Robotics Laboratory}{67}{section.163}
+\contentsline {section}{\numberline {12.4}Value Within the Swarm Robotics Space}{67}{section.164}
+\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{69}{appendix.165}
+\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{69}{section.166}
+\contentsline {chapter}{Bibliography}{71}{appendix*.167}

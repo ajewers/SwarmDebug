@@ -65,11 +65,9 @@ The following test strategies were then devised for the different element catego
  \item Examine UI element visually. Verify that it appears correct. Verify that it contains all elements necessary to satisfy its purpose.
  \item Examine all text within the element. Check for errors in both meaning and spelling.
  \item Verify that all components within the element which perform actions in response to user input operate correctly.
- \item Verify that the actions completed by the components within the element satisfy the stated functionality of the element.
  \item Verify that all components respond quickly to user input.
  \item Verify that component actions and functionality do not degrade with extreme use (sustained rapid input, large numbers of input changes, etc).
- \item Verify that all data displayed within the element is visible, readable, correctly arranged and correctly labeled.
- \item Verify that all data displayed correctly matches the data in the model.
+ \item Verify that all data displayed within the element is visible, readable, correctly arranged and correctly labelled.
  \item Verify that the element behaves sensibly when window resizing occurs, and that it remains usable and data remains visible whenever possible.
  \item Verify that the element updates promptly when responding to changes in data.
 \end{enumerate}
@@ -89,19 +87,122 @@ The following test strategies were then devised for the different element catego
   \item Verify that integrity is maintained at a range of window sizes, within reasonable limits.
  \end{enumerate}
  \item Verify that user clicks within the visualiser space are located correctly, at a number of different window sizes.
- \item Verify that robots can be selected via clicking correctly.
+ \item Verify that robots can be selected by clicking on their location in the visualiser image.
 \end{enumerate}
 
 
 \subsection{Results}
+For each user interface element the appropriate test strategy, as specified in table \ref{tab:UserInterfaceElements}, was carried out. The following results were obtained.
 
+\begin{longtable}{ l p{10cm} }
+ \hline
+ \multicolumn{2}{c}{\textbf{Visualiser Panel Tab System}}\\
+ \hline
+ \textbf{Purpose} & Allows access to the different tabs within the visualiser panel.\\
+ \textbf{Required Functionality} & Must display the names of each different tab. Must allow the user to click on the tabs and thus change between them. The required tabs are the visualiser tab, the visualiser settings tab and the tracking camera settings tab.\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{1. Examine UI element visually. Verify that it appears correct. Verify that it contains all elements necessary to satisfy its purpose.}}\\
+ \multicolumn{2}{p{14cm}}{The tab bar appears to be visually correct. All required tabs are present and visible.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{2. Examine all text within the element. Check for errors in both meaning and spelling.}}\\
+ \multicolumn{2}{p{14cm}}{The spelling of each tab name is correct. The meaning of each tab name is relatively clear, although 'Settings' is ambiguous, and only related to the visualiser through position and context. Consider renaming this tab to clarify its purpose.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{3. Verify that all components within the element which perform actions in response to user input operate correctly.}}\\
+ \multicolumn{2}{p{14cm}}{Tab selection operates correctly. Clicking any of the tabs changes the panel to display the contents of that tab. This satisfies the required functionality.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{4. Verify that all components respond quickly to user input.}}\\
+ \multicolumn{2}{p{14cm}}{The tab changes immediately when clicked.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{5. Verify that component actions and functionality do not degrade with extreme use (sustained rapid input, large numbers of input changes, etc).}}\\
+ \multicolumn{2}{p{14cm}}{Repeatedly and rapidly changing tabs does not have any detrimental affect on the application.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{6. Verify that all data displayed within the element is visible, readable, correctly arranged and correctly labelled.}}\\
+ \multicolumn{2}{p{14cm}}{n/a.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{7. Verify that the element behaves sensibly when window resizing occurs, and that it remains usable and data remains visible whenever possible.}}\\
+ \multicolumn{2}{p{14cm}}{The tabs are not affected by window resizing. All of the tabs fit within the minimum size of the panel. If the panel is reduced below this size it is minimized, and the tabs are hidden as intended.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{8. Verify that the element updates promptly when responding to changes in data.}}\\
+ \multicolumn{2}{p{14cm}}{n/a.}\\
+ \hline
+ \textbf{Fixes Required} & Consider changing the text on the visualiser settings tab from 'Settings' to something more informative to improve clarity.\\
+ \bottomrule
+\end{longtable}
+\clearpage
+
+\begin{longtable}{ l p{10cm} }
+ \hline
+ \multicolumn{2}{c}{\textbf{Visualiser Settings Tab}}\\
+ \hline
+ \textbf{Purpose} & Displays the current settings for the visualiser and allows the user to change them.\\
+ \textbf{Required Functionality} & Must correctly display the current visualiser settings. Must allow the user to adjust the general visualiser settings, and access dialog windows for changing the settings of specific visualisations.\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{1. Examine UI element visually. Verify that it appears correct. Verify that it contains all elements necessary to satisfy its purpose.}}\\
+ \multicolumn{2}{p{14cm}}{.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{2. Examine all text within the element. Check for errors in both meaning and spelling.}}\\
+ \multicolumn{2}{p{14cm}}{.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{3. Verify that all components within the element which perform actions in response to user input operate correctly.}}\\
+ \multicolumn{2}{p{14cm}}{.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{4. Verify that all components respond quickly to user input.}}\\
+ \multicolumn{2}{p{14cm}}{.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{5. Verify that component actions and functionality do not degrade with extreme use (sustained rapid input, large numbers of input changes, etc).}}\\
+ \multicolumn{2}{p{14cm}}{.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{6. Verify that all data displayed within the element is visible, readable, correctly arranged and correctly labelled.}}\\
+ \multicolumn{2}{p{14cm}}{.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{7. Verify that the element behaves sensibly when window resizing occurs, and that it remains usable and data remains visible whenever possible.}}\\
+ \multicolumn{2}{p{14cm}}{.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{8. Verify that the element updates promptly when responding to changes in data.}}\\
+ \multicolumn{2}{p{14cm}}{.}\\
+ \hline
+ \textbf{Fixes Required} & .\\
+ \bottomrule
+\end{longtable}
 
 \subsection{Fixes Implemented}
 
 %----------------------------------------------------------------------------------------
 
-\section{Back End Unit Testing} \label{BackEndUnitTesting}
+\section{Data Model and Back End Unit Testing} \label{BackEndUnitTesting}
+The next large code component requiring testing was the data model, which formed the majority of the application back-end code. Testing the data model manually, by inputting data packets and verifying the correct insertion of data into the model, was deemed to be too time consuming. This manual approach also posed another problem, in that the contents of the data model could only be examined through the user interface, which meant that the data model testing would be inherently coupled to the UI. This would make it harder to determine the source of any bugs found, as they might be related to the data model or the UI. Avoiding this kind of interdependency is part of the reason for adopting an object oriented approach to the software design and implementation. In order to avoid this issue, the back-end was tested using an automated, 'unit-testing' based approach.
 
+Unit testing is a commonly used technique in professional software testing, and involves writing specific pieces of code which test individual 'units' of code. These test cases will manipulate the unit in some way, using the data and functions it exposes. Then the test case will assert a fact that should be true after the manipulation, such as a comparison of a data point within the unit and the value it should have following the given operations. Each test might include many of these assertion statements, and the test only passes provided that all assertions are determined to be true. In order to apply this technique to this system an extra class - `\textit{TestingWindow, testingwindow.cpp / .h}' - was added to the application. Alongside this class a number of individual test case functions were added. Each of these functions was written to test the data model in a specific way. Table \ref{tab:DataModelTestCases} lists the test case functions and their purposes.
+
+\begin{longtable}{ l p{10cm} }
+\caption[Data Model Test Cases]{Test cases used to unit-test the data model.}\\
+ Test Case & Purpose and Method\\
+ \hline
+ Robot Insertion Test & Tests whether data objects for new robots are inserted into the model correctly. Supplies a packet of each possible type, using a new robot ID each time. After each packet asserts that the number of robots stored in the model has increased by one. Supplies another set of packets, this time reusing the existing robot IDs. Asserts after each packet that the number of robots stored in the model has not increased.\\
+ Name Data Test & Tests whether data describing the name of a robot, received in watchdog packets, is inserted into the data model correctly. Supplies three watchdog packets, each with a different robot ID and robot name. Asserts that the data model now contains three robots, and that their name data matches the names entered in the packets. Supplies three new watchdog packets for the same set of robot IDs, with different names. Asserts that the data for each of the robots has been updated to include the new name data.\\
+ State Data Test & Tests whether data describing the current state of a robot, received through state packets, is inserted into the data model correctly. Supplies three state packets, each with a different robot ID and state. Asserts that the data model now contains three robots, and that their state data matches the states entered via the packets. Supplies three new state packets for the same set of robot IDs, with different states. Asserts that the state data for each of the robots in the model now matches the new states.\\
+ Position Data Test & Tests whether packets describing the current position and orientation of a robot are correctly parsed and the data stored correctly in the data model. Supplies three position packets, each with a different robot ID and different position values. Asserts that the data model now contains data for three robots. Asserts that this data matches the values in the packets for x-position, y-position and angle individually. Supplies three more position packets for the same set of robot IDs with new position and angle values. Asserts that the data in the model for each robot has been updated to reflect the new values. Floating point number assertions are done using a tolerance comparison, with a tolerance of $ 1 \times 10^{-7} $.\\
+ IR Data Test & Tests whether packets describing a robot's infra red sensor values are correctly parsed and the data correctly stored in the data model. Supplies an IR data packet, with each sensor reading containing a different value. Asserts that the IR data in the model matches each of the values in turn. Supplies another IR data packet with new, unique values. Asserts that the IR data in the model now matches each of the new values. This process is repeated for packets of background IR data type.\\
+ Custom Data Test & Tests whether packets describing custom data key value pairs are correctly parsed and the data correctly stored in the data mode. Supplies three custom data packets, each with a different robot ID and a different value, for a single key. Asserts that the data model now contains data for three robots, and that each robot has a custom data entry for the given key. Asserts that the value for each of these entries matches the value supplied in the relevant packet. Supplies three new packets for the same set of robots with a new key and a new value. Asserts that each robot now contains custom data for the second key, and that the values match those supplied in the packets. Supplies three more packets using the original key, with new values. Asserts that the values for the original key for each robot have been updated to match the values in the latest packet set.\\
+ Position History Test & Tests whether position data supplied for a robot is correctly sampled and stored in the position history portion of the data model. Sets the position history sampling rate to 2. Supplies twenty position packets, all attributed to the same robot ID. Asserts that the position history now contains ten entries. Asserts that the x and y-positions values for each of these entries match the values in every second packet, in reverse order. Floating point number assertions are done using a tolerance comparison, with a tolerance of $ 1 \times 10^{-7} $.\\
+ State History Test & Tests whether state the state transition history data is correctly formed from a sequence of state packets. Supplies five state packets, each attributed to the same robot ID and containing different states. Asserts that the state transition history now contains five entries. Asserts that the entries describe the correct state transitions, as described by the packets, in reverse order.\\
+ Bad Data Test & Tests whether badly formed data packets are correctly rejected by the data model. Supplies a number of correctly formed data packets, each with a different robot ID, and asserts that the data model now contains the correct number of robot entries. Supplies a number of invalid and malformed data packets, distributed between the already used robot IDs and several new IDs. Asserts that the number of robots in the model has not changed, and that the data in each of the existing robots has not changed.\\
+ \bottomrule\\
+	
+ \label{tab:DataModelTestCases}
+\end{longtable}
+
+The TestingWindow class provides an additional user interface window, which can be opened by selecting the `\textit{Testing Window}' option from the developer menu on the main tool-bar. This window displays a list of the available tests, a text area for displaying test results, and controls for running either a single test or the full set. Each time a test is run the class instantiates a new data model object, performs the operations for the test in question, displaying the steps involved as text in the results window. For each assertion the text describes what is being asserted and states whether the result was true or false. The overall result of each test is then stated at the end, and the data model object is destroyed. This therefore allows any developer working on the system to open this window at any time whilst the application is running and verify that the full set of tests still passes. This can be done whenever changes are made to the back end code, and gives the developer a degree of certainty that the data model is still functioning correctly. New tests can be easily added by implementing a new test function and adding it as a test case. The interface for this test window is shown in figure .
+
+[TEST WINDOW UI SCREENSHOT]
+
+\subsection{Results}
+In its final state following this project the data model was implemented such that all of the stated test cases passed successfully when run. This indicated that the data model was implemented to a satisfactory standard, and that if data was supplied in correctly formatted packets, it would be correctly stored in the model. Other application functionality that relied on the data model could therefore be used and tested with the assumption that the model was operating correctly.
+
+\subsection{Issues with this Approach}
+The unit testing approach suffers from a number of issues. First and foremost the results of the tests are only as good as the tests themselves - meaning that any bugs in the code of each test could be misinterpreted as bugs in the software itself. To mitigate this the tests are designed to be as logically simple as possible, and perform the smallest number of operations necessary to achieve the behaviour under test. This minimises the chances of a mistake in the implementation of the test code. 
+
+This approach also relies on the developer writing the tests correctly determining and entering the required result for each assertion statement. One example of this issue is in floating point comparison. The accuracy with which a floating point variable can describe a number is inherently limited due to the way a floating point variable is constructed. In almost all cases a floating point number will differ from the exact value it is attempting to represent by some small amount. This can present an issue when performing comparisons between the contents of a floating point variable and an exact value, leading to false negatives. In order to avoid this all floating point comparisons have been done using a threshold, rather than a direct comparison. This technique asserts that when the expected value is subtracted from the variable being tested, the modulus of the result is less than some very small tolerance value, indicating that the value in the variable is within an acceptable range of the expected value. A tolerance value of $ 1 \times 10^{-7} $ was used in all test cases, as this was deemed to indicate sufficient accuracy for the data in this system. To give some perspective to this number note that the x-position value of a robot is stored as a floating point value between 0 and 1, representing a portion of a physical distance of approximately two and a half meters. A discrepancy of +/- $  1 \times 10^{-7} $ therefore equates to an error of $ 2.5 \mu m $. Hence this tolerance value indicates more than adequate accuracy.
 
 %----------------------------------------------------------------------------------------
 
