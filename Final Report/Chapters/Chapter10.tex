@@ -138,32 +138,69 @@ For each user interface element the appropriate test strategy, as specified in t
  \textbf{Required Functionality} & Must correctly display the current visualiser settings. Must allow the user to adjust the general visualiser settings, and access dialog windows for changing the settings of specific visualisations.\\
  \hline
  \multicolumn{2}{p{14cm}}{\textbf{1. Examine UI element visually. Verify that it appears correct. Verify that it contains all elements necessary to satisfy its purpose.}}\\
- \multicolumn{2}{p{14cm}}{.}\\
+ \multicolumn{2}{p{14cm}}{Panel layout appears to be correct. Controls are included to modify all of the required settings.}\\
  \hline
  \multicolumn{2}{p{14cm}}{\textbf{2. Examine all text within the element. Check for errors in both meaning and spelling.}}\\
- \multicolumn{2}{p{14cm}}{.}\\
+ \multicolumn{2}{p{14cm}}{All spelling is correct, and the meaning of all text is clear.}\\
  \hline
  \multicolumn{2}{p{14cm}}{\textbf{3. Verify that all components within the element which perform actions in response to user input operate correctly.}}\\
- \multicolumn{2}{p{14cm}}{.}\\
+ \multicolumn{2}{p{14cm}}{All the settings controls work correctly. Double clicking on any of the visualiser config elements in the list displays the appropriate settings dialog, if one exists.}\\
  \hline
  \multicolumn{2}{p{14cm}}{\textbf{4. Verify that all components respond quickly to user input.}}\\
- \multicolumn{2}{p{14cm}}{.}\\
+ \multicolumn{2}{p{14cm}}{All controls respond immediately to input.}\\
  \hline
  \multicolumn{2}{p{14cm}}{\textbf{5. Verify that component actions and functionality do not degrade with extreme use (sustained rapid input, large numbers of input changes, etc).}}\\
- \multicolumn{2}{p{14cm}}{.}\\
+ \multicolumn{2}{p{14cm}}{Rapidly enabling and disabling settings multiple times has no detrimental affect. Disabling and re-enabling the robot colours setting causes the robots to be re-assigned colours randomly, which might be undesired behaviour.}\\
  \hline
  \multicolumn{2}{p{14cm}}{\textbf{6. Verify that all data displayed within the element is visible, readable, correctly arranged and correctly labelled.}}\\
- \multicolumn{2}{p{14cm}}{.}\\
+ \multicolumn{2}{p{14cm}}{Information regarding the current settings is readable, correctly arranged and clearly labelled. Detailed settings for each visualiser element are described in text next to the element name.}\\
  \hline
  \multicolumn{2}{p{14cm}}{\textbf{7. Verify that the element behaves sensibly when window resizing occurs, and that it remains usable and data remains visible whenever possible.}}\\
- \multicolumn{2}{p{14cm}}{.}\\
+ \multicolumn{2}{p{14cm}}{All text fits within the minimum panel width, and scroll bars are presented when the height becomes too small to display the full visualiser config element list. Resizing is handled gracefully.}\\
  \hline
  \multicolumn{2}{p{14cm}}{\textbf{8. Verify that the element updates promptly when responding to changes in data.}}\\
- \multicolumn{2}{p{14cm}}{.}\\
+ \multicolumn{2}{p{14cm}}{Changes to the general settings and the visualiser settings are reflected in the panel immediately.}\\
  \hline
- \textbf{Fixes Required} & .\\
+ \textbf{Fixes Required} & Investigate alternative methods for assigning robot colours.\\
  \bottomrule
 \end{longtable}
+\clearpage
+
+\begin{longtable}{ l p{10cm} }
+ \hline
+ \multicolumn{2}{c}{\textbf{Camera Settings Tab}}\\
+ \hline
+ \textbf{Purpose} & Displays the current settings for the tracking camera and allows the user to change them.\\
+ \textbf{Required Functionality} & Must correctly display the current camera settings. Must allow the user to adjust the camera settings. Must allow the user to adjust the tracking system settings, and apply/remove mappings between specific tracking tag IDs and robot IDs.\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{1. Examine UI element visually. Verify that it appears correct. Verify that it contains all elements necessary to satisfy its purpose.}}\\
+ \multicolumn{2}{p{14cm}}{Panel layout appears to be correct. Controls are included to modify all of the required settings. A table and associated controls are included to allow the ID mapping to be modified.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{2. Examine all text within the element. Check for errors in both meaning and spelling.}}\\
+ \multicolumn{2}{p{14cm}}{All spelling is correct, and the meaning of all text is clear.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{3. Verify that all components within the element which perform actions in response to user input operate correctly.}}\\
+ \multicolumn{2}{p{14cm}}{All the settings controls and the mapping table work correctly.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{4. Verify that all components respond quickly to user input.}}\\
+ \multicolumn{2}{p{14cm}}{All controls respond immediately to input.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{5. Verify that component actions and functionality do not degrade with extreme use (sustained rapid input, large numbers of input changes, etc).}}\\
+ \multicolumn{2}{p{14cm}}{Camera resolution input boxes are input validated to only accept numbers in the range 1 to 10,000. Rapid use of controls has no detrimental affect.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{6. Verify that all data displayed within the element is visible, readable, correctly arranged and correctly labelled.}}\\
+ \multicolumn{2}{p{14cm}}{Current settings are all correctly displayed.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{7. Verify that the element behaves sensibly when window resizing occurs, and that it remains usable and data remains visible whenever possible.}}\\
+ \multicolumn{2}{p{14cm}}{All components fit within the panel's minimum dimensions, and are hidden when the panel is minimized.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{8. Verify that the element updates promptly when responding to changes in data.}}\\
+ \multicolumn{2}{p{14cm}}{n/a.}\\
+ \hline
+ \textbf{Fixes Required} & None.\\
+ \bottomrule
+\end{longtable}
+\clearpage
 
 \subsection{Fixes Implemented}
 
