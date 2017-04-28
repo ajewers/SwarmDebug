@@ -202,6 +202,402 @@ For each user interface element the appropriate test strategy, as specified in t
 \end{longtable}
 \clearpage
 
+\begin{longtable}{ l p{10cm} }
+\hline
+ \multicolumn{2}{c}{\textbf{Robot List Panel Tab System}}\\
+ \hline
+ \textbf{Purpose} & Allows access to the different tabs within the robot list panel.\\
+ \textbf{Required Functionality} & Must display the names of each different tab. Must allow the user to click on the tabs and thus change between them. The required tabs are the robot list tab, the network settings tab and the logging tab.\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{1. Examine UI element visually. Verify that it appears correct. Verify that it contains all elements necessary to satisfy its purpose.}}\\
+ \multicolumn{2}{p{14cm}}{The tab bar appears to be visually correct. All required tabs are present and visible.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{2. Examine all text within the element. Check for errors in both meaning and spelling.}}\\
+ \multicolumn{2}{p{14cm}}{The spelling of each tab name is correct. The meaning of each tab name is clear.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{3. Verify that all components within the element which perform actions in response to user input operate correctly.}}\\
+ \multicolumn{2}{p{14cm}}{Tab selection operates correctly. Clicking any of the tabs changes the panel to display the contents of that tab. This satisfies the required functionality.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{4. Verify that all components respond quickly to user input.}}\\
+ \multicolumn{2}{p{14cm}}{The tab changes immediately when clicked.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{5. Verify that component actions and functionality do not degrade with extreme use (sustained rapid input, large numbers of input changes, etc).}}\\
+ \multicolumn{2}{p{14cm}}{Repeatedly and rapidly changing tabs does not have any detrimental affect on the application.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{6. Verify that all data displayed within the element is visible, readable, correctly arranged and correctly labelled.}}\\
+ \multicolumn{2}{p{14cm}}{n/a.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{7. Verify that the element behaves sensibly when window resizing occurs, and that it remains usable and data remains visible whenever possible.}}\\
+ \multicolumn{2}{p{14cm}}{When the panel width is reduced such that the tabs do not fit, small scroll arrows are added to allow the user to scroll along the tabs, therefore remaining accessible even when the window or panel size is reduced.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{8. Verify that the element updates promptly when responding to changes in data.}}\\
+ \multicolumn{2}{p{14cm}}{n/a.}\\
+ \hline
+ \textbf{Fixes Required} & None.\\
+ \bottomrule
+\end{longtable}
+\clearpage
+
+\begin{longtable}{ l p{10cm} }
+ \hline
+ \multicolumn{2}{c}{\textbf{Robot List}}\\
+ \hline
+ \textbf{Purpose} & Displays a list of all the robots for which the system has data, allowing the user to select them.\\
+ \textbf{Required Functionality} & Must display a list of all the known robots, identifying them by both ID and name. Must allow the user to select any of the robots, causing the other parts of the interface to target the newly selected robot.\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{1. Examine UI element visually. Verify that it appears correct. Verify that it contains all elements necessary to satisfy its purpose.}}\\
+ \multicolumn{2}{p{14cm}}{The list displays correctly. Contains all know robots. Clearly shows current selection.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{2. Examine all text within the element. Check for errors in both meaning and spelling.}}\\
+ \multicolumn{2}{p{14cm}}{n/a.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{3. Verify that all components within the element which perform actions in response to user input operate correctly.}}\\
+ \multicolumn{2}{p{14cm}}{Robots can be selected correctly by clicking, and changing the selection causes the rest of the application to update to the new focus.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{4. Verify that all components respond quickly to user input.}}\\
+ \multicolumn{2}{p{14cm}}{The application responds to a new selection immediately.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{5. Verify that component actions and functionality do not degrade with extreme use (sustained rapid input, large numbers of input changes, etc).}}\\
+ \multicolumn{2}{p{14cm}}{Rapidly changing the selected robot has no detrimental effect on the application.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{6. Verify that all data displayed within the element is visible, readable, correctly arranged and correctly labelled.}}\\
+ \multicolumn{2}{p{14cm}}{For each robot the correct ID number and name are displayed, as defined in the data model. The the number of robots exceeds the available space in the list a scroll bar is added.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{7. Verify that the element behaves sensibly when window resizing occurs, and that it remains usable and data remains visible whenever possible.}}\\
+ \multicolumn{2}{p{14cm}}{The list is unaffected by window resizing, adding a scroll bar when necessary at small sizes.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{8. Verify that the element updates promptly when responding to changes in data.}}\\
+ \multicolumn{2}{p{14cm}}{Changes in the data model are reflected immediately, including robots being added, removed and changing name.}\\
+ \hline
+ \textbf{Fixes Required} & None.\\
+ \bottomrule
+\end{longtable}
+\clearpage
+
+\begin{longtable}{ l p{10cm} }
+ \hline
+ \multicolumn{2}{c}{\textbf{Network Settings Tab}}\\
+ \hline
+ \textbf{Purpose} & Allows the user to configure settings related to the network communication with the robots.\\
+ \textbf{Required Functionality} & Must display the current network settings. Must allow the user to change the network settings. Must allow the user to start and stop the data thread which listens for packets.\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{1. Examine UI element visually. Verify that it appears correct. Verify that it contains all elements necessary to satisfy its purpose.}}\\
+ \multicolumn{2}{p{14cm}}{The panel appears visually correct, with the necessary components visible.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{2. Examine all text within the element. Check for errors in both meaning and spelling.}}\\
+ \multicolumn{2}{p{14cm}}{All spelling correct and all meanings clear.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{3. Verify that all components within the element which perform actions in response to user input operate correctly.}}\\
+ \multicolumn{2}{p{14cm}}{The port number can be changed correctly, and is input-validated to reject non-numerical input. The button for starting and stopping the data thread operates correctly.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{4. Verify that all components respond quickly to user input.}}\\
+ \multicolumn{2}{p{14cm}}{All components respond immediately.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{5. Verify that component actions and functionality do not degrade with extreme use (sustained rapid input, large numbers of input changes, etc).}}\\
+ \multicolumn{2}{p{14cm}}{Rapidly and repeatedly pressing the start/stop listening button appears to have no detrimental effect. The port number entry box rejects numbers below 1, but does not have a maximum value, as some computers support extremely high port numbers.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{6. Verify that all data displayed within the element is visible, readable, correctly arranged and correctly labelled.}}\\
+ \multicolumn{2}{p{14cm}}{n/a.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{7. Verify that the element behaves sensibly when window resizing occurs, and that it remains usable and data remains visible whenever possible.}}\\
+ \multicolumn{2}{p{14cm}}{Controls remain usable at the full range of interface sizes.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{8. Verify that the element updates promptly when responding to changes in data.}}\\
+ \multicolumn{2}{p{14cm}}{n/a.}\\
+ \hline
+ \textbf{Fixes Required} & None.\\
+ \bottomrule
+\end{longtable}
+\clearpage
+
+\begin{longtable}{ l p{10cm} }
+ \hline
+ \multicolumn{2}{c}{\textbf{Data Logging Tab}}\\
+ \hline
+ \textbf{Purpose} & Allows the user to configure the data logging functionality.\\
+ \textbf{Required Functionality} & Must display the current data logging settings. Must allow the user to change the data logging settings. Must allow the user to start and stop the data logging.\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{1. Examine UI element visually. Verify that it appears correct. Verify that it contains all elements necessary to satisfy its purpose.}}\\
+ \multicolumn{2}{p{14cm}}{The panel appears correct, with all required elements present.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{2. Examine all text within the element. Check for errors in both meaning and spelling.}}\\
+ \multicolumn{2}{p{14cm}}{Spellings correct and meanings clear. The log file directory path can be extremely long, and might overrun the available width of the panel. Long paths should be truncated.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{3. Verify that all components within the element which perform actions in response to user input operate correctly.}}\\
+ \multicolumn{2}{p{14cm}}{All components operate correctly. The log file path can be set using a file dialog.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{4. Verify that all components respond quickly to user input.}}\\
+ \multicolumn{2}{p{14cm}}{All components respond immediately.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{5. Verify that component actions and functionality do not degrade with extreme use (sustained rapid input, large numbers of input changes, etc).}}\\
+ \multicolumn{2}{p{14cm}}{Rapid use of the start/stop button has no detrimental effect. Invalid file selections are rejected by the dialog.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{6. Verify that all data displayed within the element is visible, readable, correctly arranged and correctly labelled.}}\\
+ \multicolumn{2}{p{14cm}}{n/a.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{7. Verify that the element behaves sensibly when window resizing occurs, and that it remains usable and data remains visible whenever possible.}}\\
+ \multicolumn{2}{p{14cm}}{All controls fit within the minimum size of the panel. See 2. for note on the log file path length.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{8. Verify that the element updates promptly when responding to changes in data.}}\\
+ \multicolumn{2}{p{14cm}}{n/a.}\\
+ \hline
+ \textbf{Fixes Required} & Add code to handle long directory paths gracefully.\\
+ \bottomrule
+\end{longtable}
+\clearpage
+
+\begin{longtable}{ l p{10cm} }
+\hline
+ \multicolumn{2}{c}{\textbf{Data Panel Tab System}}\\
+ \hline
+ \textbf{Purpose} & Allows access to the different tabs within the data panel.\\
+ \textbf{Required Functionality} & Must display the names of each different tab. Must allow the user to click on the tabs and thus change between them. The required tabs are: Console, Overview, State, IR data, Custom data.\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{1. Examine UI element visually. Verify that it appears correct. Verify that it contains all elements necessary to satisfy its purpose.}}\\
+ \multicolumn{2}{p{14cm}}{The tab bar appears to be visually correct. All required tabs are present and visible.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{2. Examine all text within the element. Check for errors in both meaning and spelling.}}\\
+ \multicolumn{2}{p{14cm}}{The spelling of each tab name is correct. The meaning of each tab name is clear.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{3. Verify that all components within the element which perform actions in response to user input operate correctly.}}\\
+ \multicolumn{2}{p{14cm}}{Tab selection operates correctly. Clicking any of the tabs changes the panel to display the contents of that tab. This satisfies the required functionality.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{4. Verify that all components respond quickly to user input.}}\\
+ \multicolumn{2}{p{14cm}}{The tab changes immediately when clicked.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{5. Verify that component actions and functionality do not degrade with extreme use (sustained rapid input, large numbers of input changes, etc).}}\\
+ \multicolumn{2}{p{14cm}}{Repeatedly and rapidly changing tabs does not have any detrimental affect on the application.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{6. Verify that all data displayed within the element is visible, readable, correctly arranged and correctly labelled.}}\\
+ \multicolumn{2}{p{14cm}}{n/a.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{7. Verify that the element behaves sensibly when window resizing occurs, and that it remains usable and data remains visible whenever possible.}}\\
+ \multicolumn{2}{p{14cm}}{All tabs fit within the minimum window width.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{8. Verify that the element updates promptly when responding to changes in data.}}\\
+ \multicolumn{2}{p{14cm}}{n/a.}\\
+ \hline
+ \textbf{Fixes Required} & None.\\
+ \bottomrule
+\end{longtable}
+\clearpage
+
+\begin{longtable}{ l p{10cm} }
+ \hline
+ \multicolumn{2}{c}{\textbf{Console Tab}}\\
+ \hline
+ \textbf{Purpose} & Displays a text based console which reports messages regarding application events and messages from the robots.\\
+ \textbf{Required Functionality} & Must contain a text console. Must display messages regarding the application and messages from the robots. Must display messages in order. Must identify the source of all robot messages. Must update immediately when a message is received from either source. \\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{1. Examine UI element visually. Verify that it appears correct. Verify that it contains all elements necessary to satisfy its purpose.}}\\
+ \multicolumn{2}{p{14cm}}{The console is visually correct, however the most recent message is displayed on the top line, counter-intuitively.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{2. Examine all text within the element. Check for errors in both meaning and spelling.}}\\
+ \multicolumn{2}{p{14cm}}{The text within the element comes from the messages, hence cannot be checked here.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{3. Verify that all components within the element which perform actions in response to user input operate correctly.}}\\
+ \multicolumn{2}{p{14cm}}{Messages are presented correctly and in order. Robot messages are identified correctly.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{4. Verify that all components respond quickly to user input.}}\\
+ \multicolumn{2}{p{14cm}}{n/a.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{5. Verify that component actions and functionality do not degrade with extreme use (sustained rapid input, large numbers of input changes, etc).}}\\
+ \multicolumn{2}{p{14cm}}{Long messages and large numbers of messages are handled gracefully, and remain readable using the automatic scroll bars.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{6. Verify that all data displayed within the element is visible, readable, correctly arranged and correctly labelled.}}\\
+ \multicolumn{2}{p{14cm}}{All messages are readable and clearly labelled.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{7. Verify that the element behaves sensibly when window resizing occurs, and that it remains usable and data remains visible whenever possible.}}\\
+ \multicolumn{2}{p{14cm}}{Resizing teh window has no detrimental effect on the console.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{8. Verify that the element updates promptly when responding to changes in data.}}\\
+ \multicolumn{2}{p{14cm}}{New messages appear immediately.}\\
+ \hline
+ \textbf{Fixes Required} & Adjust the ordering so that the most recent message appears on the bottom line, as is the standard for text consoles.\\
+ \bottomrule
+\end{longtable}
+\clearpage
+
+\begin{longtable}{ l p{10cm} }
+ \hline
+ \multicolumn{2}{c}{\textbf{Overview Tab}}\\
+ \hline
+ \textbf{Purpose} & Displays a summary of the data related to the selected robot.\\
+ \textbf{Required Functionality} & Must display data related to the selected robot, including ID, name, state and position/orientation values. Must update immediately when new data is received.\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{1. Examine UI element visually. Verify that it appears correct. Verify that it contains all elements necessary to satisfy its purpose.}}\\
+ \multicolumn{2}{p{14cm}}{The tab appears visually correct. The heading text appears redundant as the tab itself already contains the heading.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{2. Examine all text within the element. Check for errors in both meaning and spelling.}}\\
+ \multicolumn{2}{p{14cm}}{All spelling correct and all meanings clear.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{3. Verify that all components within the element which perform actions in response to user input operate correctly.}}\\
+ \multicolumn{2}{p{14cm}}{n/a.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{4. Verify that all components respond quickly to user input.}}\\
+ \multicolumn{2}{p{14cm}}{n/a.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{5. Verify that component actions and functionality do not degrade with extreme use (sustained rapid input, large numbers of input changes, etc).}}\\
+ \multicolumn{2}{p{14cm}}{n/a.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{6. Verify that all data displayed within the element is visible, readable, correctly arranged and correctly labelled.}}\\
+ \multicolumn{2}{p{14cm}}{All of the data points are visible, readable, clear, correctly arranged and labelled.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{7. Verify that the element behaves sensibly when window resizing occurs, and that it remains usable and data remains visible whenever possible.}}\\
+ \multicolumn{2}{p{14cm}}{All data is visible at the full range of window size.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{8. Verify that the element updates promptly when responding to changes in data.}}\\
+ \multicolumn{2}{p{14cm}}{Updates to the data are reflected immediately.}\\
+ \hline
+ \textbf{Fixes Required} & Remove the overview heading from inside the tab, as it is redundant.\\
+ \bottomrule
+\end{longtable}
+\clearpage
+
+\begin{longtable}{ l p{10cm} }
+ \hline
+ \multicolumn{2}{c}{\textbf{State Tab}}\\
+ \hline
+ \textbf{Purpose} & Displays information related to the internal state of the robot.\\
+ \textbf{Required Functionality} & Must display a list of the selected robot's known states. Must display a list of the selected robots recent state changes, including timing information. Must update immediately when a state change occurs.\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{1. Examine UI element visually. Verify that it appears correct. Verify that it contains all elements necessary to satisfy its purpose.}}\\
+ \multicolumn{2}{p{14cm}}{Appears visually correct. Both lists are present.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{2. Examine all text within the element. Check for errors in both meaning and spelling.}}\\
+ \multicolumn{2}{p{14cm}}{All spelling correct and meanings clear.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{3. Verify that all components within the element which perform actions in response to user input operate correctly.}}\\
+ \multicolumn{2}{p{14cm}}{Lists operate correctly and ignore  selection events.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{4. Verify that all components respond quickly to user input.}}\\
+ \multicolumn{2}{p{14cm}}{n/a.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{5. Verify that component actions and functionality do not degrade with extreme use (sustained rapid input, large numbers of input changes, etc).}}\\
+ \multicolumn{2}{p{14cm}}{Large numbers of states and transition entries remain readable using scroll bars.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{6. Verify that all data displayed within the element is visible, readable, correctly arranged and correctly labelled.}}\\
+ \multicolumn{2}{p{14cm}}{Known states are readable and clear. Transitions are readable but no always clear, due to the layout of the time-stamp. The clarity could be improved with better formatting.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{7. Verify that the element behaves sensibly when window resizing occurs, and that it remains usable and data remains visible whenever possible.}}\\
+ \multicolumn{2}{p{14cm}}{resizing has no detrimental effect on the tab. Scroll bars are available when necessary.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{8. Verify that the element updates promptly when responding to changes in data.}}\\
+ \multicolumn{2}{p{14cm}}{New states and transitions are displayed immediately.}\\
+ \hline
+ \textbf{Fixes Required} & Re-format the state transition list entries to improve clarity.\\
+ \bottomrule
+\end{longtable}
+\clearpage
+
+\begin{longtable}{ l p{10cm} }
+ \hline
+ \multicolumn{2}{c}{\textbf{IR Data Tab}}\\
+ \hline
+ \textbf{Purpose} & Displays the IR sensor data for the selected robot.\\
+ \textbf{Required Functionality} & Must provide a visual display of the selected robot's IR sensor values. Must provide a numerical display of the robot's IR sensor values. Must support both active and background values. Must update immediately when new values arrive.\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{1. Examine UI element visually. Verify that it appears correct. Verify that it contains all elements necessary to satisfy its purpose.}}\\
+ \multicolumn{2}{p{14cm}}{The element is lacking clear headings for some of the data points. The bar graph is visually correct. The numerical displays are correct but their current format takes up a lot of space.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{2. Examine all text within the element. Check for errors in both meaning and spelling.}}\\
+ \multicolumn{2}{p{14cm}}{All spelling correct. Some headings have unclear meanings.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{3. Verify that all components within the element which perform actions in response to user input operate correctly.}}\\
+ \multicolumn{2}{p{14cm}}{n/a.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{4. Verify that all components respond quickly to user input.}}\\
+ \multicolumn{2}{p{14cm}}{n/a.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{5. Verify that component actions and functionality do not degrade with extreme use (sustained rapid input, large numbers of input changes, etc).}}\\
+ \multicolumn{2}{p{14cm}}{Sensor values that are out of range are not displayed.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{6. Verify that all data displayed within the element is visible, readable, correctly arranged and correctly labelled.}}\\
+ \multicolumn{2}{p{14cm}}{All data is readable and correctly arranged. The IR data is not clearly labelled.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{7. Verify that the element behaves sensibly when window resizing occurs, and that it remains usable and data remains visible whenever possible.}}\\
+ \multicolumn{2}{p{14cm}}{Some of the data becomes hidden if the window width is reduced.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{8. Verify that the element updates promptly when responding to changes in data.}}\\
+ \multicolumn{2}{p{14cm}}{New data is reflected immediately.}\\
+ \hline
+ \textbf{Fixes Required} & Add clear headings and reformat the numerical data to improve clarity. Rearrange the layout so that the bar graph fits within the minimum window width.\\
+ \bottomrule
+\end{longtable}
+\clearpage
+
+\begin{longtable}{ l p{10cm} }
+ \hline
+ \multicolumn{2}{c}{\textbf{}}\\
+ \hline
+ \textbf{Purpose} & \\
+ \textbf{Required Functionality} & \\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{1. Examine UI element visually. Verify that it appears correct. Verify that it contains all elements necessary to satisfy its purpose.}}\\
+ \multicolumn{2}{p{14cm}}{}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{2. Examine all text within the element. Check for errors in both meaning and spelling.}}\\
+ \multicolumn{2}{p{14cm}}{}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{3. Verify that all components within the element which perform actions in response to user input operate correctly.}}\\
+ \multicolumn{2}{p{14cm}}{}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{4. Verify that all components respond quickly to user input.}}\\
+ \multicolumn{2}{p{14cm}}{}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{5. Verify that component actions and functionality do not degrade with extreme use (sustained rapid input, large numbers of input changes, etc).}}\\
+ \multicolumn{2}{p{14cm}}{}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{6. Verify that all data displayed within the element is visible, readable, correctly arranged and correctly labelled.}}\\
+ \multicolumn{2}{p{14cm}}{}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{7. Verify that the element behaves sensibly when window resizing occurs, and that it remains usable and data remains visible whenever possible.}}\\
+ \multicolumn{2}{p{14cm}}{}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{8. Verify that the element updates promptly when responding to changes in data.}}\\
+ \multicolumn{2}{p{14cm}}{}\\
+ \hline
+ \textbf{Fixes Required} & \\
+ \bottomrule
+\end{longtable}
+\clearpage
+
+\begin{longtable}{ l p{10cm} }
+ \hline
+ \multicolumn{2}{c}{\textbf{}}\\
+ \hline
+ \textbf{Purpose} & \\
+ \textbf{Required Functionality} & \\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{1. Examine UI element visually. Verify that it appears correct. Verify that it contains all elements necessary to satisfy its purpose.}}\\
+ \multicolumn{2}{p{14cm}}{}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{2. Examine all text within the element. Check for errors in both meaning and spelling.}}\\
+ \multicolumn{2}{p{14cm}}{}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{3. Verify that all components within the element which perform actions in response to user input operate correctly.}}\\
+ \multicolumn{2}{p{14cm}}{}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{4. Verify that all components respond quickly to user input.}}\\
+ \multicolumn{2}{p{14cm}}{}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{5. Verify that component actions and functionality do not degrade with extreme use (sustained rapid input, large numbers of input changes, etc).}}\\
+ \multicolumn{2}{p{14cm}}{}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{6. Verify that all data displayed within the element is visible, readable, correctly arranged and correctly labelled.}}\\
+ \multicolumn{2}{p{14cm}}{}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{7. Verify that the element behaves sensibly when window resizing occurs, and that it remains usable and data remains visible whenever possible.}}\\
+ \multicolumn{2}{p{14cm}}{}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{8. Verify that the element updates promptly when responding to changes in data.}}\\
+ \multicolumn{2}{p{14cm}}{}\\
+ \hline
+ \textbf{Fixes Required} & \\
+ \bottomrule
+\end{longtable}
+\clearpage
+
 \subsection{Fixes Implemented}
 
 %----------------------------------------------------------------------------------------

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2017.4.27)  27 APR 2017 15:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2017.4.28)  28 APR 2017 10:55
 entering extended mode
 **./main.tex
 (main.tex
@@ -2395,20 +2395,197 @@ Overfull \hbox (20.9727pt too wide) in alignment at lines 201--202
 [58
 
 ]
-Overfull \hbox (5.56546pt too wide) in alignment at lines 214--230
+Overfull \hbox (20.9727pt too wide) in alignment at lines 205--237
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 237
+ []
+
+
+Overfull \hbox (20.9727pt too wide) in alignment at lines 237--238
  [] [] 
  []
 
 [59
 
-] [60] [61] [62]) [63]
-\openout2 = `Chapters/Chapter11.aux'.
+]
+Overfull \hbox (20.9727pt too wide) in alignment at lines 241--273
+ [] [] 
+ []
 
- (Chapters/Chapter11.tex [64
+
+Underfull \vbox (badness 10000) detected at line 273
+ []
 
 
+Overfull \hbox (20.9727pt too wide) in alignment at lines 273--274
+ [] [] 
+ []
+
+[60
 
 ]
+Overfull \hbox (20.9727pt too wide) in alignment at lines 277--309
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 309
+ []
+
+
+Overfull \hbox (20.9727pt too wide) in alignment at lines 309--310
+ [] [] 
+ []
+
+[61
+
+]
+Overfull \hbox (20.9727pt too wide) in alignment at lines 313--345
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 345
+ []
+
+
+Overfull \hbox (20.9727pt too wide) in alignment at lines 345--346
+ [] [] 
+ []
+
+[62
+
+]
+Overfull \hbox (20.9727pt too wide) in alignment at lines 349--381
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 381
+ []
+
+
+Overfull \hbox (20.9727pt too wide) in alignment at lines 381--382
+ [] [] 
+ []
+
+[63
+
+]
+Overfull \hbox (20.9727pt too wide) in alignment at lines 385--417
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 417
+ []
+
+
+Overfull \hbox (20.9727pt too wide) in alignment at lines 417--418
+ [] [] 
+ []
+
+[64
+
+]
+Overfull \hbox (20.9727pt too wide) in alignment at lines 421--453
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 453
+ []
+
+
+Overfull \hbox (20.9727pt too wide) in alignment at lines 453--454
+ [] [] 
+ []
+
+[65
+
+]
+Underfull \hbox (badness 1112) in paragraph at lines 462--463
+\T1/ppl/m/n/10.95 Must dis-play a list of the se-lected robots re-cent state
+ []
+
+
+Overfull \hbox (20.9727pt too wide) in alignment at lines 457--489
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 489
+ []
+
+
+Overfull \hbox (20.9727pt too wide) in alignment at lines 489--490
+ [] [] 
+ []
+
+[66
+
+]
+Overfull \hbox (20.9727pt too wide) in alignment at lines 493--525
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 525
+ []
+
+
+Overfull \hbox (20.9727pt too wide) in alignment at lines 525--526
+ [] [] 
+ []
+
+[67
+
+]
+Overfull \hbox (20.9727pt too wide) in alignment at lines 529--561
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 561
+ []
+
+
+Overfull \hbox (20.9727pt too wide) in alignment at lines 561--562
+ [] [] 
+ []
+
+[68
+
+]
+Overfull \hbox (20.9727pt too wide) in alignment at lines 565--597
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 597
+ []
+
+
+Overfull \hbox (20.9727pt too wide) in alignment at lines 597--598
+ [] [] 
+ []
+
+[69
+
+]
+Overfull \hbox (5.56546pt too wide) in alignment at lines 610--626
+ [] [] 
+ []
+
+[70
+
+] [71] [72] [73]) [74]
+\openout2 = `Chapters/Chapter11.aux'.
+
+ (Chapters/Chapter11.tex
 Chapter 11.
 
 Overfull \hbox (0.71104pt too wide) in paragraph at lines 11--12
@@ -2417,16 +2594,20 @@ res, such as macro level
  []
 
 1: section
-[65] [66]
+[75
+
+
+
+] [76]
 Overfull \hbox (10.98225pt too wide) in paragraph at lines 42--43
 \T1/ppl/m/n/10.95 Card-board have given con-sumers a first taste of real, per-s
 pec-tive based, head mounted,
  []
 
-) [67]
+) [77]
 \openout2 = `Chapters/Chapter12.aux'.
 
- (Chapters/Chapter12.tex [68
+ (Chapters/Chapter12.tex [78
 
 
 
@@ -2434,10 +2615,10 @@ pec-tive based, head mounted,
 Chapter 12.
 )
 1: section
-[69]
+[79]
 \openout2 = `Appendices/AppendixA.aux'.
 
- (Appendices/AppendixA.tex [70
+ (Appendices/AppendixA.tex [80
 
 
 
@@ -2448,14 +2629,14 @@ LaTeX Font Info:    Try loading font information for T1+pcr on input line 11.
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 ))
 1: section
-[71] [72]
+[81] [82]
 1: section
-[73
+[83
 
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 296.
- [74]
+ [84]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 296.
  (main.aux (Chapters/Chapter1.aux) (Chapters/Chapter2.aux)
 (Chapters/Chapter3.aux) (Chapters/Chapter4.aux) (Chapters/Chapter5.aux)
@@ -2471,8 +2652,8 @@ Package rerunfilecheck Warning: File `main.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 3E6C6DB4DA10D6A1E94D8B6228619C2C;13206
-(rerunfilecheck)             After:  5D5C83891B058F83EA84737387184DFB;13206.
+(rerunfilecheck)             Before: 518B24D1998C18DAFC30E4A17DED647E;13206
+(rerunfilecheck)             After:  0D9D33CBDF6CB058C449BCA94FCDC7B8;13206.
 
 LaTeX Warning: There were undefined references.
 
@@ -2484,50 +2665,53 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32697 strings out of 493334
- 653466 string characters out of 3145290
- 878212 words of memory out of 3000000
- 35509 multiletter control sequences out of 15000+200000
+ 32730 strings out of 493334
+ 653724 string characters out of 3145290
+ 878502 words of memory out of 3000000
+ 35520 multiletter control sequences out of 15000+200000
  48580 words of font info for 78 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,20n,77p,10379b,2310s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{table.145} has been referenced but does not exist
-, replaced by a fixed one
+pdfTeX warning (dest): name{appendix*.175} has been referenced but does not e
+xist, replaced by a fixed one
 
-pdfTeX warning (dest): name{appendix*.167} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.166} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{appendix.165} has been referenced but does not exis
+pdfTeX warning (dest): name{appendix.173} has been referenced but does not exis
 t, replaced by a fixed one
 
-pdfTeX warning (dest): name{section.161} has been referenced but does not exist
+pdfTeX warning (dest): name{section.172} has been referenced but does not exist
 , replaced by a fixed one
 
-pdfTeX warning (dest): name{chapter.160} has been referenced but does not exist
+pdfTeX warning (dest): name{chapter.168} has been referenced but does not exist
 , replaced by a fixed one
 
-pdfTeX warning (dest): name{section.154} has been referenced but does not exist
+pdfTeX warning (dest): name{section.165} has been referenced but does not exist
 , replaced by a fixed one
 
-pdfTeX warning (dest): name{chapter.153} has been referenced but does not exist
+pdfTeX warning (dest): name{section.164} has been referenced but does not exist
 , replaced by a fixed one
 
-pdfTeX warning (dest): name{subsection.150} has been referenced but does not ex
+pdfTeX warning (dest): name{section.163} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.162} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter.161} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.160} has been referenced but does not ex
 ist, replaced by a fixed one
 
-pdfTeX warning (dest): name{section.148} has been referenced but does not exist
+pdfTeX warning (dest): name{section.157} has been referenced but does not exist
 , replaced by a fixed one
 
-pdfTeX warning (dest): name{subsection.146} has been referenced but does not ex
+pdfTeX warning (dest): name{subsection.154} has been referenced but does not ex
 ist, replaced by a fixed one
 
-pdfTeX warning (dest): name{section.144} has been referenced but does not exist
+pdfTeX warning (dest): name{section.152} has been referenced but does not exist
 , replaced by a fixed one
 
-pdfTeX warning (dest): name{subsection.143} has been referenced but does not ex
+pdfTeX warning (dest): name{subsection.151} has been referenced but does not ex
 ist, replaced by a fixed one
 
 {C:/TEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<C:/TEX/MiKTeX/fonts/type1/publi
@@ -2538,9 +2722,9 @@ m/cmsy8.pfb><C:/TEX/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/TEX/MiKTeX/fo
 nts/type1/urw/palatino/uplb8a.pfb><C:/TEX/MiKTeX/fonts/type1/urw/palatino/uplr8
 a.pfb><C:/TEX/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/TEX/MiKTeX/fonts/t
 ype1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (94 pages, 2459402 bytes).
+Output written on main.pdf (104 pages, 2484402 bytes).
 PDF statistics:
- 1183 PDF objects out of 1200 (max. 8388607)
- 289 named destinations out of 1000 (max. 500000)
+ 1240 PDF objects out of 1440 (max. 8388607)
+ 311 named destinations out of 1000 (max. 500000)
  765 words of extra memory for PDF output out of 10000 (max. 10000000)
 
