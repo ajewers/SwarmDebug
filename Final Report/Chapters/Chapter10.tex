@@ -812,34 +812,80 @@ As per test strategy B, each data visualisation type was then tested individuall
  \hline
  \textbf{Purpose} & Display the robots recent movement in the form of a trail.\\
  \textbf{Required Functionality} & Render the robot's position history as a sequence of line segments. support an adjustable sampling interval.\\
- \textbf{Settings} & On / off (Toggle). Display for selected robot only or all robots (Toggle). Proximity or heat mode (Toggle). Angle for each sensor in degrees (Numerical).\\
+ \textbf{Settings} & On / off (Toggle). Display for selected robot only or all robots (Toggle). Sampling interval (Numerical).\\
  \hline
  \multicolumn{2}{p{14cm}}{\textbf{1. Define input data and expected representation.}}\\
- \multicolumn{2}{p{14cm}}{Five active robots reporting their IR sensor data whilst an object is placed at varying distances from each of their sensors. Expect to see the graphical representations change to reflect the changing value.}\\
+ \multicolumn{2}{p{14cm}}{Five active robots moving around the arena along different paths. Expect to see a trail line behind each robot showing the path it has taken.}\\
  \hline
  \multicolumn{2}{p{14cm}}{\textbf{3. Verify the representation is as expected.}}\\
- \multicolumn{2}{p{14cm}}{IR data is displayed in both modes. The display varies correctly as the sensor values change. Proximity lines change length correctly, but extend much further than necessary for low values. The boxes in heat mode change colour correctly, but are coloured close to black for low values, which does not display well on a dark background.}\\
+ \multicolumn{2}{p{14cm}}{Trails are correctly drawn for all robots, accurate to their approximate path. Varying the sample interval allows for longer, lower resolution and shorter, higher resolution paths. Can be correctly toggled on and off, and set to only display for the selected robot.}\\
  \hline
  \multicolumn{2}{p{14cm}}{\textbf{4. Check that the visualisation is clear and any text is legible.}}\\
- \multicolumn{2}{p{14cm}}{Both visualisations are clear.}\\
+ \multicolumn{2}{p{14cm}}{Trails are clearly drawn.}\\
  \hline
  \multicolumn{2}{p{14cm}}{\textbf{5. Repeat for multiple sets of input data.}}\\
- \multicolumn{2}{p{14cm}}{Tested with 5 robots across a range of sensor values.}\\
+ \multicolumn{2}{p{14cm}}{Tested with 5 robots moving along a number of different paths.}\\
  \hline
  \multicolumn{2}{p{14cm}}{\textbf{6. Verify that integrity is maintained with extreme data, corner cases and zero data, wherever possible.}}\\
- \multicolumn{2}{p{14cm}}{Out of range sensor data is not displayed.}\\
+ \multicolumn{2}{p{14cm}}{Setting an excessively large sampling interval leads to a very long, jagged path, as expected.}\\
  \hline
  \multicolumn{2}{p{14cm}}{\textbf{7. Verify that integrity is maintained at a range of window sizes, within reasonable limits.}}\\
- \multicolumn{2}{p{14cm}}{The size of the visualisation does not change with the size of the image. However the proximity lines can only be representative, so their actual size is not important, only the relative variation in that size.}\\
+ \multicolumn{2}{p{14cm}}{Paths remain accurate for all visualiser sizes, as path point positions are stored as proportional coordinates.}\\
  \hline
- \textbf{Fixes Required} & Set a more sensible maximum length for the proximity lines. Improve mapping between sensor values and line length (non-linear). Adjust heat mode colour scheme for clarity.\\
+ \textbf{Fixes Required} & Add an upper limit to the sampling interval setting.\\
  \bottomrule
 \end{longtable}
 \clearpage
 
 
 
+\begin{longtable}{ l p{10cm} }
+ \hline
+ \multicolumn{2}{c}{\textbf{Custom Data Visualisation}}\\
+ \hline
+ \textbf{Purpose} & Display a specific element of the robot's custom data as text.\\
+ \textbf{Required Functionality} & Must display the key and the current value for the target data point as text adjacent to the robot, below the state text. Must update whenever the value for that key changes. The user must be able to set the target key.\\
+ \textbf{Settings} & On / off (Toggle). Display for selected robot only or all robots (Toggle). Set the target data point (Text input).\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{1. Define input data and expected representation.}}\\
+ \multicolumn{2}{p{14cm}}{Five robots, each reporting custom data for two keys, with the values varying over time. Expect to see the target data key and value displayed as text below the state text.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{3. Verify the representation is as expected.}}\\
+ \multicolumn{2}{p{14cm}}{Custom data for the target key is correctly displayed, and updates immediately when new data arrives. The target key can be changed and the visualisation updates to reflect this. Can be toggled on and off correctly.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{4. Check that the visualisation is clear and any text is legible.}}\\
+ \multicolumn{2}{p{14cm}}{Text is clear and legible.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{5. Repeat for multiple sets of input data.}}\\
+ \multicolumn{2}{p{14cm}}{Tested with 5 robots reporting data for two different keys.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{6. Verify that integrity is maintained with extreme data, corner cases and zero data, wherever possible.}}\\
+ \multicolumn{2}{p{14cm}}{If no key is set, no data is displayed. Very long data values are displayed up to the edge of the image. If no data exists for the target key and the selected robot no data is displayed.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{7. Verify that integrity is maintained at a range of window sizes, within reasonable limits.}}\\
+ \multicolumn{2}{p{14cm}}{Remains visible at all usable visualiser sizes.}\\
+ \hline
+ \textbf{Fixes Required} & None.\\
+ \bottomrule
+\end{longtable}
+\clearpage
+
 \subsection{Fixes Implemented}
+The results of the user interface testing highlighted no major problems, but did identify a number of smaller bugs and aesthetic issues. The following fixes were implemented:
+
+\begin{itemize}
+ \item The settings tabs in the visualiser panel were renamed to to better reflect their purpose.
+ \item Long directory paths in the logging tab were truncated to only display the final 25 characters.
+ \item The ordering of messages in the console were reversed, and now read from top to bottom in order.
+ \item The redundant heading was removed from the overview tab.
+ \item Entries in the state transition list were reformatted to clearly separate the time-stamp from the states.
+ \item The IR data tab was reorganised to be more space efficient, and display data more clearly. Headings and labelled were added to further improve clarity.
+ \item Code was added to flip the video image, a setting was added to the camera settings tab to enable and disable this feature.
+ \item Robot IDs rendered in the visualiser were positioned slightly closer to the robots postiion.
+ \item The IR data visualisation in proximity mode was adjusted to have a shorter maximum line length, and to use a non-linear mapping to improve the proximity approximation.
+ \item The IR data visualisation in heat mode was adjusted to use white as the base colour for clarity, changing to red and increasing in size with increasing sensor value.
+ \item An upper limit was added to the robot path sampling interval.
+\end{itemize}
 
 %----------------------------------------------------------------------------------------
 

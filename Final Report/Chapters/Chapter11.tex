@@ -17,13 +17,17 @@ This project has focused on developing the first version of this swarm robotics 
 
 \section{Additional Debugging Features}
 
+
+
+It is almost impossible to predict all of the possible types of data, or possible ways of visualising this data that might be desired by users of this system, as each swarm behaviour will have its own unique features and needs, and each different robot platform will have a different set of sensors and actuators. Therefore trying to create specific visualisations that cover all the possibilities is simply infeasible. Instead an approach that might yield much more flexible and useful results could be to incorporate a scripting language, and an API for the visualiser, allowing users to write small simple scripts which provide definitions for custom visualisations. The user could then save these scripts and select them from within the application, and the visualiser would run the scripts with data from the data model to generate the custom visualisations. These scripts could be written in a language such as \textit{Python}, or \textit{LUA}, and then called from within the application using a framework such as `\textit{Boost.Python}'. One downside to this approach would be the requirement for users to have some knowledge of programming, however considering the target users of the system are robotics developers and researchers, it seems unlikely that they would not be familiar with programming concepts. A well designed API could help to keep the requirements for these visualisation scripts simple, reducing the burden on the user. A visualisation scripting system of this nature would have the added benefit of allowing scripts to be shared, potentially leading to collaborative and faster, more effective discovery of useful ways to visualise robotic data.
+
 %----------------------------------------------------------------------------------------
 
 \section{Platform Development}
 
 The system could be further developed to become a full swarm robotics platform, used not only for debugging swarm behaviours but also for running swarm experiments and collecting experimental data. A number of additional features would be key to making this step forward. Firstly an organised method for managing experiment `runs', coupled with a more robust data logging system, could be implemented. This would allow the user to specify when an experiment run was taking place, and record and organise data related to each experiment run. This data could then be used when analysing the results of the experiment. The user could also control which elements of the data should be recorded, to ensure relevance to the experiment being run. The system could also be extended to support bi-directional communication, in order to send simple commands to the robots. This could include commands to start, stop, pause and restart specific behaviours or experiments. When coupled with the improved data logging and experiment organisation this could allow a user to start and stop experiment runs without having to interact directly with each robot, allowing them all to be started simultaneously. This bi-directional communication could also send other types of commands to the robots, potentially experiment-specific, user-defined ones, that might give high level directives to control swarm behaviour.
 
-The addition of higher level analytical features, focusing on the behaviour of the overall swarm rather than the individual robots, could also contribute to the system's use as a swarm robotics platform. These could analyse useful swarm-level parameters such as aggregate position over time, and distributions such as spread and skew. Behaviour significantly different from the average could also potentially be highlighted. This is often the kind of data that is used to judge whether a swarm is behaving correctly.
+The addition of higher level analytical features, focusing on the behaviour of the overall swarm rather than the individual robots, could also contribute to the system's use as a swarm robotics platform. These could analyse useful swarm-level parameters such as aggregate position over time, and distributions such as spread and skew. Behaviour significantly different from the average could also potentially be highlighted. This is often the kind of data that is used to judge whether a swarm is behaving correctly. This extra analysis could be coupled with new visualisations, for example giving a visual indicator of a swarms average position, and tracking its changed over time.
 
 The augmented video feed is one of the key features of the application, and could be extended to allow for video to be recorded directly from this feed and exported. This would allow a user to watch back experiment runs and replay specific sections, perhaps gaining insight into specific interactions or trends within the swarms behaviour. Exported video could also be used for demonstration purposes, with the graphical augmentations adding context for the viewer.
 
@@ -43,13 +47,8 @@ In recent years there has been rapid development in augmented reality technology
 
 %----------------------------------------------------------------------------------------
 
-\section{Use within the York Robotics Laboratory}
-
-
-%----------------------------------------------------------------------------------------
-
 \section{Integration with Tablet Application}
 
-Another application being completed at the University of York, simultaneously with this project, has implemented a similar swarm debugging system as an Android app for a tablet computer. The main aim of this approach is to allow the user to be more mobile whilst using the system, so that they can interact with the swarm in a hands on fashion whilst also receiving data from the robots. In future versions of both this project and the tablet project the two could be integrated together into a single platform, with the tablet perhaps acting as a satellite terminal through which the user can access the system. 
+Another project being completed at the University of York, simultaneously with this project, has implemented a similar swarm debugging system as an Android app for a tablet computer. The main aim of this approach is to allow the user to be more mobile whilst using the system, so that they can interact with the swarm in a hands on fashion whilst also having immediate access to internal data from the robots. In the future the tablet application could be integrated with the application developed in this project, to form a single platform, with the tablet acting as a satellite terminal through which the user can access the system.
 
 %----------------------------------------------------------------------------------------
