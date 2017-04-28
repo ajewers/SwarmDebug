@@ -40,7 +40,6 @@ The user interface was separated into the elements described in table \ref{tab:U
  Visualiser Panel Tab System & A \\
  \textbf{Visualiser} & \textbf{B} \\
  Visualiser Settings Tab & A \\
- Individual Visulisation Settings Dialogs & A \\
  Camera Settings Tab & A \\
  Robot List Panel Tab System & A \\
  Robot List Element & A \\
@@ -52,7 +51,7 @@ The user interface was separated into the elements described in table \ref{tab:U
  State Data Tab & A \\
  IR Data Tab & A \\
  Custom Data Tab & A \\
- Toolbar Menus & A \\
+ Individual Visulisation Settings Dialogs & A \\
  \bottomrule
  \label{tab:UserInterfaceElements}
 \end{longtable}
@@ -75,19 +74,19 @@ The following test strategies were then devised for the different element catego
 \textbf{Test Strategy B - Visualiser:}
 
 \begin{enumerate}
+ \item Verify that the video image is displayed correctly.
+ \item Verify that user clicks within the visualiser space are located correctly, at a number of different window sizes.
+ \item Verify that robots can be selected by clicking on their location in the visualiser image.
  \item For each data visualisation type:
  \begin{enumerate}
   \item Define a set of input data and the expected representation of this data.
   \item Supply the input data.
   \item Verify the representation is as expected.
   \item Check that the visualisation is clear and any text is legible.
-  \item Repeat for 3 different sets of input data.
-  \item Verify that visualisation updates immediately in response to changes in the data.
+  \item Repeat for multiple sets of input data.
   \item Verify that integrity is maintained with extreme data, corner cases and zero data, wherever possible.
   \item Verify that integrity is maintained at a range of window sizes, within reasonable limits.
  \end{enumerate}
- \item Verify that user clicks within the visualiser space are located correctly, at a number of different window sizes.
- \item Verify that robots can be selected by clicking on their location in the visualiser image.
 \end{enumerate}
 
 
@@ -528,75 +527,317 @@ For each user interface element the appropriate test strategy, as specified in t
 
 \begin{longtable}{ l p{10cm} }
  \hline
- \multicolumn{2}{c}{\textbf{}}\\
+ \multicolumn{2}{c}{\textbf{Custom Data Tab}}\\
  \hline
- \textbf{Purpose} & \\
- \textbf{Required Functionality} & \\
+ \textbf{Purpose} & Displays custom data reported by the selected robot.\\
+ \textbf{Required Functionality} & Must display each custom data point in, including both key and value strings. Must update immediately when new data is received.\\
  \hline
  \multicolumn{2}{p{14cm}}{\textbf{1. Examine UI element visually. Verify that it appears correct. Verify that it contains all elements necessary to satisfy its purpose.}}\\
- \multicolumn{2}{p{14cm}}{}\\
+ \multicolumn{2}{p{14cm}}{The tab is visually correct, including a table to display the custom data key/value pairs.}\\
  \hline
  \multicolumn{2}{p{14cm}}{\textbf{2. Examine all text within the element. Check for errors in both meaning and spelling.}}\\
- \multicolumn{2}{p{14cm}}{}\\
+ \multicolumn{2}{p{14cm}}{All spelling correct and meanings clear.}\\
  \hline
  \multicolumn{2}{p{14cm}}{\textbf{3. Verify that all components within the element which perform actions in response to user input operate correctly.}}\\
- \multicolumn{2}{p{14cm}}{}\\
+ \multicolumn{2}{p{14cm}}{The table cannot be modified using the mouse or keyboard, as intended.}\\
  \hline
  \multicolumn{2}{p{14cm}}{\textbf{4. Verify that all components respond quickly to user input.}}\\
- \multicolumn{2}{p{14cm}}{}\\
+ \multicolumn{2}{p{14cm}}{n/a.}\\
  \hline
  \multicolumn{2}{p{14cm}}{\textbf{5. Verify that component actions and functionality do not degrade with extreme use (sustained rapid input, large numbers of input changes, etc).}}\\
- \multicolumn{2}{p{14cm}}{}\\
+ \multicolumn{2}{p{14cm}}{Long keys and values and large numbers of key/value pairs are handled gracefully with scroll bars.}\\
  \hline
  \multicolumn{2}{p{14cm}}{\textbf{6. Verify that all data displayed within the element is visible, readable, correctly arranged and correctly labelled.}}\\
- \multicolumn{2}{p{14cm}}{}\\
+ \multicolumn{2}{p{14cm}}{All data is displayed clearly. The columns of the table are clearly labelled.}\\
  \hline
  \multicolumn{2}{p{14cm}}{\textbf{7. Verify that the element behaves sensibly when window resizing occurs, and that it remains usable and data remains visible whenever possible.}}\\
- \multicolumn{2}{p{14cm}}{}\\
+ \multicolumn{2}{p{14cm}}{The table scales to fit the available space, providing scroll bars whenever necessary.}\\
  \hline
  \multicolumn{2}{p{14cm}}{\textbf{8. Verify that the element updates promptly when responding to changes in data.}}\\
- \multicolumn{2}{p{14cm}}{}\\
+ \multicolumn{2}{p{14cm}}{New and updated custom data is displayed immediately.}\\
  \hline
- \textbf{Fixes Required} & \\
+ \textbf{Fixes Required} & None.\\
  \bottomrule
 \end{longtable}
 \clearpage
 
 \begin{longtable}{ l p{10cm} }
  \hline
- \multicolumn{2}{c}{\textbf{}}\\
+ \multicolumn{2}{c}{\textbf{Individual Visualisation Settings Dialogs}}\\
  \hline
- \textbf{Purpose} & \\
- \textbf{Required Functionality} & \\
+ \textbf{Purpose} & Allow the user to change settings for the data visualisations.\\
+ \textbf{Required Functionality} & Must display the settings for the selected visualisation type in a pop-up, modal window. Must allow the user to change these settings. Must provide the user with options for applying or cancelling the changes.\\
  \hline
  \multicolumn{2}{p{14cm}}{\textbf{1. Examine UI element visually. Verify that it appears correct. Verify that it contains all elements necessary to satisfy its purpose.}}\\
- \multicolumn{2}{p{14cm}}{}\\
+ \multicolumn{2}{p{14cm}}{All settings dialogs appear correctly, containing all the necessary controls to adjust the available settings.}\\
  \hline
  \multicolumn{2}{p{14cm}}{\textbf{2. Examine all text within the element. Check for errors in both meaning and spelling.}}\\
- \multicolumn{2}{p{14cm}}{}\\
+ \multicolumn{2}{p{14cm}}{All spelling correct and all meanings clear.}\\
  \hline
  \multicolumn{2}{p{14cm}}{\textbf{3. Verify that all components within the element which perform actions in response to user input operate correctly.}}\\
- \multicolumn{2}{p{14cm}}{}\\
+ \multicolumn{2}{p{14cm}}{All settings controls working correctly.}\\
  \hline
  \multicolumn{2}{p{14cm}}{\textbf{4. Verify that all components respond quickly to user input.}}\\
- \multicolumn{2}{p{14cm}}{}\\
+ \multicolumn{2}{p{14cm}}{Settings changes take effect immediately after pressing the apply button.}\\
  \hline
  \multicolumn{2}{p{14cm}}{\textbf{5. Verify that component actions and functionality do not degrade with extreme use (sustained rapid input, large numbers of input changes, etc).}}\\
- \multicolumn{2}{p{14cm}}{}\\
+ \multicolumn{2}{p{14cm}}{All components appear robust to repeated, rapid use. Input fields are validated to reject out of range values.}\\
  \hline
  \multicolumn{2}{p{14cm}}{\textbf{6. Verify that all data displayed within the element is visible, readable, correctly arranged and correctly labelled.}}\\
- \multicolumn{2}{p{14cm}}{}\\
+ \multicolumn{2}{p{14cm}}{All settings are clearly displayed, labelled and arranged.}\\
  \hline
  \multicolumn{2}{p{14cm}}{\textbf{7. Verify that the element behaves sensibly when window resizing occurs, and that it remains usable and data remains visible whenever possible.}}\\
- \multicolumn{2}{p{14cm}}{}\\
+ \multicolumn{2}{p{14cm}}{Dialog windows cannot be resized.}\\
  \hline
  \multicolumn{2}{p{14cm}}{\textbf{8. Verify that the element updates promptly when responding to changes in data.}}\\
- \multicolumn{2}{p{14cm}}{}\\
+ \multicolumn{2}{p{14cm}}{n/a.}\\
  \hline
- \textbf{Fixes Required} & \\
+ \textbf{Fixes Required} & None.\\
  \bottomrule
 \end{longtable}
 \clearpage
+
+\begin{longtable}{ l p{10cm} }
+ \hline
+ \multicolumn{2}{c}{\textbf{General Visualiser Functionality}}\\
+ \hline
+ \textbf{Purpose} & Displays the live video feed and overlays the the data visualisations.\\
+ \textbf{Required Functionality} & Must display the video feed. Must render the data visualisations based on the current data. Must allow the user to select a robot by clicking on it within the image.\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{1. Verify that the video image is displayed correctly.}}\\
+ \multicolumn{2}{p{14cm}}{The video feed image is displayed correctly, and updates at a decent rate. Due to the mounting orientation of the camera the image appears reversed when compared to the real world view. Settings could be added to allow the user to flip the image. }\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{2. Verify that user clicks within the visualiser space are located correctly, at a number of different window sizes.}}\\
+ \multicolumn{2}{p{14cm}}{User clicks are correctly located as shown by the cross-hairs showing the latest click location. Tested for a number of different sizes and image dimensions / aspect ratios, and worked correctly each time.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{3. Verify that robots can be selected by clicking on their location in the visualiser image.}}\\
+ \multicolumn{2}{p{14cm}}{Robots can be selected by clicking, with a reasonable tolerance. Robots positioned directly adjacent to one another can still be selected correctly. Clicking a robot with ID 10 caused a robot with ID 1 to be selected erroneously.}\\
+ \hline
+ \textbf{Fixes Required} & Add setting to allow the user to flip the video image. Robot selection works incorrectly for robots with IDs beginning with the same digit; determine the cause and fix.\\
+ \bottomrule
+\end{longtable}
+
+As per test strategy B, each data visualisation type was then tested individually, obtaining the following results.
+\clearpage
+
+\begin{longtable}{ l p{10cm} }
+ \hline
+ \multicolumn{2}{c}{\textbf{Robot ID Visualisation}}\\
+ \hline
+ \textbf{Purpose} & Overlay the numerical ID of the robot on the video feed.\\
+ \textbf{Required Functionality} & Display the numerical ID as a text string adjacent to the related robot.\\
+ \textbf{Settings} & On / off (Toggle). Display for selected robot only or all robots (Toggle).\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{1. Define input data and expected representation.}}\\
+ \multicolumn{2}{p{14cm}}{Five active robots using ID's 0, 1, 5, 7 and 8. expect to see the ID numbers rendered to the left of each robot, slightly above their center.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{3. Verify the representation is as expected.}}\\
+ \multicolumn{2}{p{14cm}}{Numerical ID numbers appear next to each robot. The ID is positioned slightly too far to the left of each robot, sometimes overlapping with other visualisations in crowded areas. Settings apply correctly.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{4. Check that the visualisation is clear and any text is legible.}}\\
+ \multicolumn{2}{p{14cm}}{ID numbers are legible.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{5. Repeat for multiple sets of input data.}}\\
+ \multicolumn{2}{p{14cm}}{Tested with five robots.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{6. Verify that integrity is maintained with extreme data, corner cases and zero data, wherever possible.}}\\
+ \multicolumn{2}{p{14cm}}{Robot IDs higher than 999 result in long strings, which overlap with the robot itself and its position/direction visualisation. Robot swarm of this size are not anticipated however.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{7. Verify that integrity is maintained at a range of window sizes, within reasonable limits.}}\\
+ \multicolumn{2}{p{14cm}}{IDs display at the same size for all visualiser sizes, therefore remaining legible but occupying excessive space at small sizes. However the visualiser is not usable at such small sizes, so this is not anticipated to cause issues.}\\
+ \hline
+ \textbf{Fixes Required} & Reposition IDs slightly closer to the robot. Potentially allow the user to configure the positioning.\\
+ \bottomrule
+\end{longtable}
+\clearpage
+
+\begin{longtable}{ l p{10cm} }
+ \hline
+ \multicolumn{2}{c}{\textbf{Robot Name Visualisation}}\\
+ \hline
+ \textbf{Purpose} & Overlay the name of the robot on the video feed.\\
+ \textbf{Required Functionality} & Display the name of the robot as a text string adjacent to the related robot.\\
+ \textbf{Settings} & On / off (Toggle). Display for selected robot only or all robots (Toggle).\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{1. Define input data and expected representation.}}\\
+ \multicolumn{2}{p{14cm}}{Five active robots reporting the names Robot\_0, Robot\_1, Robot\_5, Robot\_7 and Robot\_8 in watchdog packets. Expect to see the names rendered to the right of each robot, slightly above their center.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{3. Verify the representation is as expected.}}\\
+ \multicolumn{2}{p{14cm}}{Names appear next to each robot. The text is positioned correctly to the right of each robot. Settings apply correctly.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{4. Check that the visualisation is clear and any text is legible.}}\\
+ \multicolumn{2}{p{14cm}}{Names are legible.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{5. Repeat for multiple sets of input data.}}\\
+ \multicolumn{2}{p{14cm}}{Tested with five robots.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{6. Verify that integrity is maintained with extreme data, corner cases and zero data, wherever possible.}}\\
+ \multicolumn{2}{p{14cm}}{Extremely long names are displayed up to the edge of the image.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{7. Verify that integrity is maintained at a range of window sizes, within reasonable limits.}}\\
+ \multicolumn{2}{p{14cm}}{Names remain legible for all usable sizes of the visualiser.}\\
+ \hline
+ \textbf{Fixes Required} & None.\\
+ \bottomrule
+\end{longtable}
+\clearpage
+
+\begin{longtable}{ l p{10cm} }
+ \hline
+ \multicolumn{2}{c}{\textbf{Robot State Visualisation}}\\
+ \hline
+ \textbf{Purpose} & Overlay the current state of the robot on the video feed.\\
+ \textbf{Required Functionality} & Display the state of the robot as a text string adjacent to the related robot. Update this display whenever the state changes.\\
+ \textbf{Settings} & On / off (Toggle). Display for selected robot only or all robots (Toggle).\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{1. Define input data and expected representation.}}\\
+ \multicolumn{2}{p{14cm}}{Five active robots oscillating between STATE1 and STATE2. Expect to see the states rendered to the right of each robot, below the name visualisation.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{3. Verify the representation is as expected.}}\\
+ \multicolumn{2}{p{14cm}}{States appear next to each robot. The text is positioned correctly to the right of each robot and below the name text. Settings apply correctly.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{4. Check that the visualisation is clear and any text is legible.}}\\
+ \multicolumn{2}{p{14cm}}{States are legible.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{5. Repeat for multiple sets of input data.}}\\
+ \multicolumn{2}{p{14cm}}{Tested with five robots, each changing state at different times.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{6. Verify that integrity is maintained with extreme data, corner cases and zero data, wherever possible.}}\\
+ \multicolumn{2}{p{14cm}}{Extremely long states are displayed up to the edge of the image.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{7. Verify that integrity is maintained at a range of window sizes, within reasonable limits.}}\\
+ \multicolumn{2}{p{14cm}}{States remain legible for all usable sizes of the visualiser.}\\
+ \hline
+ \textbf{Fixes Required} & None.\\
+ \bottomrule
+\end{longtable}
+\clearpage
+
+\begin{longtable}{ l p{10cm} }
+ \hline
+ \multicolumn{2}{c}{\textbf{Robot Position Visualisation}}\\
+ \hline
+ \textbf{Purpose} & Overlay a small circle around the robot's current position.\\
+ \textbf{Required Functionality} & Render a circle outline around the robots current position. Use a thicker line to highlight the robot if it is currently selected.\\
+ \textbf{Settings} & On / off (Toggle).\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{1. Define input data and expected representation.}}\\
+ \multicolumn{2}{p{14cm}}{Five active robots moving around the arena in different paths. Expect to see a circle rendered around the center of each robot, updating as their positions change.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{3. Verify the representation is as expected.}}\\
+ \multicolumn{2}{p{14cm}}{Circles are correctly rendered for all robots, and update correctly over time. Can be correctly toggled on and off.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{4. Check that the visualisation is clear and any text is legible.}}\\
+ \multicolumn{2}{p{14cm}}{Circles are clear.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{5. Repeat for multiple sets of input data.}}\\
+ \multicolumn{2}{p{14cm}}{Tested with five robots.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{6. Verify that integrity is maintained with extreme data, corner cases and zero data, wherever possible.}}\\
+ \multicolumn{2}{p{14cm}}{Circles display correctly for all positions within the image.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{7. Verify that integrity is maintained at a range of window sizes, within reasonable limits.}}\\
+ \multicolumn{2}{p{14cm}}{Circles render correctly at all sizes.}\\
+ \hline
+ \textbf{Fixes Required} & None.\\
+ \bottomrule
+\end{longtable}
+\clearpage
+
+\begin{longtable}{ l p{10cm} }
+ \hline
+ \multicolumn{2}{c}{\textbf{Robot Direction Visualisation}}\\
+ \hline
+ \textbf{Purpose} & Overlay a small line indicating the direction the robot is facing.\\
+ \textbf{Required Functionality} & Render a line from the center of the robot outwards, in the direction it is facing. Use a thicker line if the robot is selected.\\
+ \textbf{Settings} & On / off (Toggle).\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{1. Define input data and expected representation.}}\\
+ \multicolumn{2}{p{14cm}}{Five active robots moving around the arena in different paths. Expect to see a line rendered from the center of each robot outward in the direction it is facing, updating as its orientation changes.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{3. Verify the representation is as expected.}}\\
+ \multicolumn{2}{p{14cm}}{Lines are correctly rendered for all robots, and update correctly over time. Can be correctly toggled on and off.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{4. Check that the visualisation is clear and any text is legible.}}\\
+ \multicolumn{2}{p{14cm}}{Lines are clear.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{5. Repeat for multiple sets of input data.}}\\
+ \multicolumn{2}{p{14cm}}{Tested with five robots.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{6. Verify that integrity is maintained with extreme data, corner cases and zero data, wherever possible.}}\\
+ \multicolumn{2}{p{14cm}}{Lines display correctly for all orientations, at all positions within the image.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{7. Verify that integrity is maintained at a range of window sizes, within reasonable limits.}}\\
+ \multicolumn{2}{p{14cm}}{Lines render correctly at all sizes.}\\
+ \hline
+ \textbf{Fixes Required} & None.\\
+ \bottomrule
+\end{longtable}
+\clearpage
+
+\begin{longtable}{ l p{10cm} }
+ \hline
+ \multicolumn{2}{c}{\textbf{IR Data Visualisation}}\\
+ \hline
+ \textbf{Purpose} & Overlay a graphical representation of the robots infra-red sensor data.\\
+ \textbf{Required Functionality} & IR sensor data represented in one of two modes. In proximity mode, display a line in the direction of each relevant sensor with a length inversely related to the sensors value, indicating an approximation of proximity. In `heat' mode, display a small box for each sensor adjacent to the robot and positioned to match the sensor layout, that changes colour as the sensor value changes. Uses the position and orientation of the robot to render with the correct position and rotation.\\
+ \textbf{Settings} & On / off (Toggle). Display for selected robot only or all robots (Toggle). Proximity or heat mode (Toggle). Angle for each sensor in degrees (Numerical).\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{1. Define input data and expected representation.}}\\
+ \multicolumn{2}{p{14cm}}{Five active robots reporting their IR sensor data whilst an object is placed at varying distances from each of their sensors. Expect to see the graphical representations change to reflect the changing value.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{3. Verify the representation is as expected.}}\\
+ \multicolumn{2}{p{14cm}}{IR data is displayed in both modes. The display varies correctly as the sensor values change. Proximity lines change length correctly, but extend much further than necessary for low values. The boxes in heat mode change colour correctly, but are coloured close to black for low values, which does not display well on a dark background.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{4. Check that the visualisation is clear and any text is legible.}}\\
+ \multicolumn{2}{p{14cm}}{Both visualisations are clear.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{5. Repeat for multiple sets of input data.}}\\
+ \multicolumn{2}{p{14cm}}{Tested with 5 robots across a range of sensor values.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{6. Verify that integrity is maintained with extreme data, corner cases and zero data, wherever possible.}}\\
+ \multicolumn{2}{p{14cm}}{Out of range sensor data is not displayed.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{7. Verify that integrity is maintained at a range of window sizes, within reasonable limits.}}\\
+ \multicolumn{2}{p{14cm}}{The size of the visualisation does not change with the size of the image. However the proximity lines can only be representative, so their actual size is not important, only the relative variation in that size.}\\
+ \hline
+ \textbf{Fixes Required} & Set a more sensible maximum length for the proximity lines. Improve mapping between sensor values and line length (non-linear). Adjust heat mode colour scheme for clarity.\\
+ \bottomrule
+\end{longtable}
+\clearpage
+
+\begin{longtable}{ l p{10cm} }
+ \hline
+ \multicolumn{2}{c}{\textbf{Robot Path Visualisation}}\\
+ \hline
+ \textbf{Purpose} & Display the robots recent movement in the form of a trail.\\
+ \textbf{Required Functionality} & Render the robot's position history as a sequence of line segments. support an adjustable sampling interval.\\
+ \textbf{Settings} & On / off (Toggle). Display for selected robot only or all robots (Toggle). Proximity or heat mode (Toggle). Angle for each sensor in degrees (Numerical).\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{1. Define input data and expected representation.}}\\
+ \multicolumn{2}{p{14cm}}{Five active robots reporting their IR sensor data whilst an object is placed at varying distances from each of their sensors. Expect to see the graphical representations change to reflect the changing value.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{3. Verify the representation is as expected.}}\\
+ \multicolumn{2}{p{14cm}}{IR data is displayed in both modes. The display varies correctly as the sensor values change. Proximity lines change length correctly, but extend much further than necessary for low values. The boxes in heat mode change colour correctly, but are coloured close to black for low values, which does not display well on a dark background.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{4. Check that the visualisation is clear and any text is legible.}}\\
+ \multicolumn{2}{p{14cm}}{Both visualisations are clear.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{5. Repeat for multiple sets of input data.}}\\
+ \multicolumn{2}{p{14cm}}{Tested with 5 robots across a range of sensor values.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{6. Verify that integrity is maintained with extreme data, corner cases and zero data, wherever possible.}}\\
+ \multicolumn{2}{p{14cm}}{Out of range sensor data is not displayed.}\\
+ \hline
+ \multicolumn{2}{p{14cm}}{\textbf{7. Verify that integrity is maintained at a range of window sizes, within reasonable limits.}}\\
+ \multicolumn{2}{p{14cm}}{The size of the visualisation does not change with the size of the image. However the proximity lines can only be representative, so their actual size is not important, only the relative variation in that size.}\\
+ \hline
+ \textbf{Fixes Required} & Set a more sensible maximum length for the proximity lines. Improve mapping between sensor values and line length (non-linear). Adjust heat mode colour scheme for clarity.\\
+ \bottomrule
+\end{longtable}
+\clearpage
+
+
 
 \subsection{Fixes Implemented}
 
