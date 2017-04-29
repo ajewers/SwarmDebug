@@ -6,12 +6,12 @@
 
 %----------------------------------------------------------------------------------------
 
-This project was completed between Monday 16th January and Thursday 18th May, 2017. A well defined breakdown of the tasks required to complete this project, and an organised plan for completing these tasks, was instrumental in ensuring that the project could be completed in the available time. This chapter gives details of this work breakdown, and the timing considerations. However, a significant majority of the project work was software development based, and - as with almost all modern software development - accurately predicting the time required to implement every piece of code was a virtually impossible task. The development process inevitably leads to the discovery of unforeseen issues and a deeper understanding of the problem constraints, which in turn requires the allocation of project time to be re-evaluated. Hence wherever possible an `\textit{agile}' methodology and approach was employed. This included frequent re-assessment of the remaining work and the feasibility of individual features. The agile methodology, and its application within this project, is discussed in more detail in section \ref{Agile}.
+This project was completed between Monday 16th January and Thursday 18th May, 2017. A well defined breakdown of the tasks required to complete this project, and an organised plan for completing these tasks, was instrumental in ensuring that the project could be completed in the available time. This chapter gives details of this work breakdown, and the timing considerations. It also includes details of a number of potential risks identified at the start of the project, and information on how these were mitigated where possible. It should be noted that a significant majority of work involved in this project was software development based, and - as with almost all modern software development - accurately predicting the time required to implement every piece of code was a virtually impossible task. The development process inevitably leads to the discovery of unforeseen issues and a deeper understanding of the problem constraints, which in turn requires the allocation of project time to be re-evaluated. Hence wherever possible an `\textit{agile}' methodology and approach was employed. This included frequent re-assessment of the remaining work and the feasibility of individual features. The agile methodology, and its application within this project, is discussed in more detail in section \ref{Agile}.
 
 %----------------------------------------------------------------------------------------
 
 \section{Work Breakdown}
-At the start of the project the software development and software testing work was divided into the logical tasks shown in tables \ref{tab:DevTasks} and \ref{tab:TestingTasks} respectively. The timings given for each development task are approximate, and based on prior experience with software work. Other tasks, not related specifically to the software development, are listed in table .
+At the start of the project the software related work, including both development and testing stages, was divided into logical tasks. These tasks are shown in tables \ref{tab:DevTasks} and \ref{tab:TestingTasks} respectively. The time required to complete each task was estimated based on prior experience of software development work, and these approximate timings are listed in the tables. Other tasks, not related specifically to the software development, are listed in table \ref{tab:OtherTasks}.
 
 \begin{longtable}{ >{\raggedright}p{5cm}>{\raggedright}p{6cm}p{3cm} }
 	\caption{Development tasks.}\\
@@ -99,16 +99,22 @@ User Evaluation Sessions & To evaluate the system by allowing a number of users 
 
 %----------------------------------------------------------------------------------------
 
-\section{Timing}
+\section{Timing and Plan}
 
-Using the estimated time required for each development task, as shown in table \ref{tab:DevTasks}, a plan for completing the project was devised. This plan could largely be separated into three main phases; a preliminary phase of research and design, the main implementation phase, and then the final testing and evaluation 
+Having estimated the time required for each development task, a plan for completing the project within the available time frame was devised, and can be found as a Gantt chart in appendix \ref{app:GanttChart}. The plan comprised three main phases; a preliminary phase of research and design work, the main implementation phase, and a final testing and evaluation phase. Where possible, tasks were organised to leave weekend days free, in an attempt to provide a more manageable schedule, but also to allow some slippage time each week for any overrunning tasks.
 
 %----------------------------------------------------------------------------------------
 
 \section{Risk Analysis and Mitigation}
+
+The primary source of risk within this project was time. Software development is an inherently time consuming process, with most implementation tasks suffering from a degree of uncertainty, and the time frame for the project was relatively short. Therefore the major risk to be considered was the potential features to not be implemented due to a lack of available time, and therefore for the system to fall short of its stated aims and objectives. A number of steps were taken to mitigate this risk. Firstly, the features of the system required to satisfy the core aims were assessed, and the task schedule was organised such that a `minimum viable product' would be completed as quickly as possible. The minimum viable product describes the smallest possible set of features which can be implemented such that the system still satisfies its core objectives. The second step taken to mitigate the time-risk was the inclusion of slippage time in the project plan. This extra time was worked into the plan to absorb any overrun in individual, reducing the chances of a single overrunning task having a knock-on effect on the rest of the plan. This slippage time was introduced in two places; by arranging tasks to leave weekend days free, as previously discussed, but also by planning for a flexible testing phase, where time previously allocated for testing could be re-allocated for development if this was deemed necessary. The knock-on affect of reduced testing was determined to be an undesirable but acceptable consequence.
 
 
 
 %----------------------------------------------------------------------------------------
 
 \section{Application of Agile Methodologies} \label{Agile}
+
+
+
+%----------------------------------------------------------------------------------------
