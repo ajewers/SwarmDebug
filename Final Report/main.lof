@@ -3,29 +3,29 @@
 \select@language {english}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Debugging information abstraction diagram}}{3}{figure.caption.11}
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Proposed system architecture}}{4}{figure.caption.13}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Proposed system architecture}}{5}{figure.caption.13}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Sonar data visualisation. Collet and MacDonald \cite {Collet:2006}}}{12}{figure.caption.40}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Spatially situation data overlay. Garrido et al. \cite {Garrido:2014}}}{13}{figure.caption.42}
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces The e-puck Robot}}{24}{figure.caption.57}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces e-puck IR Sensor Layout}}{25}{figure.caption.62}
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Tracking Camera Arrangement}}{27}{figure.caption.65}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Robot Arena and Tracking Camera}}{28}{figure.caption.66}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces JAI-Go Camera}}{29}{figure.caption.68}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces ARuCo Markers}}{30}{figure.caption.70}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces ARuCo Marker Mounted on E-Puck}}{31}{figure.caption.71}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Sonar data visualisation. Collet and MacDonald \cite {Collet:2006}}}{14}{figure.caption.40}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Spatially situation data overlay. Garrido et al. \cite {Garrido:2014}}}{15}{figure.caption.42}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Software Architecture Diagram}}{41}{figure.caption.80}
-\contentsline {figure}{\numberline {8.2}{\ignorespaces Data Model Diagram}}{42}{figure.caption.82}
-\contentsline {figure}{\numberline {8.3}{\ignorespaces UI Layout}}{43}{figure.caption.84}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {9.1}{\ignorespaces Application User Interface}}{46}{figure.caption.88}
-\contentsline {figure}{\numberline {9.2}{\ignorespaces Data Format}}{51}{figure.caption.98}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces The e-puck Robot}}{26}{figure.caption.57}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces e-puck IR Sensor Layout}}{27}{figure.caption.62}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Tracking Camera Arrangement}}{29}{figure.caption.65}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Robot Arena and Tracking Camera}}{30}{figure.caption.66}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces JAI-Go Camera}}{31}{figure.caption.68}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces ARuCo Markers}}{32}{figure.caption.70}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces ARuCo Marker Mounted on E-Puck}}{33}{figure.caption.71}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Software Architecture Diagram}}{43}{figure.caption.80}
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Data Model Diagram}}{44}{figure.caption.82}
+\contentsline {figure}{\numberline {8.3}{\ignorespaces UI Layout}}{45}{figure.caption.84}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {9.1}{\ignorespaces Application User Interface}}{48}{figure.caption.88}
+\contentsline {figure}{\numberline {9.2}{\ignorespaces Data Format}}{53}{figure.caption.98}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

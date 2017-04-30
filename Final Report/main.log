@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2017.4.29)  29 APR 2017 18:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2017.4.30)  30 APR 2017 12:10
 entering extended mode
 **./main.tex
 (main.tex
@@ -2065,49 +2065,48 @@ t>
 File: Figures/RobotDebuggingInformationAbstraction.png Graphic file (type png)
  <use Figures/RobotDebuggingInformationAbstraction.png>
 Package pdftex.def Info: Figures/RobotDebuggingInformationAbstraction.png used 
-on input line 32.
+on input line 30.
 (pdftex.def)             Requested size: 415.55148pt x 216.80946pt.
 
-Overfull \hbox (11.5224pt too wide) in paragraph at lines 32--34
+Overfull \hbox (11.5224pt too wide) in paragraph at lines 30--32
  [][] 
  []
 
-[2] <Figures/SystemArchitecture.png, id=591, 393.6306pt x 199.2243pt>
+[2] [3 <./Figures/RobotDebuggingInformationAbstraction.png>]
+<Figures/SystemArchitecture.png, id=599, 393.6306pt x 199.2243pt>
 File: Figures/SystemArchitecture.png Graphic file (type png)
 
 <use Figures/SystemArchitecture.png>
-Package pdftex.def Info: Figures/SystemArchitecture.png used on input line 47.
+Package pdftex.def Info: Figures/SystemArchitecture.png used on input line 51.
 (pdftex.def)             Requested size: 314.9049pt x 159.37965pt.
- [3 <./Figures/RobotDebuggingInformationAbstraction.png>] [4 <./Figures/SystemA
-rchitecture.png>]) [5] [6]
+ [4] [5 <./Figures/SystemArchitecture.png>] [6]) [7]
 \openout2 = `Chapters/Chapter2.aux'.
 
+ (Chapters/Chapter2.tex [8
 
-(Chapters/Chapter2.tex
+
+
+]
 Chapter 2.
 1: section
-[7
-
-
-
-] [8] [9] [10] [11] <Figures/Sonar.png, id=691, 487.8225pt x 375.65344pt>
+[9] [10] [11] [12] [13] <Figures/Sonar.png, id=703, 487.8225pt x 375.65344pt>
 File: Figures/Sonar.png Graphic file (type png)
 
 <use Figures/Sonar.png>
 Package pdftex.def Info: Figures/Sonar.png used on input line 56.
 (pdftex.def)             Requested size: 292.69576pt x 225.3938pt.
- [12 <./Figures/Sonar.png>]
-<Figures/SpatiallySituatedData.png, id=703, 386.19281pt x 242.40562pt>
+ [14 <./Figures/Sonar.png>]
+<Figures/SpatiallySituatedData.png, id=715, 386.19281pt x 242.40562pt>
 File: Figures/SpatiallySituatedData.png Graphic file (type png)
 
 <use Figures/SpatiallySituatedData.png>
 Package pdftex.def Info: Figures/SpatiallySituatedData.png used on input line 7
 0.
 (pdftex.def)             Requested size: 308.95465pt x 193.92474pt.
-) [13 <./Figures/SpatiallySituatedData.png>]
+) [15 <./Figures/SpatiallySituatedData.png>]
 \openout2 = `Chapters/Chapter3.aux'.
 
- (Chapters/Chapter3.tex [14
+ (Chapters/Chapter3.tex [16
 
 
 
@@ -2124,7 +2123,7 @@ Overfull \hbox (30.30948pt too wide) in alignment at lines 16--57
  []
 
 1: section
-[15] [16]
+[17] [18]
 Underfull \hbox (badness 10000) in paragraph at lines 62--63
 []|\T1/ppl/b/n/10.95 Approximate
  []
@@ -2144,12 +2143,12 @@ Overfull \hbox (18.3095pt too wide) in alignment at lines 78--97
  [] [] 
  []
 
-[17]
+[19]
 
-LaTeX Warning: Reference `app:GanttChart' on page 18 undefined on input line 10
+LaTeX Warning: Reference `app:GanttChart' on page 20 undefined on input line 10
 4.
 
-[18] [19]) [20]
+[20] [21]) [22]
 \openout2 = `Chapters/Chapter4.aux'.
 
  (Chapters/Chapter4.tex
@@ -2158,40 +2157,40 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 14.
 )
 1: section
-[21
+[23
 
 
 
-] [22]
+] [24]
 \openout2 = `Chapters/Chapter5.aux'.
 
  (Chapters/Chapter5.tex
 Chapter 5.
-<Figures/EPuck.png, id=755, 459.21562pt x 410.2828pt>
+<Figures/EPuck.png, id=768, 459.21562pt x 410.2828pt>
 File: Figures/EPuck.png Graphic file (type png)
  <use Figures/EPuck.png>
 Package pdftex.def Info: Figures/EPuck.png used on input line 14.
 (pdftex.def)             Requested size: 275.5315pt x 246.17157pt.
 
 1: section
-[23
+[25
 
 
 
-] [24 <./Figures/EPuck.png>]
-<Figures/EPuckIRSensors.png, id=769, 602.25pt x 602.25pt>
+] [26 <./Figures/EPuck.png>]
+<Figures/EPuckIRSensors.png, id=780, 602.25pt x 602.25pt>
 File: Figures/EPuckIRSensors.png Graphic file (type png)
 
 <use Figures/EPuckIRSensors.png>
 Package pdftex.def Info: Figures/EPuckIRSensors.png used on input line 41.
 (pdftex.def)             Requested size: 240.89572pt x 240.89572pt.
- [25 <./Figures/EPuckIRSensors.png>]) [26]
+ [27 <./Figures/EPuckIRSensors.png>]) [28]
 \openout2 = `Chapters/Chapter6.aux'.
 
 
 (Chapters/Chapter6.tex
 Chapter 6.
-<Figures/CameraLayout.png, id=783, 1052.43187pt x 830.35219pt>
+<Figures/CameraLayout.png, id=794, 1052.43187pt x 830.35219pt>
 File: Figures/CameraLayout.png Graphic file (type png)
 
 <use Figures/CameraLayout.png>
@@ -2199,26 +2198,26 @@ Package pdftex.def Info: Figures/CameraLayout.png used on input line 13.
 (pdftex.def)             Requested size: 315.732pt x 249.10757pt.
 
 1: section
-[27
+[29
 
 
 
  <./Figures/CameraLayout.png>]
-<Figures/ArenaPhoto.png, id=791, 569.12625pt x 758.835pt>
+<Figures/ArenaPhoto.png, id=803, 569.12625pt x 758.835pt>
 File: Figures/ArenaPhoto.png Graphic file (type png)
 
 <use Figures/ArenaPhoto.png>
 Package pdftex.def Info: Figures/ArenaPhoto.png used on input line 23.
 (pdftex.def)             Requested size: 227.64647pt x 303.52863pt.
- [28 <./Figures/ArenaPhoto.png>]
-<Figures/Camera.png, id=798, 271.76532pt x 235.63031pt>
+ [30 <./Figures/ArenaPhoto.png>]
+<Figures/Camera.png, id=810, 271.76532pt x 235.63031pt>
 File: Figures/Camera.png Graphic file (type png)
 
 <use Figures/Camera.png>
 Package pdftex.def Info: Figures/Camera.png used on input line 36.
 (pdftex.def)             Requested size: 217.41254pt x 188.5045pt.
- [29 <./Figures/Camera.png>]
-<Figures/ARuCoTags.png, id=815, 1011.78pt x 758.835pt>
+ [31 <./Figures/Camera.png>]
+<Figures/ARuCoTags.png, id=826, 1011.78pt x 758.835pt>
 File: Figures/ARuCoTags.png Graphic file (type png)
 
 <use Figures/ARuCoTags.png>
@@ -2230,44 +2229,44 @@ Overfull \hbox (0.67575pt too wide) in paragraph at lines 53--55
  []
 
 
-LaTeX Warning: Reference `fig:EPuckAruco' on page 30 undefined on input line 59
+LaTeX Warning: Reference `fig:EPuckAruco' on page 32 undefined on input line 59
 .
 
-[30 <./Figures/ARuCoTags.png>]
-<Figures/EPuckARuCo.png, id=822, 557.08125pt x 558.085pt>
+[32 <./Figures/ARuCoTags.png>]
+<Figures/EPuckARuCo.png, id=833, 557.08125pt x 558.085pt>
 File: Figures/EPuckARuCo.png Graphic file (type png)
 
 <use Figures/EPuckARuCo.png>
 Package pdftex.def Info: Figures/EPuckARuCo.png used on input line 63.
 (pdftex.def)             Requested size: 278.53995pt x 279.04182pt.
-) [31 <./Figures/EPuckARuCo.png>]
+) [33 <./Figures/EPuckARuCo.png>]
 \openout2 = `Chapters/Chapter7.aux'.
 
 
-(Chapters/Chapter7.tex [32
+(Chapters/Chapter7.tex [34
 
 
 
 ]
 Chapter 7.
 1: section
-[33]
+[35]
 Overfull \hbox (16.6094pt too wide) in paragraph at lines 72--73
 []\T1/ppl/m/n/10.95 ``I think the sys-tem (al-ready po-ten-tially very use-ful)
  could be im-proved/expanded
  []
 
-[34] [35] [36]) [37]
+[36] [37] [38]) [39]
 \openout2 = `Chapters/Chapter8.aux'.
 
- (Chapters/Chapter8.tex [38
+ (Chapters/Chapter8.tex [40
 
 
 
 ]
 Chapter 8.
 1: section
-[39] [40] <Figures/SoftwareArchitecture.png, id=866, 605.1408pt x 415.5525pt>
+[41] [42] <Figures/SoftwareArchitecture.png, id=878, 605.1408pt x 415.5525pt>
 File: Figures/SoftwareArchitecture.png Graphic file (type png)
 
 <use Figures/SoftwareArchitecture.png>
@@ -2279,15 +2278,15 @@ Overfull \hbox (19.56657pt too wide) in paragraph at lines 37--39
  [][] 
  []
 
-[41 <./Figures/SoftwareArchitecture.png>]
-<Figures/DataModel.png, id=874, 542.025pt x 280.4076pt>
+[43 <./Figures/SoftwareArchitecture.png>]
+<Figures/DataModel.png, id=885, 542.025pt x 280.4076pt>
 File: Figures/DataModel.png Graphic file (type png)
 
 <use Figures/DataModel.png>
 Package pdftex.def Info: Figures/DataModel.png used on input line 48.
 (pdftex.def)             Requested size: 379.4149pt x 196.28397pt.
- [42 <./Figures/DataModel.png>]
-<Figures/UILayout.png, id=880, 433.62pt x 325.215pt>
+ [44 <./Figures/DataModel.png>]
+<Figures/UILayout.png, id=891, 433.62pt x 325.215pt>
 File: Figures/UILayout.png Graphic file (type png)
 
 <use Figures/UILayout.png>
@@ -2298,12 +2297,12 @@ Overfull \hbox (29.58986pt too wide) in paragraph at lines 61--63
  [][] 
  []
 
-[43 <./Figures/UILayout.png>]) [44]
+[45 <./Figures/UILayout.png>]) [46]
 \openout2 = `Chapters/Chapter9.aux'.
 
  (Chapters/Chapter9.tex
 Chapter 9.
-<Figures/ApplicationScreenshotOverview.png, id=895, 962.59625pt x 746.79pt>
+<Figures/ApplicationScreenshotOverview.png, id=906, 962.59625pt x 746.79pt>
 File: Figures/ApplicationScreenshotOverview.png Graphic file (type png)
 
 <use Figures/ApplicationScreenshotOverview.png>
@@ -2312,7 +2311,7 @@ t line 18.
 (pdftex.def)             Requested size: 385.03168pt x 298.7107pt.
 
 1: section
-[45
+[47
 
 
 
@@ -2326,12 +2325,12 @@ Overfull \hbox (20.91736pt too wide) in alignment at lines 53--56
  [] [] 
  []
 
-[46 <./Figures/ApplicationScreenshotOverview.png>] [47]
+[48 <./Figures/ApplicationScreenshotOverview.png>] [49]
 Overfull \hbox (2.12738pt too wide) in alignment at lines 58--67
  [] [] 
  []
 
-[48] [49] [50] <Figures/DataFormat.png, id=930, 1359.57938pt x 88.83188pt>
+[50] [51] [52] <Figures/DataFormat.png, id=941, 1359.57938pt x 88.83188pt>
 File: Figures/DataFormat.png Graphic file (type png)
 
 <use Figures/DataFormat.png>
@@ -2352,16 +2351,16 @@ Overfull \hbox (1.39282pt too wide) in alignment at lines 143--160
  [] [] 
  []
 
-[51 <./Figures/DataFormat.png>]
+[53 <./Figures/DataFormat.png>]
 
-LaTeX Warning: Reference `' on page 52 undefined on input line 169.
+LaTeX Warning: Reference `' on page 54 undefined on input line 169.
 
 
 Overfull \hbox (36.41174pt too wide) in alignment at lines 171--188
  [] [] [] 
  []
 
-[52] [53] [54] [55]
+[54] [55] [56] [57]
 Underfull \hbox (badness 2529) in paragraph at lines 241--242
 []|\T1/ppl/m/n/10.95 Identifies the socket on the lo-cal ma-chine
  []
@@ -2381,17 +2380,17 @@ Overfull \hbox (23.18405pt too wide) in alignment at lines 257--260
  [] [] [] 
  []
 
-[56]) [57]
+[58]) [59]
 \openout2 = `Chapters/Chapter10.aux'.
 
- (Chapters/Chapter10.tex [58
+ (Chapters/Chapter10.tex [60
 
 
 
 ]
 Chapter 10.
 1: section
-[59] [60]
+[61] [62]
 Overfull \hbox (20.9727pt too wide) in alignment at lines 96--128
  [] [] 
  []
@@ -2405,7 +2404,7 @@ Overfull \hbox (20.9727pt too wide) in alignment at lines 128--129
  [] [] 
  []
 
-[61] [62]
+[63] [64]
 Overfull \hbox (20.9727pt too wide) in alignment at lines 132--164
  [] [] 
  []
@@ -2419,7 +2418,7 @@ Overfull \hbox (20.9727pt too wide) in alignment at lines 164--165
  [] [] 
  []
 
-[63
+[65
 
 ]
 Overfull \hbox (20.9727pt too wide) in alignment at lines 168--200
@@ -2435,7 +2434,7 @@ Overfull \hbox (20.9727pt too wide) in alignment at lines 200--201
  [] [] 
  []
 
-[64
+[66
 
 ]
 Overfull \hbox (20.9727pt too wide) in alignment at lines 204--236
@@ -2451,7 +2450,7 @@ Overfull \hbox (20.9727pt too wide) in alignment at lines 236--237
  [] [] 
  []
 
-[65
+[67
 
 ]
 Overfull \hbox (20.9727pt too wide) in alignment at lines 240--272
@@ -2467,7 +2466,7 @@ Overfull \hbox (20.9727pt too wide) in alignment at lines 272--273
  [] [] 
  []
 
-[66
+[68
 
 ]
 Overfull \hbox (20.9727pt too wide) in alignment at lines 276--308
@@ -2483,7 +2482,7 @@ Overfull \hbox (20.9727pt too wide) in alignment at lines 308--309
  [] [] 
  []
 
-[67
+[69
 
 ]
 Overfull \hbox (20.9727pt too wide) in alignment at lines 312--344
@@ -2499,7 +2498,7 @@ Overfull \hbox (20.9727pt too wide) in alignment at lines 344--345
  [] [] 
  []
 
-[68
+[70
 
 ]
 Overfull \hbox (20.9727pt too wide) in alignment at lines 348--380
@@ -2515,7 +2514,7 @@ Overfull \hbox (20.9727pt too wide) in alignment at lines 380--381
  [] [] 
  []
 
-[69
+[71
 
 ]
 Overfull \hbox (20.9727pt too wide) in alignment at lines 384--416
@@ -2531,7 +2530,7 @@ Overfull \hbox (20.9727pt too wide) in alignment at lines 416--417
  [] [] 
  []
 
-[70
+[72
 
 ]
 Overfull \hbox (20.9727pt too wide) in alignment at lines 420--452
@@ -2547,7 +2546,7 @@ Overfull \hbox (20.9727pt too wide) in alignment at lines 452--453
  [] [] 
  []
 
-[71
+[73
 
 ]
 Underfull \hbox (badness 1112) in paragraph at lines 461--462
@@ -2568,7 +2567,7 @@ Overfull \hbox (20.9727pt too wide) in alignment at lines 488--489
  [] [] 
  []
 
-[72
+[74
 
 ]
 Overfull \hbox (20.9727pt too wide) in alignment at lines 492--524
@@ -2584,7 +2583,7 @@ Overfull \hbox (20.9727pt too wide) in alignment at lines 524--525
  [] [] 
  []
 
-[73
+[75
 
 ]
 Overfull \hbox (20.9727pt too wide) in alignment at lines 528--560
@@ -2600,7 +2599,7 @@ Overfull \hbox (20.9727pt too wide) in alignment at lines 560--561
  [] [] 
  []
 
-[74
+[76
 
 ]
 Overfull \hbox (20.9727pt too wide) in alignment at lines 564--596
@@ -2616,7 +2615,7 @@ Overfull \hbox (20.9727pt too wide) in alignment at lines 596--597
  [] [] 
  []
 
-[75
+[77
 
 ]
 Overfull \hbox (20.9727pt too wide) in alignment at lines 600--618
@@ -2627,7 +2626,7 @@ Overfull \hbox (20.9727pt too wide) in alignment at lines 600--618
 Underfull \vbox (badness 10000) detected at line 618
  []
 
-[76
+[78
 
 ]
 Overfull \hbox (20.9727pt too wide) in alignment at lines 623--651
@@ -2638,7 +2637,7 @@ Overfull \hbox (20.9727pt too wide) in alignment at lines 623--651
 Underfull \vbox (badness 10000) detected at line 651
  []
 
-[77
+[79
 
 ]
 Overfull \hbox (20.9727pt too wide) in alignment at lines 654--682
@@ -2649,7 +2648,7 @@ Overfull \hbox (20.9727pt too wide) in alignment at lines 654--682
 Underfull \vbox (badness 10000) detected at line 682
  []
 
-[78
+[80
 
 ]
 Overfull \hbox (20.9727pt too wide) in alignment at lines 685--713
@@ -2660,7 +2659,7 @@ Overfull \hbox (20.9727pt too wide) in alignment at lines 685--713
 Underfull \vbox (badness 10000) detected at line 713
  []
 
-[79
+[81
 
 ]
 Overfull \hbox (20.9727pt too wide) in alignment at lines 716--744
@@ -2671,7 +2670,7 @@ Overfull \hbox (20.9727pt too wide) in alignment at lines 716--744
 Underfull \vbox (badness 10000) detected at line 744
  []
 
-[80
+[82
 
 ]
 Overfull \hbox (20.9727pt too wide) in alignment at lines 747--775
@@ -2682,7 +2681,7 @@ Overfull \hbox (20.9727pt too wide) in alignment at lines 747--775
 Underfull \vbox (badness 10000) detected at line 775
  []
 
-[81
+[83
 
 ]
 Overfull \hbox (20.9727pt too wide) in alignment at lines 778--806
@@ -2693,7 +2692,7 @@ Overfull \hbox (20.9727pt too wide) in alignment at lines 778--806
 Underfull \vbox (badness 10000) detected at line 806
  []
 
-[82
+[84
 
 ]
 Overfull \hbox (20.9727pt too wide) in alignment at lines 809--837
@@ -2704,7 +2703,7 @@ Overfull \hbox (20.9727pt too wide) in alignment at lines 809--837
 Underfull \vbox (badness 10000) detected at line 837
  []
 
-[83
+[85
 
 ]
 Overfull \hbox (20.9727pt too wide) in alignment at lines 842--870
@@ -2715,16 +2714,16 @@ Overfull \hbox (20.9727pt too wide) in alignment at lines 842--870
 Underfull \vbox (badness 10000) detected at line 870
  []
 
-[84
+[86
 
-] [85
+] [87
 
 ]
 Overfull \hbox (5.56546pt too wide) in alignment at lines 897--913
  [] [] 
  []
 
-[86] [87] [88] [89]) [90]
+[88] [89] [90] [91]) [92]
 \openout2 = `Chapters/Chapter11.aux'.
 
  (Chapters/Chapter11.tex
@@ -2736,39 +2735,39 @@ res, such as macro level
  []
 
 1: section
-[91
+[93
 
 
 
-] [92]
+] [94]
 Overfull \hbox (10.98225pt too wide) in paragraph at lines 46--47
 \T1/ppl/m/n/10.95 Card-board have given con-sumers a first taste of real, per-s
 pec-tive based, head mounted,
  []
 
-[93]) [94]
+[95]) [96]
 \openout2 = `Chapters/Chapter12.aux'.
 
  (Chapters/Chapter12.tex
 Chapter 12.
 )
 1: section
-[95
+[97
 
 
 
-] [96
+] [98
 
 
 ]
 1: section
-[97]
+[99]
 LaTeX Font Info:    Try loading font information for T1+pcr on input line 293.
  (C:\TEX\MiKTeX\tex\latex\psnfss\t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 296.
- [98]
+ [100]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 296.
  (main.aux
 (Chapters/Chapter1.aux) (Chapters/Chapter2.aux) (Chapters/Chapter3.aux)
@@ -2788,13 +2787,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32766 strings out of 493334
- 654278 string characters out of 3145290
- 875673 words of memory out of 3000000
+ 32768 strings out of 493334
+ 654294 string characters out of 3145290
+ 875682 words of memory out of 3000000
  35549 multiletter control sequences out of 15000+200000
  48580 words of font info for 78 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,20n,77p,10379b,2310s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 58i,20n,77p,10379b,2310s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/TEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<C:/TEX/MiKTeX/fonts/type1/pub
 lic/amsfonts/cm/cmmi10.pfb><C:/TEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.
 pfb><C:/TEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/TEX/MiKTeX/fonts
@@ -2803,9 +2802,9 @@ pfb><C:/TEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/TEX/MiKTeX/fonts
 fonts/type1/urw/palatino/uplb8a.pfb><C:/TEX/MiKTeX/fonts/type1/urw/palatino/upl
 r8a.pfb><C:/TEX/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/TEX/MiKTeX/fonts
 /type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (118 pages, 5593046 bytes).
+Output written on main.pdf (120 pages, 5596973 bytes).
 PDF statistics:
- 1304 PDF objects out of 1440 (max. 8388607)
- 322 named destinations out of 1000 (max. 500000)
+ 1315 PDF objects out of 1440 (max. 8388607)
+ 324 named destinations out of 1000 (max. 500000)
  753 words of extra memory for PDF output out of 10000 (max. 10000000)
 
