@@ -1,25 +1,21 @@
 % Chapter 2
 
-\chapter[Literature Survey]{Literature Survey} % Main chapter title
+\chapter[Literature Review]{Literature Review} % Main chapter title
 
 \label{Chapter2} % For referencing the chapter elsewhere, use \ref{Chapter1} 
 
 %----------------------------------------------------------------------------------------
 
-
-
-%----------------------------------------------------------------------------------------
-
 \section{Overview}
-Although a relatively young field, Swarm Robotics has already generated a substantial body of research and literature. This section presents an overview of that literature, and highlights specific pieces of research identified as relevant to this project, with the aim of providing the reader with the base of knowledge required to better understand the project. This research informed the project direction significantly, and formed the basis for many of the design and implementation decisions made later. The literature covered in this section can be separated into several broad topics, each informing a different element of the project work. 
+This section presents a review of some of the literature from the field of swarm robotics, including some general summaries of the field's fundamentals, as well as a number of specific pieces of research with particular relevance to this project. It also presents a number of pieces of research from other, related areas, such as human-robot interaction and robotics-focused augmented reality research. The results of this literature survey informed the project direction significantly, and formed the basis for many of the design and implementation decisions made later on. It is also presented with the aim of providing the reader with the base of knowledge required to better understand the project. The literature covered in this section can be separated into several broad topics, each informing a different element of the project work.
 
 Firstly an understanding of the fundamental concepts of Swarm Robotics, and to a lesser extent Swarm Intelligence, was deemed key to producing an application that is useful in practice, and will help a reader to better understand the purpose and aims of the project. An overview of the core concepts as well as some key publications are presented in Section \ref{GeneralSwarmRobotics}. A deep understanding of the technical details of specific swarm systems, such as specific behavioural algorithms or implementation details, is not a priority for understanding this project, as the application aims to be more broadly applicable to a wide range of swarm systems. Emphasis was instead placed on understanding the general classification of swarm robotic systems, relevant problem domains, and recurring concepts, so that the software might better serve researchers in the field.
 
-This project focuses on a piece of software which forms an interface between a human operator and a robot swarm. A relevant area of current research is therefore Human-Swarm Interaction (HSI). This topic focuses specifically on the different roles humans take whilst interacting with robot swarms, and contains research into the best practices for facilitating this interaction given different aims, and different types of user (Developer, researcher, end user, etc.). The two key challenges of HSI are control - how best to allow a human operator to direct the behaviour of a decentralised swarm - and monitoring - how to retrieve data from a swarm and present it in a useful, human readable manner. This project focuses on the latter problem. An overview of the relevant Human-Swarm Interaction literature is presented in Section \ref{HumanSwarmInteraction}.
+This project focuses on a piece of software which forms an interface between a human operator and a robot swarm. A relevant area of research is therefore Human-Swarm Interaction (HSI). Research in this area focuses on the different ways in which humans and robot swarms can interact, the different roles humans take whilst interacting with robot swarms, and the best practices for facilitating this interaction given different aims, and different types of user (developer, researcher, end user, etc.). The two key challenges of HSI are control - how best to allow a human operator to direct the behaviour of a decentralised swarm - and monitoring - how to retrieve data from a swarm and present it in a useful, human readable manner. This project focuses on the latter problem. An overview of the relevant Human-Swarm Interaction literature is presented in Section \ref{HumanSwarmInteraction}.
 
-Recent advances in virtual-reality (VR) and augmented-reality (AR) technologies have led to an increased interest in using these technologies in conjunction with robotics. AR specifically presents a powerful tool for human-robotic interaction (HRI), including HSI, as a digitally augmented space can be readily understood by both humans and robots. Research relating to the use of AR with robotic systems is summarized in Section \ref{AugmentedReality}.
+As previously explained, augmented reality technologies have been identified as a potentially powerful tool for facilitating human-robot interaction and communication. Section \ref{AugmentedReality} reviews a number of pieces of research relating to the use of AR technologies in conjunction with robotic systems.
 
-A number of systems exist which utilize a range of the concepts previously discussed in the context of multi-robot systems, and this work is summarised in section \ref{SimilarWork}. This includes other real time, graphical debugging systems which bear similarities to the aims of this project .
+A number of pieces of research exist which investigate different ways to monitor and debug single robot and multi-robot systems, using a range of the technologies and concepts discussed previously, sharing common ground with this project. These works are summarised and reviewed in section \ref{SimilarWork}, with a specific focus on other systems applying graphical, AR-style techniques to a debugging context.
 
 %----------------------------------------------------------------------------------------
 
