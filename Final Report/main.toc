@@ -83,4 +83,3 @@
 \contentsline {section}{\numberline {12.2}Evaluation Against Aims and Objectives}{97}{section.184}
 \contentsline {section}{\numberline {12.3}Use Within the York Robotics Laboratory}{97}{section.185}
 \contentsline {section}{\numberline {12.4}Value Within the Swarm Robotics Space}{97}{section.186}
-\contentsline {chapter}{Bibliography}{99}{appendix*.187}
