@@ -13,6 +13,7 @@ This project was completed between Monday 16th January and Thursday 18th May, 20
 \section{Work Breakdown}
 At the start of the project the software related work, including both development and testing stages, was divided into logical tasks. These tasks are shown in tables \ref{tab:DevTasks} and \ref{tab:TestingTasks} respectively. The time required to complete each task was estimated based on prior experience of software development work, and these approximate timings are listed in the tables. Other tasks, not related specifically to the software development, are listed in table \ref{tab:OtherTasks}.
 
+\clearpage
 \begin{longtable}{ >{\raggedright}p{5cm}>{\raggedright}p{6cm}p{3cm} }
 	\caption{Development tasks.}\\
 	\toprule
@@ -52,7 +53,6 @@ Implement Data Visualisation Filtering & To implement code to allow the user to 
 Implement Robot Data Comparison & To implement code to allow the user to compare the data of specific robots. & 3 Days
 \\
 	\bottomrule\\
-	
 	\label{tab:DevTasks}
 \end{longtable}
 
@@ -71,10 +71,10 @@ Verification Fixes and Changes & To make the necessary changes to correct issues
 Final Fixes and Changes & Some leeway time is available to make any final changes or fixes based on the results of the user evaluation sessions. & Remaining time 
 \\ 
 	\bottomrule\\
-	
 	\label{tab:TestingTasks}
 \end{longtable}
 
+\clearpage
 \begin{longtable}{ p{5cm}p{9cm} }
 	\caption{Other tasks.}\\
 	\toprule
@@ -92,10 +92,8 @@ Create a System Evaluation and User Testing Plan & To devise a plan for evaluati
 User Evaluation Sessions & To evaluate the system by allowing a number of users to use it in a structured evaluation session.
 \\
 	\bottomrule\\
-	
 	\label{tab:OtherTasks}
 \end{longtable}
-
 
 %----------------------------------------------------------------------------------------
 
