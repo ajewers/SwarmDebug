@@ -1,35 +1,35 @@
 % Chapter 8
 
-\chapter[Application Design]{Application Design} % Main chapter title
+\chapter[Design]{Design} % Main chapter title
 
 \label{Chapter8} % For referencing the chapter elsewhere, use \ref{Chapter8} 
 
 %----------------------------------------------------------------------------------------
 
-This section describes the design of the system, and gives details of the reasoning behind some of the design decisions. This design work was done largely prior to implementation, with some elements of the design being re-factored during the implementation phase in adherence to the agile development methodology being followed. The design process was broken down into a number of key areas. Firstly the design of the software architecture, including the breakdown of the different components and the path of data through the system. This served as a road map during the implementation stage. The second key area was the user interface design. This involved determining how the main application should appear to the user, how best to provide the user with access to the various features, and then creating a template of the window and component layout required to achieve this.
+This section describes the design of the system, and gives details of the reasoning behind some of the design decisions. This design work was done largely prior to implementation, with some elements of the design being re-factored during the implementation phase in adherence to the agile development methodology being followed. The design process was broken down into a number of key areas. Firstly the design of the software architecture, including the breakdown of the different components and the path of data through the system. This served as a road map during the implementation stage. The second key area was the user interface design. This involved determining how the main application should appear to the user, how best to provide the user with access to the various features, and then creating a template of the window and component layout required to achieve this. Graphical representations were also designed for each of the data types to be displayed in the visualiser.
 
 %----------------------------------------------------------------------------------------
 
 \section{Software Architecture Design}
-The guiding principles of the software architecture design were `Object Oriented Programming' (OOP), and the `model-view-controller' (MVC) software architecture pattern. OOP \cite{OOP} is an extremely widespread concept in modern software development theory. The basic idea is that code should be organised into units based on individual functionalities, commonly referred to as classes, where the data that describes an object and the routines to perform actions with and on that data are collected together. An object usually refers to a single instance of a class. OOP aims to reduce duplication in code, make code easier to understanding and maintain, and increase re-usability and modularity. Designing software in an OOP fashion is standard practice for most modern programming tasks, and modern languages are often designed around OOP concepts. C++ was selected as the development language for this application for several reasons. The majority of the existing software infrastructure in the YRL has been implemented in C++, hence following suit would help with maintainability in the future. C++ also offers much of the low level control and efficiency of the C language, whilst also supporting OOP practices natively. Considering the project's requirements for interfacing with low level hardware such as the tracking camera (via a driver) and the robots (via network sockets), and for performing image processing, the speed and low level capabilities of C++ seemed beneficial. Higher level languages such as Java were considered, as they offered a number of different benefits such as better portability and resource management, but this was ultimately deemed less valuable.
+The guiding principles of the software architecture design were `Object Oriented Programming' (OOP) practices, and the `model-view-controller' (MVC) software architecture pattern. OOP \cite{OOP} is an extremely widespread concept in modern software development theory. It states that code should be organised into units based on individual functionalities, commonly referred to as classes. Each class collects together the data that describes an object and the routines to perform actions with and on that data. A class then acts as a template, and a new instance of the class can be instantiated each time an object of that type is needed. OOP aims to make code easier to understanding and maintain, reduce code duplication, and increase re-usability and modularity. Designing software in an OOP fashion is standard practice for most modern programming tasks, and modern languages are often designed around OOP concepts. C++ was selected as the development language for this application as it offers much of the low level control and efficiency of the C language, whilst also supporting OOP practices natively. The majority of the existing software infrastructure in the YRL had also been implemented in C++, hence following suit would help with maintainability and integration in the future. Considering the project's requirements for interfacing with low level hardware such as the tracking camera (via a driver) and the robots (via network sockets), and for performing image processing, the speed and low level capabilities of C++ also seemed beneficial. Higher level languages such as Java were considered, as they offered a number of different benefits such as better portability and automatic resource management, but were ultimately deemed less suitable.
 
-The MVC software architecture design pattern is another widespread concept in software development theory. It primarily relates to the programming of application user interfaces. The three words that give the pattern its name define the three 'layers' into which code components are organised. The model refers to the application's data, and includes all of the information that defines the application in its current state. The view refers to the code used to produce the user interface from the data in the model. It acts as the method by which the user 'views' the data, thus getting its name. Finally the controller layer acts as the intermediary between the two, retrieving data from the model and processing it if necessary before passing it to the view for display. The controller also responds to data input events and changes the model accordingly. This includes data input via the user through the view, as well as data from other sources. In the case of this application these other sources include peripherals, such as the tracking camera, and the robots via the WiFi network. Adhering to an MVC pattern helps to keep code structured and organised, making it easier to understand, maintain and extend. It ensures that state data is not maintained by the UI, and that one true `gold standard' version of the application data exists within the model. 
+The MVC software architecture design pattern is another widespread concept in software development theory. It primarily relates to the programming of applications with user interfaces. The three words that give the pattern its name - model, view and controller - define the three 'layers' into which code components are organised. The model refers to the application's data, and includes all of the information that defines an application's current state. The view refers to the code used to produce the user interface from the data in the model layer. It acts as the method by which the user 'views' the data, thus getting its name. Finally the controller layer acts as the intermediary between the two, retrieving data from the model and processing it if necessary before passing it to the view for display. The controller also responds to input and changes the data in the model accordingly. This includes data input via the user through the view, as well as data from other sources. In the case of this application these other sources include the peripherals, such as the tracking camera, and the robots via the WiFi network. Adhering to an MVC pattern helps to keep code structured and organised, making it easier to understand, maintain and extend. It ensures that state data is not maintained or duplicated within the UI code, and that only one, true copy of the application data exists, stored in the model layer.
 
-With these two principles in mind, the software design process could begin. First the application was broken down into individual components based on the functionalities expressed in the functional specification. The following key areas were identified:
+With these two principles in mind, the software design process could begin. First the application was broken down into individual components based on the functional specification. The following key areas were identified:
 
 \begin{itemize}
-\item Code relating to communicating with the camera
-\item Code relating to performing the robot tracking
-\item Code relating to handling networking and receiving data from the robots
-\item Code relating to storing the robot data
-\item Code relating to augmenting the video feed based on the stored data
-\item Code relating to displaying the video feed to the user
-\item Code relating to other elements of the user interface
-\item Code relating to storing user settings
-\item Code relating to producing logs of the data and events
+\item Code to handle communicating with the camera and retrieving the image data.
+\item Code to perform the robot tracking.
+\item Code to handle the networking, including receiving data from the robots.
+\item Code defining a model to store the robot data in.
+\item Code to enter new data into the model.
+\item Code to augment the video feed based on the stored data.
+\item Code to display the video and augmentations feed to the user.
+\item Code to respond to user input via the user interface
+\item Code to store user settings
 \end{itemize}
 
-Once separated into functional components, these components could be organised into a structure, and the data path of the application examined. Figure \ref{fig:SoftwareArchitecture} shows this structural arrangement, with boxes for each of the functional objects and arrows indicating data flow. The three layers of the MVC design pattern are shown by the vertical partitioning. The horizontal partitioning is used to show another key design consideration - threading. In order to maximise performance and ensure responsiveness, functionality which has the potential to `block' execution whilst waiting for a result or response should be run in a separate thread. This application was therefore designed with three threads in mind. The main thread handles the core of the application, including all data model access and GUI operations. The network thread handles communicating with the robots via WiFi. It was anticipated that this networking would involve low level socket code, which meant the potential for blocking socket-read operations, therefore requiring a separate thread. The camera thread handles reading the machine vision camera and performing the tag tracking using the ARuCo library. It was anticipated that the camera read operation could block until the next frame was available in the camera driver's buffer. Tracking the robots in the image using the ARuCo library also had the potential to be CPU intensive, so keeping this off the main thread was considered a potential performance benefit.
+Once separated into functional components, the required code blocks could be organised into a structure, and the data path of the application examined. Figure \ref{fig:SoftwareArchitecture} shows this structural arrangement, with boxes for each of the functional objects and arrows indicating data flow. The three layers of the MVC design pattern are shown by the vertical partitioning. The horizontal partitioning is used to show another key design consideration - threading. In order to maximise performance and ensure responsiveness, functionality which has the potential to `block' execution whilst waiting for a result or response should be run in a separate thread. This application was therefore designed with three threads in mind. The main thread handles the core of the application, including all data model access and GUI operations. The network thread handles communicating with the robots via WiFi. It was anticipated that this networking would involve low level socket code, which meant the potential for blocking socket-read operations, therefore requiring a separate thread. The camera thread handles reading the machine vision camera and performing the tag tracking using the ARuCo library. It was anticipated that the camera read operation could block until the next frame was available in the camera driver's buffer. Tracking the robots in the image using the ARuCo library also had the potential to be CPU intensive, so keeping this off the main thread was considered a potential performance benefit.
 
 \begin{figure}
 	\centering
@@ -39,15 +39,41 @@ Once separated into functional components, these components could be organised i
 	\label{fig:SoftwareArchitecture}
 \end{figure}
 
-\subsection{Data Model} \label{DataModelDesign}
-Figure \ref{fig:SoftwareArchitecture} also shows that the model layer contains the application settings and the data model. The data model itself was designed to be comprised of a number of smaller components. The primary function of the data model is to maintain a record of all the robots the system is aware of, and the most up to date data related to the state of each robot. As such the data model was designed to use a hierarchical structure. The larger data model object would maintain a collection of smaller objects, each containing the data related to a single robot. These would in turn maintain a collection of different data objects relating to the robot's state and sensor data. Figure \ref{fig:DataModel} illustrates this hierarchical data model design using the IR sensor data of a single robot as an example.
+As can be seen in figure \ref{fig:SoftwareArchitecture}, the software architecture is structured around a central application controller. The data from all other components of the application flows through this central component, which routes it to where it needs to go. It is also responsible for updating the visualiser and GUI with new data when necessary, and acting on the user input signals received through the UI. The other key controller layer components - the network controller and the camera controller - exhibit data flow in only one direction. The design of these components was therefore relatively simple, as they needed only to perform the following loop of tasks:
 
-\begin{figure}
+\begin{enumerate}
+ \item Receive data from external source.
+ \item Process data as necessary, extracting required information.
+ \item Notify the application controller of the newly available data.
+ \item Wait for new data to become available.
+\end{enumerate}
+
+The remaining components are more complex, and required greater software design considerations. The design of the data model is discussed in section \ref{DataModelDesign}. The design of the visualiser code is discussed in section \ref{VisualiserDesign}.
+
+\subsection{Data Model} \label{DataModelDesign}
+The purpose of the data model component is to store all of the data required to describe the applications current state. This includes all data related to each of the robots being tracked by the system. In order to achieve this in an object oriented manner the data model itself was designed to be comprised of a number of smaller components in a hierarchical structure. The main data model object maintains a collection of smaller objects, each containing the data related to a single robot. These in turn maintain a collection of different data objects relating to the robot's state and sensor data. Figure \ref{fig:DataModel} illustrates this hierarchical data model design using the IR sensor data of a single robot as an example.
+
+\begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.7]{Figures/DataModel.png}
 	\decoRule
 	\caption[Data Model Diagram]{A diagram of the data model design.}
 	\label{fig:DataModel}
+\end{figure}
+
+This follows object oriented programming practices by defining a single class to describe a robot, from which a new robot data object can be instantiated each time the system begins tracking a new robot. When data is received regarding a robot the system is already aware of, it can simply update the correct existing robot data object with the new data.
+
+\subsection{Visualiser} \label{VisualiserDesign}
+The purpose of the visualiser component is to generate and display the augmented video feed to the user. The component therefore receives the latest camera image and the most up to date robot data, generating the graphical overlays based on a combination of the robot data and the current settings for each visualisation. It then displays the latest image, with the graphical overlays applied, to the user by rendering it as a single image within the appropriate GUI element. This rendering process occurs each time a new video frame is read from the camera, hence both the video and the overlays should update regularly and respond rapidly to changes in the robot data.
+
+In order to further modularise the visualiser code, it was broken down into a number of smaller components. For each type of data visualisation a separate component was defined, which describes how the visualisation for that data type is generated, based on a single robot data object. The main visualiser component could then be designed to generate the graphical overlays iteratively, by stepping through the available set of robot data objects, and for each one step through the different visualisation components, generating the overlay for each combination. The overlays can then be combined and displayed as a single image. Figure \ref{fig:VisualiserProcess} describes this process diagrammatically.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.7]{Figures/VisualiserProcess.png}
+	\decoRule
+	\caption[Visualiser Render Process Design]{A diagram describing the design of the visualiser rendering process.}
+	\label{fig:VisualiserProcess}
 \end{figure}
 
 %----------------------------------------------------------------------------------------
