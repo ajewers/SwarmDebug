@@ -7,8 +7,8 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Simple AR visualisation. \cite {Azuma:1997}}}{14}{figure.caption.40}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Microsoft HoloLens. }}{15}{figure.caption.41}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Sonar data visualisation. Collet and MacDonald \cite {Collet:2006}}}{16}{figure.caption.42}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Spatially situation data overlay. Garrido et al. \cite {Garrido:2014}}}{17}{figure.caption.44}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Sonar data visualisation. Collet and MacDonald \cite {Collet:2006}}}{17}{figure.caption.42}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Spatially situation data overlay. Garrido et al. \cite {Garrido:2014}}}{18}{figure.caption.44}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
@@ -23,16 +23,17 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {8.1}{\ignorespaces Software Architecture Diagram}}{44}{figure.caption.80}
-\contentsline {figure}{\numberline {8.2}{\ignorespaces Data Model Diagram}}{45}{figure.caption.86}
-\contentsline {figure}{\numberline {8.3}{\ignorespaces Visualiser Render Process Design}}{46}{figure.caption.88}
-\contentsline {figure}{\numberline {8.4}{\ignorespaces UI Layout}}{47}{figure.caption.90}
-\contentsline {figure}{\numberline {8.5}{\ignorespaces UI Example}}{48}{figure.caption.91}
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Data Model Diagram}}{46}{figure.caption.86}
+\contentsline {figure}{\numberline {8.3}{\ignorespaces Visualiser Render Process Design}}{47}{figure.caption.88}
+\contentsline {figure}{\numberline {8.4}{\ignorespaces UI Layout}}{48}{figure.caption.90}
+\contentsline {figure}{\numberline {8.5}{\ignorespaces UI Example}}{49}{figure.caption.91}
 \contentsline {figure}{\numberline {8.6}{\ignorespaces Data Panel Designs}}{50}{figure.caption.92}
 \contentsline {figure}{\numberline {8.7}{\ignorespaces Visualiser Settings Tab Design}}{51}{figure.caption.93}
-\contentsline {figure}{\numberline {8.8}{\ignorespaces Visualiser Overlay Designs}}{52}{figure.caption.94}
+\contentsline {figure}{\numberline {8.8}{\ignorespaces Visualiser Overlay Designs}}{53}{figure.caption.94}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {9.1}{\ignorespaces Application User Interface}}{54}{figure.caption.97}
-\contentsline {figure}{\numberline {9.2}{\ignorespaces Data Format}}{63}{figure.caption.111}
+\contentsline {figure}{\numberline {9.1}{\ignorespaces Application User Interface}}{55}{figure.caption.97}
+\contentsline {figure}{\numberline {9.2}{\ignorespaces Application Structure}}{60}{figure.caption.104}
+\contentsline {figure}{\numberline {9.3}{\ignorespaces Data Format}}{65}{figure.caption.113}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

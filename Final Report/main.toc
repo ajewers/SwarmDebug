@@ -15,7 +15,7 @@
 \contentsline {section}{\numberline {2.1}Overview}{8}{section.35}
 \contentsline {section}{\numberline {2.2}Swarm Intelligence and Swarm Robotics}{9}{section.36}
 \contentsline {section}{\numberline {2.3}Human Swarm Interaction}{11}{section.37}
-\contentsline {section}{\numberline {2.4}Robotics Debugging}{12}{section.38}
+\contentsline {section}{\numberline {2.4}Robotics Debugging}{13}{section.38}
 \contentsline {section}{\numberline {2.5}AR and Robotics}{14}{section.39}
 \contentsline {section}{\numberline {2.6}Similar Work}{17}{section.43}
 \contentsline {chapter}{\numberline {3}Project Plan}{19}{chapter.45}
@@ -26,7 +26,7 @@
 \contentsline {chapter}{\numberline {4}Statement of Ethics}{26}{chapter.53}
 \contentsline {section}{\numberline {4.1}Human Participant Consideration}{26}{section.54}
 \contentsline {subsection}{\numberline {4.1.1}Initial User Survey}{26}{subsection.55}
-\contentsline {subsection}{\numberline {4.1.2}User Testing and Evaluation Sessions}{26}{subsection.56}
+\contentsline {subsection}{\numberline {4.1.2}User Testing and Evaluation Sessions}{27}{subsection.56}
 \contentsline {chapter}{\numberline {5}E-Puck Robot Platform}{28}{chapter.57}
 \contentsline {section}{\numberline {5.1}Overview}{28}{section.58}
 \contentsline {section}{\numberline {5.2}Processor}{28}{section.60}
@@ -39,52 +39,53 @@
 \contentsline {chapter}{\numberline {7}Initial User Survey}{37}{chapter.73}
 \contentsline {section}{\numberline {7.1}Overview}{37}{section.74}
 \contentsline {section}{\numberline {7.2}Data}{37}{section.75}
-\contentsline {section}{\numberline {7.3}Analysis}{39}{section.76}
+\contentsline {section}{\numberline {7.3}Analysis}{40}{section.76}
 \contentsline {section}{\numberline {7.4}Issues and Shortcomings}{41}{section.77}
 \contentsline {chapter}{\numberline {8}Design}{42}{chapter.78}
 \contentsline {section}{\numberline {8.1}Software Architecture Design}{42}{section.79}
 \contentsline {subsection}{\numberline {8.1.1}Data Model}{45}{subsection.85}
-\contentsline {subsection}{\numberline {8.1.2}Visualiser}{46}{subsection.87}
-\contentsline {section}{\numberline {8.2}User Interface Design}{47}{section.89}
-\contentsline {chapter}{\numberline {9}Implementation}{53}{chapter.95}
-\contentsline {section}{\numberline {9.1}Overview}{53}{section.96}
-\contentsline {section}{\numberline {9.2}Application Framework Selection}{54}{section.98}
-\contentsline {subsection}{\numberline {9.2.1}The Qt Framework}{55}{subsection.99}
-\contentsline {section}{\numberline {9.3}Source Code}{56}{section.100}
-\contentsline {section}{\numberline {9.4}Data Model}{58}{section.103}
-\contentsline {section}{\numberline {9.5}Video Feed and Tracking System}{60}{section.105}
-\contentsline {section}{\numberline {9.6}Networking}{61}{section.106}
-\contentsline {section}{\numberline {9.7}Data Transfer Format}{62}{section.110}
-\contentsline {section}{\numberline {9.8}User Interface}{64}{section.113}
-\contentsline {section}{\numberline {9.9}Visualiser}{64}{section.114}
-\contentsline {subsection}{\numberline {9.9.1}Data Visualisations}{65}{subsection.115}
-\contentsline {section}{\numberline {9.10}Robot Side API}{66}{section.123}
-\contentsline {chapter}{\numberline {10}Testing and Evaluation}{69}{chapter.125}
-\contentsline {section}{\numberline {10.1}Continuous Integration Testing}{69}{section.126}
-\contentsline {section}{\numberline {10.2}Manual User Interface Testing}{69}{section.127}
-\contentsline {subsection}{\numberline {10.2.1}Method}{70}{subsection.128}
-\contentsline {subsection}{\numberline {10.2.2}Results}{71}{subsection.154}
-\contentsline {subsection}{\numberline {10.2.3}Fixes Implemented}{72}{subsection.155}
-\contentsline {section}{\numberline {10.3}Data Model and Back End Unit Testing}{72}{section.156}
-\contentsline {subsection}{\numberline {10.3.1}Results}{76}{subsection.158}
-\contentsline {subsection}{\numberline {10.3.2}Issues with this Approach}{76}{subsection.159}
-\contentsline {section}{\numberline {10.4}Validation Testing}{77}{section.160}
-\contentsline {section}{\numberline {10.5}Evaluation}{77}{section.161}
-\contentsline {subsection}{\numberline {10.5.1}Method}{77}{subsection.162}
-\contentsline {subsection}{\numberline {10.5.2}Results}{77}{subsection.163}
-\contentsline {subsection}{\numberline {10.5.3}Analysis}{77}{subsection.164}
-\contentsline {chapter}{\numberline {11}Future Work}{78}{chapter.165}
-\contentsline {section}{\numberline {11.1}Additional Debugging Features}{78}{section.166}
-\contentsline {section}{\numberline {11.2}Platform Development}{79}{section.167}
-\contentsline {section}{\numberline {11.3}Expansion of Target Platforms}{80}{section.168}
-\contentsline {section}{\numberline {11.4}Integration with Augmented Reality Hardware}{80}{section.169}
-\contentsline {section}{\numberline {11.5}Integration with Tablet Application}{81}{section.170}
-\contentsline {chapter}{\numberline {12}Conclusion}{82}{chapter.171}
-\contentsline {section}{\numberline {12.1}Overview}{82}{section.172}
-\contentsline {section}{\numberline {12.2}Evaluation Against Aims and Objectives}{82}{section.173}
-\contentsline {section}{\numberline {12.3}System Limitations}{82}{section.174}
-\contentsline {section}{\numberline {12.4}Use Within the York Robotics Laboratory}{82}{section.175}
-\contentsline {section}{\numberline {12.5}Value Within the Swarm Robotics Space}{82}{section.176}
-\contentsline {chapter}{\numberline {A}Test Results}{83}{appendix.177}
-\contentsline {section}{\numberline {A.1}Manual UI Testing}{83}{section.178}
-\contentsline {chapter}{Bibliography}{107}{appendix*.202}
+\contentsline {subsection}{\numberline {8.1.2}Visualiser}{45}{subsection.87}
+\contentsline {section}{\numberline {8.2}User Interface Design}{46}{section.89}
+\contentsline {chapter}{\numberline {9}Implementation}{54}{chapter.95}
+\contentsline {section}{\numberline {9.1}Overview}{54}{section.96}
+\contentsline {section}{\numberline {9.2}Application Framework Selection}{55}{section.98}
+\contentsline {subsection}{\numberline {9.2.1}The Qt Framework}{56}{subsection.99}
+\contentsline {section}{\numberline {9.3}Source Code}{57}{section.100}
+\contentsline {section}{\numberline {9.4}Application Structure}{59}{section.103}
+\contentsline {section}{\numberline {9.5}Data Model}{61}{section.105}
+\contentsline {section}{\numberline {9.6}Video Feed and Tracking System}{62}{section.107}
+\contentsline {section}{\numberline {9.7}Networking}{63}{section.108}
+\contentsline {section}{\numberline {9.8}Data Transfer Format}{65}{section.112}
+\contentsline {section}{\numberline {9.9}User Interface}{67}{section.115}
+\contentsline {section}{\numberline {9.10}Visualiser}{67}{section.116}
+\contentsline {subsection}{\numberline {9.10.1}Data Visualisations}{68}{subsection.117}
+\contentsline {section}{\numberline {9.11}Robot Side API}{69}{section.125}
+\contentsline {chapter}{\numberline {10}Testing and Evaluation}{72}{chapter.127}
+\contentsline {section}{\numberline {10.1}Continuous Integration Testing}{72}{section.128}
+\contentsline {section}{\numberline {10.2}Manual User Interface Testing}{72}{section.129}
+\contentsline {subsection}{\numberline {10.2.1}Method}{73}{subsection.130}
+\contentsline {subsection}{\numberline {10.2.2}Results}{75}{subsection.156}
+\contentsline {subsection}{\numberline {10.2.3}Fixes Implemented}{75}{subsection.157}
+\contentsline {section}{\numberline {10.3}Data Model and Back End Unit Testing}{76}{section.158}
+\contentsline {subsection}{\numberline {10.3.1}Results}{79}{subsection.160}
+\contentsline {subsection}{\numberline {10.3.2}Issues with this Approach}{79}{subsection.161}
+\contentsline {section}{\numberline {10.4}Validation Testing}{80}{section.162}
+\contentsline {section}{\numberline {10.5}Evaluation}{80}{section.163}
+\contentsline {subsection}{\numberline {10.5.1}Method}{80}{subsection.164}
+\contentsline {subsection}{\numberline {10.5.2}Results}{80}{subsection.165}
+\contentsline {subsection}{\numberline {10.5.3}Analysis}{80}{subsection.166}
+\contentsline {chapter}{\numberline {11}Future Work}{81}{chapter.167}
+\contentsline {section}{\numberline {11.1}Additional Debugging Features}{81}{section.168}
+\contentsline {section}{\numberline {11.2}Platform Development}{82}{section.169}
+\contentsline {section}{\numberline {11.3}Expansion of Target Platforms}{83}{section.170}
+\contentsline {section}{\numberline {11.4}Integration with Augmented Reality Hardware}{83}{section.171}
+\contentsline {section}{\numberline {11.5}Integration with Tablet Application}{84}{section.172}
+\contentsline {chapter}{\numberline {12}Conclusion}{85}{chapter.173}
+\contentsline {section}{\numberline {12.1}Overview}{85}{section.174}
+\contentsline {section}{\numberline {12.2}Evaluation Against Aims and Objectives}{85}{section.175}
+\contentsline {section}{\numberline {12.3}System Limitations}{85}{section.176}
+\contentsline {section}{\numberline {12.4}Use Within the York Robotics Laboratory}{85}{section.177}
+\contentsline {section}{\numberline {12.5}Value Within the Swarm Robotics Space}{85}{section.178}
+\contentsline {chapter}{\numberline {A}Test Results}{86}{appendix.179}
+\contentsline {section}{\numberline {A.1}Manual UI Testing}{86}{section.180}
+\contentsline {chapter}{Bibliography}{110}{appendix*.204}
