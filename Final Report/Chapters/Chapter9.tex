@@ -143,24 +143,26 @@ The \textit{MachineVision} class handles the lower level operations related to t
 %----------------------------------------------------------------------------------------
 
 \section{Networking} \label{Networking}
-The networking requirements of the system were relatively simple, and can be summarised as follows:
+A key element of the system is the wireless retrieval of information from the robots. This required the implementation of networking functionality within both the application and the robot side API. As mentioned previously the Linux extension boards on the e-puck robots feature a WiFi adapter, so WiFi was selected as the target wireless networking technology to implement this functionality with. The next step was to look at the networking requirements in more detail, and decide on which transport layer protocol to use.
+
+The requirements for the networking portion of the system were relatively simple, and can be summarised as follows:
 
 \begin{enumerate}
 	\item Must utilize a WiFi network.
-	\item Must allow a large number of sources to transmit data to a single host
-	\item Must allow for frequent transmission of small packets of data
+	\item Must allow a large number of sources to transmit data to a single host.
+	\item Must allow for frequent transmission of small packets of data.
 \end{enumerate}
 
-WiFi networks utilise the standard Internet Protocol (IP) network layer protocol. There are two commonly supported transport layer protocols which run on top of IP, the Transmission Control Protocol (TCP) and the User Datagram Protocol (UDP). TCP is a managed and delivery-error checked protocol, and therefore guarantees that packets will be transmitted in the correct order, with lost packets being retransmitted. This adds overheads such as acknowledgements to the protocol, and requires an established 'connection' in order to function correctly. TCP also operates a queueing system, whereby packets for transmission are held until a number of them are ready, and can therefore be grouped together and sent. UDP, by contrast, does not error check the delivery of packets, making no guarantees that a packet will be received, or that packets will be received in the correct order, removing the need for an established connection and reducing the overheads involved. Packets can therefore be sent from any application to any target IP address and port on the network, without first establishing a connection with another application. Packets are also sent immediately, with no queueing system in place It was determined that the User Datagram Protocol (UDP) would be the most suitable for this system, for a number of reasons. The connection requirements of TCP would require the to form a connection with application each robot prior to transmitting data, which would add unnecessary complexity. Using UDP also ensured that the packets were transmitted immediately, reducing the potential for latency in the system. The lack of delivery checking was not considered an issue, as the robots would be transmitting updates frequently enough that a single lost packet would not cause a significant issue.
+WiFi networks utilise the standard Internet Protocol (IP) network layer protocol. There are two commonly supported transport layer protocols which run on top of IP, the Transmission Control Protocol (TCP) and the User Datagram Protocol (UDP). TCP is a managed and delivery-error checked protocol, and therefore guarantees that packets will be transmitted in the correct order, with lost packets being retransmitted. This adds overheads such as acknowledgements to the protocol, and requires an established 'connection' in order to function correctly. TCP also operates a queueing system, whereby packets for transmission are sometimes held until a number of them are ready, and can therefore be grouped together and sent. UDP, by contrast, does not error check the delivery of packets, making no guarantees that a packet will be received, or that packets will be received in the correct order, removing the need for an established connection and reducing the overheads involved. Packets can therefore be sent from any application to any target IP address and port on the network, without first establishing a connection with another application. Packets are also sent immediately, with no queueing system in place. It was determined that UDP would be the most suitable for this system, for a number of reasons. The connection requirements of TCP would require the application to form a connection with each robot prior to transmitting data, which would add unnecessary complexity. Using UDP also ensured that the packets were transmitted immediately, reducing the potential for latency in the system. The lack of delivery checking was not considered an issue, as the robots would be transmitting updates frequently enough that a single lost packet would not cause a significant issue.
 
-Code relating to the networking functionalities of the application is contained in the files \textit{datathread.cpp / .h}, which encapsulate the \textit{DataThread} class. This class is run on a dedicated thread to ensure that potentially blocking operations do not impact application performance. This class contains routines for dealing with the low level network requirements, such as establishing a socket through which to receive data packets from the robots, and continually listening on this socket for new data. All socket operations are implemented using structures and definitions from the standard C++ networking libraries. Data received from the robots is passed to the main application thread through a Qt signal, using the Qt signals and slots interface in the same manner as described in section \ref{VideoFeedAndTrackingSystem}. The main application class, \textit{MainWindow}, connects this signal to the appropriate slot in the \textit{DataModel} class. The application side networking is configured in the \textit{network} tab of the right-hand panel of the user interface. The user is able to enter a desired port number on which to receive data, and can begin listening for packets on this port by pressing the `\textit{start listening}' button.
+The networking functionalities of the application are encapsulated in the \textit{DataThread} class, found in \textit{datathread.cpp / .h}. This class is run on a dedicated thread to ensure that potentially blocking operations do not impact application performance. The class contains routines for dealing with the low level network requirements, such as establishing a socket through which to receive data packets from the robots, and continually listening on this socket for new data. All socket operations are implemented using structures and definitions from the standard C++ networking libraries. Data received from the robots is passed to the main application thread through a Qt signal, using the Qt signals and slots interface mentioned previously. The main application class, \textit{MainWindow}, connects this signal to the appropriate slot in the \textit{DataModel} class at initialisation time. The application side networking can be configured by the user in the \textit{network} tab of the right-hand panel of the user interface. Here the user is able to enter a desired port number on which to receive data, and can start and stop the application listening for packets on this port by pressing the `\textit{start/stop listening}' button.
 
-Within the robot side API, the networking functionality is implemented in a very similar way. The initialisation function establishes a target socket based on a supplied IP address and port. This should match the IP address of the computer or server running the main application, and the port chosen by the user within the main application. When any of the functions for sending specific data packets are called, the data is then sent to this target socket. All socket operations are again implemented using the standard C++ networking libraries.
+For the robot side API, the networking functionality is implemented in a similar way. The initialisation function establishes a target socket based on a supplied IP address and port. This should match the IP address of the computer or server running the main application, and the port chosen by the user within the main application. When any of the functions for sending specific data packets are called, the data is sent to this target socket as a UDP packet. Section \ref{DataTransferFormat} discusses the format of the data within these packets. All socket operations are once again implemented using the standard C++ networking libraries to increase portability.
 
 %----------------------------------------------------------------------------------------
 
 \section{Data Transfer Format} \label{DataTransferFormat}
-In order for the application to interpret and use data received from the robots, a common format for exchanging this data needed to be defined. Both sides of the communication link would then need to use this format correctly when constructing and de-constructing packets. A number of different options were considered for achieving this, ranging from super-lightweight custom packet formats using the minimum number of bytes, to established existing solutions such as the JSON data interchange standard. The primary concerns when making this decision were a desire to minimise any overhead in terms of extra code needed on the robot side, as the robots have limited memory, and to ensure the format remained as simple as possible so that future extensions to the system, such as implementations for other robots, could be programmed with relative ease. It was ultimately decided not to use JSON, to avoid the need for any additional code libraries to be stored in the robot's memory, and to instead use a custom simple string-based packet format. All data to be transmitted from the robot to the application is therefore converted to a simple string which is then transmitted in the data packet. As well as containing the data, the string must identify the robot and describe the type of data within. The format for these strings is defined as three sections separated by space characters. The first section contains the numerical ID of the robot sending the packet. The second contains a number identifying the type of data contained in the packet. The last section contains the packet data, and has a variable format, depending on the packet's type. Figure \ref{fig:DataFormat} gives a visual representation of this format. Table \ref{tab:DataFormat} describes the purpose of each packet type, and describes the format of the `packet data' section for each.
+In order for the application to interpret and use data received from the robots, a common format for exchanging this data needed to be defined. Both sides of the communication link then need to use this format correctly when constructing and de-constructing packets. A number of different options were considered for achieving this, ranging from super-lightweight custom packet formats using the minimum number of bytes, to established existing solutions such as the JSON data interchange standard. The primary concerns when making this decision were a desire to minimise any overhead in terms of extra code needed on the robot side, as the robots have limited memory, and to ensure the format remained as simple as possible so that future extensions to the system, such as implementations for other robots, could be programmed with relative ease. It was ultimately decided not to use JSON, to avoid the need for any additional code libraries to be stored in the robot's memory, and to instead use a custom, simple, string-based packet format. All data to be transmitted from the robot to the application is therefore converted to a string which is then transmitted in the data packet. As well as containing the data, the string must identify the robot and describe the type of data within. The format for these strings is defined as three sections separated by space characters. The first section contains the numerical ID of the robot sending the packet. The second contains a number identifying the type of data contained in the packet. The last section contains the packet data, and has a variable format, depending on the packet's type. Figure \ref{fig:DataFormat} gives a visual representation of this format. Table \ref{tab:DataFormat} describes the purpose of each packet type, and describes the format of the `packet data' section for each.
 
 \begin{figure}
  \centering
@@ -178,6 +180,7 @@ In order for the application to interpret and use data received from the robots,
  Type ID & 0 \\
  Format & [ROBOT NAME]\\
  Purpose & Sent periodically to inform the application that the robot is still active. Also contains the robot's name, as should be displayed in the application.\\
+ Example & ``6 0 Robot_6''\\
  
  \hline
  \multicolumn{2}{p{12cm}}{\textbf{State}}\\
@@ -185,6 +188,7 @@ In order for the application to interpret and use data received from the robots,
  Type ID & 1 \\
  Format & [CURRENT STATE]\\
  Purpose & Informs the application of the robots current state.\\
+ Example & ``6 1 IDLE''\\
  
  \hline
  \multicolumn{2}{p{12cm}}{\textbf{Position}}\\
@@ -192,6 +196,7 @@ In order for the application to interpret and use data received from the robots,
  Type ID & 2 \\
  Format & [X POSITION] \_ [Y POSITION] \_ [ANGLE]\\
  Purpose & Provides the application with a robot's position and orientation. This data is not sent by the robot, but instead comes from the tracking code.\\
+ Example & ``6 2 0.23 0.682 110''\\
  
  \hline
  \multicolumn{2}{p{12cm}}{\textbf{IR}}\\
@@ -199,6 +204,7 @@ In order for the application to interpret and use data received from the robots,
  Type ID & 3 \\
  Format & [SENSOR 1 DATA] \_ [SENSOR 2 DATA] \_ ... [SENSOR N DATA] \\
  Purpose & Contains a robot's infra-red sensor readings. Each sensor value is separated by a space, and the packet can contain as many values as the robot has IR sensors. \\
+ Example & ``6 3 101 93 115 112 103 98 365 2850''\\
  
  \hline
  \multicolumn{2}{p{12cm}}{\textbf{Background IR}}\\
@@ -206,6 +212,7 @@ In order for the application to interpret and use data received from the robots,
  Type ID & 4 \\
  Format & [SENSOR 1 DATA] \_ [SENSOR 2 DATA] \_ ... [SENSOR N DATA] \\
  Purpose & Contains a robot's background infra-red sensor readings. Formatted the same as the standard IR data packet.\\
+ Example & ``6 4 95 87 99 110 89 98 103 82''\\
  
  \hline
  \multicolumn{2}{p{12cm}}{\textbf{Message}}\\
@@ -213,6 +220,7 @@ In order for the application to interpret and use data received from the robots,
  Type ID & 5 \\
  Format & [MESSAGE STRING]\\
  Purpose & This packet allows any general message to be sent from the robot to the application, and will be displayed in the application console and recorded in the logs. \\
+ Example & ``6 5 Robot entering hibernation mode''\\
  
  \hline
  \multicolumn{2}{p{12cm}}{\textbf{Custom Data}}\\
@@ -220,6 +228,7 @@ In order for the application to interpret and use data received from the robots,
  Type ID & 6 \\
  Format & [KEY] \_ [VALUE]\\
  Purpose & Contains a piece of custom user data, in the form of a key value pair. \\
+ Example & ``6 6 DebugCounter 540''\\
 	
  \label{tab:DataFormat}
 \end{longtable}
@@ -227,11 +236,17 @@ In order for the application to interpret and use data received from the robots,
 %----------------------------------------------------------------------------------------
 
 \section{User Interface} \label{UserInterfaceImplementation}
-The user interface has been implemented using the Qt GUI framework. The layout for the interface is defined in \textit{mainwindow.ui}, a file generated by the Qt interface designer application to describe the structure and layout of the interface components in an XML based format. The Qt framework uses a standard event-driven interface paradigm, where events are generated when the user interacts with the interface, and code is used to define specific routines to execute in response to relevant events. The routines for handling interface events can be found in \textit{mainwindow.cpp / .h}, and are usually prefixed with the term `\textit{on\_}'. For example, the function `\textit{on\_actionExit\_triggered}' is called when the `Exit' action is selected from the menu, and instructs the application to close.
+In order to implement the user interface the designs shown in section \ref{UserInterfaceDesign} had to be realised using the UI component classes provided by the Qt application framework. The `\textit{QtCreator}' tool was used to arrange all the basic elements of the UI, and generate an XML-based descriptor file (\textit{mainwindow.ui}) which describes this layout. When the application is initialised this file is parsed and used to populate the user interface. Events generated by the interface are linked to functions within the \textit{MainWindow} class using the signals and slots system. Code was then implemented within each of these functions to execute the correct actions based on the input received.
 
-[INDIVIDUAL UI ELEMENTS w/ SCREENSHOTS]
+The user interface was implemented following the three panel layout outlined during the design phase. The panels are divided by splitters which can be dragged by the user to adjust the size of each panel to suit their screen. When reduced past a certain minimum size the panels will be minimized completely, freeing up more UI space for the other panels. This allows the user to hide the robot list panel or data panel in favour of a larger visualiser display. Each panel features a tab controller component to allow the user to switch between multiple views. This was necessary to provide sufficient space for the required features and all the various settings. The visualiser panel has three tabs, the first showing the main visualiser view, the second providing access to the settings related to the visualiser, and the third providing access to the settings related to the camera and tracking system. The visualiser and its settings are discussed in section \ref{VisualiserImplementation}. The camera settings tab allows the user to input the image dimensions of their camera output, so that the visualiser can display this at the correct aspect ratio. It also allows the user to set up mappings between specific ARuCo tag and robot IDs. This is useful if the ID number of the tag attached to a robot does not match the ID number the robot is using to report data. By applying a mapping the user can instruct the system to apply tracking data for a specified ARuCo tag ID to the robot entry within the data model with a different specified robot ID.
 
-In addition to the main user interface, a number of extra `dialog' windows are used to provide the user with access to the settings of each visualisation element, if settings are available. These dialog windows are defined in the files  \textit{idsettingsdialog.cpp / .h, pathsettingsdialog.cpp / .h} and \textit{proximitysettingsdialog.cpp / .h}. Dialog windows are a commonly used tool within application programming. They act as pop-up windows which usually require the user to either confirm or cancel some change. In this case the dialog windows present controls for changing specific visualisation settings, and the user can then either apply their changes or cancel them using the standard accept/reject buttons at the bottom of the window.
+The robot list panel also features three tabs. The first displays the robot list, and allows the user to select from the robots currently known to the system. By selecting a robot the user makes it the current focus of the application. This can cause the visualiser to display more visualisations for the selected robot depending on the visualiser settings. It will also make the selected robot the focus of the information shown in the data panel. The second tab provides controls for the user to configure the networking functionality, including a text box to enter the desired port number, and a button to start and stop listening for data packets. The third tab provides controls for the user to configure the data logging functionality, including a button which opens a file browser for setting the directory path where logs should be stored, and a button to start and stop the data logging.
+
+The data panel
+
+[INDIVIDUAL UI ELEMENTS SCREENSHOTS]
+
+In addition to the main user interface, a number of extra `dialog' windows are used to provide the user with access to various settings. For each of the data visualisations which feature settings beyond a simple enable/disable , a dialog window class was implemented. The names of these classes take the form \textit{*SettingsDialog}, where \textit{*} is replaced by the visualisation type. The files containing definitions for these classes follow the same naming format, \textit{*settingsdialog.cpp / .h}. Dialog windows are a commonly used tool within applications programming. They act as pop-up windows which usually require the user to either confirm or cancel some action or change. In this case the dialog windows present controls for changing specific visualisation settings, and the user can then either apply their changes or cancel them using the standard accept/reject buttons at the bottom of the window.
 
 %----------------------------------------------------------------------------------------
 
