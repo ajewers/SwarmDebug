@@ -6,7 +6,7 @@
 
 %----------------------------------------------------------------------------------------
 
-Software testing is the process of defining a number of processes which can be applied to a piece of software in order to verify its correct operation. Each of these processes may involve a number of steps, and is usually described as a single test. The results of each test are normally recorded, and used to determine if any bugs or issues remain in the software. Once the implementation phase of this project was complete it was important to thoroughly test the software in order to verify its correct implementation and operation, and identify any remaining issues that needed to be fixed or mitigated. Some testing was also carried out throughout the implementation phase, in order to verify the correct operation of individual components as they were completed, and to ensure that different components would work correctly together. This process of testing during development is referred to here as continuous integration testing, and was done to reduce the risk of issues stacking up and becoming layered or entrenched as development continued. A more rigorous testing process was then applied once the implementation was complete, and included testing of both the user interface and the system back end, as well as testing the system as a whole. 
+Software testing is the practice of defining a number of processes which can be applied to a piece of software in order to verify its correct operation. Each of these processes may involve a number of steps, and is usually described as a single test. The results of each test are normally recorded, and used to determine if any bugs or issues remain in the software. Once the implementation phase of this project was complete it was important to thoroughly test the software in order to verify its correct implementation and operation, and identify any remaining issues that needed to be fixed or mitigated. Some testing was also carried out throughout the implementation phase, in order to verify the correct operation of individual components as they were completed, and to ensure that different components would work correctly together. This process of testing during development is referred to here as continuous integration testing, and was done to reduce the risk of issues stacking up and becoming layered or entrenched as development continued. A more rigorous testing process was then applied once the implementation was complete, and included testing of both the user interface and the system back end, as well as testing the system as a whole. 
 
 Once the testing processes had been completed, and any issues addressed, an evaluation process was undertaken to determine whether the system was useful in practice, and to gauge what benefits it provided the user, whether it succeeded in meeting the aims of the project, and how it might be improved in the future. The evaluation process involved carrying out observed trials with a number of potential users of the system, as well as a questionnaire completed by participants after having used the system. This section gives details of the different testing stages and the evaluation process.
 
@@ -153,6 +153,8 @@ This approach also relies on the developer writing the tests correctly determini
 \section{Verification and Validation Testing} \label{ValidationTesting}
 Verification and validation (V\&V) testing is the process of determining whether the software implemented meets the high level requirements, and whether the individual functionalities operate correctly and without bugs. This was the last step in the testing process, and served to test the system as a whole. The approach taken was to consider the requirements of the system, as stated in the functional specification in section \ref{FunctionalSpecification}, and determine whether each requirement is satisfied by the functionality implemented. Where possible each functionality will be tested with relevant data and control inputs. The requirements, and the tests carried out for each are given below.
 
+\noindent\textbf{Core Requirements}
+
 \begin{enumerate}
  \item Must be comprised of a PC application.
  \begin{itemize}
@@ -173,7 +175,7 @@ Verification and validation (V\&V) testing is the process of determining whether
  \item Must be capable of receiving a live video feed of the robots in their environment.
  \begin{itemize}
   \item Run the application and verify that the video feed is displayed.
-  Introduce a number of objects to the environment space and verify that they are seen in the video feed.
+  \item Introduce a number of objects to the environment space and verify that they are seen in the video feed.
  \end{itemize}
  
  \item Must collate received data and present it to the user in a combined graphical form.
@@ -195,6 +197,57 @@ Verification and validation (V\&V) testing is the process of determining whether
  \item Must at minimum support the e-puck robot platform.
  \begin{itemize}
   \item The previously stated tests should be performed using e-puck robots.
+ \end{itemize}
+\end{enumerate}
+
+\textbf{Secondary Requirements}
+
+\begin{enumerate}
+ \item Should use a modularised structure.
+ \begin{itemize}
+  \item Verifying this through standard testing is not feasible. See section \ref{ApplicationStructure} for details of the modular implementation.
+ \end{itemize}
+ 
+ \item Should exchange data between the robot platform and the application using a platform-agnostic, extensible protocol.
+ \begin{itemize}
+  \item Use a platform other than the e-puck robot to transmit packets to the application. Verify that the packets are received and interpreted correctly regardless of the source.
+ \end{itemize}
+ 
+ \item Should provide a basis for interoperability with a number of robotics platforms.
+ \begin{itemize}
+  \item 
+ \end{itemize}
+ 
+ \item Should allow the user to configure the displayed data.
+ \begin{itemize}
+  \item Program the robots to report data of all supported types. Verify that the visualiser settings allow for display configuration.
+ \end{itemize}
+ 
+ \item Should employ a model-view-controller (MVC) software architecture.
+ \begin{itemize}
+  \item Verifying this through standard testing is not feasible. See section \ref{SoftwareArchitectureDesign} for details of the MVC based architecture design.
+ \end{itemize}
+ 
+ \item Could provide the user with ways to configure and display custom data types.
+ \begin{itemize}
+  \item Program the robots to report a variety of textual and numerical custom data. Verify that this data is received, stored and displayed correctly.
+  \item Verify that the custom data overlay can correctly display any of the received data.
+ \end{itemize}
+ 
+ \item Could allow the user to compare data on two or more specific individual robots.
+ \begin{itemize}
+  \item Due to time constraints, and a lack of interest in this feature during the initial survey, it was deemed low priority, and ultimately not implemented.
+ \end{itemize}
+ 
+ \item Could calculate and display swarm-level meta-data and statistics.
+ \begin{itemize}
+  \item Verify that the average position of the tracked robots is correctly displayed.
+ \end{itemize}
+ 
+ \item Could generate log files of robot activity over a user defined period.
+ \begin{itemize}
+  \item Program the robots to periodically report data of various types. Verify that pressing the start logging button, and then pressing it again (to stop the logging) some time later, results in the generation of a log text file containing entries covering the time period between the presses.
+  \item Verify that setting the log file path directory using the user interface correctly effects where the log file is saved.
  \end{itemize}
 \end{enumerate}
 
