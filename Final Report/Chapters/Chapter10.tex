@@ -6,12 +6,14 @@
 
 %----------------------------------------------------------------------------------------
 
-Once the implementation phase of the project was complete it was important to thoroughly test the software in order to verify its correct implementation and operation, and identify any remaining issues that needed to be fixed or mitigated. Some testing was also carried out during the implementation phase in order to verify the correct operation of individual components as they were completed, and to ensure that different components would work correctly together. This is referred to here as continuous integration testing. This was done to reduce the chances of issues stacking up and becoming layered or entrenched as development continued. A more rigorous testing process was then applied once the implementation was complete, and included testing of both the user interface and the system back end, as well as testing the system as a whole. Once these testing processes had been completed, and any issues addressed, an evaluation process was undertaken to determine whether the system was useful in practice, and to gauge what benefits it provided the user, whether it succeeded in meeting the aims of the project, and how it might be improved in the future. The evaluation process involved carrying out observed trials with a number of potential users of the system, as well as a questionnaire completed by participants after having used the system. This section gives details of the different testing stages and the evaluation process.
+Software testing is the process of defining a number of processes which can be applied to a piece of software in order to verify its correct operation. Each of these processes may involve a number of steps, and is usually described as a single test. The results of each test are normally recorded, and used to determine if any bugs or issues remain in the software. Once the implementation phase of this project was complete it was important to thoroughly test the software in order to verify its correct implementation and operation, and identify any remaining issues that needed to be fixed or mitigated. Some testing was also carried out throughout the implementation phase, in order to verify the correct operation of individual components as they were completed, and to ensure that different components would work correctly together. This process of testing during development is referred to here as continuous integration testing, and was done to reduce the risk of issues stacking up and becoming layered or entrenched as development continued. A more rigorous testing process was then applied once the implementation was complete, and included testing of both the user interface and the system back end, as well as testing the system as a whole. 
+
+Once the testing processes had been completed, and any issues addressed, an evaluation process was undertaken to determine whether the system was useful in practice, and to gauge what benefits it provided the user, whether it succeeded in meeting the aims of the project, and how it might be improved in the future. The evaluation process involved carrying out observed trials with a number of potential users of the system, as well as a questionnaire completed by participants after having used the system. This section gives details of the different testing stages and the evaluation process.
 
 %----------------------------------------------------------------------------------------
 
 \section{Continuous Integration Testing} \label{ContinuousIntegrationTesting}
-
+The modular design of the software made the continuous integration testing process relatively simple. After a software component or a specific functionality was implemented, it was tested informally by supplying relevant data or control inputs and verifying the correct result. The existing modules and functionality were then also re-tested. This helped to check that the newly implemented functionality had not created an issue elsewhere. Where possible each module was also tested in isolation, prior to being connected to any related modules, to avoid issues becoming compounded. For example the \textit{MachineVision} class was tested alone, by verifying that it could retrieve a single image from the camera and track the robots in said image, before it was connected to the higher level \textit{CameraController} component. This process was completed in a relatively informal manner, as the main focus at the time was implementation, however it was still a useful technique and helped to ensure that bugs were caught early if possible. For a larger, more complex application, being developed by a team rather than an individual, integration testing should be applied in a more formal manner. For this application however it was deemed more important to focus the relatively limited time on the actual implementation.
 
 %----------------------------------------------------------------------------------------
 
@@ -90,10 +92,10 @@ The following test strategies were then devised for the different element catego
 \end{enumerate}
 
 \subsection{Results}
-For each user interface element the appropriate test strategy, as specified in table \ref{tab:UserInterfaceElements}, was carried out. The results of this testing can be found in appendix \ref{app:UITestResults}.
+For each user interface element the appropriate test strategy, as specified in table \ref{tab:UserInterfaceElements}, was carried out. The results of this testing can be found in appendix \ref{app:UITestResults}. The testing highlighted no major problems with functionality, but did identify a number of smaller issues, mostly related to aesthetics and usability.
 
 \subsection{Fixes Implemented}
-The results of the user interface testing highlighted no major problems, but did identify a number of smaller bugs and aesthetic issues. The following fixes were implemented:
+The following fixes were implemented to address the issues identified during the manual user interface testing:
 
 \begin{itemize}
  \item The settings tabs in the visualiser panel were renamed to to better reflect their purpose.
@@ -148,8 +150,56 @@ This approach also relies on the developer writing the tests correctly determini
 
 %----------------------------------------------------------------------------------------
 
-\section{Validation Testing} \label{VerificationTesting}
+\section{Verification and Validation Testing} \label{ValidationTesting}
+Verification and validation (V\&V) testing is the process of determining whether the software implemented meets the high level requirements, and whether the individual functionalities operate correctly and without bugs. This was the last step in the testing process, and served to test the system as a whole. The approach taken was to consider the requirements of the system, as stated in the functional specification in section \ref{FunctionalSpecification}, and determine whether each requirement is satisfied by the functionality implemented. Where possible each functionality will be tested with relevant data and control inputs. The requirements, and the tests carried out for each are given below.
 
+\begin{enumerate}
+ \item Must be comprised of a PC application.
+ \begin{itemize}
+  \item Verify the software runs on a PC and/or server.
+  \item Verify that the software has the general appearance of a software application.
+ \end{itemize}
+ 
+ \item Must be capable of receiving data related to the state of multiple robots.
+ \begin{itemize}
+  \item Program a number of robots to send state data through the system, and verify that it is reflected by the application.
+ \end{itemize}
+ 
+ \item Must be capable of receiving positional data for the same set of robots.
+ \begin{itemize}
+  \item Program the robots to move along a number of different paths in view of the system, and verify that their positioned are correctly tracked by the application.
+ \end{itemize}
+ 
+ \item Must be capable of receiving a live video feed of the robots in their environment.
+ \begin{itemize}
+  \item Run the application and verify that the video feed is displayed.
+  Introduce a number of objects to the environment space and verify that they are seen in the video feed.
+ \end{itemize}
+ 
+ \item Must collate received data and present it to the user in a combined graphical form.
+ \begin{itemize}
+  \item Program the robots to report a number of different data types, including sensor data, and verify that this can all be displayed by the application simultaneously.
+ \end{itemize}
+ 
+ \item Must present auxiliary, non-spatial data to the user in textual or other forms.
+ \begin{itemize}
+  \item Program the robots to report name, state and custom data and verify that this is correctly received and displayed in the application.
+ \end{itemize}
+ 
+ \item Must update in approximately real time.
+ \begin{itemize}
+  \item Program the robots to report data periodically, and verify that the data within the application updates in real time.
+  \item Program the robots to move around in view of the system, and verify that the video shows their movement in approximately real time.
+ \end{itemize}
+ 
+ \item Must at minimum support the e-puck robot platform.
+ \begin{itemize}
+  \item The previously stated tests should be performed using e-puck robots.
+ \end{itemize}
+\end{enumerate}
+
+\section{Restuls}
+[VERIFICATION TESTING RESULTS]
 
 %----------------------------------------------------------------------------------------
 
