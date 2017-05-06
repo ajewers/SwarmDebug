@@ -1,0 +1,12 @@
+- Re-apply danesh's change to the epuck ID setting - final three digits of the IP. See https://github.com/alanmillard/argos3-epuck/commit/773c0416ceea6061830a57e63035f8840b98c6a0
+
+- Implement following behaviour as testcontroller:
+  - Periodically report name (watchdog) as Robot_<id>
+  - Periodically report change in state between STATE_1 -> STATE_2 -> STATE_3
+  - Continually drive in a wide circle
+  - Report all IR data each step
+  - Report control step every ten steps
+
+- Implement following behavoir as dispersioncontroller:
+  - Disperse as usual
+  - Only act on IR sensor readings > 95 (Threshold too low, will move about randomly)

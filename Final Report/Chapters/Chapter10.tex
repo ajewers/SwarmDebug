@@ -155,7 +155,7 @@ Verification and validation (V\&V) testing is the process of determining whether
 
 \noindent\textbf{Core Requirements}
 
-\begin{enumerate}
+\begin{enumerate}[label=C\arabic*.]
  \item Must be comprised of a PC application.
  \begin{itemize}
   \item Verify the software runs on a PC and/or server.
@@ -202,7 +202,7 @@ Verification and validation (V\&V) testing is the process of determining whether
 
 \textbf{Secondary Requirements}
 
-\begin{enumerate}
+\begin{enumerate}[label=S\arabic*.]
  \item Should use a modularised structure.
  \begin{itemize}
   \item Verifying this through standard testing is not feasible. See section \ref{ApplicationStructure} for details of the modular implementation.
@@ -215,7 +215,7 @@ Verification and validation (V\&V) testing is the process of determining whether
  
  \item Should provide a basis for interoperability with a number of robotics platforms.
  \begin{itemize}
-  \item 
+  \item Verifying this requires another robot platform to be integrated into the system. This is outside the scope of the project. However sections \ref{DataTransferFormat} and \ref{RobotSide} indicate how the system has been implemented with portability in mind, and suggest that interoperability should be feasible and relatively easy to achieve.
  \end{itemize}
  
  \item Should allow the user to configure the displayed data.
@@ -251,9 +251,36 @@ Verification and validation (V\&V) testing is the process of determining whether
  \end{itemize}
 \end{enumerate}
 
-\section{Restuls}
-[VERIFICATION TESTING RESULTS]
+\section{Results}
+\begin{longtable}{ l p{10cm} }
+\caption[Verification Testing Results]{Verification testing results.}\\
+ \textbf{Test} & \textbf{Result}\\
+ \hline
+ C1 & The application was run successfully on two machines running Linux operating systems. The application has an appearance consistent with the familiarly understood definition of a software application.\\\hline
+ C2 & Data of all defined types was successfully sent from six robots to the application. The data was correctly displayed within the application.\\\hline
+ C3 & The positions of six moving robots were correctly tracked simultaneously. The tracking data obtained was correctly displayed in the application both numerically and visually.\\\hline
+ C4 & The application correctly displays the input video feed. Objects placed in view of the camera are seen in the video feed within the application.\\\hline
+ C5 & Data received from the robots, including sensor data, was correctly converted to visual representations and displayed in the application.\\\hline
+ C6 & Data received from the robots was correctly received and displayed in a textual form within the application.\\\hline
+ C7 & The application updated the data displayed to match new data from the robots in approximately real time. The application updated the position and orientation data to match the movement of the robots in approximately real time.\\\hline
+ C8 & E-puck robots used for all core tests involving robots. E-puck platform is sufficiently supported.\\\hline
+ \hline
+ S2 & Utility program used to send specific UDP packets to the application via the network, mimicking the behaviour of an arbitrary robot. The system received and interpreted the packets correctly.\\\hline
+ S4 & The visualisations of the data reported by six robots could be configured using the options available in the visualiser settings menu, to a moderate extent. Full customisation of all aspects of the visualisations was not possible.\\ \hline
+ S6 & Custom data sent from six robots was received and displayed within a table correctly, updating in approximately real time. The custom data visualisation could be set to target any of the specific data points received. The target data point was then correctly displayed overlaid on the video feed. Configuring the display of custom data beyond a textual representation was not possible. Displaying more than one target data point was not possible.\\\hline
+ S8 & When enabled, the average position display correctly displayed the average position of the currently tracked robots as a mark within the video feed, when tested with three, four and six robots. This data was not provided in numerical form. Other swarm-level data was not provided.\\\hline
+ S9 & Was able to correctly start and stop logging whilst receiving data from six robots. The generated text file contained appropriate information. The layout of this information was, however, difficult to parse, making the data hard to understand and use. The directory to store the log files could be correctly set using the UI controls.\\\hline
+ \bottomrule\\
+\end{longtable}
 
+All core requirement tests, C1 through C8 passed satisfactorily, indicating that the application satisfies the core requirements. Verifying secondary requirements S1, S3 and S5 was not possible using standard testing approaches. Secondary requirement S7 was dropped following the results of the initial user survey, and a reassessment of the feature set. Secondary requirement test S2 passed satisfactorily, without caveats. Tests S4, S6, S8 and S9 all passed conditionally, as the requirement was either partially met, or met to a limited standard. In order to fully satisfy these requirements the following developments should be made:
+
+\begin{itemize}
+ \item S4: Further develop the visualisation configuration options to allow the user to fully configure all visualisations, including sizes, offset positionings, font sizes, line widths, etc.
+ \item S6: Develop the visualisation of custom data to allow the user a number of graphical options. Allow the user to visualise more than one custom data point simultaneously.
+ \item S8: Add a new tab to the data panel for swarm-level data acquired through analysis. Display the average position values in this tab. Define and implement a number of other swarm-level data analyses, and display this data within the tab, and graphically within the visualiser.
+ \item S9: Edit the log file generation to produce structured, comma-separated-value (CSV) format files.
+\end{itemize}
 %----------------------------------------------------------------------------------------
 
 \section{Evaluation} \label{Evaluation}

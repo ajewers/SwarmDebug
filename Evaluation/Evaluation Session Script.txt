@@ -1,0 +1,20 @@
+1. Introduce the application, its purpose, the purpose of this evaluation. Open the application and indicate all of the key features.
+
+2. Ask the user to start the application listening for robot data on port 8888.
+
+3. Run simple circular motion test controller code on three robots. Ask the user to locate the following information:
+
+ - Current state of robot 1
+ - Recent state changes of robot 2
+ - Current IR sensor values of robot 3
+ - Current value of the custom data point ControlStep for robot 1
+
+4. Ask the user to use the visualiser settings tab to achieve the following:
+
+ - Hide the name and state data for all robots
+ - Display the recent path of all three robots
+ - Display the IR sensor data for the selected robot, in heat mode
+ - Show the average robot position marker
+ - Display the custom data point ControlStep for all three robots
+
+5. Run the dispersion behaviour code with known fault (sensor threshold value too low). Explain the desired behaviour, and the erroneous behaviour (uneccesary movement). Ask the user to attempt to locate the cause of the fault, using the system.
