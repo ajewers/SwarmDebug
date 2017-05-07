@@ -50,11 +50,11 @@
 \contentsline {section}{\numberline {9.1}Overview}{54}{section.96}
 \contentsline {section}{\numberline {9.2}Application Framework Selection}{55}{section.98}
 \contentsline {subsection}{\numberline {9.2.1}The Qt Framework}{56}{subsection.99}
-\contentsline {section}{\numberline {9.3}Source Code}{57}{section.100}
-\contentsline {section}{\numberline {9.4}Application Structure}{59}{section.103}
+\contentsline {section}{\numberline {9.3}Application Structure}{57}{section.100}
+\contentsline {section}{\numberline {9.4}Source Code}{59}{section.102}
 \contentsline {section}{\numberline {9.5}Data Model}{61}{section.105}
-\contentsline {section}{\numberline {9.6}Video Feed and Tracking System}{62}{section.107}
-\contentsline {subsection}{\numberline {9.6.1}Image Processing Library}{63}{subsection.108}
+\contentsline {section}{\numberline {9.6}Video Feed and Tracking System}{63}{section.107}
+\contentsline {subsection}{\numberline {9.6.1}Image Processing Library}{64}{subsection.108}
 \contentsline {section}{\numberline {9.7}Networking}{64}{section.109}
 \contentsline {section}{\numberline {9.8}Data Transfer Format}{67}{section.114}
 \contentsline {subsection}{\numberline {9.8.1}Constraints}{69}{subsection.117}
