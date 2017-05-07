@@ -202,11 +202,12 @@ The acknowledgements and the people to thank go here, don't forget to include yo
 %	ABBREVIATIONS
 %----------------------------------------------------------------------------------------
 
-%\begin{abbreviations}{ll} % Include a list of abbreviations (a table of two columns)
+\begin{abbreviations}{ll} % Include a list of abbreviations (a table of two columns)
 
-%\textbf{HSI} & \textbf{H}uman \textbf{S}warm \textbf{I}nteraction\\
+\textbf{YRL} & \textbf{Y}ork \textbf{R}obotics \textbf{L}aboratory\\
+\textbf{HSI} & \textbf{H}uman \textbf{S}warm \textbf{I}nteraction\\
 
-%\end{abbreviations}
+\end{abbreviations}
 
 %----------------------------------------------------------------------------------------
 %	PHYSICAL CONSTANTS/OTHER DEFINITIONS

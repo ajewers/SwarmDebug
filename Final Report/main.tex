@@ -118,13 +118,13 @@ headsepline, % Uncomment to get a line under the header
 \begin{minipage}[t]{0.4\textwidth}
 \begin{flushleft} \large
 \emph{Author:}\\
-\href{http://www.johnsmith.com}{\authorname} % Author name - remove the \href bracket to remove the link
+\authorname % Author name - remove the \href bracket to remove the link
 \end{flushleft}
 \end{minipage}
 \begin{minipage}[t]{0.4\textwidth}
 \begin{flushright} \large
 \emph{Supervisor:} \\
-\href{http://www.jamessmith.com}{\supname} % Supervisor name - remove the \href bracket to remove the link  
+\supname % Supervisor name - remove the \href bracket to remove the link  
 \end{flushright}
 \end{minipage}\\[3cm]
  
@@ -202,11 +202,12 @@ The acknowledgements and the people to thank go here, don't forget to include yo
 %	ABBREVIATIONS
 %----------------------------------------------------------------------------------------
 
-%\begin{abbreviations}{ll} % Include a list of abbreviations (a table of two columns)
+\begin{abbreviations}{ll} % Include a list of abbreviations (a table of two columns)
 
-%\textbf{HSI} & \textbf{H}uman \textbf{S}warm \textbf{I}nteraction\\
+\textbf{YRL} & \textbf{Y}ork \textbf{R}obotics \textbf{L}aboratory\\
+\textbf{HSI} & \textbf{H}uman \textbf{S}warm \textbf{I}nteraction\\
 
-%\end{abbreviations}
+\end{abbreviations}
 
 %----------------------------------------------------------------------------------------
 %	PHYSICAL CONSTANTS/OTHER DEFINITIONS

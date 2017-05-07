@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2017.5.7)  7 MAY 2017 15:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2017.5.7)  7 MAY 2017 22:05
 entering extended mode
 **./main.tex
 (main.tex
@@ -2043,11 +2043,15 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
 [9
 
 ]
+1: section
+[10
+
+]
 --------------------
  Dedicatory
 --------------------
 1: section
-[10
+[11
 
 ]
 1: section
@@ -2065,7 +2069,7 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
 
 
 ]
-<Figures/RobotDebuggingInformationAbstraction.png, id=625, 415.5525pt x 216.81p
+<Figures/RobotDebuggingInformationAbstraction.png, id=644, 415.5525pt x 216.81p
 t>
 File: Figures/RobotDebuggingInformationAbstraction.png Graphic file (type png)
  <use Figures/RobotDebuggingInformationAbstraction.png>
@@ -2078,89 +2082,96 @@ Overfull \hbox (11.5224pt too wide) in paragraph at lines 30--32
  []
 
 [2] [3 <./Figures/RobotDebuggingInformationAbstraction.png>]
-<Figures/SystemArchitecture.png, id=639, 393.6306pt x 199.2243pt>
+<Figures/SystemArchitecture.png, id=657, 393.6306pt x 199.2243pt>
 File: Figures/SystemArchitecture.png Graphic file (type png)
 
 <use Figures/SystemArchitecture.png>
 Package pdftex.def Info: Figures/SystemArchitecture.png used on input line 51.
 (pdftex.def)             Requested size: 314.9049pt x 159.37965pt.
- [4] [5 <./Figures/SystemArchitecture.png>] [6]) [7]
+ [4] [5 <./Figures/SystemArchitecture.png>] [6]) [7] [8]
 \openout2 = `Chapters/Chapter2.aux'.
 
  (Chapters/Chapter2.tex
 Chapter 2.
 1: section
-[8
+[9
 
 
 
-] [9] [10] [11] [12]
+] [10] [11] [12] [13]
 Overfull \hbox (2.15556pt too wide) in paragraph at lines 46--47
 \T1/ppl/m/n/10.95 information-reporting be-haviours might also add sig-nif-i-ca
 nt com-plex-ity to the robots
  []
 
-[13] <Figures/SelfOrganisedFeedback.png, id=742, 280.79906pt x 230.36063pt>
+[14] <Figures/SelfOrganisedFeedback.png, id=766, 280.79906pt x 230.36063pt>
 File: Figures/SelfOrganisedFeedback.png Graphic file (type png)
 
 <use Figures/SelfOrganisedFeedback.png>
 Package pdftex.def Info: Figures/SelfOrganisedFeedback.png used on input line 5
 0.
 (pdftex.def)             Requested size: 280.79837pt x 230.36005pt.
- [14 <./Figures/SelfOrganisedFeedback.png>] <Figures/SwarmCraft.png, id=752, 23
+ [15 <./Figures/SelfOrganisedFeedback.png>] <Figures/SwarmCraft.png, id=776, 23
 8.64156pt x 179.92218pt>
 File: Figures/SwarmCraft.png Graphic file (type png)
 
 <use Figures/SwarmCraft.png>
 Package pdftex.def Info: Figures/SwarmCraft.png used on input line 61.
 (pdftex.def)             Requested size: 238.64096pt x 179.92174pt.
- [15 <./Figures/SwarmCraft.png>]
+ [16 <./Figures/SwarmCraft.png>]
 Overfull \hbox (2.09642pt too wide) in paragraph at lines 73--74
-[]\T1/ppl/m/n/10.95 Gumbley and Mac-Don-ald [[][]13[][]] iden-tify one of the c
+[]\T1/ppl/m/n/10.95 Gumbley and Mac-Don-ald [[][]14[][]] iden-tify one of the c
 ore is-sues in de-bug-ging robotic
  []
 
-[16] <Figures/ARBasic.png, id=776, 185.19188pt x 145.29282pt>
+[17] <Figures/NUbugger.png, id=796, 426.84468pt x 256.70906pt>
+File: Figures/NUbugger.png Graphic file (type png)
+
+<use Figures/NUbugger.png>
+Package pdftex.def Info: Figures/NUbugger.png used on input line 77.
+(pdftex.def)             Requested size: 341.47621pt x 205.36751pt.
+ [18 <./Figures/NUbugger.png>]
+<Figures/ARBasic.png, id=812, 185.19188pt x 145.29282pt>
 File: Figures/ARBasic.png Graphic file (type png)
 
 <use Figures/ARBasic.png>
-Package pdftex.def Info: Figures/ARBasic.png used on input line 82.
+Package pdftex.def Info: Figures/ARBasic.png used on input line 93.
 (pdftex.def)             Requested size: 222.22911pt x 174.3505pt.
- [17 <./Figures/ARBasic.png>]
-<Figures/HoloLens.png, id=787, 971.88094pt x 396.7322pt>
+ [19 <./Figures/ARBasic.png>]
+<Figures/HoloLens.png, id=824, 971.88094pt x 396.7322pt>
 File: Figures/HoloLens.png Graphic file (type png)
 
 <use Figures/HoloLens.png>
-Package pdftex.def Info: Figures/HoloLens.png used on input line 93.
+Package pdftex.def Info: Figures/HoloLens.png used on input line 104.
 (pdftex.def)             Requested size: 388.74548pt x 158.69006pt.
- [18 <./Figures/HoloLens.png>]
-<Figures/Sonar.png, id=805, 487.8225pt x 375.65344pt>
+ [20 <./Figures/HoloLens.png>]
+<Figures/Sonar.png, id=842, 487.8225pt x 375.65344pt>
 File: Figures/Sonar.png Graphic file (type png)
  <use Figures/Sonar.png>
-Package pdftex.def Info: Figures/Sonar.png used on input line 108.
+Package pdftex.def Info: Figures/Sonar.png used on input line 119.
 (pdftex.def)             Requested size: 292.69576pt x 225.3938pt.
 
-[19] [20 <./Figures/Sonar.png>]
-<Figures/SpatiallySituatedData.png, id=823, 386.19281pt x 242.40562pt>
+[21] <Figures/SpatiallySituatedData.png, id=854, 386.19281pt x 242.40562pt>
 File: Figures/SpatiallySituatedData.png Graphic file (type png)
 
 <use Figures/SpatiallySituatedData.png>
 Package pdftex.def Info: Figures/SpatiallySituatedData.png used on input line 1
-22.
+33.
 (pdftex.def)             Requested size: 308.95465pt x 193.92474pt.
 
-Overfull \hbox (3.2072pt too wide) in paragraph at lines 129--130
+Overfull \hbox (3.2072pt too wide) in paragraph at lines 140--141
 \T1/ppl/m/n/10.95 based so-lu-tion for both in-di-cat-ing robot po-si-tion, and
  com-mu-ni-cat-ing a small amount
  []
 
-) [21 <./Figures/SpatiallySituatedData.png>] [22]
+[22 <./Figures/Sonar.png>]) [23 <./Figures/SpatiallySituatedData.png>] [24]
 \openout2 = `Chapters/Chapter3.aux'.
 
- (Chapters/Chapter3.tex
+
+(Chapters/Chapter3.tex
 Chapter 3.
 1: section
-[23
+[25
 
 
 
@@ -2174,7 +2185,7 @@ Overfull \hbox (30.30948pt too wide) in alignment at lines 17--57
  [] [] [] 
  []
 
-[24
+[26
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 62--63
@@ -2191,18 +2202,18 @@ Overfull \hbox (30.30948pt too wide) in alignment at lines 59--75
  [] [] [] 
  []
 
-[25]
+[27]
 Overfull \hbox (18.3095pt too wide) in alignment at lines 78--96
  [] [] 
  []
 
 
-LaTeX Warning: Reference `app:GanttChart' on page 26 undefined on input line 10
+LaTeX Warning: Reference `app:GanttChart' on page 28 undefined on input line 10
 2.
 
-[26
+[28
 
-] [27] [28]) [29]
+] [29] [30]) [31]
 \openout2 = `Chapters/Chapter4.aux'.
 
  (Chapters/Chapter4.tex
@@ -2211,40 +2222,40 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 14.
 )
 1: section
-[30
+[32
 
 
 
-] [31]
+] [33]
 \openout2 = `Chapters/Chapter5.aux'.
 
  (Chapters/Chapter5.tex
 Chapter 5.
-<Figures/EPuck.png, id=890, 459.21562pt x 410.2828pt>
+<Figures/EPuck.png, id=928, 459.21562pt x 410.2828pt>
 File: Figures/EPuck.png Graphic file (type png)
  <use Figures/EPuck.png>
 Package pdftex.def Info: Figures/EPuck.png used on input line 14.
 (pdftex.def)             Requested size: 275.5315pt x 246.17157pt.
 
 1: section
-[32
+[34
 
 
 
-] [33 <./Figures/EPuck.png>]
-<Figures/EPuckIRSensors.png, id=907, 602.25pt x 602.25pt>
+] [35 <./Figures/EPuck.png>]
+<Figures/EPuckIRSensors.png, id=940, 602.25pt x 602.25pt>
 File: Figures/EPuckIRSensors.png Graphic file (type png)
 
 <use Figures/EPuckIRSensors.png>
 Package pdftex.def Info: Figures/EPuckIRSensors.png used on input line 38.
 (pdftex.def)             Requested size: 240.89572pt x 240.89572pt.
- [34 <./Figures/EPuckIRSensors.png>]) [35]
+ [36 <./Figures/EPuckIRSensors.png>]) [37]
 \openout2 = `Chapters/Chapter6.aux'.
 
 
 (Chapters/Chapter6.tex
 Chapter 6.
-<Figures/CameraLayout.png, id=923, 1052.43187pt x 830.35219pt>
+<Figures/CameraLayout.png, id=955, 1052.43187pt x 830.35219pt>
 File: Figures/CameraLayout.png Graphic file (type png)
 
 <use Figures/CameraLayout.png>
@@ -2252,26 +2263,26 @@ Package pdftex.def Info: Figures/CameraLayout.png used on input line 13.
 (pdftex.def)             Requested size: 315.732pt x 249.10757pt.
 
 1: section
-[36
+[38
 
 
 
  <./Figures/CameraLayout.png>]
-<Figures/ArenaPhoto.png, id=932, 569.12625pt x 758.835pt>
+<Figures/ArenaPhoto.png, id=963, 569.12625pt x 758.835pt>
 File: Figures/ArenaPhoto.png Graphic file (type png)
 
 <use Figures/ArenaPhoto.png>
 Package pdftex.def Info: Figures/ArenaPhoto.png used on input line 23.
 (pdftex.def)             Requested size: 227.64647pt x 303.52863pt.
- [37 <./Figures/ArenaPhoto.png>]
-<Figures/Camera.png, id=941, 271.76532pt x 235.63031pt>
+ [39 <./Figures/ArenaPhoto.png>]
+<Figures/Camera.png, id=970, 271.76532pt x 235.63031pt>
 File: Figures/Camera.png Graphic file (type png)
 
 <use Figures/Camera.png>
 Package pdftex.def Info: Figures/Camera.png used on input line 36.
 (pdftex.def)             Requested size: 217.41254pt x 188.5045pt.
- [38 <./Figures/Camera.png>]
-<Figures/ARuCoTags.png, id=960, 1011.78pt x 758.835pt>
+ [40 <./Figures/Camera.png>]
+<Figures/ARuCoTags.png, id=986, 1011.78pt x 758.835pt>
 File: Figures/ARuCoTags.png Graphic file (type png)
 
 <use Figures/ARuCoTags.png>
@@ -2283,44 +2294,44 @@ Overfull \hbox (0.67575pt too wide) in paragraph at lines 53--55
  []
 
 
-LaTeX Warning: Reference `fig:EPuckAruco' on page 39 undefined on input line 59
+LaTeX Warning: Reference `fig:EPuckAruco' on page 41 undefined on input line 59
 .
 
-[39 <./Figures/ARuCoTags.png>]
-<Figures/EPuckARuCo.png, id=967, 557.08125pt x 558.085pt>
+[41 <./Figures/ARuCoTags.png>]
+<Figures/EPuckARuCo.png, id=993, 557.08125pt x 558.085pt>
 File: Figures/EPuckARuCo.png Graphic file (type png)
 
 <use Figures/EPuckARuCo.png>
 Package pdftex.def Info: Figures/EPuckARuCo.png used on input line 63.
 (pdftex.def)             Requested size: 278.53995pt x 279.04182pt.
-) [40 <./Figures/EPuckARuCo.png>]
+) [42 <./Figures/EPuckARuCo.png>]
 \openout2 = `Chapters/Chapter7.aux'.
 
 
 (Chapters/Chapter7.tex
 Chapter 7.
 1: section
-[41
+[43
 
 
 
-] [42]
+] [44]
 Overfull \hbox (16.6094pt too wide) in paragraph at lines 72--73
 []\T1/ppl/m/n/10.95 ``I think the sys-tem (al-ready po-ten-tially very use-ful)
  could be im-proved/expanded
  []
 
-[43] [44]) [45]
+[45] [46]) [47]
 \openout2 = `Chapters/Chapter8.aux'.
 
  (Chapters/Chapter8.tex
 Chapter 8.
 1: section
-[46
+[48
 
 
 
-] [47] <Figures/SoftwareArchitecture.png, id=1011, 614.295pt x 398.2077pt>
+] [49] <Figures/SoftwareArchitecture.png, id=1033, 614.295pt x 398.2077pt>
 File: Figures/SoftwareArchitecture.png Graphic file (type png)
 
 <use Figures/SoftwareArchitecture.png>
@@ -2332,8 +2343,8 @@ Overfull \hbox (25.97447pt too wide) in paragraph at lines 36--38
  [][] 
  []
 
-[48 <./Figures/SoftwareArchitecture.png>]
-<Figures/DataModel.png, id=1021, 542.025pt x 280.4076pt>
+[50 <./Figures/SoftwareArchitecture.png>]
+<Figures/DataModel.png, id=1042, 542.025pt x 280.4076pt>
 File: Figures/DataModel.png Graphic file (type png)
 
 <use Figures/DataModel.png>
@@ -2343,7 +2354,7 @@ Package pdftex.def Info: Figures/DataModel.png used on input line 58.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[49] <Figures/VisualiserProcess.png, id=1033, 614.295pt x 247.1634pt>
+[51] <Figures/VisualiserProcess.png, id=1052, 614.295pt x 247.1634pt>
 File: Figures/VisualiserProcess.png Graphic file (type png)
 
 <use Figures/VisualiserProcess.png>
@@ -2357,7 +2368,7 @@ Overfull \hbox (25.97447pt too wide) in paragraph at lines 73--75
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/UILayout.png, id=1034, 424.7067pt x 307.1475pt>
+<Figures/UILayout.png, id=1053, 424.7067pt x 307.1475pt>
 File: Figures/UILayout.png Graphic file (type png)
 
 <use Figures/UILayout.png>
@@ -2371,8 +2382,8 @@ Overfull \hbox (20.67656pt too wide) in paragraph at lines 84--86
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[50 <./Figures/DataModel.png>] [51 <./Figures/VisualiserProcess.png>]
-<Figures/UIExample.png, id=1048, 433.62pt x 325.215pt>
+[52 <./Figures/DataModel.png>] [53 <./Figures/VisualiserProcess.png>]
+<Figures/UIExample.png, id=1063, 433.62pt x 325.215pt>
 File: Figures/UIExample.png Graphic file (type png)
 
 <use Figures/UIExample.png>
@@ -2386,8 +2397,8 @@ Overfull \hbox (29.58986pt too wide) in paragraph at lines 96--98
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[52 <./Figures/UILayout.png>]
-<Figures/DataPanelDesigns.png, id=1058, 433.62pt x 379.4175pt>
+[54 <./Figures/UILayout.png>]
+<Figures/DataPanelDesigns.png, id=1073, 433.62pt x 379.4175pt>
 File: Figures/DataPanelDesigns.png Graphic file (type png)
 
 <use Figures/DataPanelDesigns.png>
@@ -2398,7 +2409,7 @@ Overfull \hbox (29.58986pt too wide) in paragraph at lines 108--110
  [][] 
  []
 
-<Figures/VisualiserSettingsTabDesign.png, id=1059, 469.755pt x 216.81pt>
+<Figures/VisualiserSettingsTabDesign.png, id=1074, 469.755pt x 216.81pt>
 File: Figures/VisualiserSettingsTabDesign.png Graphic file (type png)
 
 <use Figures/VisualiserSettingsTabDesign.png>
@@ -2410,47 +2421,47 @@ Overfull \hbox (65.72478pt too wide) in paragraph at lines 116--118
  [][] 
  []
 
-[53 <./Figures/UIExample.png>] [54 <./Figures/DataPanelDesigns.png>] [55 <./Fig
+[55 <./Figures/UIExample.png>] [56 <./Figures/DataPanelDesigns.png>] [57 <./Fig
 ures/VisualiserSettingsTabDesign.png>]
-<Figures/OverlayDesigns.png, id=1076, 352.4367pt x 469.755pt>
+<Figures/OverlayDesigns.png, id=1092, 352.4367pt x 469.755pt>
 File: Figures/OverlayDesigns.png Graphic file (type png)
 
 <use Figures/OverlayDesigns.png>
 Package pdftex.def Info: Figures/OverlayDesigns.png used on input line 126.
 (pdftex.def)             Requested size: 352.43585pt x 469.75386pt.
-) [56] [57 <./Figures/OverlayDesigns.png>]
+) [58] [59 <./Figures/OverlayDesigns.png>]
 \openout2 = `Chapters/Chapter9.aux'.
 
 
 (Chapters/Chapter9.tex
 Chapter 9.
 1: section
-[58
+[60
 
 
 
 ]
-<Figures/ApplicationScreenshotOverview.png, id=1101, 962.59625pt x 746.79pt>
+<Figures/ApplicationScreenshotOverview.png, id=1113, 962.59625pt x 746.79pt>
 File: Figures/ApplicationScreenshotOverview.png Graphic file (type png)
 
 <use Figures/ApplicationScreenshotOverview.png>
 Package pdftex.def Info: Figures/ApplicationScreenshotOverview.png used on inpu
 t line 18.
 (pdftex.def)             Requested size: 385.03168pt x 298.7107pt.
- [59 <./Figures/ApplicationScreenshotOverview.png>] [60]
+ [61 <./Figures/ApplicationScreenshotOverview.png>] [62]
 Overfull \hbox (3.22394pt too wide) in paragraph at lines 34--35
 []\T1/ppl/m/n/10.95 The fol-low-ing pri-mary fea-tures of the Qt ap-pli-ca-tion
  frame-work were used within
  []
 
-[61] <Figures/ApplicationStructure.png, id=1123, 451.6875pt x 343.2825pt>
+[63] <Figures/ApplicationStructure.png, id=1132, 451.6875pt x 343.2825pt>
 File: Figures/ApplicationStructure.png Graphic file (type png)
 
 <use Figures/ApplicationStructure.png>
 Package pdftex.def Info: Figures/ApplicationStructure.png used on input line 52
 .
 (pdftex.def)             Requested size: 361.35048pt x 274.62636pt.
- [62 <./Figures/ApplicationStructure.png>]
+ [64 <./Figures/ApplicationStructure.png>]
 Overfull \hbox (43.13486pt too wide) in alignment at lines 65--87
  [] [] 
  []
@@ -2460,19 +2471,19 @@ Overfull \hbox (43.13486pt too wide) in alignment at lines 87--93
  [] [] 
  []
 
-[63] [64]
+[65] [66]
 Overfull \hbox (2.12738pt too wide) in alignment at lines 96--105
  [] [] 
  []
 
-[65
+[67
 
 ]
 Overfull \hbox (36.41174pt too wide) in alignment at lines 116--133
  [] [] [] 
  []
 
-[66] [67] [68]
+[68] [69] [70]
 Overfull \hbox (13.0673pt too wide) in paragraph at lines 164--165
 []\T1/ppl/m/n/10.95 The net-work-ing func-tion-al-i-ties of the ap-pli-ca-tion 
 are en-cap-su-lated in the \T1/ppl/m/it/10.95 DataThread
@@ -2484,8 +2495,8 @@ File: Figures/NetworkingFlow.png Graphic file (type png)
 <use Figures/NetworkingFlow.png>
 Package pdftex.def Info: Figures/NetworkingFlow.png used on input line 168.
 (pdftex.def)             Requested size: 252.94438pt x 341.11354pt.
- [69] [70 <./Figures/NetworkingFlow.png>]
-<Figures/DataFormat.png, id=1192, 1359.57938pt x 88.83188pt>
+ [71] [72 <./Figures/NetworkingFlow.png>]
+<Figures/DataFormat.png, id=1191, 1359.57938pt x 88.83188pt>
 File: Figures/DataFormat.png Graphic file (type png)
 
 <use Figures/DataFormat.png>
@@ -2496,7 +2507,7 @@ Overfull \hbox (3.84789pt too wide) in paragraph at lines 183--185
  [][] 
  []
 
-[71 <./Figures/DataFormat.png>]
+[73 <./Figures/DataFormat.png>]
 Overfull \hbox (3.90044pt too wide) in alignment at lines 190--222
  [] [] 
  []
@@ -2506,53 +2517,53 @@ Overfull \hbox (3.90044pt too wide) in alignment at lines 222--249
  [] [] 
  []
 
-[72
+[74
 
-] <Figures/VisualiserPanel.png, id=1206, 1081.03876pt x 329.73187pt>
+] <Figures/VisualiserPanel.png, id=1203, 1081.03876pt x 329.73187pt>
 File: Figures/VisualiserPanel.png Graphic file (type png)
 
 <use Figures/VisualiserPanel.png>
 Package pdftex.def Info: Figures/VisualiserPanel.png used on input line 261.
 (pdftex.def)             Requested size: 525.23903pt x 160.20654pt.
- [73] [74 <./Figures/VisualiserPanel.png>]
-<Figures/RobotListPanel.png, id=1223, 677.53125pt x 330.48468pt>
+ [75] [76 <./Figures/VisualiserPanel.png>]
+<Figures/RobotListPanel.png, id=1217, 677.53125pt x 330.48468pt>
 File: Figures/RobotListPanel.png Graphic file (type png)
 
 <use Figures/RobotListPanel.png>
 Package pdftex.def Info: Figures/RobotListPanel.png used on input line 273.
 (pdftex.def)             Requested size: 404.02908pt x 197.08206pt.
 
-<Figures/DataPanel.png, id=1225, 710.655pt x 1068.99374pt>
+<Figures/DataPanel.png, id=1219, 710.655pt x 1068.99374pt>
 File: Figures/DataPanel.png Graphic file (type png)
 
 <use Figures/DataPanel.png>
 Package pdftex.def Info: Figures/DataPanel.png used on input line 283.
 (pdftex.def)             Requested size: 404.02908pt x 607.76686pt.
- [75 <./Figures/RobotListPanel.png>] [76 <./Figures/DataPanel.png>]
-<Figures/VisualiserDiagram.png, id=1238, 366.4089pt x 219.4599pt>
+ [77 <./Figures/RobotListPanel.png>] [78 <./Figures/DataPanel.png>]
+<Figures/VisualiserDiagram.png, id=1231, 366.4089pt x 219.4599pt>
 File: Figures/VisualiserDiagram.png Graphic file (type png)
 
 <use Figures/VisualiserDiagram.png>
 Package pdftex.def Info: Figures/VisualiserDiagram.png used on input line 299.
 (pdftex.def)             Requested size: 366.408pt x 219.45935pt.
- [77
+ [79
 
-] [78 <./Figures/VisualiserDiagram.png>] <Figures/Overlays.png, id=1257, 368.12
+] [80 <./Figures/VisualiserDiagram.png>] <Figures/Overlays.png, id=1248, 368.12
 53pt x 402.75468pt>
 File: Figures/Overlays.png Graphic file (type png)
 
 <use Figures/Overlays.png>
 Package pdftex.def Info: Figures/Overlays.png used on input line 325.
 (pdftex.def)             Requested size: 368.1244pt x 402.7537pt.
- [79 <./Figures/Overlays.png>] [80]
-<Figures/VisualiserSettingsTab.png, id=1277, 858.20625pt x 354.57469pt>
+ [81 <./Figures/Overlays.png>] [82]
+<Figures/VisualiserSettingsTab.png, id=1267, 858.20625pt x 354.57469pt>
 File: Figures/VisualiserSettingsTab.png Graphic file (type png)
 
 <use Figures/VisualiserSettingsTab.png>
 Package pdftex.def Info: Figures/VisualiserSettingsTab.png used on input line 3
 38.
 (pdftex.def)             Requested size: 484.83366pt x 200.31343pt.
- [81 <./Figures/VisualiserSettingsTab.png>]
+ [83 <./Figures/VisualiserSettingsTab.png>]
 Overfull \hbox (31.46805pt too wide) in paragraph at lines 348--349
 \T1/ppl/m/n/10.95 The robot side API is en-cap-su-lated by the \T1/ppl/m/it/10.
 95 De-bugNet-work \T1/ppl/m/n/10.95 class, de-fined in `\T1/ppl/m/it/10.95 de-b
@@ -2579,25 +2590,25 @@ Overfull \hbox (23.18405pt too wide) in alignment at lines 375--378
  [] [] [] 
  []
 
-[82
+[84
 
 
-]) [83]
+]) [85]
 \openout2 = `Chapters/Chapter10.aux'.
 
  (Chapters/Chapter10.tex
 Chapter 10.
 1: section
-[84
+[86
 
 
 
-] [85] [86] [87] [88]
+] [87] [88] [89] [90]
 Overfull \hbox (5.56546pt too wide) in alignment at lines 121--137
  [] [] 
  []
 
-[89] [90] [91] [92] [93] [94] [95] [96]) [97]
+[91] [92] [93] [94] [95] [96] [97] [98]) [99]
 \openout2 = `Chapters/Chapter11.aux'.
 
  (Chapters/Chapter11.tex
@@ -2609,24 +2620,24 @@ res, such as macro level
  []
 
 1: section
-[98
+[100
 
 
 
-] [99]
+] [101]
 Overfull \hbox (10.98225pt too wide) in paragraph at lines 46--47
 \T1/ppl/m/n/10.95 Card-board have given con-sumers a first taste of real, per-s
 pec-tive based, head mounted,
  []
 
-[100]) [101]
+[102]) [103]
 \openout2 = `Chapters/Chapter12.aux'.
 
  (Chapters/Chapter12.tex
 Chapter 12.
 )
 1: section
-[102
+[104
 
 
 
@@ -2650,11 +2661,11 @@ Overfull \hbox (20.9727pt too wide) in alignment at lines 39--40
  []
 
 1: section
-[103
+[105
 
 
 
-] [104]
+] [106]
 Overfull \hbox (20.9727pt too wide) in alignment at lines 43--75
  [] [] 
  []
@@ -2668,7 +2679,7 @@ Overfull \hbox (20.9727pt too wide) in alignment at lines 75--76
  [] [] 
  []
 
-[105
+[107
 
 ]
 Overfull \hbox (20.9727pt too wide) in alignment at lines 79--111
@@ -2684,7 +2695,7 @@ Overfull \hbox (20.9727pt too wide) in alignment at lines 111--112
  [] [] 
  []
 
-[106
+[108
 
 ]
 Overfull \hbox (20.9727pt too wide) in alignment at lines 115--147
@@ -2700,7 +2711,7 @@ Overfull \hbox (20.9727pt too wide) in alignment at lines 147--148
  [] [] 
  []
 
-[107
+[109
 
 ]
 Overfull \hbox (20.9727pt too wide) in alignment at lines 151--183
@@ -2716,7 +2727,7 @@ Overfull \hbox (20.9727pt too wide) in alignment at lines 183--184
  [] [] 
  []
 
-[108
+[110
 
 ]
 Overfull \hbox (20.9727pt too wide) in alignment at lines 187--219
@@ -2732,7 +2743,7 @@ Overfull \hbox (20.9727pt too wide) in alignment at lines 219--220
  [] [] 
  []
 
-[109
+[111
 
 ]
 Overfull \hbox (20.9727pt too wide) in alignment at lines 223--255
@@ -2748,7 +2759,7 @@ Overfull \hbox (20.9727pt too wide) in alignment at lines 255--256
  [] [] 
  []
 
-[110
+[112
 
 ]
 Overfull \hbox (20.9727pt too wide) in alignment at lines 259--291
@@ -2764,7 +2775,7 @@ Overfull \hbox (20.9727pt too wide) in alignment at lines 291--292
  [] [] 
  []
 
-[111
+[113
 
 ]
 Overfull \hbox (20.9727pt too wide) in alignment at lines 295--327
@@ -2780,7 +2791,7 @@ Overfull \hbox (20.9727pt too wide) in alignment at lines 327--328
  [] [] 
  []
 
-[112
+[114
 
 ]
 Overfull \hbox (20.9727pt too wide) in alignment at lines 331--363
@@ -2796,7 +2807,7 @@ Overfull \hbox (20.9727pt too wide) in alignment at lines 363--364
  [] [] 
  []
 
-[113
+[115
 
 ]
 Underfull \hbox (badness 1112) in paragraph at lines 372--373
@@ -2817,7 +2828,7 @@ Overfull \hbox (20.9727pt too wide) in alignment at lines 399--400
  [] [] 
  []
 
-[114
+[116
 
 ]
 Overfull \hbox (20.9727pt too wide) in alignment at lines 403--435
@@ -2833,7 +2844,7 @@ Overfull \hbox (20.9727pt too wide) in alignment at lines 435--436
  [] [] 
  []
 
-[115
+[117
 
 ]
 Overfull \hbox (20.9727pt too wide) in alignment at lines 439--471
@@ -2849,7 +2860,7 @@ Overfull \hbox (20.9727pt too wide) in alignment at lines 471--472
  [] [] 
  []
 
-[116
+[118
 
 ]
 Overfull \hbox (20.9727pt too wide) in alignment at lines 475--507
@@ -2865,7 +2876,7 @@ Overfull \hbox (20.9727pt too wide) in alignment at lines 507--508
  [] [] 
  []
 
-[117
+[119
 
 ]
 Overfull \hbox (20.9727pt too wide) in alignment at lines 511--529
@@ -2885,9 +2896,9 @@ Overfull \hbox (20.9727pt too wide) in alignment at lines 531--559
 Underfull \vbox (badness 10000) detected at line 559
  []
 
-[118
+[120
 
-] [119]
+] [121]
 Overfull \hbox (20.9727pt too wide) in alignment at lines 562--590
  [] [] 
  []
@@ -2896,7 +2907,7 @@ Overfull \hbox (20.9727pt too wide) in alignment at lines 562--590
 Underfull \vbox (badness 10000) detected at line 590
  []
 
-[120
+[122
 
 ]
 Overfull \hbox (20.9727pt too wide) in alignment at lines 593--621
@@ -2907,7 +2918,7 @@ Overfull \hbox (20.9727pt too wide) in alignment at lines 593--621
 Underfull \vbox (badness 10000) detected at line 621
  []
 
-[121
+[123
 
 ]
 Overfull \hbox (20.9727pt too wide) in alignment at lines 624--652
@@ -2918,7 +2929,7 @@ Overfull \hbox (20.9727pt too wide) in alignment at lines 624--652
 Underfull \vbox (badness 10000) detected at line 652
  []
 
-[122
+[124
 
 ]
 Overfull \hbox (20.9727pt too wide) in alignment at lines 655--683
@@ -2929,7 +2940,7 @@ Overfull \hbox (20.9727pt too wide) in alignment at lines 655--683
 Underfull \vbox (badness 10000) detected at line 683
  []
 
-[123
+[125
 
 ]
 Overfull \hbox (20.9727pt too wide) in alignment at lines 686--714
@@ -2940,7 +2951,7 @@ Overfull \hbox (20.9727pt too wide) in alignment at lines 686--714
 Underfull \vbox (badness 10000) detected at line 714
  []
 
-[124
+[126
 
 ]
 Overfull \hbox (20.9727pt too wide) in alignment at lines 717--745
@@ -2951,7 +2962,7 @@ Overfull \hbox (20.9727pt too wide) in alignment at lines 717--745
 Underfull \vbox (badness 10000) detected at line 745
  []
 
-[125
+[127
 
 ]
 Overfull \hbox (20.9727pt too wide) in alignment at lines 748--776
@@ -2962,54 +2973,48 @@ Overfull \hbox (20.9727pt too wide) in alignment at lines 748--776
 Underfull \vbox (badness 10000) detected at line 776
  []
 
-[126
+[128
 
 ])
 1: section
-[127
+[129
 
 
 
 ]
-Overfull \hbox (1.73643pt too wide) in paragraph at lines 288--288
+Overfull \hbox (1.73643pt too wide) in paragraph at lines 289--289
 \T1/ppl/m/n/10.95 Soft-ware. In: \T1/ppl/m/it/10.95 Aus-tralasian Con-fer-ence
  on Robotics and Au-toma-tion (ACRA) \T1/ppl/m/n/10.95 (2009). 
  []
 
 
-Overfull \hbox (2.49762pt too wide) in paragraph at lines 288--288
+Overfull \hbox (2.49762pt too wide) in paragraph at lines 289--289
 []\T1/ppl/m/n/10.95 Ronald T. Azuma.   A Sur-vey of Aug-mented Re-al-ity. In:
  \T1/ppl/m/it/10.95 Foun-da-tions and Trends
  []
 
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 288.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 289.
 (C:\TEX\MiKTeX\tex\latex\psnfss\t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
-Overfull \hbox (3.66933pt too wide) in paragraph at lines 288--288
+) [130]
+Overfull \hbox (3.66933pt too wide) in paragraph at lines 289--289
 []\T1/ppl/m/n/10.95 Deborah J. Arm-strong.   The Quarks of Object-oriented De-
 vel-op-ment. In: \T1/ppl/m/it/10.95 Com-
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 291.
-[128]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 291.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 292.
+[131]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 292.
  (main.aux (Chapters/Chapter1.aux) (Chapters/Chapter2.aux)
 (Chapters/Chapter3.aux) (Chapters/Chapter4.aux) (Chapters/Chapter5.aux)
 (Chapters/Chapter6.aux) (Chapters/Chapter7.aux) (Chapters/Chapter8.aux)
 (Chapters/Chapter9.aux) (Chapters/Chapter10.aux) (Chapters/Chapter11.aux)
 (Chapters/Chapter12.aux) (Appendices/AppendixTestResults.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 291.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 291.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 292.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 292.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 559AA194BB393BFE0A70B84CA2FEC8A1;13859.
 
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: DC5AA40363C6F71461F9DB7CD334F65B;13565
-(rerunfilecheck)             After:  79CECF7E44618A3CA54B4526FDD468F0;13656.
 
 LaTeX Warning: There were undefined references.
 
@@ -3021,255 +3026,24 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33367 strings out of 493334
- 665313 string characters out of 3145291
- 887071 words of memory out of 3000000
- 35965 multiletter control sequences out of 15000+200000
+ 33314 strings out of 493334
+ 664813 string characters out of 3145291
+ 890070 words of memory out of 3000000
+ 35978 multiletter control sequences out of 15000+200000
  48580 words of font info for 78 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 59i,20n,84p,10379b,2310s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{table.193} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{table.171} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{table.148} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{table.138} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{table.118} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{table.108} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{table.105} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{table.49} has been referenced but does not exist, r
-eplaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.135} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.125} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.121} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.117} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.115} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.103} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.99} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.92} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.90} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.88} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.82} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.73} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.71} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.68} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.65} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.61} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{appendix*.235} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.211} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{appendix.210} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.205} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.204} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.199} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.198} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.195} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.194} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.192} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.174} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.172} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.170} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.168} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.142} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.140} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.139} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.137} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.126} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.124} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.120} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.119} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.116} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.111} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.110} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.109} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.107} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.104} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.102} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.101} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.100} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.98} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.97} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{section.91} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.89} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.87} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.81} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.80} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{section.76} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.75} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{section.72} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{section.70} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.67} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{section.66} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{section.62} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{section.60} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.59} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.57} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.56} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.55} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{section.52} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{section.48} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.47} has been referenced but does not exist,
- replaced by a fixed one
-
-{C:/TEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<C:/TEX/MiKTeX/fonts/type1/publi
-c/amsfonts/cm/cmmi10.pfb><C:/TEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pf
-b><C:/TEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/TEX/MiKTeX/fonts/t
-ype1/public/amsfonts/cm/cmsy10.pfb><C:/TEX/MiKTeX/fonts/type1/public/amsfonts/c
-m/cmsy8.pfb><C:/TEX/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/TEX/MiKTeX/fo
-nts/type1/urw/palatino/uplb8a.pfb><C:/TEX/MiKTeX/fonts/type1/urw/palatino/uplr8
-a.pfb><C:/TEX/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/TEX/MiKTeX/fonts/t
-ype1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (139 pages, 7754726 bytes).
+ 60i,20n,84p,10379b,2597s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/TEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<C:/TEX/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmmi10.pfb><C:/TEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.
+pfb><C:/TEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/TEX/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmsy10.pfb><C:/TEX/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmsy8.pfb><C:/TEX/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/TEX/MiKTeX/
+fonts/type1/urw/palatino/uplb8a.pfb><C:/TEX/MiKTeX/fonts/type1/urw/palatino/upl
+r8a.pfb><C:/TEX/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/TEX/MiKTeX/fonts
+/type1/urw/palatino/uplri8a.pfb>
+Output written on main.pdf (143 pages, 7867722 bytes).
 PDF statistics:
- 1720 PDF objects out of 1728 (max. 8388607)
- 477 named destinations out of 1000 (max. 500000)
- 894 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1677 PDF objects out of 1728 (max. 8388607)
+ 410 named destinations out of 1000 (max. 500000)
+ 915 words of extra memory for PDF output out of 10000 (max. 10000000)
 
