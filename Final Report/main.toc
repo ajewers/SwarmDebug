@@ -11,7 +11,7 @@
 \contentsline {section}{\numberline {1.4}Aim and Objectives}{5}{section.16}
 \contentsline {section}{\numberline {1.5}Functional Specification}{6}{section.17}
 \contentsline {section}{\numberline {1.6}Report Structure}{7}{section.35}
-\contentsline {section}{\numberline {1.7}York Robotics Laboratory}{7}{section.36}
+\contentsline {section}{\numberline {1.7}York Robotics Laboratory}{8}{section.36}
 \contentsline {chapter}{\numberline {2}Literature Review}{9}{chapter.37}
 \contentsline {section}{\numberline {2.1}Overview}{9}{section.38}
 \contentsline {section}{\numberline {2.2}Swarm Intelligence and Swarm Robotics}{10}{section.39}
@@ -37,7 +37,7 @@
 \contentsline {section}{\numberline {5.5}Linux Extension Board}{36}{section.71}
 \contentsline {chapter}{\numberline {6}Video Tracking System}{38}{chapter.72}
 \contentsline {section}{\numberline {6.1}Camera}{39}{section.75}
-\contentsline {section}{\numberline {6.2}ARuCo Tracking System}{40}{section.77}
+\contentsline {section}{\numberline {6.2}ArUco Tracking System}{40}{section.77}
 \contentsline {chapter}{\numberline {7}Initial User Survey}{43}{chapter.80}
 \contentsline {section}{\numberline {7.1}Overview}{43}{section.81}
 \contentsline {section}{\numberline {7.2}Data}{43}{section.82}
