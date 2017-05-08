@@ -17,33 +17,31 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces The e-puck Robot}}{35}{figure.caption.66}
 \contentsline {figure}{\numberline {5.2}{\ignorespaces e-puck IR Sensor Layout}}{36}{figure.caption.70}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Tracking Camera Arrangement}}{37}{figure.caption.73}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Robot Arena and Tracking Camera}}{38}{figure.caption.74}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces JAI-Go Camera}}{39}{figure.caption.76}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces ArUco Markers}}{41}{figure.caption.78}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces ArUco Marker Mounted on E-Puck}}{41}{figure.caption.79}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Tracking Camera Arrangement}}{38}{figure.caption.73}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Robot Arena and Tracking Camera}}{39}{figure.caption.74}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces JAI-Go Camera}}{40}{figure.caption.76}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces ArUco Markers}}{41}{figure.caption.78}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces ArUco Marker Mounted on E-Puck}}{42}{figure.caption.79}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Software Architecture Diagram}}{49}{figure.caption.86}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Data Model Diagram}}{51}{figure.caption.92}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Visualiser Render Process Design}}{52}{figure.caption.94}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces UI Layout}}{53}{figure.caption.96}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces UI Example}}{54}{figure.caption.97}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Data Panel Designs}}{55}{figure.caption.98}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Visualiser Settings Tab Design}}{56}{figure.caption.99}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Visualiser Overlay Designs}}{58}{figure.caption.100}
 \addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Software Architecture Diagram}}{50}{figure.caption.87}
-\contentsline {figure}{\numberline {8.2}{\ignorespaces Data Model Diagram}}{52}{figure.caption.93}
-\contentsline {figure}{\numberline {8.3}{\ignorespaces Visualiser Render Process Design}}{53}{figure.caption.95}
-\contentsline {figure}{\numberline {8.4}{\ignorespaces UI Layout}}{54}{figure.caption.97}
-\contentsline {figure}{\numberline {8.5}{\ignorespaces UI Example}}{55}{figure.caption.98}
-\contentsline {figure}{\numberline {8.6}{\ignorespaces Data Panel Designs}}{56}{figure.caption.99}
-\contentsline {figure}{\numberline {8.7}{\ignorespaces Visualiser Settings Tab Design}}{57}{figure.caption.100}
-\contentsline {figure}{\numberline {8.8}{\ignorespaces Visualiser Overlay Designs}}{59}{figure.caption.101}
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {9.1}{\ignorespaces Application User Interface}}{61}{figure.caption.104}
-\contentsline {figure}{\numberline {9.2}{\ignorespaces Application Structure}}{64}{figure.caption.108}
-\contentsline {figure}{\numberline {9.3}{\ignorespaces Networking Code Flow Diagram}}{72}{figure.caption.120}
-\contentsline {figure}{\numberline {9.4}{\ignorespaces Data Format}}{73}{figure.caption.122}
-\contentsline {figure}{\numberline {9.5}{\ignorespaces Visualiser Panel}}{76}{figure.caption.126}
-\contentsline {figure}{\numberline {9.6}{\ignorespaces Robot List Panel}}{77}{figure.caption.127}
-\contentsline {figure}{\numberline {9.7}{\ignorespaces Data Panel}}{78}{figure.caption.128}
-\contentsline {figure}{\numberline {9.8}{\ignorespaces Visualiser Data Flow}}{80}{figure.caption.130}
-\contentsline {figure}{\numberline {9.9}{\ignorespaces Data Visualisations}}{81}{figure.caption.140}
-\contentsline {figure}{\numberline {9.10}{\ignorespaces Visualiser Settings Tab}}{83}{figure.caption.141}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Application User Interface}}{60}{figure.caption.103}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Application Structure}}{63}{figure.caption.107}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Networking Code Flow Diagram}}{71}{figure.caption.119}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Data Format}}{72}{figure.caption.121}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Visualiser Panel}}{75}{figure.caption.125}
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Robot List Panel}}{76}{figure.caption.126}
+\contentsline {figure}{\numberline {7.7}{\ignorespaces Data Panel}}{77}{figure.caption.127}
+\contentsline {figure}{\numberline {7.8}{\ignorespaces Visualiser Data Flow}}{79}{figure.caption.129}
+\contentsline {figure}{\numberline {7.9}{\ignorespaces Data Visualisations}}{80}{figure.caption.139}
+\contentsline {figure}{\numberline {7.10}{\ignorespaces Visualiser Settings Tab}}{82}{figure.caption.140}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
