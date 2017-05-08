@@ -15,9 +15,37 @@ The user evaluation sessions used to evaluate the system followed an observed te
 \subsection{Set Up}
 Four robots were used during the sessions. Two simple behaviours were programmed for the robots prior to the start of the sessions. The first was a very simple test controller behaviour which had the robot drive slowly in a circular path, whilst reporting data for all of the types defined in the system. This included a watchdog packet every ten control steps containing a unique name for each robot,  varying state, which would change every fifty control steps between three possible values, active and background IR data, an arbitrary log message packet every hundred control steps and a custom data packet every ten control steps, containing the current total number of control steps as the data portion. The second behaviour was a simple dispersion behaviour, which would cause the robot to turn and drive away from any nearby object. This was achieved by monitoring the values of the robots IR sensors and calculating a heading vector in the opposite direction to any sensors above a certain threshold. Whilst executing this behaviour the robot was also reporting debugging information to the application. This included watchdog packets, active and passive IR data as before, and the control step as custom data all as before, as well as the state of the robot (which varied between \textit{IDLE} and \textit{MOVING}, depending on whether the robots IR threshold had been met, causing it to move). The IR value threshold in this behaviour was deliberately set too low, causing the robots to occasionally move randomly as a result of the fluctuations in the IR readings due to noise. This was done to simulate a bug in the robot's behaviour code, which participants were then asked to attempt to locate the cause of and fix using the debugging system.
 
-Prior to the start of each session the robots were returned to this initial set up, with the two behaviours loaded and the first behaviour running. It was important that this starting set up be the same for each participant, in order for the results to be comparable.
+Prior to the start of each session the robots were returned to this initial state, with the two behaviours loaded and the first behaviour running. The application was not set up in any way, and was run fresh for each session. It was important that this starting set up be the same for each participant, in order for the results to be comparable.
 
-\subsection{Session Tasks}
+\subsection{Session Sequence}
+The following sequence of steps was then carried out for each session. Where a user was asked to complete a task or use an element of the interface the instructions given were deliberately kept minimal, to see if the interface could be intuitively navigated. Participants were asked to say if they could not determine how to complete one of the tasks, at which point further guidance was given. Relevant observational notes were taken at each step.
+
+\begin{enumerate}
+ \item Introduce the application to the participant, and have them run the executable.
+ \item Explain the purpose of the application, and the purpose of this evaluation session.
+ \item Indicate the key features within the application. Specifically identify the visualiser and explain its purpose, as well as the robot list panel and the data panel.
+ \item Ask the user to start the application listening for data packets on the network. Mention that this functionality can be found on the network tab only if necessary.
+ \item The simple circular motion controller code should be running on the robots already. If it is not, run it now.
+ \item Ask the participant to obtain the following pieces of information:
+ \begin{itemize}
+  \item The current state of robot 1
+  \item The recent state changes of robot 2
+  \item The current IR sensor values of robot 3
+  \item The current value of the `ControlStep' custom data point for robot 4
+  \item The set of known states for robot 1
+  \item The numerical angle describing the orientation of robot 2
+ \end{itemize}
+ \item Ask the user to use the visualiser settings tab to achieve the following:
+ \begin{itemize}
+  \item Hide the name and state visualisation for all robots
+  \item Display the recent path for all robots
+  \item Display the IR sensor data for the selected robot in heat mode
+  \item Hide the position and orientation visualisation for all robots
+  \item Display the custom data point ControlStep for the selected robot.
+ \end{itemize}
+ \item Ask the user to use the camera settings tab to add a mapping from ARuCo tag ID 2 to robot ID 10. Explain further if necessary.
+ \item Ask the user to use the logging tab to 
+\end{enumerate}
 
 
 %----------------------------------------------------------------------------------------
