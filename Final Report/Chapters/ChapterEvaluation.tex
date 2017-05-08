@@ -1,0 +1,45 @@
+% Evaluation Chapter
+
+\chapter[System Evaluation]{System Evaluation} % Main chapter title
+
+\label{ChapterEvaluation} % For referencing the chapter elsewhere, use \ref{Chapter10} 
+
+The final stage in this project was system evaluation. Software testing can be used to verify that a system works as intended, however as the system created in this project is experimental in nature, it was also necessary to determine the extent to which it is useful in practice. The purpose of the system evaluation stage was therefore to have the system be used for its intended purpose and evaluate its effectiveness. In order to achieve this \textit{User Evaluation Sessions} were carried out, where potential system users with no involvement in the system's development were asked to use the system to complete a number of tasks, and data was recorded regarding their experience. This data was obtained through direct observation of the participants interaction with the system, and through a follow up questionnaire designed to gauge their opinions on the system.
+
+%----------------------------------------------------------------------------------------
+
+\section{Method}
+
+The user evaluation sessions used to evaluate the system followed an observed testing format. Participants were given control of the system, which was initialised to a known state, and asked to complete a number of tasks, ranging from simple information and data location and retrieval to a full simulated debugging task. Data was collected by taking notes on how the participants interacted with the system, including any difficulties they had, and any comments they made whilst using it. The process was structured as follows:
+
+\subsection{Set Up}
+Four robots were used during the sessions. Two simple behaviours were programmed for the robots prior to the start of the sessions. The first was a very simple test controller behaviour which had the robot drive slowly in a circular path, whilst reporting data for all of the types defined in the system. This included a watchdog packet every ten control steps containing a unique name for each robot,  varying state, which would change every fifty control steps between three possible values, active and background IR data, an arbitrary log message packet every hundred control steps and a custom data packet every ten control steps, containing the current total number of control steps as the data portion. The second behaviour was a simple dispersion behaviour, which would cause the robot to turn and drive away from any nearby object. This was achieved by monitoring the values of the robots IR sensors and calculating a heading vector in the opposite direction to any sensors above a certain threshold. Whilst executing this behaviour the robot was also reporting debugging information to the application. This included watchdog packets, active and passive IR data as before, and the control step as custom data all as before, as well as the state of the robot (which varied between \textit{IDLE} and \textit{MOVING}, depending on whether the robots IR threshold had been met, causing it to move). The IR value threshold in this behaviour was deliberately set too low, causing the robots to occasionally move randomly as a result of the fluctuations in the IR readings due to noise. This was done to simulate a bug in the robot's behaviour code, which participants were then asked to attempt to locate the cause of and fix using the debugging system.
+
+Prior to the start of each session the robots were returned to this initial set up, with the two behaviours loaded and the first behaviour running. It was important that this starting set up be the same for each participant, in order for the results to be comparable.
+
+\subsection{Session Tasks}
+
+
+%----------------------------------------------------------------------------------------
+
+\section{Participants}
+
+Two groups of participants took part in the user evaluation sessions. The first was comprised of `\textit{domain experts}'; researchers and other technical people with experience in the field of swarm robotics. This group were more likely to have an understanding of the needs of the system's target users, and therefore their input was considered more valuable. However because of the relatively niche nature of the field, the availability of participants in this category was limited. Hence only a small number could be found to participate in the sessions.
+
+In order to remedy this lack of participants, the second group was introduced. This group was comprised primarily of engineering students, who had little or no experience with swarm robotics specifically, beyond a basic understanding of the core concepts. Where necessary an introduction to the core concepts was given before the session. This group did however possess general knowledge regarding software development, as this was necessary to complete the sessions effectively. The results obtained from this group were therefore mostly useful to evaluate elements of the system unrelated to swarm robotics, such as the usability of the user interface and the clarity of information display. This difference is reflected in the analysis of the results.
+
+%----------------------------------------------------------------------------------------
+
+\section{Results}
+
+
+
+
+%----------------------------------------------------------------------------------------
+
+\section{Analysis}
+
+
+
+
+%----------------------------------------------------------------------------------------

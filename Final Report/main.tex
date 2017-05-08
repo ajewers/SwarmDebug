@@ -51,6 +51,7 @@ headsepline, % Uncomment to get a line under the header
 
 \usepackage{longtable}
 \usepackage{enumitem}
+\usepackage{pdfpages}
 
 \edef\restoreparindent{\parindent=\the\parindent\relax}
 \usepackage{parskip}
@@ -103,6 +104,8 @@ headsepline, % Uncomment to get a line under the header
 %----------------------------------------------------------------------------------------
 %	TITLE PAGE
 %----------------------------------------------------------------------------------------
+
+\includepdf[pages={1}]{CoverPage.pdf}
 
 \begin{titlepage}
 \begin{center}
@@ -266,6 +269,7 @@ The acknowledgements and the people to thank go here, don't forget to include yo
 \include{Chapters/Chapter8}
 \include{Chapters/Chapter9}
 \include{Chapters/Chapter10}
+\include{Chapters/ChapterEvaluation}
 \include{Chapters/Chapter11}
 \include{Chapters/Chapter12}
 

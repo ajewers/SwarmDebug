@@ -1,6 +1,6 @@
 1. Introduce the application, its purpose, the purpose of this evaluation. Open the application and indicate all of the key features.
 
-2. Ask the user to start the application listening for robot data on port 8888.
+2. Ask the user to start listening for robot data on port 8888.
 
 3. Run simple circular motion test controller code on three robots. Ask the user to locate the following information:
 
@@ -16,5 +16,9 @@
  - Display the IR sensor data for the selected robot, in heat mode
  - Show the average robot position marker
  - Display the custom data point ControlStep for all three robots
+ 
+5. Ask the user to use the camera settings tab to achieve the following:
+
+ - Map ARuCo tag ID 2 to robot ID 10
 
 5. Run the dispersion behaviour code with known fault (sensor threshold value too low). Explain the desired behaviour, and the erroneous behaviour (uneccesary movement). Ask the user to attempt to locate the cause of the fault, using the system.

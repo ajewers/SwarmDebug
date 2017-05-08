@@ -51,6 +51,7 @@ headsepline, % Uncomment to get a line under the header
 
 \usepackage{longtable}
 \usepackage{enumitem}
+\usepackage{pdfpages}
 
 \edef\restoreparindent{\parindent=\the\parindent\relax}
 \usepackage{parskip}
@@ -104,6 +105,8 @@ headsepline, % Uncomment to get a line under the header
 %	TITLE PAGE
 %----------------------------------------------------------------------------------------
 
+\includepdf[pages={1}]{CoverPage.pdf}
+
 \begin{titlepage}
 \begin{center}
 
@@ -118,13 +121,13 @@ headsepline, % Uncomment to get a line under the header
 \begin{minipage}[t]{0.4\textwidth}
 \begin{flushleft} \large
 \emph{Author:}\\
-\href{http://www.johnsmith.com}{\authorname} % Author name - remove the \href bracket to remove the link
+\authorname % Author name - remove the \href bracket to remove the link
 \end{flushleft}
 \end{minipage}
 \begin{minipage}[t]{0.4\textwidth}
 \begin{flushright} \large
 \emph{Supervisor:} \\
-\href{http://www.jamessmith.com}{\supname} % Supervisor name - remove the \href bracket to remove the link  
+\supname % Supervisor name - remove the \href bracket to remove the link  
 \end{flushright}
 \end{minipage}\\[3cm]
  
@@ -266,6 +269,7 @@ The acknowledgements and the people to thank go here, don't forget to include yo
 \include{Chapters/Chapter8}
 \include{Chapters/Chapter9}
 \include{Chapters/Chapter10}
+\include{Chapters/ChapterEvaluation}
 \include{Chapters/Chapter11}
 \include{Chapters/Chapter12}
 

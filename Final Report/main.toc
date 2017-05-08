@@ -64,7 +64,7 @@
 \contentsline {section}{\numberline {9.10}Visualiser}{79}{section.129}
 \contentsline {subsection}{\numberline {9.10.1}Data Visualisations}{80}{subsection.131}
 \contentsline {section}{\numberline {9.11}Robot Side API}{84}{section.142}
-\contentsline {chapter}{\numberline {10}Testing and Evaluation}{86}{chapter.144}
+\contentsline {chapter}{\numberline {10}Testing}{86}{chapter.144}
 \contentsline {section}{\numberline {10.1}Continuous Integration Testing}{86}{section.145}
 \contentsline {section}{\numberline {10.2}Manual User Interface Testing}{87}{section.146}
 \contentsline {subsection}{\numberline {10.2.1}Method}{87}{subsection.147}
@@ -75,22 +75,26 @@
 \contentsline {subsection}{\numberline {10.3.2}Issues with this Approach}{94}{subsection.178}
 \contentsline {section}{\numberline {10.4}Verification and Validation Testing}{95}{section.179}
 \contentsline {section}{\numberline {10.5}Results}{97}{section.197}
-\contentsline {section}{\numberline {10.6}Evaluation}{99}{section.199}
-\contentsline {subsection}{\numberline {10.6.1}Method}{99}{subsection.200}
-\contentsline {subsection}{\numberline {10.6.2}Results}{99}{subsection.201}
-\contentsline {subsection}{\numberline {10.6.3}Analysis}{99}{subsection.202}
-\contentsline {chapter}{\numberline {11}Future Work}{100}{chapter.203}
-\contentsline {section}{\numberline {11.1}Additional Debugging Features}{100}{section.204}
-\contentsline {section}{\numberline {11.2}Platform Development}{101}{section.205}
-\contentsline {section}{\numberline {11.3}Expansion of Target Platforms}{102}{section.206}
-\contentsline {section}{\numberline {11.4}Integration with Augmented Reality Hardware}{102}{section.207}
-\contentsline {section}{\numberline {11.5}Integration with Tablet Application}{103}{section.208}
-\contentsline {chapter}{\numberline {12}Conclusion}{104}{chapter.209}
-\contentsline {section}{\numberline {12.1}Overview}{104}{section.210}
-\contentsline {section}{\numberline {12.2}Evaluation Against Aims and Objectives}{104}{section.211}
-\contentsline {section}{\numberline {12.3}System Limitations}{104}{section.212}
-\contentsline {section}{\numberline {12.4}Use Within the York Robotics Laboratory}{104}{section.213}
-\contentsline {section}{\numberline {12.5}Value Within the Swarm Robotics Space}{104}{section.214}
-\contentsline {chapter}{\numberline {A}Test Results}{105}{appendix.215}
-\contentsline {section}{\numberline {A.1}Manual UI Testing}{105}{section.216}
-\contentsline {chapter}{Bibliography}{129}{appendix*.240}
+\contentsline {section}{\numberline {10.6}Analysis}{99}{section.199}
+\contentsline {chapter}{\numberline {11}System Evaluation}{100}{chapter.200}
+\contentsline {section}{\numberline {11.1}Method}{100}{section.201}
+\contentsline {subsection}{\numberline {11.1.1}Set Up}{100}{subsection.202}
+\contentsline {subsection}{\numberline {11.1.2}Session Tasks}{101}{subsection.203}
+\contentsline {section}{\numberline {11.2}Participants}{101}{section.204}
+\contentsline {section}{\numberline {11.3}Results}{102}{section.205}
+\contentsline {section}{\numberline {11.4}Analysis}{102}{section.206}
+\contentsline {chapter}{\numberline {12}Future Work}{103}{chapter.207}
+\contentsline {section}{\numberline {12.1}Additional Debugging Features}{103}{section.208}
+\contentsline {section}{\numberline {12.2}Platform Development}{104}{section.209}
+\contentsline {section}{\numberline {12.3}Expansion of Target Platforms}{105}{section.210}
+\contentsline {section}{\numberline {12.4}Integration with Augmented Reality Hardware}{105}{section.211}
+\contentsline {section}{\numberline {12.5}Integration with Tablet Application}{106}{section.212}
+\contentsline {chapter}{\numberline {13}Conclusion}{107}{chapter.213}
+\contentsline {section}{\numberline {13.1}Overview}{107}{section.214}
+\contentsline {section}{\numberline {13.2}Evaluation Against Aims and Objectives}{107}{section.215}
+\contentsline {section}{\numberline {13.3}System Limitations}{107}{section.216}
+\contentsline {section}{\numberline {13.4}Use Within the York Robotics Laboratory}{107}{section.217}
+\contentsline {section}{\numberline {13.5}Value Within the Swarm Robotics Space}{107}{section.218}
+\contentsline {chapter}{\numberline {A}Test Results}{108}{appendix.219}
+\contentsline {section}{\numberline {A.1}Manual UI Testing}{108}{section.220}
+\contentsline {chapter}{Bibliography}{132}{appendix*.244}

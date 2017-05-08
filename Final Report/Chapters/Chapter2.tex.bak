@@ -88,7 +88,7 @@ In their `\textit{NUbugger}' system \cite{Annable:2014}, Annable, Budden and Men
 \section{AR and Robotics} \label{AugmentedReality}
 Augmented Reality is the term used to describe the process of super-imposing `virtual' objects and elements, in the form of computer generated graphics, on to a live video image of the real world \cite{Azuma:1997}. The general aim of any augmented reality system is to give the impression that the virtual objects being rendered are actually situated within the users real environment, and to allow the user to interact with them as such. True AR is sometimes defined as requiring the use of a Head-Mounted Display, as this leads to the much more immersive qualities of Virtual Reality, from which AR is derived. However this is not a universal requirement, and in one of the most widely cited surveys of the topic, Azuma \cite{Azuma:1997} provides a definition which states only three requirements of an AR system; the combination of virtual and real content, real time interaction, and 3D rendering. Figure \ref{fig:ARBasic} shows the example image used in Azuma's \cite{Azuma:1997} survey. It includes a view of a real table, augmented by virtual furniture.
 
-\begin{figure}[b]
+\begin{figure}[h]
 	\begin{center}
 	\includegraphics[scale=1.2]{ARBasic.png}
 	\decoRule
