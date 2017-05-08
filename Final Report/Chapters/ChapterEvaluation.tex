@@ -10,7 +10,7 @@ The final stage in this project was system evaluation. Software testing can be u
 
 \section{Method}
 
-The user evaluation sessions used to evaluate the system followed an observed testing format. Participants were given control of the system, which was initialised to a known state, and asked to complete a number of tasks, ranging from simple information and data location and retrieval to a full simulated debugging task. Data was collected by taking notes on how the participants interacted with the system, including any difficulties they had, and any comments they made whilst using it. The process was structured as follows:
+The user evaluation sessions followed an observed testing format. Participants were given control of the system, which was initialised to a known state, and asked to complete a number of tasks, ranging from simple information and data location and retrieval to a full simulated debugging task. Data was collected by taking notes on how the participants interacted with the system, including any difficulties they had, and any comments they made whilst using it. The primary areas of interest for these notes were how easily the participant was able to navigate the user interface and obtain information, how often they asked for additional information, and what they asked for information regarding, as well as if (and how quickly) they were able to isolate and correct the deliberate behavioural fault. The process was structured as follows:
 
 \subsection{Set Up}
 Four robots were used during the sessions. Two simple behaviours were programmed for the robots prior to the start of the sessions. The first was a very simple test controller behaviour which had the robot drive slowly in a circular path, whilst reporting data for all of the types defined in the system. This included a watchdog packet every ten control steps containing a unique name for each robot,  varying state, which would change every fifty control steps between three possible values, active and background IR data, an arbitrary log message packet every hundred control steps and a custom data packet every ten control steps, containing the current total number of control steps as the data portion. The second behaviour was a simple dispersion behaviour, which would cause the robot to turn and drive away from any nearby object. This was achieved by monitoring the values of the robots IR sensors and calculating a heading vector in the opposite direction to any sensors above a certain threshold. Whilst executing this behaviour the robot was also reporting debugging information to the application. This included watchdog packets, active and passive IR data as before, and the control step as custom data all as before, as well as the state of the robot (which varied between \textit{IDLE} and \textit{MOVING}, depending on whether the robots IR threshold had been met, causing it to move). The IR value threshold in this behaviour was deliberately set too low, causing the robots to occasionally move randomly as a result of the fluctuations in the IR readings due to noise. This was done to simulate a bug in the robot's behaviour code, which participants were then asked to attempt to locate the cause of and fix using the debugging system.
@@ -24,29 +24,127 @@ The following sequence of steps was then carried out for each session. Where a u
  \item Introduce the application to the participant, and have them run the executable.
  \item Explain the purpose of the application, and the purpose of this evaluation session.
  \item Indicate the key features within the application. Specifically identify the visualiser and explain its purpose, as well as the robot list panel and the data panel.
- \item Ask the user to start the application listening for data packets on the network. Mention that this functionality can be found on the network tab only if necessary.
+ \item Ask the participant to start the application listening for data packets on the network. Mention that this functionality can be found on the network tab only if necessary.
  \item The simple circular motion controller code should be running on the robots already. If it is not, run it now.
  \item Ask the participant to obtain the following pieces of information:
- \begin{itemize}
+ \begin{enumerate}
   \item The current state of robot 1
   \item The recent state changes of robot 2
   \item The current IR sensor values of robot 3
   \item The current value of the `ControlStep' custom data point for robot 4
   \item The set of known states for robot 1
   \item The numerical angle describing the orientation of robot 2
- \end{itemize}
- \item Ask the user to use the visualiser settings tab to achieve the following:
- \begin{itemize}
+ \end{enumerate}
+ \item Ask the participant to use the visualiser settings tab to achieve the following:
+ \begin{enumerate}
   \item Hide the name and state visualisation for all robots
   \item Display the recent path for all robots
   \item Display the IR sensor data for the selected robot in heat mode
   \item Hide the position and orientation visualisation for all robots
-  \item Display the custom data point ControlStep for the selected robot.
- \end{itemize}
- \item Ask the user to use the camera settings tab to add a mapping from ARuCo tag ID 2 to robot ID 10. Explain further if necessary.
- \item Ask the user to use the logging tab to 
+  \item Display the custom data point `ControlStep' for the selected robot.
+ \end{enumerate}
+ \item Ask the participant to use the camera settings tab to add a mapping from ARuCo tag ID 2 to robot ID 10. Explain further if necessary.
+ \item Ask the participant to use the logging tab to achieve the following:
+ \begin{enumerate}
+  \item Set the logging directory to a specific folder
+  \item Start logging for a short period of time and then stop it.
+ \end{enumerate}
+ \item Stop the circular motion behaviour on the robots and switch to the dispersion behaviour.
+ \item Make the dispersion behaviour source code available to the user.
+ \item Explain the desired behaviour to the participant, and the current erroneous behaviour.
+ \item Ask the participant to attempt to locate the cause of the issue using the data made available by the debugging system. Provide hints and advice only if necessary.
 \end{enumerate}
 
+\subsection{Questionnaire}
+Following the practical session, participants were asked to complete a questionnaire regarding their experience, and their opinions of the system and its features. The questionnaire included the following questions:
+
+\noindent\textbf{Question 1: How would you rate your overall impression of the user interface?}\\(Scale of 1 to 5, poor to excellent)
+
+\begin{center}
+\begin{tabular}{ l c c c c c c }
+ Group & 1 & 2 & 3 & 4 & 5 & Average \\ 
+ \hline
+ Domain Experts & x & x & x & x & x & a \\
+ Others 		& x & x & x & x & x & a \\
+\end{tabular}
+\end{center}
+
+\noindent\textbf{Question 2: }\\(Scale of 1 to 5, )
+
+\begin{center}
+\begin{tabular}{ l c c c c c c }
+ Group & 1 & 2 & 3 & 4 & 5 & Average \\ 
+ \hline
+ Domain Experts & x & x & x & x & x & a \\
+ Others 		& x & x & x & x & x & a \\
+\end{tabular}
+\end{center}
+
+\noindent\textbf{Question 3: }\\(Scale of 1 to 5, )
+
+\begin{center}
+\begin{tabular}{ l c c c c c c }
+ Group & 1 & 2 & 3 & 4 & 5 & Average \\ 
+ \hline
+ Domain Experts & x & x & x & x & x & a \\
+ Others 		& x & x & x & x & x & a \\
+\end{tabular}
+\end{center}
+
+\noindent\textbf{Question 4: }\\(Scale of 1 to 5, )
+
+\begin{center}
+\begin{tabular}{ l c c c c c c }
+ Group & 1 & 2 & 3 & 4 & 5 & Average \\ 
+ \hline
+ Domain Experts & x & x & x & x & x & a \\
+ Others 		& x & x & x & x & x & a \\
+\end{tabular}
+\end{center}
+
+\noindent\textbf{Question 5: }\\(Scale of 1 to 5, )
+
+\begin{center}
+\begin{tabular}{ l c c c c c c }
+ Group & 1 & 2 & 3 & 4 & 5 & Average \\ 
+ \hline
+ Domain Experts & x & x & x & x & x & a \\
+ Others 		& x & x & x & x & x & a \\
+\end{tabular}
+\end{center}
+
+\noindent\textbf{Question 6: }\\(Scale of 1 to 5, )
+
+\begin{center}
+\begin{tabular}{ l c c c c c c }
+ Group & 1 & 2 & 3 & 4 & 5 & Average \\ 
+ \hline
+ Domain Experts & x & x & x & x & x & a \\
+ Others 		& x & x & x & x & x & a \\
+\end{tabular}
+\end{center}
+
+\noindent\textbf{Question 7: }\\(Scale of 1 to 5, )
+
+\begin{center}
+\begin{tabular}{ l c c c c c c }
+ Group & 1 & 2 & 3 & 4 & 5 & Average \\ 
+ \hline
+ Domain Experts & x & x & x & x & x & a \\
+ Others 		& x & x & x & x & x & a \\
+\end{tabular}
+\end{center}
+
+\noindent\textbf{Question 8: }\\(Scale of 1 to 5, )
+
+\begin{center}
+\begin{tabular}{ l c c c c c c }
+ Group & 1 & 2 & 3 & 4 & 5 & Average \\ 
+ \hline
+ Domain Experts & x & x & x & x & x & a \\
+ Others 		& x & x & x & x & x & a \\
+\end{tabular}
+\end{center}
 
 %----------------------------------------------------------------------------------------
 
