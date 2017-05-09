@@ -1,0 +1,86 @@
+% Chapter Conclusion
+
+\chapter[Conclusions and Future Work]{Conclusions and Future Work} % Main chapter title
+
+\label{ChapterConclusion} % For referencing the chapter elsewhere, use \ref{ChapterConclusion} 
+
+%----------------------------------------------------------------------------------------
+
+\section{Project Results Summary}
+This project has resulted in the creation of a system capable of aiding a developer in the task of debugging a robot swarm, through the retrieval and display of previously hard to obtain internal state and sensor data.
+
+%----------------------------------------------------------------------------------------
+
+\section{Evaluation Against Aims and Objectives}
+
+
+%----------------------------------------------------------------------------------------
+
+\section{System Limitations}
+
+- Requires code to be added to the robot behaviour to report information, and therefore behaviour may change, especially if this code is removed after debugging.
+
+
+%----------------------------------------------------------------------------------------
+
+\section{Use Within the York Robotics Laboratory}
+
+One of the key aims of this project was to create a system which is practical, usable, and offers real benefit to swarm robotics developers and researchers. In this capacity it is hoped that the application will continue to be used within the YRL to aid in swarm robotics research and development efforts, and that the application itself will see further development to build upon its core functionality in some of the ways previously mentioned.
+
+%----------------------------------------------------------------------------------------
+
+\section{Value Within the Swarm Robotics Space}
+
+
+%----------------------------------------------------------------------------------------
+
+\section{Future Work} 
+
+This project has focused on developing the first version of this swarm robotics debugging system. Responses to the initial user survey, and anecdotal comments from members of the York Robotics Laboratory have indicated that there is an interest in seeing the development of this system continue and its capabilities expanded to a number of new areas. This section discusses potential directions that future development could take, and considers how these might benefit users of the system. Some key areas for potential development are as follows:
+
+\begin{itemize}
+ \item Implementation of additional debugging features.
+ \item Implementation of analytical and experiment-enabling features, such as macro level analysis and data export, leading to the system becoming a full swarm robotics research and development platform.
+ \item Expansion of the target robot platforms and supported hardware.
+ \item Integration with native augmented reality hardware.
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+
+\subsection{Additional Debugging Features}
+
+- additional features
+
+It is almost impossible to predict all of the possible types of data, or possible ways of visualising this data that might be desired by users of this system, as each swarm behaviour will have its own unique features and needs, and each different robot platform will have a different set of sensors and actuators. Therefore trying to create specific visualisations that cover all the possibilities is simply infeasible. Instead an approach that might yield much more flexible and useful results could be to incorporate a scripting language, and an API for the visualiser, allowing users to write small simple scripts which provide definitions for custom visualisations. The user could then save these scripts and select them from within the application, and the visualiser would run the scripts with data from the data model to generate the custom visualisations. These scripts could be written in a language such as \textit{Python}, or \textit{LUA}, and then called from within the application using a framework such as `\textit{Boost.Python}'. One downside to this approach would be the requirement for users to have some knowledge of programming, however considering the target users of the system are robotics developers and researchers, it seems unlikely that they would not be familiar with programming concepts. A well designed API could help to keep the requirements for these visualisation scripts simple, reducing the burden on the user. A visualisation scripting system of this nature would have the added benefit of allowing scripts to be shared, potentially leading to collaborative and faster, more effective discovery of useful ways to visualise robotic data.
+
+%----------------------------------------------------------------------------------------
+
+\subsection{Towards a Full Swarm Robotics Research and Development Platform}
+
+The system could be further developed to become a full platform for swarm robotics research and development, which would be used not only for debugging swarm behaviours but also for running and monitoring swarm experiments and collecting experimental data. A number of additional features would be key to making this step forward. Firstly an organised method for managing experiment `runs', coupled with a more robust data logging system, could be implemented. This would allow the user to specify when an experiment run was taking place, and record and organise data related to each experiment run. This data could then be used when analysing the results of the experiment. The user could also control which elements of the data should be recorded, to ensure relevance to the experiment being run. The system could also be extended to support bi-directional communication, in order to send simple commands to the robots. This could include commands to start, stop, pause and restart specific behaviours or experiments. When coupled with the improved data logging and experiment organisation this could allow a user to start and stop experiment runs without having to interact directly with each robot, allowing them all to be started simultaneously. This bi-directional communication could also send other types of commands to the robots, potentially experiment-specific, user-defined ones, that might give high level directives to control swarm behaviour.
+
+The addition of higher level analytical features, focusing on the behaviour of the overall swarm rather than the individual robots, could also contribute to the system's use as a swarm robotics platform. These could analyse useful swarm-level parameters such as aggregate position over time, and distributions such as spread and skew. Behaviour significantly different from the average could also potentially be highlighted. This is often the kind of data that is used to judge whether a swarm is behaving correctly. This extra analysis could be coupled with new visualisations, for example giving a visual indicator of a swarms average position, and tracking its changed over time.
+
+The augmented video feed is one of the key features of the application, and could be extended to allow for video to be recorded directly from this feed and exported. This would allow a user to watch back experiment runs and replay specific sections, perhaps gaining insight into specific interactions or trends within the swarms behaviour. Exported video could also be used for demonstration purposes, with the graphical augmentations adding context for the viewer.
+
+%----------------------------------------------------------------------------------------
+
+\subsection{Expansion of Supported Hardware}
+
+Wherever possible this system has been implemented with portability in mind, with the aim of allowing different robots to be easily incorporated into the system. The use of ArUco tags to achieve robot tracking means this portion of the system is fully independent of the robots, requiring no specific hardware, only simple printed paper tags as a minimum. The robot side code has also been designed to be as portable as possible, however it still has two main requirements which are fairly specific; the robots must be running linux, and they must be able to connect to a WiFi network. WiFi connectivity is not always common amongst smaller robot platforms, with many instead utilising Bluetooth to achieve wireless communications. Therefore implementing Bluetooth communication support within the application, alongside WiFi, and adding Bluetooth support to the robot side API could significantly increase the number of robotic platforms on which the system could be used.
+
+Currently the system supports only one specific machine vision camera. A major challenge in the future development of this system will be to find a way to support multiple different camera set ups, with potentially bespoke drivers and APIs, in a way which requires minimal or ideally no changes to the code. One way to achieve this might be to extend the application to be able to receive the video feed via a network, leaving it up to the user to implement a system which obtains the video from their specific camera set up and sends it to the application. This would also allow the application to be run on a machine without a physical connection to the camera hardware. One of the main barriers to this approach, and the reason it was not included in this implementation, is the high bandwidth required to transmit the video feed.
+
+%----------------------------------------------------------------------------------------
+
+\subsection{Integration with Dedicated Augmented Reality Hardware}
+
+In recent years there has been rapid development in augmented reality technology, with the technology beginning to find its way into real world applications. Dedicated hardware platforms such as Microsoft HoloLens, Google Glass, and Google Cardboard have given consumers a first taste of real, perspective based, head mounted, augmented reality. By contrast, the version of augmented reality used in this project is simplistic, and fairly limited. In the future, a combination of a swarm robotics tool such as the system developed in this project, and dedicated AR hardware, could lead to much more immersive and effective human-robot interaction. The data visualisation could be developed to support full 3D, and utilise the motion tracking abilities of these hardware platforms,and the orientation calculation features built into the ArUco system, to render the augmentations from any perspective. This report firmly believes that, considering the immense potential of augmented reality systems when coupled with robotics, the use of AR-based tools when working with robots will become commonplace.
+
+%----------------------------------------------------------------------------------------
+
+\subsection{Integration with Tablet Application}
+
+Another project being completed at the University of York, simultaneously with this project, has implemented a similar swarm debugging system as an Android app for a tablet computer. The main aim of this approach is to allow the user to be more mobile whilst using the system, so that they can interact with the swarm in a hands on fashion whilst also having immediate access to internal data from the robots. In the future the tablet application could be integrated with the application developed in this project, to form a single platform, with the tablet acting as a satellite terminal through which the user can access the system.
+
+%----------------------------------------------------------------------------------------

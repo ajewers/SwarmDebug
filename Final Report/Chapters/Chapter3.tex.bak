@@ -1,4 +1,4 @@
-% Chapter 3
+% Chapter Project Plan
 
 \chapter[Project Plan]{Project Plan} % Main chapter title
 
@@ -91,7 +91,7 @@ Create a System Evaluation and User Testing Plan & To devise a plan for evaluati
 \\
 User Evaluation Sessions & To evaluate the system by allowing a number of users to use it in a structured evaluation session.
 \\
-	\bottomrule\\
+	\bottomrule
 	\label{tab:OtherTasks}
 \end{longtable}
 
