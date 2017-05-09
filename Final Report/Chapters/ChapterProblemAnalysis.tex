@@ -17,67 +17,73 @@ A survey was carried out within the YRL in order to determine how best to implem
 \subsection{Data}
 \noindent\textbf{Question 1: Do you believe that a system for displaying internal robot data for a swarm of robots in real time would be useful when debugging swarm robotics behaviours and/or conducting swarm robotics experiments?}
 
-\begin{longtable}{ c c c }
- Answer & Votes & Percentage \\ 
+\begin{longtable}{ l c c }
+ \textbf{Answer} & \textbf{Votes} & \textbf{Percentage} \\ 
  \hline
  Yes & 4 & 80 \\ 
  No & 1 & 20 \\
  No Opinion & 0 & 0 \\
  \bottomrule
- \caption{Response to question 1.}
+ \caption{Responses to Question 1.}
  \label{tab:QuestionOneData}
 \end{longtable}
 
+\clearpage
 \noindent\textbf{Question 2: Do you believe that such a system would benefit from the inclusion of an 'augmented reality' component - whereby data retrieved from the robots could be displayed in graphical forms, overlaid on a live video feed of the robots themselves?}
 
-\begin{center}
-\begin{tabular}{ c c c }
- Answer & Votes & Percentage \\ 
+\begin{longtable}{ l c c }
+ \textbf{Answer} & \textbf{Votes} & \textbf{Percentage} \\ 
  \hline
  Yes & 5 & 100 \\ 
  No & 0 & 0 \\
  No Opinion & 0 & 0 \\
-\end{tabular}
-\end{center}
-
-\vspace{2cm}
+ \bottomrule
+ \caption{Responses to Question 2.}
+ \label{tab:QuestionTwoData}
+\end{longtable}
 
 \noindent\textbf{Question 3: Please rate each of the following potential features based on your opinion of their importance or usefulness to the system proposed, on a scale of one to five, where one indicates a feature is not important or useful, and five indicates a feature is very important or useful.}
 
-On the questionnaire the values of one to five were qualified as `\textit{Not important or useful}', `\textit{Unlikely to be important or useful}', `\textit{Neutral}', `\textit{Somewhat important or useful}' and `\textit{Very important or useful}' respectively.
+\begin{figure}[h]
+	\centering
+	\makebox[\textwidth][c]{\includegraphics[width=1.1\textwidth]{FeatureLikert.png}}
+	\decoRule
+	\caption[Initial Survey Question 3 Results]{The results of Question 3.}
+	\label{fig:FeatureLikert}
+\end{figure}
 
-\begin{center}
-\begin{tabular}{ p{10cm} c c c c c }
- Feature & 1 & 2 & 3 & 4 & 5 \\ 
- \hline
- Real time video feed of the robots and their environment & 0 & 0 & 0 & 0 & 5\\
- Augmentation of the video feed with the position and orientation of each robot & 0 & 0 & 1 & 1 & 3\\
- Augmentation of the video feed with each robots identifier (ID or name) & 0 & 0 & 0 & 1 & 4\\
- Augmentation of the video feed with spatially situated sensor data, represented in a graphical form & 0 & 0 & 0 & 2 & 3\\
- The ability to enable and disable individual elements of the video feed augmentation & 0 & 0 & 0 & 2 & 3\\
- The ability to customise individual elements of the video feed augmentation (colour, size, etc.) & 0 & 0 & 2 & 1 & 2\\
- Displaying the robots internal state and a history of recent state transitions & 0 & 0 & 0 & 3 & 2\\
- Displaying raw sensor data (e.g. IR) in textual format & 0 & 0 & 0 & 4 & 1\\
- Displaying sensor data in plotted graph formats & 0 & 0 & 1 & 3 & 1\\
- Support for displaying unspecified user data in textual form & 0 & 0 & 1 & 2 & 2\\
- The ability to compare two or more specific robots within the swarm & 0 & 1 & 1 & 1 & 2\\
- Logging received data and events to a text or CSV file & 0 & 0 & 0 & 1 & 4\\
-\end{tabular}
-\end{center}
+%On the questionnaire the values of one to five were qualified as `\textit{Not important or useful}', `\textit{Unlikely to be important or useful}', `\textit{Neutral}', `\textit{Somewhat important or useful}' and `\textit{Very important or useful}' respectively.
 
-\vspace{1cm}
+%\begin{center}
+%\begin{tabular}{ p{10cm} c c c c c }
+% \textbf{Feature} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} \\ 
+% \hline
+% Real time video feed of the robots and their environment & 0 & 0 & 0 & 0 & 5\\
+% Augmentation of the video feed with the position and orientation of each robot & 0 & 0 & 1 & 1 & 3\\
+% Augmentation of the video feed with each robots identifier (ID or name) & 0 & 0 & 0 & 1 & 4\\
+% Augmentation of the video feed with spatially situated sensor data, represented in a graphical form & 0 & 0 & 0 & 2 & 3\\
+% The ability to enable and disable individual elements of the video feed augmentation & 0 & 0 & 0 & 2 & 3\\
+% The ability to customise individual elements of the video feed augmentation (colour, size, etc.) & 0 & 0 & 2 & 1 & 2\\
+% Displaying the robots internal state and a history of recent state transitions & 0 & 0 & 0 & 3 & 2\\
+% Displaying raw sensor data (e.g. IR) in textual format & 0 & 0 & 0 & 4 & 1\\
+% Displaying sensor data in plotted graph formats & 0 & 0 & 1 & 3 & 1\\
+% Support for displaying unspecified user data in textual form & 0 & 0 & 1 & 2 & 2\\
+% The ability to compare two or more specific robots within the swarm & 0 & 1 & 1 & 1 & 2\\
+% Logging received data and events to a text or CSV file & 0 & 0 & 0 & 1 & 4\\
+%\end{tabular}
+%\end{center}
 
+\clearpage
 \noindent\textbf{Question 4: Please briefly describe any additional features you believe would be useful, based on your experiences working with swarm robotics systems.}
 
 \begin{itemize}
-\item ``macro-level behavioural data on the swarm; e.g., number of robots in different behavioural states (color coded accordingly).''
-\item ``I think the system (already potentially very useful) could be improved/expanded further to add the option of more post-processing/extraction of data. The ability to create video of the over-lay, and perform statistical analysis on the complete run, would begin to turn the system in not only a very useful debugging system but a complete package allow researchers to gather high-quality, publication ready analysis of swarm experiments.''
+\item ``\textit{macro-level behavioural data on the swarm; e.g., number of robots in different behavioural states (color coded accordingly).}''
+\item ``\textit{I think the system (already potentially very useful) could be improved/expanded further to add the option of more post-processing/extraction of data. The ability to create video of the over-lay, and perform statistical analysis on the complete run, would begin to turn the system in not only a very useful debugging system but a complete package allow researchers to gather high-quality, publication ready analysis of swarm experiments.}''
 \end{itemize}
 
 \noindent\textbf{Question 5: Which of the following aspects of the robot data do you believe should be made available by the application to aid in debugging and testing? Tick all that apply. Please add any more you may think of.}
 
-\begin{center}
-\begin{tabular}{ p{10cm} c }
+\begin{longtable}{ p{10cm} c }
  Data Type & Votes\\ 
  \hline
  Position & 4\\
@@ -89,21 +95,23 @@ On the questionnaire the values of one to five were qualified as `\textit{Not im
  Distance between robots & 3\\
  Robot ID & 4\\
  Other & 2\\
-\end{tabular}
-\end{center}
+ \bottomrule
+ \caption{Responses to Question 5.}
+ \label{tab:QuestionFiveData}
+\end{longtable}
 
 Additional responses:
 
 \begin{itemize}
-\item ``Option to include user-defined data so if a certain controller implements a timer that facilitates a state transition might be useful to see the value of that timer whilst debugging to compare with state transitions''
-\item ``A simple API to add user-defined variables/statuses''
+\item ``\textit{Option to include user-defined data so if a certain controller implements a timer that facilitates a state transition might be useful to see the value of that timer whilst debugging to compare with state transitions.}''
+\item ``\textit{A simple API to add user-defined variables/statuses.}''
 \end{itemize}
 
 \noindent\textbf{Please add any additional comments you have about the proposed application in relation to your experiences working with swarm robotics systems.}
 
 \begin{itemize}
-\item ``A client-server model between back-end (camera) and remote client would potentially be very useful; also the system should be flexible and not reliant on a specific camera/server setup. Would be very interesting to see if it will work on a R-Pi 3 + camera combination, as this would allow for portable tracking setups.''
-\item ``All real-time information is useful!''
+\item ``\textit{A client-server model between back-end (camera) and remote client would potentially be very useful; also the system should be flexible and not reliant on a specific camera/server setup. Would be very interesting to see if it will work on a R-Pi 3 + camera combination, as this would allow for portable tracking setups.}''
+\item ``\textit{All real-time information is useful!}''
 \end{itemize}
 
 %----------------------------------------------------------------------------------------
@@ -126,7 +134,7 @@ This survey provided a useful tool for gathering a general impression of relevan
 
 %----------------------------------------------------------------------------------------
 
-\section{E-Puck Robot Platform}
+\section{Hardware Details - E-Puck Robot Platform}
 The e-puck robotic platform, created by a team at the \textit{Ecole Polytechnique Fédérale de Lausanne} \cite{epuck}, is a small, relatively inexpensive, multi-purpose robotic platform designed for education and research pursuits regarding robotics and multi-robot systems. The platform is widely used in swarm robotics research, featuring in a number of publications. The e-puck was chosen as the first target platform for this system for a number of reasons. Firstly this was one of the platforms available in suitable numbers in the York Robotics Laboratory (YRL) at the University of York, where the practical work for this project was carried out. Secondly the platform's wide use in swarm robotics research helps to show the broad applicability of the system, and better demonstrates its value when compared to a less widely used or bespoke platform. Finally the platform's extensible design meant that it could be equipped with a Linux extension board, a configuration frequently used at the YRL. This made the use of WiFi for wireless data transfer feasible, and was a large part of the reason for the e-pucks choice. This section provides details of the e-puck robot's hardware, including processor, sensors and actuators, as well as details of the configuration used for this project, including the Linux extension board. Figure \ref{fig:EPuck} shows the e-puck robot, equipped with the Linux extension board on top.
 
 \begin{figure}
@@ -173,19 +181,19 @@ For this project the e-pucks were fitted with an extension board featuring a 32-
 
 % (Chapter 6)
 
-\section{Video Tracking System}
+\section{Hardware Details - Video Tracking System}
 
 In order to implement the augmented reality element of the system, and satisfy the related objectives, a live video feed of the swarm was needed. A method for tracking the positions of each individual robot in the swarm within each video frame in this feed was also required, in order to correctly position the graphical overlays. Prior to the start of this project infrastructure had been put in place at the YRL for performing this kind of video-based tracking task, in the form of a machine vision camera placed above an 'arena'. Figure \ref{fig:CameraLayout} shows the arrangement of the machine vision camera used for robot tracking, and the robot arena. Figure \ref{fig:ArenaPhoto} shows a photo of the robot arena and tracking camera set up at the YRL. Ongoing research being carried out by members of the YRL had already made use of this camera and arena set up, in conjunction with image processing software for tracking fiducial markers within the image, to achieve robot tracking with good accuracy and relatively high frame-rate.
 
-\begin{figure}[h]
+The image processing in these ongoing research efforts was performed using the `ArUco\cite{Garrido:2014}' fiducial marker based tracking system, discussed further in section \ref{ArUco}. It was determined that incorporating this existing infrastructure into this project would be the quickest way to achieve an operational tracking system, allowing work to focus on the novel aspects of this project sooner.
+
+\begin{figure}
 	\centering
 	\includegraphics[scale=0.3]{Figures/CameraLayout.png}
 	\decoRule
 	\caption[Tracking Camera Arrangement]{Arrangement of the tracking camera over the robot arena.}
 	\label{fig:CameraLayout}
 \end{figure}
-
-The image processing in these ongoing research efforts was performed using the `ArUco\cite{Garrido:2014}' fiducial marker based tracking system, discussed further in section \ref{ArUco}. It was determined that incorporating this existing infrastructure into this project would be the quickest way to achieve an operational tracking system, allowing work to focus on the novel aspects of this project sooner.
 
 \begin{figure}
 	\centering
