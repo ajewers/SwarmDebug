@@ -81,17 +81,15 @@
 \contentsline {section}{\numberline {8.3}Results}{101}{section.232}
 \contentsline {section}{\numberline {8.4}Analysis}{101}{section.233}
 \contentsline {chapter}{\numberline {9}Conclusions and Future Work}{102}{chapter.234}
-\contentsline {section}{\numberline {9.1}Project Results Summary}{102}{section.235}
-\contentsline {section}{\numberline {9.2}Evaluation Against Aims and Objectives}{102}{section.236}
-\contentsline {section}{\numberline {9.3}System Limitations}{102}{section.237}
-\contentsline {section}{\numberline {9.4}Use Within the York Robotics Laboratory}{102}{section.238}
-\contentsline {section}{\numberline {9.5}Value Within the Swarm Robotics Space}{103}{section.239}
-\contentsline {section}{\numberline {9.6}Future Work}{103}{section.240}
-\contentsline {subsection}{\numberline {9.6.1}Additional Debugging Features}{103}{subsection.241}
-\contentsline {subsection}{\numberline {9.6.2}Towards a Full Swarm Robotics Research and Development Platform}{104}{subsection.242}
-\contentsline {subsection}{\numberline {9.6.3}Expansion of Supported Hardware}{105}{subsection.243}
-\contentsline {subsection}{\numberline {9.6.4}Integration with Dedicated Augmented Reality Hardware}{105}{subsection.244}
-\contentsline {subsection}{\numberline {9.6.5}Integration with Tablet Application}{106}{subsection.245}
-\contentsline {chapter}{\numberline {A}Test Results}{107}{appendix.246}
-\contentsline {section}{\numberline {A.1}Manual UI Testing}{107}{section.247}
-\contentsline {chapter}{Bibliography}{131}{appendix*.271}
+\contentsline {section}{\numberline {9.1}System Limitations}{103}{section.235}
+\contentsline {section}{\numberline {9.2}Use Within the York Robotics Laboratory}{103}{section.236}
+\contentsline {section}{\numberline {9.3}Value Within the Swarm Robotics Space}{103}{section.237}
+\contentsline {section}{\numberline {9.4}Future Work}{103}{section.238}
+\contentsline {subsection}{\numberline {9.4.1}Additional Debugging Features}{103}{subsection.239}
+\contentsline {subsection}{\numberline {9.4.2}Towards a Full Swarm Robotics Research and Development Platform}{105}{subsection.240}
+\contentsline {subsection}{\numberline {9.4.3}Expansion of Supported Hardware}{106}{subsection.241}
+\contentsline {subsection}{\numberline {9.4.4}Integration with Dedicated Augmented Reality Hardware}{106}{subsection.242}
+\contentsline {subsection}{\numberline {9.4.5}Integration with Tablet Application}{107}{subsection.243}
+\contentsline {chapter}{\numberline {A}Test Results}{108}{appendix.244}
+\contentsline {section}{\numberline {A.1}Manual UI Testing}{108}{section.245}
+\contentsline {chapter}{Bibliography}{132}{appendix*.269}
