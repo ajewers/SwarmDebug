@@ -70,25 +70,26 @@
 \contentsline {subsection}{\numberline {7.3.1}Results}{90}{subsection.177}
 \contentsline {subsection}{\numberline {7.3.2}Issues with this Approach}{90}{subsection.178}
 \contentsline {section}{\numberline {7.4}Verification and Validation Testing}{91}{section.179}
-\contentsline {section}{\numberline {7.5}Results}{93}{section.197}
-\contentsline {section}{\numberline {7.6}Analysis}{95}{section.199}
-\contentsline {chapter}{\numberline {8}System Evaluation}{96}{chapter.200}
-\contentsline {section}{\numberline {8.1}Method}{96}{section.201}
+\contentsline {subsection}{\numberline {7.4.1}Results}{93}{subsection.197}
+\contentsline {subsection}{\numberline {7.4.2}Analysis}{95}{subsection.199}
+\contentsline {chapter}{\numberline {8}Evaluation}{96}{chapter.200}
+\contentsline {section}{\numberline {8.1}User Evaluation Sessions}{96}{section.201}
 \contentsline {subsection}{\numberline {8.1.1}Set Up}{97}{subsection.202}
-\contentsline {subsection}{\numberline {8.1.2}Session Sequence}{97}{subsection.203}
+\contentsline {subsection}{\numberline {8.1.2}Session Sequence}{98}{subsection.203}
 \contentsline {subsection}{\numberline {8.1.3}Questionnaire}{99}{subsection.230}
-\contentsline {section}{\numberline {8.2}Participants}{100}{section.231}
-\contentsline {section}{\numberline {8.3}Results}{101}{section.232}
-\contentsline {section}{\numberline {8.4}Analysis}{101}{section.233}
-\contentsline {chapter}{\numberline {9}Conclusions and Future Work}{102}{chapter.234}
-\contentsline {section}{\numberline {9.1}Conclusion}{102}{section.235}
-\contentsline {section}{\numberline {9.2}System Limitations}{103}{section.236}
-\contentsline {section}{\numberline {9.3}Future Work}{104}{section.237}
-\contentsline {subsection}{\numberline {9.3.1}Additional Debugging Features}{104}{subsection.238}
-\contentsline {subsection}{\numberline {9.3.2}Towards a Full Swarm Robotics Research and Development Platform}{105}{subsection.239}
-\contentsline {subsection}{\numberline {9.3.3}Expansion of Supported Hardware}{107}{subsection.240}
-\contentsline {subsection}{\numberline {9.3.4}Integration with Dedicated Augmented Reality Hardware}{107}{subsection.241}
-\contentsline {subsection}{\numberline {9.3.5}Integration with Tablet Application}{108}{subsection.242}
-\contentsline {chapter}{\numberline {A}Test Results}{109}{appendix.243}
-\contentsline {section}{\numberline {A.1}Manual UI Testing}{109}{section.244}
-\contentsline {chapter}{Bibliography}{133}{appendix*.268}
+\contentsline {subsection}{\numberline {8.1.4}Participants}{100}{subsection.231}
+\contentsline {subsection}{\numberline {8.1.5}Results}{101}{subsection.232}
+\contentsline {subsection}{\numberline {8.1.6}Analysis}{101}{subsection.233}
+\contentsline {section}{\numberline {8.2}Comparison with Project Aim and Objectives}{101}{section.234}
+\contentsline {section}{\numberline {8.3}System Limitations}{101}{section.235}
+\contentsline {chapter}{\numberline {9}Conclusions and Future Work}{103}{chapter.236}
+\contentsline {section}{\numberline {9.1}Conclusion}{103}{section.237}
+\contentsline {section}{\numberline {9.2}Future Work}{104}{section.238}
+\contentsline {subsection}{\numberline {9.2.1}Additional Debugging Features}{104}{subsection.239}
+\contentsline {subsection}{\numberline {9.2.2}Towards a Full Swarm Robotics Research and Development Platform}{105}{subsection.240}
+\contentsline {subsection}{\numberline {9.2.3}Expansion of Supported Hardware}{106}{subsection.241}
+\contentsline {subsection}{\numberline {9.2.4}Integration with Dedicated Augmented Reality Hardware}{107}{subsection.242}
+\contentsline {subsection}{\numberline {9.2.5}Integration with Tablet Application}{108}{subsection.243}
+\contentsline {chapter}{\numberline {A}Test Results}{109}{appendix.244}
+\contentsline {section}{\numberline {A.1}Manual UI Testing}{109}{section.245}
+\contentsline {chapter}{Bibliography}{133}{appendix*.269}

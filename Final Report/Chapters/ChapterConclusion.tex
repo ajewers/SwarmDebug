@@ -18,20 +18,6 @@ A wide range of areas for possible future expansion of the system have been iden
 
 %----------------------------------------------------------------------------------------
 
-\section{System Limitations}
-
-In spite of the projects success in achieving the aims and producing a working system, a number of limitations inherent to the systems nature have been identified and are summarised here.
-
-\begin{description}
- \item [Effect on robot behaviour.] In order to receive data from the robots, the system requires that   additions are made to the robot's controller code to report this data. Any time code is added to the robot's controller it has the potential to effect the behaviour in unforeseen ways, even if the added code has no direct effect on the code controlling decision making. This is because time is required to execute the data reporting code, and this can have a knock on effect on the execution of the rest of the code. This is most dangerous when deploying a swarm system, as the developer may choose to remove all of the data reporting code prior to producing the `release' version of the system, as this code is debugging focused, and not needed in a final version once correct operation has been established. If there is a significant amount of data reporting code, removing it all could have a non-negligible effect on the robots behaviour, leading to potential unpredictability. In order to mitigate this problem as much as possible the robot side code has been implemented to require as little time as possible to transmit data packets.
- 
-\item [WiFi network requirement.] The system requires that all robots be connected to one WiFi network in order to operate correctly. This means the current system is limited to robots which can support WiFi, and requires that the network infrastructure be in place. Considering the system's intention as a debugging tool, and therefore its likely use within laboratories, WiFi network infrastructure is not an unreasonable requirement. However not all robot platforms support WiFi, hence this system in its current state is limited to robot platforms that do. Section \ref{HardwareExpansion} discusses extending the system in future to support a further wireless protocol such as Bluetooth.
-
-\item [Fixed Camera Viewpoint.] The video based portion of the system has been implemented to function with the video captured from a fixed viewpoint, with an overhead, birds-eye view of the robots. The system cannot correctly augment the video if it is captured from any other angle, even though the tag detection algorithm can cope with a range of angles. The system is therefore limited to consider and augment the space in only be two dimensions, and cannot display height-related data in any way. Many consider a three-dimensional reference frame to be a requirement of a true augmented-reality system \cite{Azuma:1997}, cite{Billinghurst:2014}, and this system would have to be modified to support a non-specific viewpoint in order to work with modern augmented reality hardware.
-\end{description}
-
-%----------------------------------------------------------------------------------------
-
 \section{Future Work} \label{FutureWork}
 
 This project has focused on developing the first version of this swarm robotics debugging system. Responses to the initial user survey, and anecdotal comments from members of the York Robotics Laboratory, have indicated that there is an interest in seeing the development of this system continue and its capabilities expanded to a number of new areas. This section discusses potential directions that future development could take, and considers how these might benefit users of the system. Some key areas for potential development are as follows:
