@@ -132,7 +132,7 @@ This survey provided a useful tool for gathering a general impression of relevan
 
 %----------------------------------------------------------------------------------------
 
-\section{Hardware Details - E-Puck Robot Platform}
+\section{Hardware - E-Puck Robot Platform}
 The e-puck robotic platform, created by a team at the \textit{Ecole Polytechnique Fédérale de Lausanne} \cite{epuck}, is a small, relatively inexpensive, multi-purpose robotic platform designed for education and research pursuits regarding robotics and multi-robot systems. The platform is widely used in swarm robotics research, featuring in a number of publications. The e-puck was chosen as the first target platform for this system for a number of reasons. Firstly this was one of the platforms available in suitable numbers in the York Robotics Laboratory (YRL) at the University of York, where the practical work for this project was carried out. Secondly the platform's wide use in swarm robotics research helps to show the broad applicability of the system, and better demonstrates its value when compared to a less widely used or bespoke platform. Finally the platform's extensible design meant that it could be equipped with a Linux extension board, a configuration frequently used at the YRL. This made the use of WiFi for wireless data transfer feasible, and was a large part of the reason for the e-pucks choice. This section provides details of the e-puck robot's hardware, including processor, sensors and actuators, as well as details of the configuration used for this project, including the Linux extension board. Figure \ref{fig:EPuck} shows the e-puck robot, equipped with the Linux extension board on top.
 
 \begin{figure}
@@ -179,7 +179,7 @@ For this project the e-pucks were fitted with an extension board featuring a 32-
 
 % (Chapter 6)
 
-\section{Hardware Details - Video Tracking System}
+\section{Hardware - Video Tracking System}
 
 In order to implement the augmented reality element of the system, and satisfy the related objectives, a live video feed of the swarm was needed. A method for tracking the positions of each individual robot in the swarm within each video frame in this feed was also required, in order to correctly position the graphical overlays. Prior to the start of this project infrastructure had been put in place at the YRL for performing this kind of video-based tracking task, in the form of a machine vision camera placed above an 'arena'. Figure \ref{fig:CameraLayout} shows the arrangement of the machine vision camera used for robot tracking, and the robot arena. Figure \ref{fig:ArenaPhoto} shows a photo of the robot arena and tracking camera set up at the YRL. Ongoing research being carried out by members of the YRL had already made use of this camera and arena set up, in conjunction with image processing software for tracking fiducial markers within the image, to achieve robot tracking with good accuracy and relatively high frame-rate.
 
