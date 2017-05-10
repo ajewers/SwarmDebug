@@ -83,12 +83,12 @@
 \contentsline {chapter}{\numberline {9}Conclusions and Future Work}{102}{chapter.234}
 \contentsline {section}{\numberline {9.1}Conclusion}{102}{section.235}
 \contentsline {section}{\numberline {9.2}System Limitations}{103}{section.236}
-\contentsline {section}{\numberline {9.3}Future Work}{103}{section.237}
+\contentsline {section}{\numberline {9.3}Future Work}{104}{section.237}
 \contentsline {subsection}{\numberline {9.3.1}Additional Debugging Features}{104}{subsection.238}
 \contentsline {subsection}{\numberline {9.3.2}Towards a Full Swarm Robotics Research and Development Platform}{105}{subsection.239}
-\contentsline {subsection}{\numberline {9.3.3}Expansion of Supported Hardware}{106}{subsection.240}
-\contentsline {subsection}{\numberline {9.3.4}Integration with Dedicated Augmented Reality Hardware}{106}{subsection.241}
-\contentsline {subsection}{\numberline {9.3.5}Integration with Tablet Application}{107}{subsection.242}
-\contentsline {chapter}{\numberline {A}Test Results}{108}{appendix.243}
-\contentsline {section}{\numberline {A.1}Manual UI Testing}{108}{section.244}
-\contentsline {chapter}{Bibliography}{132}{appendix*.268}
+\contentsline {subsection}{\numberline {9.3.3}Expansion of Supported Hardware}{107}{subsection.240}
+\contentsline {subsection}{\numberline {9.3.4}Integration with Dedicated Augmented Reality Hardware}{107}{subsection.241}
+\contentsline {subsection}{\numberline {9.3.5}Integration with Tablet Application}{108}{subsection.242}
+\contentsline {chapter}{\numberline {A}Test Results}{109}{appendix.243}
+\contentsline {section}{\numberline {A.1}Manual UI Testing}{109}{section.244}
+\contentsline {chapter}{Bibliography}{133}{appendix*.268}

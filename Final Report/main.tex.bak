@@ -92,6 +92,7 @@ headsepline, % Uncomment to get a line under the header
 \AtBeginDocument{
 	\hypersetup{linkcolor=black}
 	\hypersetup{citecolor=black}
+	\hypersetup{urlcolor=black}
 }
 
 
