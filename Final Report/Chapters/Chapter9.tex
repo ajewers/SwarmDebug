@@ -66,48 +66,7 @@ The GUI portion of the software architecture design is encapsulated into the UI 
 %----------------------------------------------------------------------------------------
 
 \section{Source Code}
-The system source code is implemented in two groups of files; a collection of C++ source and header files which make up the main application, and a smaller collection of C++ source and header files which handle the robot-side portion of the system. In addition to its source files the main application also relies on a number of other files which are used by the Qt system to define the user interface layout, and manage the build process. Table \ref{tab:CodeFiles} details the names and purposes of all files within the main application. Table \ref{tab:RobotCodeFiles} details the files that make up the robot side API.
-
-\begin{longtable}{ l p{10cm} }
-\caption[Application Code Files]{Source code and tertiary files that make up the main application.}\\
- File & Purpose\\ 
- \hline
- main.cpp & The entry point for the application. Instantiates the MainWindow class.\\
- mainwindow.cpp, .h & The core class, controls the set up and tear down processes, handles responding to UI events within the main window and routing data throughout the system.\\
- mainwindow.ui & Describes the user interface layout in an XML-like format. Used by the Qt framework to construct the UI.\\
- datamodel.cpp, .h & The top level class encapsulating the full data model. Maintains a list of \textit{RobotData} objects.\\
- robotdata.cpp, .h & A class encapsulating the data of a single robot, including ID, name, position, path, state, sensor data and all custom user data.\\
- datathread.cpp, .h & This class contains all routines for receiving data from the robots via wifi, and is runs on a thread of its own.\\
- cameracontroller.cpp, .h & The high level class encapsulating the routines and data related to reading the tracking camera.\\
- machinevision.cpp, .h & A lower level class encapsulating routines for interfacing with the camera hardware.\\
- visualiser.cpp, .h & This class encapsulates the visualiser GUI component, and is implemented to conform the Qt framework by extending the QWidget class. Contains routines for generating and applying the video augmentations based on the current robot data and visualiser settings.\\
- viselement.h & Contains an abstract class definition for a single visualiser settings element. These elements are used to define how specific elements of the video augmentation are rendered, and also contain settings and variables relevant to this task. \\
- vis*.cpp, .h & Classes beginning with the `\textit{vis}' prefix derive from the \textit{VisElement} abstract class and contain routines for rendering the visualisation for one type of data. The latter part of the class name identifies the relevant data type.\\
- irdataview.cpp, .h & A custom GUI object, derived from QWidget, which displays the raw IR sensor data as a bar graph in the data window.\\
- settings.cpp, .h & Encapsulates the general application settings and provides functions for changing their values. Implemented as a singleton class to allow access from anywhere in the application.\\
- log.cpp, .h & Encapsulates the functionality for recording events and data in log files. Implemented as a singleton class to allow access from anywhere in the application.\\
- util.cpp, .h & Contains static utility functions used in various places throughout the application code.\\
- *settingsdialog.cpp, .h & Classes ending with the `\textit{settingsdialog}' suffix describe dialog windows for adjusting the settings related to the visualisation of specific data types, identified by the first part of the class name.\\
- robotinfodialog.cpp, .h & Defines a dialog window which displays meta information about a specific robot, and provides controls to change the robot's display colour and delete its data from the data model.\\
- addidmappingdialog.cpp, .h & Defines a dialog window which can be used to add a non-standard ID mapping.\\
- testingwindow.cpp, .h & Defines a dialog window for running and displaying the results of the data model unit tests.\\
- appconfig.h & Contains pre-processor definitions for controlling the inclusion of specific code segments.\\
- SwarmDebug.pro & Used by the Qt framework to build the application. Lists the necessary code files and libraries.\\
- \bottomrule\\
-	
- \label{tab:CodeFiles}
-\end{longtable}
-
-\begin{longtable}{ l p{10cm} }
-\caption[Robot-side Code Files]{Source code files that make up the robot side API.}\\
- File & Purpose\\
- \hline
- debug\_network.cpp & This file encapsulates networking functionality for communicating with the debugging system. Contains routines for sending data of specific types, as well as for sending raw packets.\\
- debug\_network.h & Header file for the debugging system network interface. Also contains definitions for data type identifiers.\\
- \bottomrule\\
-	
- \label{tab:RobotCodeFiles}
-\end{longtable}
+The system source code is implemented in two groups of files; a collection of C++ source and header files which make up the main application, and a smaller collection of C++ source and header files which handle the robot-side portion of the system. In addition to its source files the main application also relies on a number of other files which are used by the Qt system to define the user interface layout, and manage the build process. A full list of all source code files is given in appendix \ref{AppendixSourceCodeFiles}. Table \ref{tab:CodeFiles} details the names and purposes of all files within the main application. Table \ref{tab:RobotCodeFiles} details the files that make up the robot side API.
 
 %----------------------------------------------------------------------------------------
 
@@ -333,11 +292,22 @@ The visualiser supports a number of specific data visualisations:
 	\label{fig:Overlays}
 \end{figure}
 
-The designs for these visualisations described in \ref{UserInterfaceDesign} and shown in figure \ref{fig:OverlayDesigns} were tested, and the most effective selected for the final implementation. Figure \ref{fig:Overlays} shows the implemented visualisations. The text based data is rendered adjacent to the robot, on the right hand side, where even relatively long strings will not overlap the robot's other visualisations. The exception to this is the ID number, which is rendered above and to the left, as this is unlikely to be long enough to cause overlapping issues. Row 1 of figure \ref{fig:Overlays} shows all of the text-based visualisations individually, followed by the full set combined. Robot position is indicated using an outlined circle. This was chosen over the filled circle or square designs as it was the least intrusive on other elements of the image. Direction is indicated by a line, starting from the robots center and extending outwards in its forward direction. This was selected over the arrow based designs, as rendering the arrows at small enough sizes was not feasible. Row 2 of figure \ref{fig:Overlays} shows the robot position and orientation visualisations, alone and combined. For the IR data visualisation, both designs were implemented, and the user can select which to use. The first renders a line for each of the sensors, extruding out from the center of the robot at the angle of the respective sensor. The length varies inversely and non-linearly with the value of the sensor, in an attempt to approximate a proximity measurement. The second mode, referred to as the `heat map' mode, renders a number of small boxes around the robot, positioned to match the sensors. The colour and size of each box varies to indicate the sensor value. The choice to provide both was made because the line based visualisation is useful in certain scenarios when testing the response of individual sensors, but the box-based `heat map' visualisation provides a more immediately understandable indication of the sensor values. Row 3 of figure \ref{fig:Overlays} shows the two types of IR data visualisation. The robots recent path is visualised as a trail of line segments. One of the original designs proposed a dotted line, but in the end this proved to be less visually clear than a solid line. The smoothness of the line was also considered in the design, but during implementation it became clear that the smoothness of the line was inherently related to the number of samples. A trade-off therefore had to be made between the smoothness and accuracy of the line, and its length. A setting was added to allow the user to vary the sampling interval for the line, thus allowing them to choose between a longer but less accurate and more jagged path, or a shorter but smoother and more accurate one. Row 4 of figure \ref{fig:Overlays} shows the path visualisation. Finally row 5 shows two possible combinations of the visualisations. In the first the robots ID, position and path are shown, as well as its IR data in heat map mode. In the second the robots ID, name, state, position, direction and path are shown.
+The designs for these visualisations described in section \ref{UserInterfaceDesign} and shown in figure \ref{fig:OverlayDesigns} were tested, and the most effective selected for the final implementation. Figure \ref{fig:Overlays} shows the implemented visualisations. Each row of figure \ref{fig:Overlays} is summarised as follows.
+
+\begin{description}
+\item [Row 1.] Shows all of the text-based visualisations individually, followed by the full set combined. The text based data is rendered adjacent to the robot, on the right hand side, where even relatively long strings will not overlap the robot's other visualisations. The exception to this is the ID number, which is rendered above and to the left, as this is unlikely to be long enough to cause overlapping issues.  
+
+\item [Row 2.] Shows the robot position and orientation visualisations, alone and combined. Robot position is indicated using an outlined circle. This was chosen over the filled circle or square designs as it was the least intrusive on other elements of the image. Direction is indicated by a line, starting from the robots center and extending outwards in its forward direction. This was selected over the arrow based designs, as rendering the arrows at small enough sizes was not feasible.
+
+\item [Row 3] Shows the two types of IR data visualisation. For the IR data visualisation, both designs were implemented, and the user can select which to use. The first renders a line for each of the sensors, extruding out from the center of the robot at the angle of the respective sensor. The length varies inversely and non-linearly with the value of the sensor, in an attempt to approximate a proximity measurement. The second mode, referred to as the `heat map' mode, renders a number of small boxes around the robot, positioned to match the sensors. The colour and size of each box varies to indicate the sensor value. The choice to provide both was made because the line based visualisation is useful in certain scenarios when testing the response of individual sensors, but the box-based `heat map' visualisation provides a more immediately understandable indication of the sensor values.  
+
+\item [Row 4.] Shows the path visualisation. The robots recent path is visualised as a trail of line segments. One of the original designs proposed a dotted line, but in the end this proved to be less visually clear than a solid line. The smoothness of the line was also considered in the design, but during implementation it became clear that the smoothness of the line was inherently related to the number of samples. A trade-off therefore had to be made between the smoothness and accuracy of the line, and its length. A setting was added to allow the user to vary the sampling interval for the line, thus allowing them to choose between a longer but less accurate and more jagged path, or a shorter but smoother and more accurate one.
+
+\item [Row 5.] Finally row 5 shows two possible combinations of the visualisations. In the first the robots ID, position and path are shown, as well as its IR data in heat map mode. In the second the robots ID, name, state, position, direction and path are shown.
+\end{description}
 
 Each visualiser element can be enabled and disabled via the settings tab. Some of the visualisations have more complex settings, which can be accessed be double clicking the specific element in the visualisations list, also in the settings tab. Figure  shows visualiser settings interface and the various dialog windows. For the majority of the visualisations the user has the option to set them to render only for the selected robot, or for all the robots. The IR data visualisation also has settings to switch between the proximity and heat map modes, and to set the angles of the sensors. The path visualisation has a setting for the sampling interval, as previously mentioned. Finally the custom data visualisation allows the user to input the key string for the data point they want displayed. Figure \ref{fig:VisualiserSettingsTab} shows the visualiser settings tab, as well one of the dialog window for accessing detailed visualisation settings. This dialog is showing the settings for the IR data visualisation.
 
-\clearpage
 \begin{figure}
  \centering
  \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{Figures/VisualiserSettingsTab.png}}
@@ -346,41 +316,10 @@ Each visualiser element can be enabled and disabled via the settings tab. Some o
  \label{fig:VisualiserSettingsTab}
 \end{figure}
 
-\clearpage
 %----------------------------------------------------------------------------------------
 
 \section{Robot Side API} \label{RobotSide}
-The robot side API is encapsulated by the \textit{DebugNetwork} class, defined in `\textit{debug\_network.cpp / .h}'. The contents of the \textit{DebugNetwork} class are described in table \ref{tab:RobotAPI}.
-
-\begin{longtable}{ l l p{8cm} }
-\caption[Robot API]{The contents of the \textit{DebugNetwork} class the forms the robot side API.}\\
- \hline
- \multicolumn{3}{l}{\textbf{Variables}} \\
- \hline
- Name & Type & Purpose\\
- \hline\\
- socket\_ready & Boolean & Indicates whether the socket has been created successfully, and it ready to be used.\\
- sock\_in & Struct & A structure defining the target socket.\\
- sock\_fd & Integer & Identifies the socket on the local machine (robot).\\
- robot\_id & Integer & The numerical ID of this robot. Set at initialisation time. Inserted to the header of each packet to identify the sender.\\
- \hline
- \multicolumn{3}{l}{\textbf{Functions}} \\
- \hline
- Name & Return Type & Purpose\\
- \hline\\
- init & Void & Initialises the class by setting up the socket and setting the ID for this robot. Requires a port number, a target host IP address and the robot ID as arguments. \\
- destroy & Void & Shuts down the socket. \\
- sendData & Void & Sends a given string as a raw data packet. \\
- sendWatchdogPacket & Void & Constructs and sends a watchdog packet. Requires the robot name to be provided as an argument. \\
- sendStatePacket & Void & Constructs and sends a state packet. Requires the current state to be provided as an argument string. \\
- sendIRDataPacket & Void & Constructs and sends an IR data packet. Requires the data be arranged into an array, and takes a pointer to the first element and a size value as parameters. Also takes an extra boolean parameter which can be set to true to indicate that this packet should be identified as backgroud IR data.\\
- sendLogMessage & Void & Constructs and sends a message packet to display a message in the application console and logs. The message string is supplied as an argument.\\
- sendCustomData & Void & Constructs and sends a custom data packet. The key value pair are supplied to this function as two argument strings.\\
- getRobotID & Integer & Returns the numerical robot ID, as currently set. \\
- setRobotID & Void & Sets the numerical robot ID based on an integer argument. \\
- 
- \label{tab:RobotAPI}
-\end{longtable}
+The robot side API is encapsulated by the \textit{DebugNetwork} class, defined in `\textit{debug\_network.cpp / .h}'. The contents of the \textit{DebugNetwork} class are described in appendix \ref{AppendixRobotAPI}, table \ref{tab:RobotAPI}.
 
 In order to utilise this API a user should modify their robot controller code to include the \textit{debug\_network.h} header file, call the \textit{init} function at start-up time, and then call the various packet and data functions whenever necessary. The user is therefore in charge of how frequently data is transmitted, and can decide whether to simply send updates to the application when the robot's data changes, or to transmit a fixed quantity of data every control step. It was potentially possible for the API to handle all data reporting in the background, without requiring the user to specify when to transmit data in the controller code, however this approach was not taken for a number of reasons. Firstly it limits the control and flexibility available to the user. Each swarm system is different, and may have different requirements, hence the API should allow the developer to make decisions regarding data reporting which are right for their specific case. It would also limit the portability of the API, as a more automatic system would likely have to hook into the lower level robot drivers, meaning much greater changes would be necessary to port the code to a different robot. Furthermore by allowing the user to have complete control over when and how frequently data is transmitted they are able to manage the amount of traffic they are putting on their network, potentially mitigating congestion issues with very large swarms. Finally allowing users to control the moments within the code when data is reported to the debugging system was deemed to be a more intuitive system, especially as many developers are already familiar with the concept of using `print' statements within code to display debugging messages in a console.
 

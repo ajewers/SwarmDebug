@@ -286,6 +286,10 @@ The acknowledgements and the people to thank go here, don't forget to include yo
 % Include the appendices of the thesis as separate files from the Appendices folder
 % Uncomment the lines as you write the Appendices
 
+\include{Appendices/AppendixGantt}
+\include{Appendices/AppendixEthics}
+\include{Appendices/AppendixSourceCodeFiles}
+\include{Appendices/AppendixRobotAPI}
 \include{Appendices/AppendixTestResults}
 %\include{Appendices/AppendixB}
 %\include{Appendices/AppendixC}

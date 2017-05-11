@@ -1,0 +1,33 @@
+\chapter{Robot Side API}
+
+\label{AppendixRobotAPI}
+
+\begin{longtable}{ l l p{8cm} }
+\caption[Robot API]{The contents of the \textit{DebugNetwork} class that forms the robot side API.}\\
+ \hline
+ \multicolumn{3}{l}{\textbf{Variables}} \\
+ \hline
+ Name & Type & Purpose\\
+ \hline\\
+ socket\_ready & Boolean & Indicates whether the socket has been created successfully, and it ready to be used.\\
+ sock\_in & Struct & A structure defining the target socket.\\
+ sock\_fd & Integer & Identifies the socket on the local machine (robot).\\
+ robot\_id & Integer & The numerical ID of this robot. Set at initialisation time. Inserted to the header of each packet to identify the sender.\\
+ \hline
+ \multicolumn{3}{l}{\textbf{Functions}} \\
+ \hline
+ Name & Return Type & Purpose\\
+ \hline\\
+ init & Void & Initialises the class by setting up the socket and setting the ID for this robot. Requires a port number, a target host IP address and the robot ID as arguments. \\
+ destroy & Void & Shuts down the socket. \\
+ sendData & Void & Sends a given string as a raw data packet. \\
+ sendWatchdogPacket & Void & Constructs and sends a watchdog packet. Requires the robot name to be provided as an argument. \\
+ sendStatePacket & Void & Constructs and sends a state packet. Requires the current state to be provided as an argument string. \\
+ sendIRDataPacket & Void & Constructs and sends an IR data packet. Requires the data be arranged into an array, and takes a pointer to the first element and a size value as parameters. Also takes an extra boolean parameter which can be set to true to indicate that this packet should be identified as backgroud IR data.\\
+ sendLogMessage & Void & Constructs and sends a message packet to display a message in the application console and logs. The message string is supplied as an argument.\\
+ sendCustomData & Void & Constructs and sends a custom data packet. The key value pair are supplied to this function as two argument strings.\\
+ getRobotID & Integer & Returns the numerical robot ID, as currently set. \\
+ setRobotID & Void & Sets the numerical robot ID based on an integer argument. \\
+ 
+ \label{tab:RobotAPI}
+\end{longtable}

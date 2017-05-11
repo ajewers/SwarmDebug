@@ -135,9 +135,15 @@ Unit testing is a commonly used technique in professional software testing, and 
  \label{tab:DataModelTestCases}
 \end{longtable}
 
-The TestingWindow class provides an additional user interface window, which can be opened by selecting the `\textit{Testing Window}' option from the developer menu on the main tool-bar. This window displays a list of the available tests, a text area for displaying test results, and controls for running either a single test or the full set. Each time a test is run the class instantiates a new data model object, performs the operations for the test in question, displaying the steps involved as text in the results window. For each assertion the text describes what is being asserted and states whether the result was true or false. The overall result of each test is then stated at the end, and the data model object is destroyed. This therefore allows any developer working on the system to open this window at any time whilst the application is running and verify that the full set of tests still passes. This can be done whenever changes are made to the back end code, and gives the developer a degree of certainty that the data model is still functioning correctly. New tests can be easily added by implementing a new test function and adding it as a test case. The interface for this test window is shown in figure .
+The TestingWindow class provides an additional user interface window, which can be opened by selecting the `\textit{Testing Window}' option from the developer menu on the main tool-bar. This window displays a list of the available tests, a text area for displaying test results, and controls for running either a single test or the full set. Each time a test is run the class instantiates a new data model object, performs the operations for the test in question, displaying the steps involved as text in the results window. For each assertion the text describes what is being asserted and states whether the result was true or false. The overall result of each test is then stated at the end, and the data model object is destroyed. This therefore allows any developer working on the system to open this window at any time whilst the application is running and verify that the full set of tests still passes. This can be done whenever changes are made to the back end code, and gives the developer a degree of certainty that the data model is still functioning correctly. New tests can be easily added by implementing a new test function and adding it as a test case. The interface for this test window is shown in figure \ref{fig:TestingWindow}.
 
-[TEST WINDOW UI SCREENSHOT]
+\begin{figure}
+ \centering
+ \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{Figures/TestingWindow.png}}
+ \decoRule
+ \caption[Testing Window]{The testing window, used for running the data model unit tests.}
+ \label{fig:TestingWindow}
+\end{figure}
 
 \subsection{Results}
 In its final state following this project the data model was implemented such that all of the stated test cases passed successfully when run. This indicated that the data model was implemented to a satisfactory standard, and that if data was supplied in correctly formatted packets, it would be correctly stored in the model. Other application functionality that relied on the data model could therefore be used and tested with the assumption that the model was operating correctly.

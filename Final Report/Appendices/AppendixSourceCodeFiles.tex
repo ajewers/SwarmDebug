@@ -1,0 +1,46 @@
+% Appendix A
+
+\chapter{Source Code Files} % Main appendix title
+
+\label{AppendixSourceCodeFiles} % For referencing this appendix elsewhere, use \ref{AppendixA}
+
+\begin{longtable}{ l p{10cm} }
+\caption[Application Code Files]{Source code and tertiary files that make up the main application.}\\
+ File & Purpose\\ 
+ \hline
+ main.cpp & The entry point for the application. Instantiates the MainWindow class.\\
+ mainwindow.cpp, .h & The core class, controls the set up and tear down processes, handles responding to UI events within the main window and routing data throughout the system.\\
+ mainwindow.ui & Describes the user interface layout in an XML-like format. Used by the Qt framework to construct the UI.\\
+ datamodel.cpp, .h & The top level class encapsulating the full data model. Maintains a list of \textit{RobotData} objects.\\
+ robotdata.cpp, .h & A class encapsulating the data of a single robot, including ID, name, position, path, state, sensor data and all custom user data.\\
+ datathread.cpp, .h & This class contains all routines for receiving data from the robots via wifi, and is runs on a thread of its own.\\
+ cameracontroller.cpp, .h & The high level class encapsulating the routines and data related to reading the tracking camera.\\
+ machinevision.cpp, .h & A lower level class encapsulating routines for interfacing with the camera hardware.\\
+ visualiser.cpp, .h & This class encapsulates the visualiser GUI component, and is implemented to conform the Qt framework by extending the QWidget class. Contains routines for generating and applying the video augmentations based on the current robot data and visualiser settings.\\
+ viselement.h & Contains an abstract class definition for a single visualiser settings element. These elements are used to define how specific elements of the video augmentation are rendered, and also contain settings and variables relevant to this task. \\
+ vis*.cpp, .h & Classes beginning with the `\textit{vis}' prefix derive from the \textit{VisElement} abstract class and contain routines for rendering the visualisation for one type of data. The latter part of the class name identifies the relevant data type.\\
+ irdataview.cpp, .h & A custom GUI object, derived from QWidget, which displays the raw IR sensor data as a bar graph in the data window.\\
+ settings.cpp, .h & Encapsulates the general application settings and provides functions for changing their values. Implemented as a singleton class to allow access from anywhere in the application.\\
+ log.cpp, .h & Encapsulates the functionality for recording events and data in log files. Implemented as a singleton class to allow access from anywhere in the application.\\
+ util.cpp, .h & Contains static utility functions used in various places throughout the application code.\\
+ *settingsdialog.cpp, .h & Classes ending with the `\textit{settingsdialog}' suffix describe dialog windows for adjusting the settings related to the visualisation of specific data types, identified by the first part of the class name.\\
+ robotinfodialog.cpp, .h & Defines a dialog window which displays meta information about a specific robot, and provides controls to change the robot's display colour and delete its data from the data model.\\
+ addidmappingdialog.cpp, .h & Defines a dialog window which can be used to add a non-standard ID mapping.\\
+ testingwindow.cpp, .h & Defines a dialog window for running and displaying the results of the data model unit tests.\\
+ appconfig.h & Contains pre-processor definitions for controlling the inclusion of specific code segments.\\
+ SwarmDebug.pro & Used by the Qt framework to build the application. Lists the necessary code files and libraries.\\
+ \bottomrule\\
+	
+ \label{tab:CodeFiles}
+\end{longtable}
+
+\begin{longtable}{ l p{10cm} }
+\caption[Robot-side Code Files]{Source code files that make up the robot side API.}\\
+ File & Purpose\\
+ \hline
+ debug\_network.cpp & This file encapsulates networking functionality for communicating with the debugging system. Contains routines for sending data of specific types, as well as for sending raw packets.\\
+ debug\_network.h & Header file for the debugging system network interface. Also contains definitions for data type identifiers.\\
+ \bottomrule\\
+	
+ \label{tab:RobotCodeFiles}
+\end{longtable}
