@@ -67,132 +67,128 @@ The following sequence of steps was then carried out for each session. Participa
 \subsection{Observations}
 The following is a summary of the observations and comments made during the evaluation sessions. Special note was taken of any observation or comment made by more than one participant. Steps in the session for which no comments are noted can be assumed to have been completed without issue by all participants.
 
-- All located information easily and quickly
-- All located settings ofr network, vis, camera, logging quickly
-- Current state not on state tab [1, 3, 6]
-- Visualiser settings not related to selected robot [1, 2, 5]
-- Double click to edit visualiser settings not clear [1, 2, 3, 5, 6]; Suggestions included drop down, right click or expandable list with sub items for each visualisation type
-- IR mode toggle unclear, proximity not named, should be dropdown: [3]
+All participants were able to quickly find the network tab and enable packet listening, at which point the system began receiving data from the robots. All participants were also able to easily locate all of the requested information. The only exception to this was the current state of robot 1, which three of the participants commented was not clearly displayed on the state tab. The state tab displays other state related information, but does not clearly display the current state (it can be inferred from the state transition list), which was an oversight in the user interface design. All participants were able to subsequently locate the current state on the overview tab.
 
-Debugging:
-- Used visualiser settings to customise visible information
-- Used state tab to identify lack of IDLE state in behaviour: [1, 2, 4, 5, 6]
-- Used IR tab to look at specific values: [1, 2, 4, 5, 6]
+All participants were able to locate the visualiser settings tab and determine how to enable and disable visualisations. Three of the participants were initially confused by the fact that the visualiser settings were unrelated to the selected robot, instead applying globally. Five participants also commented that the process of double clicking an item within the visualiser configuration list, to access the more specific settings, was unintuitive. Several commented that this was not a user interface behaviour they had seen before, and therefore was not immediately obvious. Suggested alternatives were to use drop-down menus within each element of the list to modify its further settings, to use a right click menu to expose the detailed settings, or to use a `tree' style expandable list, where each element could be expanded to expose its detailed settings as sub-list items. One participant also commented that the detailed settings for the IR data visualisation were not clearly described, especially regarding the two possible modes; proximity mode and heat mode. They commented that these would be better presented as a drop-down selector.
 
-Comments:
-P1	- Useful to see data in real time
-	- System would be helpful based on robotics experience
-	
-P2	- Useful to have IR
-	- Still requires knowledge of the robots and the code (flaw with evaluation method)
-	
-P3	- IR data v. useful
-	- Questioned how debugging could be achieved without this kind of system
-	
-P4	- Sensor data reporting useful in this scenario, all data reporting potentially useful
-	- Noted the portability of the system, mentioned other potential platforms to use it with
-	
-P5 	- n/a
+During the simulated debugging task all participants made use of the visualiser settings to configure the way that data was displayed, and used the visualiser display when attempting to determine the cause of the issue. Three participants adjusted the visualiser settings more than once. Five participants used the state tab to identify that the robots were incorrectly remaining in the \textit{HEADING} state, and not moving to the \textit{IDLE} state as the code suggested they should. All six participants used the IR data tab to check the values being reported by the robots' IR sensors, and all six were able to identify that the cause of the bug was the low threshold value. As expected the members of the domain expert participant group were quicker to locate the simulated bug than those in the non-expert group. One participant from the non-expert group explicitly noted that familiarity with the robots and their basic capabilities would have made the task significantly easier.
 
-P6 	- Commented on immediate applicability to their current work
-	- Noted a number of scenarios each feature would be useful in
+All three members of the domain expert group commented on their belief that the system would be useful, based on their prior experience with swarm robotics. One participant specifically mentioned the system's applicability to their current work, and noted a number of scenarios where the custom data reporting functionality would be useful, including reporting `pheromone' levels in a swarm path-finding behaviour. Another member of the expert group commented that they liked the idea of re-using the system with a different robot platform, and noted that the use of the \textit{ArUco} tracking tags would improve the ease of the porting process. The three members of the non-expert group each identified the IR and state data reporting as useful in completing the simulated debugging task.
+
 \subsection{Questionnaire}
 Following the practical session, participants were asked to complete a questionnaire regarding their experience, and their opinions of the system and its features. The questionnaire included the following questions:
 
-\noindent\textbf{Question 1: How would you rate your overall impression of the user interface?}\\(Scale of 1 to 5, poor to excellent)
+\noindent\textbf{Question 1: How would you rate your overall impression of the user interface?}\\(Scale of 1 to 5, `poor' to `excellent')
+
+\begin{center}
+\begin{tabular}{ l c c c c c c }
+ Group & 1 & 2 & 3 & 4 & 5 & Average Score \\ 
+ \hline
+ Domain Experts & 0 & 0 & 0 & 1 & 2 & 4.7 \\
+ Others 		& 0 & 0 & 0 & 2 & 1 & 4.3 \\
+\end{tabular}
+\end{center}
+
+\noindent\textbf{Question 2: How intuitive was the robot selection mechanism?}\\(Scale of 1 to 5, `not intuitive at all' to `highly intuitive')
+
+\begin{center}
+\begin{tabular}{ l c c c c c c }
+ Group & 1 & 2 & 3 & 4 & 5 & Average Score \\ 
+ \hline
+ Domain Experts & 0 & 0 & 0 & 0 & 3 & 5 \\
+ Others 		& 0 & 0 & 0 & 1 & 2 & 4.7 \\
+\end{tabular}
+\end{center}
+
+\noindent\textbf{Question 3: How easy was it to locate the requested information?}\\(Scale of 1 to 5, `very hard' to `very easy')
 
 \begin{center}
 \begin{tabular}{ l c c c c c c }
  Group & 1 & 2 & 3 & 4 & 5 & Average \\ 
  \hline
- Domain Experts & x & x & x & x & x & a \\
- Others 		& x & x & x & x & x & a \\
+ Domain Experts & 0 & 0 & 0 & 0 & 3 & 5 \\
+ Others 		& 0 & 0 & 0 & 1 & 2 & 4.7 \\
 \end{tabular}
 \end{center}
 
-\noindent\textbf{Question 2: }\\(Scale of 1 to 5, )
+\noindent\textbf{Question 4: How would you rate the organisation of information in the lower data panel?}\\(Scale of 1 to 5, `poorly organised' to `well organised')
 
 \begin{center}
 \begin{tabular}{ l c c c c c c }
  Group & 1 & 2 & 3 & 4 & 5 & Average \\ 
  \hline
- Domain Experts & x & x & x & x & x & a \\
- Others 		& x & x & x & x & x & a \\
+ Domain Experts & 0 & 0 & 0 & 1 & 2 & 4.7 \\
+ Others 		& 0 & 0 & 0 & 1 & 2 & 4.7 \\
 \end{tabular}
 \end{center}
 
-\noindent\textbf{Question 3: }\\(Scale of 1 to 5, )
+\clearpage
+\noindent\textbf{Question 5: For each of the following data types, how would you rate their presentation within the visualiser, in terms of information clarity?}
+
+\begin{figure}[h]
+	\centering
+	\makebox[\textwidth][c]{\includegraphics[width=1\textwidth]{VisualisationLikert.png}}
+	\decoRule
+	\caption[Evaluation Questionnaire Question 5 Results]{The results of Question 5.}
+	\label{fig:VisualisationLikert}
+\end{figure}
+
+\noindent\textbf{Question 6: How easy was it to adjust the visualiser settings as requested?}\\(Scale of 1 to 5, `very easy' to `very difficult')
 
 \begin{center}
 \begin{tabular}{ l c c c c c c }
  Group & 1 & 2 & 3 & 4 & 5 & Average \\ 
  \hline
- Domain Experts & x & x & x & x & x & a \\
- Others 		& x & x & x & x & x & a \\
+ Domain Experts & 0 & 0 & 0 & 1 & 2 & 4.7 \\
+ Others 		& 0 & 0 & 0 & 1 & 2 & 4.7 \\
 \end{tabular}
 \end{center}
 
-\noindent\textbf{Question 4: }\\(Scale of 1 to 5, )
+\noindent\textbf{Question 7: How beneficial do you believe the visualiser component to be to the overall application functionality?}\\(Scale of 1 to 5, `not beneficial at all' to `essential')
 
 \begin{center}
 \begin{tabular}{ l c c c c c c }
  Group & 1 & 2 & 3 & 4 & 5 & Average \\ 
  \hline
- Domain Experts & x & x & x & x & x & a \\
- Others 		& x & x & x & x & x & a \\
+ Domain Experts & 0 & 0 & 0 & 0 & 3 & 5 \\
+ Others 		& 0 & 0 & 0 & 1 & 2 & 4.7 \\
 \end{tabular}
 \end{center}
 
-\noindent\textbf{Question 5: }\\(Scale of 1 to 5, )
+\noindent\textbf{Question 8: How easy / clear was it to use the network tab to begin listening for robot data packets?}\\(Scale of 1 to 5, `very difficult / unclear' to `very easy / clear')
 
 \begin{center}
 \begin{tabular}{ l c c c c c c }
  Group & 1 & 2 & 3 & 4 & 5 & Average \\ 
  \hline
- Domain Experts & x & x & x & x & x & a \\
- Others 		& x & x & x & x & x & a \\
+ Domain Experts & 0 & 0 & 0 & 0 & 3 & 5 \\
+ Others 		& 0 & 0 & 0 & 0 & 3 & 5 \\
 \end{tabular}
 \end{center}
 
-\noindent\textbf{Question 6: }\\(Scale of 1 to 5, )
+\noindent\textbf{Question 9: How easy / clear was it to use the logging tab to record received data to a log?}\\(Scale of 1 to 5, `very difficult / unclear' to `very easy / clear')
 
 \begin{center}
 \begin{tabular}{ l c c c c c c }
  Group & 1 & 2 & 3 & 4 & 5 & Average \\ 
  \hline
- Domain Experts & x & x & x & x & x & a \\
- Others 		& x & x & x & x & x & a \\
+ Domain Experts & 0 & 0 & 0 & 1 & 2 & 4.7 \\
+ Others 		& 0 & 0 & 0 & 0 & 3 & 5 \\
 \end{tabular}
 \end{center}
 
-\noindent\textbf{Question 7: }\\(Scale of 1 to 5, )
+\noindent\textbf{Question 10: How would you rate your overall impression of the system's usefulness as a debugging tool?}\\(Scale of 1 to 5, `not useful at all' to `extremely useful')
 
 \begin{center}
 \begin{tabular}{ l c c c c c c }
  Group & 1 & 2 & 3 & 4 & 5 & Average \\ 
  \hline
- Domain Experts & x & x & x & x & x & a \\
- Others 		& x & x & x & x & x & a \\
+ Domain Experts & 0 & 0 & 0 & 0 & 3 & 5 \\
+ Others 		& 0 & 0 & 0 & 1 & 2 & 4.7 \\
 \end{tabular}
 \end{center}
 
-\noindent\textbf{Question 8: }\\(Scale of 1 to 5, )
-
-\begin{center}
-\begin{tabular}{ l c c c c c c }
- Group & 1 & 2 & 3 & 4 & 5 & Average \\ 
- \hline
- Domain Experts & x & x & x & x & x & a \\
- Others 		& x & x & x & x & x & a \\
-\end{tabular}
-\end{center}
-
-%----------------------------------------------------------------------------------------
-
-\subsection{Results}
-
-
-
+\noindent\textbf{Question 11: Please feel free to add any additional comments regarding any aspect of the system.}
 
 %----------------------------------------------------------------------------------------
 
