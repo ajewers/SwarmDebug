@@ -14,6 +14,11 @@ Software testing can be used to verify that a system works as intended, however 
 
 The user evaluation sessions followed an observed testing format. Participants were given full control of the system, which was initialised to a known state, and asked to complete a number of tasks, ranging from simple information and data location and retrieval to a full simulated debugging task. Data was collected by taking notes on how the participants interacted with the system, including any difficulties they had, and any comments they made whilst using it. The primary areas of interest for these notes were how easily the participant was able to navigate the user interface and obtain information, how often they asked for additional information, and what they asked for information regarding, as well as if (and how quickly) they were able to isolate and correct the deliberate behavioural fault during the debugging task, and what features of the system they made use of during their attempt.
 
+\subsection{Participants}
+Two groups of participants took part in the user evaluation sessions. The first was composed of `\textit{domain experts}'; researchers and other technical people with experience in the field of swarm robotics. This group were more likely to have an understanding of the needs of the system's target users, and therefore their input was considered more valuable. However because of the relatively niche nature of the field, the availability of participants in this category was limited. Hence only a small number could be found to participate in the sessions.
+
+In order to remedy this lack of participants, the second group was introduced. This group was composed of undergraduate engineering students, who had a basic understanding of the core concepts of swarm robotics, but little or no practical experience. Where necessary an introduction to the core concepts was given before the session. This group did however possess general knowledge regarding software development, as this was necessary to complete the sessions effectively. The results obtained from this group were therefore mostly useful to evaluate elements of the system unrelated to swarm robotics, such as the usability of the user interface and the clarity of information display. This difference is reflected in the analysis of the results.
+
 \subsection{Set Up}
 Four robots were used during the sessions, each loaded with the same behaviours. Two simple behaviours were programmed for the robots prior to the start of the sessions. The first was a very simple data test behaviour which had the robot drive slowly in a circular path, whilst reporting data for all of the types defined in the system. This included a watchdog packet every ten control steps containing a unique name for each robot, a varying state which would change every fifty control steps between three possible values, active and background IR data, an arbitrary log message packet every hundred control steps and a custom data packet every ten control steps, containing the current total number of control steps as its data. 
 
@@ -59,6 +64,38 @@ The following sequence of steps was then carried out for each session. Participa
  \item Ask the participant to attempt to locate the cause of the issue using the data made available by the debugging system. Provide hints and advice only if necessary.
 \end{enumerate}
 
+\subsection{Observations}
+The following is a summary of the observations and comments made during the evaluation sessions. Special note was taken of any observation or comment made by more than one participant. Steps in the session for which no comments are noted can be assumed to have been completed without issue by all participants.
+
+- All located information easily and quickly
+- All located settings ofr network, vis, camera, logging quickly
+- Current state not on state tab [1, 3, 6]
+- Visualiser settings not related to selected robot [1, 2, 5]
+- Double click to edit visualiser settings not clear [1, 2, 3, 5, 6]; Suggestions included drop down, right click or expandable list with sub items for each visualisation type
+- IR mode toggle unclear, proximity not named, should be dropdown: [3]
+
+Debugging:
+- Used visualiser settings to customise visible information
+- Used state tab to identify lack of IDLE state in behaviour: [1, 2, 4, 5, 6]
+- Used IR tab to look at specific values: [1, 2, 4, 5, 6]
+
+Comments:
+P1	- Useful to see data in real time
+	- System would be helpful based on robotics experience
+	
+P2	- Useful to have IR
+	- Still requires knowledge of the robots and the code (flaw with evaluation method)
+	
+P3	- IR data v. useful
+	- Questioned how debugging could be achieved without this kind of system
+	
+P4	- Sensor data reporting useful in this scenario, all data reporting potentially useful
+	- Noted the portability of the system, mentioned other potential platforms to use it with
+	
+P5 	- n/a
+
+P6 	- Commented on immediate applicability to their current work
+	- Noted a number of scenarios each feature would be useful in
 \subsection{Questionnaire}
 Following the practical session, participants were asked to complete a questionnaire regarding their experience, and their opinions of the system and its features. The questionnaire included the following questions:
 
@@ -152,14 +189,6 @@ Following the practical session, participants were asked to complete a questionn
 
 %----------------------------------------------------------------------------------------
 
-\subsection{Participants}
-
-Two groups of participants took part in the user evaluation sessions. The first was composed of `\textit{domain experts}'; researchers and other technical people with experience in the field of swarm robotics. This group were more likely to have an understanding of the needs of the system's target users, and therefore their input was considered more valuable. However because of the relatively niche nature of the field, the availability of participants in this category was limited. Hence only a small number could be found to participate in the sessions.
-
-In order to remedy this lack of participants, the second group was introduced. This group was composed of undergraduate engineering students, who had a basic understanding of the core concepts of swarm robotics, but little or no practical experience. Where necessary an introduction to the core concepts was given before the session. This group did however possess general knowledge regarding software development, as this was necessary to complete the sessions effectively. The results obtained from this group were therefore mostly useful to evaluate elements of the system unrelated to swarm robotics, such as the usability of the user interface and the clarity of information display. This difference is reflected in the analysis of the results.
-
-%----------------------------------------------------------------------------------------
-
 \subsection{Results}
 
 
@@ -192,3 +221,5 @@ In spite of the projects success in achieving the aims and producing a working s
 
 \item [Fixed Camera Viewpoint.] The video based portion of the system has been implemented to function with the video captured from a fixed viewpoint, with an overhead, birds-eye view of the robots. The system cannot correctly augment the video if it is captured from any other angle, even though the tag detection algorithm can cope with a range of angles. The system is therefore limited to consider and augment the space in only be two dimensions, and cannot display height-related data in any way. Many consider a three-dimensional reference frame to be a requirement of a true augmented-reality system \cite{Azuma:1997}, \cite{Billinghurst:2014}, and this system would have to be modified to support a non-specific viewpoint in order to work with modern augmented reality hardware.
 \end{description}
+
+%----------------------------------------------------------------------------------------
