@@ -69,7 +69,7 @@ The following is a summary of the observations and comments made during the eval
 
 All participants were able to quickly find the network tab and enable packet listening, at which point the system began receiving data from the robots. All participants were also able to easily locate all of the requested information. The only exception to this was the current state of robot 1, which three of the participants commented was not clearly displayed on the state tab. The state tab displays other state related information, but does not clearly display the current state (it can be inferred from the state transition list), which was an oversight in the user interface design. All participants were able to subsequently locate the current state on the overview tab.
 
-All participants were able to locate the visualiser settings tab and determine how to enable and disable visualisations. Three of the participants were initially confused by the fact that the visualiser settings were unrelated to the selected robot, instead applying globally. Five participants also commented that the process of double clicking an item within the visualiser configuration list, to access the more specific settings, was unintuitive. Several commented that this was not a user interface behaviour they had seen before, and therefore was not immediately obvious. Suggested alternatives were to use drop-down menus within each element of the list to modify its further settings, to use a right click menu to expose the detailed settings, or to use a `tree' style expandable list, where each element could be expanded to expose its detailed settings as sub-list items. One participant also commented that the detailed settings for the IR data visualisation were not clearly described, especially regarding the two possible modes; proximity mode and heat mode. They commented that these would be better presented as a drop-down selector.
+All participants were able to locate the visualiser settings tab and determine how to enable and disable visualisations. Three of the participants were initially confused by the fact that the visualiser settings were unrelated to the selected robot, instead applying globally. Five participants also commented that the process of double clicking an item within the visualiser configuration list, to access the more specific settings, was unintuitive. Several commented that this was not a user interface behaviour they had seen before, and therefore was not immediately obvious. Suggested alternatives were to use drop-down menus, a right click menu, or a `tree' style expandable list, to access detailed settings for each visualisation. One participant also commented that the detailed settings for the IR data visualisation were not clearly described, especially regarding the two possible modes; proximity mode and heat mode. They commented that these would be better presented as a drop-down selector.
 
 During the simulated debugging task all participants made use of the visualiser settings to configure the way that data was displayed, and used the visualiser display when attempting to determine the cause of the issue. Three participants adjusted the visualiser settings more than once. Five participants used the state tab to identify that the robots were incorrectly remaining in the \textit{HEADING} state, and not moving to the \textit{IDLE} state as the code suggested they should. All six participants used the IR data tab to check the values being reported by the robots' IR sensors, and all six were able to identify that the cause of the bug was the low threshold value. As expected the members of the domain expert participant group were quicker to locate the simulated bug than those in the non-expert group. One participant from the non-expert group explicitly noted that familiarity with the robots and their basic capabilities would have made the task significantly easier.
 
@@ -127,7 +127,7 @@ Following the practical session, participants were asked to complete a questionn
 
 \begin{figure}[h]
 	\centering
-	\makebox[\textwidth][c]{\includegraphics[width=1\textwidth]{VisualisationLikert.png}}
+	\makebox[\textwidth][c]{\includegraphics[scale=0.6]{VisualisationLikert.png}}
 	\decoRule
 	\caption[Evaluation Questionnaire Question 5 Results]{The results of Question 5.}
 	\label{fig:VisualisationLikert}
@@ -166,7 +166,7 @@ Following the practical session, participants were asked to complete a questionn
 \end{tabular}
 \end{center}
 
-\noindent\textbf{Question 9: How easy / clear was it to use the logging tab to record received data to a log?}\\(Scale of 1 to 5, `very difficult / unclear' to `very easy / clear')
+\noindent\textbf{Question 9: How easy / clear was it to use the logging tab to record received data to a log file?}\\(Scale of 1 to 5, `very difficult / unclear' to `very easy / clear')
 
 \begin{center}
 \begin{tabular}{ l c c c c c c }
@@ -189,13 +189,27 @@ Following the practical session, participants were asked to complete a questionn
 \end{center}
 
 \noindent\textbf{Question 11: Please feel free to add any additional comments regarding any aspect of the system.}
+\begin{itemize}
+ \item ``\textit{Drop down menu to choose single robot/all robots would be a nice addition. More visual "heat mode" display against dark background would also be useful.}''
+ \item ``\textit{This seems like an extremely useful addition to the system. I can see how debugging without this application would be much harder and take much longer.}''
+ \item ``\textit{Exceptionally useful system with intuitive and easy to use interface; shows a high level of polish and thought in UI design. Naturally some areas could have subtle improvements but nothing major!}''
+ \item ``\textit{Really intuitive to use and I can already think of multiple use cases where this will be beneficial for robot lab researchers. Updated quickly and software seemed to run seamlessly. Ability to monitor custom data will be incredibly useful too. Loved how data was displayed in bar charts in the bottom panel and the heat mode display of the IR sensors. Excellent way to display information visually for quick diagnosis of problems. Literally only thing I found that wasn't immediately intuitive was the additional settings on the Visualizer Settings.}''
+\end{itemize}
 
 %----------------------------------------------------------------------------------------
 
 \subsection{Analysis}
+A general appraisal of the observations and comments made during the evaluation sessions, and the responses to the subsequent questionnaire, indicates an overall positive response to system. Participants were able to easily navigate and use the majority of the UI, without detailed direction, indicating that the user interface is intuitive and clear. The following remedies for minor issues with the user interface should be applied:
 
+\begin{itemize}
+ \item The interface for accessing specific visualisation settings should to conform to a more commonly seen interface pattern. An expandable list would work well, with main list items for each of the visualisations, and sub-items attached to each for specific settings.
+ \item The current state should be displayed clearly on the state tab, possibly by highlighting the current state within the known state list.
+ \item The IR data visualisation modes selection should be changed to use a drop-down menu selector.
+\end{itemize}
 
+The participants use of the system during the simulated debugging task, including examining state changes and IR data, and utilising the visualiser settings, coupled with their comments, suggests that the system is useful in practice. This aligns with the high scores for usefulness that the system received in responses to question ten of the questionnaire. Comments from the domain expert group of participants regarding the potential use of the system in their swarm robotics work also reflect well on the system, suggesting that these participants believe they can benefit from its use. The specific use of the visualiser by the participants, and the high scores in response to question seven, indicate that the system benefits from the inclusion of the visualiser, and is more useful than a data reporting system without a visual component.
 
+Overall the results of the user evaluation sessions were positive, suggesting that the system meets the two key objectives being examined in these sessions; being useful in a practical debugging context, and displaying information through an intuitive interface. However the limited sizes of the participant groups 
 
 %----------------------------------------------------------------------------------------
 
