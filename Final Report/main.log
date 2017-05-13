@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2017.5.13)  13 MAY 2017 11:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2017.5.13)  13 MAY 2017 13:03
 entering extended mode
 **./main.tex
 (main.tex
@@ -3280,39 +3280,39 @@ Underfull \vbox (badness 10000) detected at line 776
 
 
 ]
-Overfull \hbox (1.73643pt too wide) in paragraph at lines 302--302
+Overfull \hbox (1.73643pt too wide) in paragraph at lines 295--295
 \T1/ppl/m/n/10.95 Soft-ware. In: \T1/ppl/m/it/10.95 Aus-tralasian Con-fer-ence
  on Robotics and Au-toma-tion (ACRA) \T1/ppl/m/n/10.95 (2009). 
  []
 
 
-Overfull \hbox (2.49762pt too wide) in paragraph at lines 302--302
+Overfull \hbox (2.49762pt too wide) in paragraph at lines 295--295
 []\T1/ppl/m/n/10.95 Ronald T. Azuma.   A Sur-vey of Aug-mented Re-al-ity. In:
  \T1/ppl/m/it/10.95 Foun-da-tions and Trends
  []
 
 [158]
-Overfull \hbox (6.22302pt too wide) in paragraph at lines 302--302
+Overfull \hbox (6.22302pt too wide) in paragraph at lines 295--295
 []\T1/ppl/m/n/10.95 B. O'Sullivan. \T1/ppl/m/it/10.95 Mer-cu-rial: The Defini-t
 ive Guide: The Defini-tive Guide\T1/ppl/m/n/10.95 . An-i-mal Guide.
  []
 
 
-Overfull \hbox (1.4218pt too wide) in paragraph at lines 302--302
+Overfull \hbox (1.4218pt too wide) in paragraph at lines 295--295
 []\T1/ppl/m/n/10.95 The Qt Com-pany Ltd. \T1/ppl/m/it/10.95 Qt Cre-ator Man-ual
 \T1/ppl/m/n/10.95 . [][]$\T1/pcr/m/n/10.95 http : / / doc . qt . io / qtcreator
 /$[][]\T1/ppl/m/n/10.95 .
  []
 
 
-Overfull \hbox (3.66933pt too wide) in paragraph at lines 302--302
+Overfull \hbox (3.66933pt too wide) in paragraph at lines 295--295
 []\T1/ppl/m/n/10.95 Deborah J. Arm-strong.   The Quarks of Object-oriented De-
 vel-op-ment. In: \T1/ppl/m/it/10.95 Com-
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 305.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 298.
 [159]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 305.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 298.
  (main.aux (Chapters/Chapter1.aux) (Chapters/Chapter2.aux)
 (Chapters/ChapterProblemAnalysis.aux) (Chapters/Chapter3.aux)
 (Chapters/Chapter8.aux) (Chapters/Chapter9.aux) (Chapters/Chapter10.aux)
@@ -3320,8 +3320,8 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 305.
 (Appendices/AppendixGantt.aux) (Appendices/AppendixEthics.aux)
 (Appendices/AppendixSourceCodeFiles.aux) (Appendices/AppendixRobotAPI.aux)
 (Appendices/AppendixTestResults.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 305.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 305.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 298.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 298.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D5920D34447DC35A5901729134AD0241;16491.
 Package logreq Info: Writing requests to 'main.run.xml'.
@@ -3329,11 +3329,11 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 34265 strings out of 493334
- 681326 string characters out of 3145290
+ 34266 strings out of 493334
+ 681340 string characters out of 3145290
  910685 words of memory out of 3000000
- 36796 multiletter control sequences out of 15000+200000
- 50176 words of font info for 80 fonts, out of 3000000 for 9000
+ 36797 multiletter control sequences out of 15000+200000
+ 51140 words of font info for 81 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,20n,82p,10379b,2619s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/TEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<C:/TEX/MiKTeX/fonts/type1/pub
@@ -3347,7 +3347,7 @@ blic/amsfonts/cm/cmsy8.pfb><C:/TEX/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C
 /palatino/uplbi8a.pfb><C:/TEX/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/TE
 X/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/TEX/MiKTeX/fonts/type1/urw/pal
 atino/uplri8a.pfb>
-Output written on main.pdf (173 pages, 9357306 bytes).
+Output written on main.pdf (173 pages, 9357682 bytes).
 PDF statistics:
  2138 PDF objects out of 2487 (max. 8388607)
  497 named destinations out of 1000 (max. 500000)
