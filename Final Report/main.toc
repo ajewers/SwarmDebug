@@ -91,20 +91,21 @@
 \contentsline {subsection}{\numberline {8.1.6}Analysis}{105}{subsection.241}
 \contentsline {section}{\numberline {8.2}Comparison with Project Aim and Objectives}{106}{section.242}
 \contentsline {section}{\numberline {8.3}System Limitations}{109}{section.243}
-\contentsline {chapter}{\numberline {9}Conclusions and Future Work}{111}{chapter.244}
-\contentsline {section}{\numberline {9.1}Conclusion}{111}{section.245}
-\contentsline {section}{\numberline {9.2}Future Work}{112}{section.246}
-\contentsline {subsection}{\numberline {9.2.1}Additional Debugging Features}{112}{subsection.247}
-\contentsline {subsection}{\numberline {9.2.2}Towards a Full Swarm Robotics Research and Development Platform}{113}{subsection.248}
-\contentsline {subsection}{\numberline {9.2.3}Expansion of Supported Hardware}{114}{subsection.249}
-\contentsline {subsection}{\numberline {9.2.4}Integration with Dedicated Augmented Reality Hardware}{115}{subsection.250}
-\contentsline {subsection}{\numberline {9.2.5}Integration with Tablet Application}{116}{subsection.251}
-\contentsline {chapter}{\numberline {A}Gantt Chart}{117}{appendix.252}
-\contentsline {chapter}{\numberline {B}Ethics Documents}{119}{appendix.253}
-\contentsline {section}{\numberline {B.1}Ethics Form}{119}{section.254}
-\contentsline {section}{\numberline {B.2}User Evaluation Session Consent Form}{125}{section.255}
-\contentsline {chapter}{\numberline {C}Source Code Files}{127}{appendix.256}
-\contentsline {chapter}{\numberline {D}Robot Side API}{130}{appendix.259}
-\contentsline {chapter}{\numberline {E}Test Results}{132}{appendix.261}
-\contentsline {section}{\numberline {E.1}Manual UI Testing}{132}{section.262}
-\contentsline {chapter}{Bibliography}{156}{appendix*.286}
+\contentsline {section}{\numberline {8.4}Project Exectuion}{111}{section.244}
+\contentsline {chapter}{\numberline {9}Conclusions and Future Work}{112}{chapter.245}
+\contentsline {section}{\numberline {9.1}Conclusion}{112}{section.246}
+\contentsline {section}{\numberline {9.2}Future Work}{113}{section.247}
+\contentsline {subsection}{\numberline {9.2.1}Additional Debugging Features}{113}{subsection.248}
+\contentsline {subsection}{\numberline {9.2.2}Towards a Full Swarm Robotics Research and Development Platform}{114}{subsection.249}
+\contentsline {subsection}{\numberline {9.2.3}Expansion of Supported Hardware}{115}{subsection.250}
+\contentsline {subsection}{\numberline {9.2.4}Integration with Dedicated Augmented Reality Hardware}{116}{subsection.251}
+\contentsline {subsection}{\numberline {9.2.5}Integration with Tablet Application}{117}{subsection.252}
+\contentsline {chapter}{\numberline {A}Gantt Chart}{118}{appendix.253}
+\contentsline {chapter}{\numberline {B}Ethics Documents}{120}{appendix.254}
+\contentsline {section}{\numberline {B.1}Ethics Form}{120}{section.255}
+\contentsline {section}{\numberline {B.2}User Evaluation Session Consent Form}{126}{section.256}
+\contentsline {chapter}{\numberline {C}Source Code Files}{128}{appendix.257}
+\contentsline {chapter}{\numberline {D}Robot Side API}{131}{appendix.260}
+\contentsline {chapter}{\numberline {E}Test Results}{133}{appendix.262}
+\contentsline {section}{\numberline {E.1}Manual UI Testing}{133}{section.263}
+\contentsline {chapter}{Bibliography}{157}{appendix*.287}
