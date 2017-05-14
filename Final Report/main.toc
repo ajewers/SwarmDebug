@@ -54,7 +54,7 @@
 \contentsline {chapter}{\numberline {6}Implementation}{60}{chapter.109}
 \contentsline {section}{\numberline {6.1}Overview}{60}{section.110}
 \contentsline {section}{\numberline {6.2}Application Framework Selection}{61}{section.112}
-\contentsline {subsection}{\numberline {6.2.1}The Qt Framework}{62}{subsection.113}
+\contentsline {subsection}{\numberline {6.2.1}The \textit {Qt} Framework}{62}{subsection.113}
 \contentsline {section}{\numberline {6.3}Application Structure}{63}{section.114}
 \contentsline {section}{\numberline {6.4}Source Code}{65}{section.116}
 \contentsline {section}{\numberline {6.5}Data Model}{65}{section.117}
@@ -64,7 +64,7 @@
 \contentsline {section}{\numberline {6.8}Data Transfer Format}{71}{section.126}
 \contentsline {subsection}{\numberline {6.8.1}Constraints}{73}{subsection.129}
 \contentsline {section}{\numberline {6.9}User Interface}{73}{section.130}
-\contentsline {section}{\numberline {6.10}Visualiser}{77}{section.134}
+\contentsline {section}{\numberline {6.10}Visualiser}{76}{section.134}
 \contentsline {subsection}{\numberline {6.10.1}Data Visualisations}{78}{subsection.136}
 \contentsline {section}{\numberline {6.11}Robot Side API}{81}{section.147}
 \contentsline {section}{\numberline {6.12}Summary}{82}{section.148}
