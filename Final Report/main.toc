@@ -49,7 +49,7 @@
 \contentsline {subsection}{\numberline {5.1.1}Data Model}{51}{subsection.97}
 \contentsline {subsection}{\numberline {5.1.2}Visualiser}{52}{subsection.99}
 \contentsline {section}{\numberline {5.2}User Interface Design}{53}{section.101}
-\contentsline {subsection}{\numberline {5.2.1}Data Visualisation Designs}{57}{subsection.106}
+\contentsline {subsection}{\numberline {5.2.1}Data Visualisation Designs}{56}{subsection.106}
 \contentsline {section}{\numberline {5.3}Summary}{58}{section.108}
 \contentsline {chapter}{\numberline {6}Implementation}{60}{chapter.109}
 \contentsline {section}{\numberline {6.1}Overview}{60}{section.110}
