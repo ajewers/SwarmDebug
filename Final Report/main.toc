@@ -23,7 +23,7 @@
 \contentsline {section}{\numberline {2.7}Summary}{25}{section.52}
 \contentsline {chapter}{\numberline {3}Problem Analysis}{26}{chapter.53}
 \contentsline {section}{\numberline {3.1}Initial User Survey}{26}{section.54}
-\contentsline {subsection}{\numberline {3.1.1}Data}{26}{subsection.55}
+\contentsline {subsection}{\numberline {3.1.1}Questions and Response Data}{26}{subsection.55}
 \contentsline {subsection}{\numberline {3.1.2}Analysis}{29}{subsection.60}
 \contentsline {subsection}{\numberline {3.1.3}Issues and Shortcomings}{30}{subsection.61}
 \contentsline {section}{\numberline {3.2}Hardware - E-Puck Robot Platform}{30}{section.62}
@@ -59,7 +59,7 @@
 \contentsline {section}{\numberline {6.4}Source Code}{65}{section.116}
 \contentsline {section}{\numberline {6.5}Data Model}{65}{section.117}
 \contentsline {section}{\numberline {6.6}Video Feed and Tracking System}{67}{section.119}
-\contentsline {subsection}{\numberline {6.6.1}Image Processing Library}{68}{subsection.120}
+\contentsline {subsection}{\numberline {6.6.1}The \textit {OpenCV} Image Processing Library}{68}{subsection.120}
 \contentsline {section}{\numberline {6.7}Networking}{68}{section.121}
 \contentsline {section}{\numberline {6.8}Data Transfer Format}{71}{section.126}
 \contentsline {subsection}{\numberline {6.8.1}Constraints}{73}{subsection.129}
@@ -107,5 +107,5 @@
 \contentsline {chapter}{\numberline {C}Source Code Files}{128}{appendix.257}
 \contentsline {chapter}{\numberline {D}Robot Side API}{131}{appendix.260}
 \contentsline {chapter}{\numberline {E}Test Results}{133}{appendix.262}
-\contentsline {section}{\numberline {E.1}Manual UI Testing}{133}{section.263}
+\contentsline {section}{\numberline {E.1}Manual UI Testing Results}{133}{section.263}
 \contentsline {chapter}{Bibliography}{157}{appendix*.287}

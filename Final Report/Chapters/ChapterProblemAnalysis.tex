@@ -8,11 +8,11 @@ This chapter focuses on analysing the problem domain, including details of an in
 
 \section{Initial User Survey} \label{InitialUserSurvey}
 
-A survey was carried out within the YRL in order to determine how best to implement the system, and to ensure that the system would be useful in practice once finished. The respondents were all actively engaged in robotics work, either in a research capacity or as a technician, and had experience and understanding of swarm robotics specifically. The survey aimed to determine if a level on interest existed for the proposed system, and then ascertain which specific features were most desired. This would go on to influence design choices and inform priorities during development.
+A survey was carried out within the YRL in order to determine how best to implement the system, and to ensure that the system would be useful in practice once finished. The respondents were all actively engaged in robotics work, either in a research capacity or as a technician, and had experience and understanding of swarm robotics specifically. The survey aimed to determine if a level of interest existed for the proposed system, and then ascertain which specific features were most desired. This would go on to influence design choices and inform priorities during development.
 
 %----------------------------------------------------------------------------------------
 
-\subsection{Data}
+\subsection{Questions and Response Data}
 \noindent\textbf{Question 1: Do you believe that a system for displaying internal robot data for a swarm of robots in real time would be useful when debugging swarm robotics behaviours and/or conducting swarm robotics experiments?}
 
 \begin{longtable}{ l c c }
@@ -128,7 +128,7 @@ The final section gave respondents the opportunity to add any additional comment
 %----------------------------------------------------------------------------------------
 
 \subsection{Issues and Shortcomings}
-This survey provided a useful tool for gathering a general impression of relevant opinions regarding the project and the system. However it also had a number of issues in its execution which might somewhat diminish the value of the data. Firstly due to the highly specific nature of the desired participants, the sample size is extremely small. Care must therefore be taken in analysing too deeply the results; for example any statistical analysis performed would likely be flawed. Another issue is that the two larger multiple choice questions present a relatively small selection of possible features and data types, based on those already planned or considered for implementation.  This report therefore aims to use the results in an indicative, holistic manner to guide implementation, rather than quantitatively define the feature set.
+This survey provided a useful tool for gaining a general impression of relevant opinions regarding the project and the system. However it also had a number of issues in its execution which might somewhat diminish the value of the data. Firstly due to the highly specific nature of the desired participants, the sample size is extremely small. Care must therefore be taken in analysing the results too deeply; for example any statistical analysis performed would likely be flawed. Another issue is that the two larger multiple choice questions present a relatively small selection of possible features and data types, based on those already planned or considered for implementation.  This report therefore aims to use the results in an indicative, holistic manner to guide implementation, rather than quantitatively define the feature set.
 
 %----------------------------------------------------------------------------------------
 
@@ -147,7 +147,7 @@ The e-puck robotic platform, created by a team at the \textit{Ecole Polytechniqu
 %----------------------------------------------------------------------------------------
 
 \subsection{Processor}
-The e-puck features a \textit{dsPIC 30F6014A} microprocessor, designed and manufactured by Microchip Technology Inc. This is a general purpose 16-bit CPU, with relatively low performance by modern standards. The processor features 68 I/O pins, which are connected to the e-pucks various peripherals. Due to the use of the Linux extension board discussed in section \ref{LinuxExtensionBoard}, which features a more powerful ARM processor, the primary use of the PIC processor in this configuration is to interface with the e-puck's hardware. This involves receiving commands from the ARM processor and sending appropriate control signals to the robot's actuators, as well as reading the robot's sensors and passing the retrieved sensor data back to the ARM processor. Prior to the start of this project members of the YRL had already developed a library of low level code allowing the PIC to function in the hardware interface role described, controlled through a UART serial connection. This firmware code was used as-is on the e-pucks' PIC processors throughout the project.
+The e-puck features a \textit{dsPIC 30F6014A} microprocessor, designed and manufactured by Microchip Technology Inc. This is a general purpose 16-bit CPU, with relatively low performance by modern standards. The processor features 68 I/O pins, which are connected to the e-puck's various peripherals. Due to the use of the Linux extension board discussed in section \ref{LinuxExtensionBoard}, which features a more powerful ARM processor, the primary use of the PIC processor in this configuration is to interface with the e-puck's hardware. This involves receiving commands from the ARM processor and sending appropriate control signals to the robot's actuators, as well as reading the robot's sensors and passing the retrieved sensor data back to the ARM processor. Prior to the start of this project members of the YRL had already developed a library of low level code allowing the PIC to function in the hardware interface role described, controlled through a UART serial connection. This firmware code was used as-is on the e-pucks' PIC processors throughout the project.
 
 %----------------------------------------------------------------------------------------
 
@@ -162,7 +162,7 @@ The e-puck robot features two wheels, independently actuated by two step motors.
 	\begin{center}
 	\includegraphics[scale=0.4]{EPuckIRSensors.png}
 	\decoRule
-	\caption[e-puck IR Sensor Layout]{The layout of the IR sensors on the e-puck robot.}
+	\caption[E-puck IR Sensor Layout]{The layout of the IR sensors on the e-puck robot.}
 	\label{fig:EPuckIRSensors}
 	\end{center}
 \end{figure}
@@ -236,7 +236,7 @@ Each of the e-puck robots used in this project were assigned an ID number, and a
 	\centering
 	\includegraphics[scale=0.5]{Figures/EPuckARuCo.png}
 	\decoRule
-	\caption[ArUco Marker Mounted on E-Puck]{A laser printed ArUco marker mounted on top of an e-puck robot.}
+	\caption[ArUco Marker Mounted on e-puck]{A laser printed ArUco marker mounted on top of an e-puck robot.}
 	\label{fig:EPuckArUco}
 \end{figure}
 
