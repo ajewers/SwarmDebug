@@ -5,47 +5,48 @@
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Debugging Information Abstraction Diagram}}{3}{figure.caption.13}
 \contentsline {figure}{\numberline {1.2}{\ignorespaces Proposed System Architecture}}{5}{figure.caption.15}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Self Organised Feedback. \cite {Podevijn:2012}}}{16}{figure.caption.42}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Swarm Craft GUI. \cite {McLurkin:2006}}}{17}{figure.caption.43}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces \textit {NUbugger} GUI. \cite {Annable:2014}}}{19}{figure.caption.45}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces AR Furniture Visualisations \cite {Azuma:1997} \cite {SayDuck}.}}{20}{figure.caption.47}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Microsoft HoloLens. }}{21}{figure.caption.48}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Sonar data visualisation. Collet and MacDonald \cite {Collet:2006}}}{22}{figure.caption.49}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Spatially situation data overlay. Garrido et al. \cite {Ghiringhelli:2014}}}{24}{figure.caption.51}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Army Ants Bridging a Gap \cite {AntBridge}.}}{12}{figure.caption.41}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Self Organised Feedback \cite {Podevijn:2012}.}}{16}{figure.caption.43}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Swarm Craft GUI \cite {McLurkin:2006}.}}{18}{figure.caption.44}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces \textit {NUbugger} GUI \cite {Annable:2014}.}}{19}{figure.caption.46}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces AR Furniture Visualisations \cite {Azuma:1997} \cite {SayDuck}.}}{20}{figure.caption.48}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Microsoft HoloLens \cite {MicrosoftHoloLens}}}{21}{figure.caption.49}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Sonar data visualisation. Collet and MacDonald \cite {Collet:2006}}}{23}{figure.caption.50}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Spatially situation data overlay. Garrido et al. \cite {Ghiringhelli:2014}}}{25}{figure.caption.52}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Initial Survey Question 3 Responses}}{27}{figure.caption.58}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces The e-puck Robot}}{31}{figure.caption.63}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces E-puck IR Sensor Layout}}{32}{figure.caption.67}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Tracking Camera Arrangement}}{34}{figure.caption.70}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Robot Arena and Tracking Camera}}{34}{figure.caption.71}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces JAI-Go Camera}}{35}{figure.caption.73}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces ArUco Markers}}{36}{figure.caption.75}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces ArUco Marker Mounted on e-puck}}{37}{figure.caption.76}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Initial Survey Question 3 Responses}}{28}{figure.caption.59}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces The e-puck Robot}}{32}{figure.caption.64}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces E-puck IR Sensor Layout}}{33}{figure.caption.68}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Tracking Camera Arrangement}}{35}{figure.caption.71}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Robot Arena and Tracking Camera}}{35}{figure.caption.72}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces JAI-Go Camera}}{36}{figure.caption.74}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces ArUco Markers}}{37}{figure.caption.76}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces ArUco Marker Mounted on e-puck}}{38}{figure.caption.77}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Software Architecture Diagram}}{50}{figure.caption.92}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Data Model Diagram}}{51}{figure.caption.98}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Visualiser Render Process Design}}{52}{figure.caption.100}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces UI Layout}}{53}{figure.caption.102}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces UI Example}}{55}{figure.caption.103}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Data Panel Designs}}{56}{figure.caption.104}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Visualiser Settings Tab Design}}{57}{figure.caption.105}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Visualiser Overlay Designs}}{59}{figure.caption.107}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Software Architecture Diagram}}{51}{figure.caption.93}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Data Model Diagram}}{52}{figure.caption.99}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Visualiser Render Process Design}}{53}{figure.caption.101}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces UI Layout}}{54}{figure.caption.103}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces UI Example}}{56}{figure.caption.104}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Data Panel Designs}}{57}{figure.caption.105}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Visualiser Settings Tab Design}}{58}{figure.caption.106}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Visualiser Overlay Designs}}{60}{figure.caption.108}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Application User Interface}}{61}{figure.caption.111}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Application Structure}}{64}{figure.caption.115}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Networking Code Flow Diagram}}{70}{figure.caption.125}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Data Format}}{71}{figure.caption.127}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Visualiser Panel}}{74}{figure.caption.131}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Robot List Panel}}{75}{figure.caption.132}
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Data Panel}}{77}{figure.caption.133}
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Visualiser Data Flow}}{78}{figure.caption.135}
-\contentsline {figure}{\numberline {6.9}{\ignorespaces Data Visualisations}}{80}{figure.caption.145}
-\contentsline {figure}{\numberline {6.10}{\ignorespaces Visualiser Settings Tab}}{81}{figure.caption.146}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Application User Interface}}{62}{figure.caption.112}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Application Structure}}{65}{figure.caption.116}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Networking Code Flow Diagram}}{71}{figure.caption.126}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Data Format}}{72}{figure.caption.128}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Visualiser Panel}}{75}{figure.caption.132}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Robot List Panel}}{76}{figure.caption.133}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Data Panel}}{78}{figure.caption.134}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Visualiser Data Flow}}{79}{figure.caption.136}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Data Visualisations}}{81}{figure.caption.146}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Visualiser Settings Tab}}{82}{figure.caption.147}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Testing Window}}{91}{figure.caption.182}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Testing Window}}{92}{figure.caption.183}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces User Evaluation Question 5 Responses}}{105}{figure.caption.249}
+\contentsline {figure}{\numberline {8.1}{\ignorespaces User Evaluation Question 5 Responses}}{106}{figure.caption.250}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
