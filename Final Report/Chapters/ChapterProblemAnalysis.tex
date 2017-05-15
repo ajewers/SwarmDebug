@@ -176,6 +176,13 @@ For this project the e-pucks were fitted with an extension board featuring a 32-
 
 %----------------------------------------------------------------------------------------
 
+\section{ARGoS Robot Controllers}
+For this project, all code used to control the behaviour of the e-puck robots was implemented within the \textit{ARGoS} robot simulator framework \cite{ARGoS}. The ARGoS simulator is an exceptionally complex physics-based simulator for multi-robot and swarm robotics systems, and an in-depth explanation of its many features is beyond the scope of this report. Of relevance to this report is the fact that the ARGoS framework allows behavioural code for a robot to be implemented once, and then run both within the simulator and on the real robot. This is achieved by defining each robot as a plug-in for the ARGoS system, with two sets of the low level code to control the robot's sensors and actuators; one for use within the simulation and one for use on the real hardware. Behavioural level code can therefore be the same for both situations, with the correct low-level code being selected at compile time.
+
+The code for communicating data from the robot to the debugging system developed in this project was designed to be as portable as possible. For this reason it was kept fully independent of the ARGoS framework, and implemented as a stand-alone API. Calls to this API were then added to the robot's ARGoS controller code at the behavioural level.
+
+%----------------------------------------------------------------------------------------
+
 % (Chapter 6)
 
 \section{Hardware - Video Tracking System} \label{TrackingHardware}
