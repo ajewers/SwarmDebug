@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2017.5.15)  15 MAY 2017 11:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2017.5.15)  15 MAY 2017 14:28
 entering extended mode
 **./main.tex
 (main.tex
@@ -2170,7 +2170,7 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
 
 
 ]
-<Figures/RobotDebuggingInformationAbstraction.png, id=783, 415.5525pt x 216.81p
+<Figures/RobotDebuggingInformationAbstraction.png, id=785, 415.5525pt x 216.81p
 t>
 File: Figures/RobotDebuggingInformationAbstraction.png Graphic file (type png)
  <use Figures/RobotDebuggingInformationAbstraction.png>
@@ -2183,7 +2183,7 @@ Overfull \hbox (11.5224pt too wide) in paragraph at lines 32--34
  []
 
 [2] [3 <./Figures/RobotDebuggingInformationAbstraction.png>]
-<Figures/SystemArchitecture.png, id=796, 393.6306pt x 199.2243pt>
+<Figures/SystemArchitecture.png, id=798, 393.6306pt x 199.2243pt>
 File: Figures/SystemArchitecture.png Graphic file (type png)
 
 <use Figures/SystemArchitecture.png>
@@ -2205,14 +2205,14 @@ Overfull \hbox (2.15556pt too wide) in paragraph at lines 40--41
 nt com-plex-ity to the robots
  []
 
-[15] <Figures/SelfOrganisedFeedback.png, id=907, 280.79906pt x 230.36063pt>
+[15] <Figures/SelfOrganisedFeedback.png, id=909, 280.79906pt x 230.36063pt>
 File: Figures/SelfOrganisedFeedback.png Graphic file (type png)
 
 <use Figures/SelfOrganisedFeedback.png>
 Package pdftex.def Info: Figures/SelfOrganisedFeedback.png used on input line 4
 6.
 (pdftex.def)             Requested size: 280.79837pt x 230.36005pt.
- [16 <./Figures/SelfOrganisedFeedback.png>] <Figures/SwarmCraft.png, id=917, 23
+ [16 <./Figures/SelfOrganisedFeedback.png>] <Figures/SwarmCraft.png, id=919, 23
 8.64156pt x 179.92218pt>
 File: Figures/SwarmCraft.png Graphic file (type png)
 
@@ -2231,40 +2231,40 @@ Overfull \hbox (2.09642pt too wide) in paragraph at lines 71--72
 ore is-sues in de-bug-ging robotic
  []
 
-<Figures/NUbugger.png, id=934, 426.84468pt x 256.70906pt>
+<Figures/NUbugger.png, id=936, 426.84468pt x 256.70906pt>
 File: Figures/NUbugger.png Graphic file (type png)
 
 <use Figures/NUbugger.png>
 Package pdftex.def Info: Figures/NUbugger.png used on input line 75.
 (pdftex.def)             Requested size: 341.47621pt x 205.36751pt.
  [18] [19 <./Figures/NUbugger.png>]
-<Figures/ARBasic.png, id=955, 185.19188pt x 145.29282pt>
-File: Figures/ARBasic.png Graphic file (type png)
+<Figures/ARDouble.png, id=958, 767.11594pt x 271.0125pt>
+File: Figures/ARDouble.png Graphic file (type png)
 
-<use Figures/ARBasic.png>
-Package pdftex.def Info: Figures/ARBasic.png used on input line 91.
-(pdftex.def)             Requested size: 222.22911pt x 174.3505pt.
+<use Figures/ARDouble.png>
+Package pdftex.def Info: Figures/ARDouble.png used on input line 91.
+(pdftex.def)             Requested size: 404.02908pt x 142.73857pt.
 
-<Figures/HoloLens.png, id=962, 971.88094pt x 396.7322pt>
+<Figures/HoloLens.png, id=967, 971.88094pt x 396.7322pt>
 File: Figures/HoloLens.png Graphic file (type png)
 
 <use Figures/HoloLens.png>
-Package pdftex.def Info: Figures/HoloLens.png used on input line 102.
+Package pdftex.def Info: Figures/HoloLens.png used on input line 101.
 (pdftex.def)             Requested size: 388.74548pt x 158.69006pt.
- [20 <./Figures/ARBasic.png>] [21 <./Figures/HoloLens.png>] <Figures/Sonar.png,
- id=984, 487.8225pt x 375.65344pt>
+ [20 <./Figures/ARDouble.png>] [21 <./Figures/HoloLens.png>] <Figures/Sonar.png
+, id=990, 487.8225pt x 375.65344pt>
 File: Figures/Sonar.png Graphic file (type png)
 
 <use Figures/Sonar.png>
-Package pdftex.def Info: Figures/Sonar.png used on input line 117.
+Package pdftex.def Info: Figures/Sonar.png used on input line 116.
 (pdftex.def)             Requested size: 292.69576pt x 225.3938pt.
  [22 <./Figures/Sonar.png>] [23]
-<Figures/SpatiallySituatedData.png, id=1007, 386.19281pt x 242.40562pt>
+<Figures/SpatiallySituatedData.png, id=1013, 386.19281pt x 242.40562pt>
 File: Figures/SpatiallySituatedData.png Graphic file (type png)
 
 <use Figures/SpatiallySituatedData.png>
 Package pdftex.def Info: Figures/SpatiallySituatedData.png used on input line 1
-35.
+34.
 (pdftex.def)             Requested size: 308.95465pt x 193.92474pt.
  [24 <./Figures/SpatiallySituatedData.png>]) [25]
 \openout2 = `Chapters/ChapterProblemAnalysis.aux'.
@@ -2278,7 +2278,7 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
 
 
 
-] <Figures/FeatureLikert.png, id=1039, 673.01437pt x 453.94594pt>
+] <Figures/FeatureLikert.png, id=1045, 673.01437pt x 453.94594pt>
 File: Figures/FeatureLikert.png Graphic file (type png)
 
 <use Figures/FeatureLikert.png>
@@ -2289,42 +2289,42 @@ Package pdftex.def Info: Figures/FeatureLikert.png used on input line 47.
  <./Figures/FeatureLikert.png>] [28
 
 ]
-[29] [30] <Figures/EPuck.png, id=1060, 459.21562pt x 410.2828pt>
+[29] [30] <Figures/EPuck.png, id=1066, 459.21562pt x 410.2828pt>
 File: Figures/EPuck.png Graphic file (type png)
 
 <use Figures/EPuck.png>
 Package pdftex.def Info: Figures/EPuck.png used on input line 140.
 (pdftex.def)             Requested size: 275.5315pt x 246.17157pt.
  [31 <./Figures/EPuck.png>]
-<Figures/EPuckIRSensors.png, id=1067, 602.25pt x 602.25pt>
+<Figures/EPuckIRSensors.png, id=1073, 602.25pt x 602.25pt>
 File: Figures/EPuckIRSensors.png Graphic file (type png)
 
 <use Figures/EPuckIRSensors.png>
 Package pdftex.def Info: Figures/EPuckIRSensors.png used on input line 163.
 (pdftex.def)             Requested size: 240.89572pt x 240.89572pt.
  [32 <./Figures/EPuckIRSensors.png>]
-<Figures/CameraLayout.png, id=1079, 1052.43187pt x 830.35219pt>
+<Figures/CameraLayout.png, id=1085, 1052.43187pt x 830.35219pt>
 File: Figures/CameraLayout.png Graphic file (type png)
 
 <use Figures/CameraLayout.png>
 Package pdftex.def Info: Figures/CameraLayout.png used on input line 189.
 (pdftex.def)             Requested size: 315.732pt x 249.10757pt.
 
-<Figures/ArenaPhoto.png, id=1080, 569.12625pt x 758.835pt>
+<Figures/ArenaPhoto.png, id=1086, 569.12625pt x 758.835pt>
 File: Figures/ArenaPhoto.png Graphic file (type png)
 
 <use Figures/ArenaPhoto.png>
 Package pdftex.def Info: Figures/ArenaPhoto.png used on input line 197.
 (pdftex.def)             Requested size: 227.64647pt x 303.52863pt.
  [33] [34 <./Figures/CameraLayout.png> <./Figures/ArenaPhoto.png>] <Figures/Cam
-era.png, id=1093, 271.76532pt x 235.63031pt>
+era.png, id=1099, 271.76532pt x 235.63031pt>
 File: Figures/Camera.png Graphic file (type png)
 
 <use Figures/Camera.png>
 Package pdftex.def Info: Figures/Camera.png used on input line 210.
 (pdftex.def)             Requested size: 217.41254pt x 188.5045pt.
  [35 <./Figures/Camera.png>]
-<Figures/ARuCoTags.png, id=1110, 1011.78pt x 758.835pt>
+<Figures/ARuCoTags.png, id=1116, 1011.78pt x 758.835pt>
 File: Figures/ARuCoTags.png Graphic file (type png)
 
 <use Figures/ARuCoTags.png>
@@ -2337,7 +2337,7 @@ n-dard
  []
 
 [36 <./Figures/ARuCoTags.png>]
-<Figures/EPuckARuCo.png, id=1118, 557.08125pt x 558.085pt>
+<Figures/EPuckARuCo.png, id=1124, 557.08125pt x 558.085pt>
 File: Figures/EPuckARuCo.png Graphic file (type png)
 
 <use Figures/EPuckARuCo.png>
@@ -2405,7 +2405,7 @@ Chapter 5.
 
 
 
-] [49] <Figures/SoftwareArchitecture.png, id=1206, 614.295pt x 398.2077pt>
+] [49] <Figures/SoftwareArchitecture.png, id=1212, 614.295pt x 398.2077pt>
 File: Figures/SoftwareArchitecture.png Graphic file (type png)
 
 <use Figures/SoftwareArchitecture.png>
@@ -2418,14 +2418,14 @@ Overfull \hbox (25.97447pt too wide) in paragraph at lines 36--38
  []
 
 [50 <./Figures/SoftwareArchitecture.png>]
-<Figures/DataModel.png, id=1215, 542.025pt x 280.4076pt>
+<Figures/DataModel.png, id=1221, 542.025pt x 280.4076pt>
 File: Figures/DataModel.png Graphic file (type png)
 
 <use Figures/DataModel.png>
 Package pdftex.def Info: Figures/DataModel.png used on input line 58.
 (pdftex.def)             Requested size: 379.4149pt x 196.28397pt.
  [51 <./Figures/DataModel.png>]
-<Figures/VisualiserProcess.png, id=1225, 614.295pt x 247.1634pt>
+<Figures/VisualiserProcess.png, id=1231, 614.295pt x 247.1634pt>
 File: Figures/VisualiserProcess.png Graphic file (type png)
 
 <use Figures/VisualiserProcess.png>
@@ -2437,7 +2437,7 @@ Overfull \hbox (25.97447pt too wide) in paragraph at lines 71--73
  []
 
 [52 <./Figures/VisualiserProcess.png>]
-<Figures/UILayout.png, id=1231, 424.7067pt x 307.1475pt>
+<Figures/UILayout.png, id=1237, 424.7067pt x 307.1475pt>
 File: Figures/UILayout.png Graphic file (type png)
 
 <use Figures/UILayout.png>
@@ -2449,7 +2449,7 @@ Overfull \hbox (20.67656pt too wide) in paragraph at lines 86--88
  []
 
 [53 <./Figures/UILayout.png>]
-<Figures/UIExample.png, id=1239, 433.62pt x 325.215pt>
+<Figures/UIExample.png, id=1245, 433.62pt x 325.215pt>
 File: Figures/UIExample.png Graphic file (type png)
 
 <use Figures/UIExample.png>
@@ -2464,7 +2464,7 @@ Overfull \hbox (29.58986pt too wide) in paragraph at lines 100--102
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [54] [55 <./Figures/UIExample.png>]
-<Figures/DataPanelDesigns.png, id=1253, 433.62pt x 379.4175pt>
+<Figures/DataPanelDesigns.png, id=1259, 433.62pt x 379.4175pt>
 File: Figures/DataPanelDesigns.png Graphic file (type png)
 
 <use Figures/DataPanelDesigns.png>
@@ -2475,7 +2475,7 @@ Overfull \hbox (29.58986pt too wide) in paragraph at lines 114--116
  [][] 
  []
 
-<Figures/VisualiserSettingsTabDesign.png, id=1254, 469.755pt x 216.81pt>
+<Figures/VisualiserSettingsTabDesign.png, id=1260, 469.755pt x 216.81pt>
 File: Figures/VisualiserSettingsTabDesign.png Graphic file (type png)
 
 <use Figures/VisualiserSettingsTabDesign.png>
@@ -2488,7 +2488,7 @@ Overfull \hbox (65.72478pt too wide) in paragraph at lines 122--124
  []
 
 [56 <./Figures/DataPanelDesigns.png>] [57 <./Figures/VisualiserSettingsTabDesig
-n.png>] <Figures/OverlayDesigns.png, id=1266, 352.4367pt x 469.755pt>
+n.png>] <Figures/OverlayDesigns.png, id=1272, 352.4367pt x 469.755pt>
 File: Figures/OverlayDesigns.png Graphic file (type png)
 
 <use Figures/OverlayDesigns.png>
@@ -2506,7 +2506,7 @@ Chapter 6.
 
 
 ]
-<Figures/ApplicationScreenshotOverview.png, id=1288, 962.59625pt x 746.79pt>
+<Figures/ApplicationScreenshotOverview.png, id=1294, 962.59625pt x 746.79pt>
 File: Figures/ApplicationScreenshotOverview.png Graphic file (type png)
 
 <use Figures/ApplicationScreenshotOverview.png>
@@ -2519,7 +2519,7 @@ Overfull \hbox (3.22394pt too wide) in paragraph at lines 36--37
  frame-work were used within
  []
 
-[63] <Figures/ApplicationStructure.png, id=1306, 451.6875pt x 343.2825pt>
+[63] <Figures/ApplicationStructure.png, id=1312, 451.6875pt x 343.2825pt>
 File: Figures/ApplicationStructure.png Graphic file (type png)
 
 <use Figures/ApplicationStructure.png>
@@ -2537,14 +2537,14 @@ Overfull \hbox (13.0673pt too wide) in paragraph at lines 130--131
 are en-cap-su-lated in the \T1/ppl/m/it/10.95 DataThread
  []
 
-[69] <Figures/NetworkingFlow.png, id=1354, 252.945pt x 341.1144pt>
+[69] <Figures/NetworkingFlow.png, id=1360, 252.945pt x 341.1144pt>
 File: Figures/NetworkingFlow.png Graphic file (type png)
 
 <use Figures/NetworkingFlow.png>
 Package pdftex.def Info: Figures/NetworkingFlow.png used on input line 134.
 (pdftex.def)             Requested size: 252.94438pt x 341.11354pt.
  [70 <./Figures/NetworkingFlow.png>]
-<Figures/DataFormat.png, id=1363, 1359.57938pt x 88.83188pt>
+<Figures/DataFormat.png, id=1369, 1359.57938pt x 88.83188pt>
 File: Figures/DataFormat.png Graphic file (type png)
 
 <use Figures/DataFormat.png>
@@ -2567,28 +2567,28 @@ Overfull \hbox (3.90044pt too wide) in alignment at lines 192--220
 
 [72
 
-] <Figures/VisualiserPanel.png, id=1375, 1081.03876pt x 329.73187pt>
+] <Figures/VisualiserPanel.png, id=1381, 1081.03876pt x 329.73187pt>
 File: Figures/VisualiserPanel.png Graphic file (type png)
 
 <use Figures/VisualiserPanel.png>
 Package pdftex.def Info: Figures/VisualiserPanel.png used on input line 234.
 (pdftex.def)             Requested size: 525.23903pt x 160.20654pt.
  [73] [74 <./Figures/VisualiserPanel.png>]
-<Figures/RobotListPanel.png, id=1389, 677.53125pt x 330.48468pt>
+<Figures/RobotListPanel.png, id=1395, 677.53125pt x 330.48468pt>
 File: Figures/RobotListPanel.png Graphic file (type png)
 
 <use Figures/RobotListPanel.png>
 Package pdftex.def Info: Figures/RobotListPanel.png used on input line 246.
 (pdftex.def)             Requested size: 404.02908pt x 197.08206pt.
  [75 <./Figures/RobotListPanel.png>]
-<Figures/DataPanel.png, id=1396, 710.655pt x 1068.99374pt>
+<Figures/DataPanel.png, id=1402, 710.655pt x 1068.99374pt>
 File: Figures/DataPanel.png Graphic file (type png)
 
 <use Figures/DataPanel.png>
 Package pdftex.def Info: Figures/DataPanel.png used on input line 256.
 (pdftex.def)             Requested size: 404.02908pt x 607.76686pt.
 
-<Figures/VisualiserDiagram.png, id=1400, 366.4089pt x 219.4599pt>
+<Figures/VisualiserDiagram.png, id=1406, 366.4089pt x 219.4599pt>
 File: Figures/VisualiserDiagram.png Graphic file (type png)
 
 <use Figures/VisualiserDiagram.png>
@@ -2596,14 +2596,14 @@ Package pdftex.def Info: Figures/VisualiserDiagram.png used on input line 271.
 (pdftex.def)             Requested size: 366.408pt x 219.45935pt.
  [76] [77 <./Figures/DataPanel.png>]
 [78 <./Figures/VisualiserDiagram.png>] [79]
-<Figures/Overlays.png, id=1431, 368.1253pt x 402.75468pt>
+<Figures/Overlays.png, id=1437, 368.1253pt x 402.75468pt>
 File: Figures/Overlays.png Graphic file (type png)
 
 <use Figures/Overlays.png>
 Package pdftex.def Info: Figures/Overlays.png used on input line 312.
 (pdftex.def)             Requested size: 368.1244pt x 402.7537pt.
  [80 <./Figures/Overlays.png>]
-<Figures/VisualiserSettingsTab.png, id=1437, 858.20625pt x 354.57469pt>
+<Figures/VisualiserSettingsTab.png, id=1443, 858.20625pt x 354.57469pt>
 File: Figures/VisualiserSettingsTab.png Graphic file (type png)
 
 <use Figures/VisualiserSettingsTab.png>
@@ -2634,7 +2634,7 @@ Overfull \hbox (5.56546pt too wide) in alignment at lines 121--146
  [] [] 
  []
 
-[88] [89] [90] <Figures/TestingWindow.png, id=1516, 903.375pt x 529.22719pt>
+[88] [89] [90] <Figures/TestingWindow.png, id=1522, 903.375pt x 529.22719pt>
 File: Figures/TestingWindow.png Graphic file (type png)
 
 <use Figures/TestingWindow.png>
@@ -2658,7 +2658,7 @@ Chapter 8.
 
 
 ] [99] [100] [101] [102] [103] [104]
-<Figures/VisualisationLikert.png, id=1635, 586.44093pt x 395.97937pt>
+<Figures/VisualisationLikert.png, id=1641, 586.44093pt x 395.97937pt>
 File: Figures/VisualisationLikert.png Graphic file (type png)
 
 <use Figures/VisualisationLikert.png>
@@ -2698,7 +2698,7 @@ pec-tive based, head mounted,
 
  (Appendices/AppendixEthics.tex
 Appendix A.
-<EthicsForm.pdf, id=1748, 597.19112pt x 845.19763pt>
+<EthicsForm.pdf, id=1754, 597.19112pt x 845.19763pt>
 File: EthicsForm.pdf Graphic file (type pdf)
  <use EthicsForm.pdf>
 Package pdftex.def Info: EthicsForm.pdf used on input line 6.
@@ -2709,7 +2709,7 @@ File: EthicsForm.pdf Graphic file (type pdf)
 Package pdftex.def Info: EthicsForm.pdf used on input line 6.
 (pdftex.def)             Requested size: 597.18967pt x 845.19557pt.
 
-<EthicsForm.pdf, id=1751, page=1, 597.19112pt x 845.19763pt>
+<EthicsForm.pdf, id=1757, page=1, 597.19112pt x 845.19763pt>
 File: EthicsForm.pdf Graphic file (type pdf)
 
 <use EthicsForm.pdf, page 1>
@@ -2740,7 +2740,7 @@ File: EthicsForm.pdf Graphic file (type pdf)
 Package pdftex.def Info: EthicsForm.pdf, page1 used on input line 6.
 (pdftex.def)             Requested size: 597.217pt x 845.23425pt.
  [121 <./EthicsForm.pdf>]
-<EthicsForm.pdf, id=1789, page=2, 597.19112pt x 845.19763pt>
+<EthicsForm.pdf, id=1795, page=2, 597.19112pt x 845.19763pt>
 File: EthicsForm.pdf Graphic file (type pdf)
 
 <use EthicsForm.pdf, page 2>
@@ -2756,7 +2756,7 @@ File: EthicsForm.pdf Graphic file (type pdf)
 Package pdftex.def Info: EthicsForm.pdf, page2 used on input line 6.
 (pdftex.def)             Requested size: 597.217pt x 845.23425pt.
  [122 <./EthicsForm.pdf>]
-<EthicsForm.pdf, id=1810, page=3, 597.19112pt x 845.19763pt>
+<EthicsForm.pdf, id=1816, page=3, 597.19112pt x 845.19763pt>
 File: EthicsForm.pdf Graphic file (type pdf)
 
 <use EthicsForm.pdf, page 3>
@@ -2772,7 +2772,7 @@ File: EthicsForm.pdf Graphic file (type pdf)
 Package pdftex.def Info: EthicsForm.pdf, page3 used on input line 6.
 (pdftex.def)             Requested size: 597.217pt x 845.23425pt.
  [123 <./EthicsForm.pdf>]
-<EthicsForm.pdf, id=1816, page=4, 597.19112pt x 845.19763pt>
+<EthicsForm.pdf, id=1822, page=4, 597.19112pt x 845.19763pt>
 File: EthicsForm.pdf Graphic file (type pdf)
 
 <use EthicsForm.pdf, page 4>
@@ -2788,7 +2788,7 @@ File: EthicsForm.pdf Graphic file (type pdf)
 Package pdftex.def Info: EthicsForm.pdf, page4 used on input line 6.
 (pdftex.def)             Requested size: 597.217pt x 845.23425pt.
  [124 <./EthicsForm.pdf>]
-<EthicsForm.pdf, id=1822, page=5, 597.19112pt x 845.19763pt>
+<EthicsForm.pdf, id=1828, page=5, 597.19112pt x 845.19763pt>
 File: EthicsForm.pdf Graphic file (type pdf)
 
 <use EthicsForm.pdf, page 5>
@@ -2804,7 +2804,7 @@ File: EthicsForm.pdf Graphic file (type pdf)
 Package pdftex.def Info: EthicsForm.pdf, page5 used on input line 6.
 (pdftex.def)             Requested size: 597.217pt x 845.23425pt.
  [125 <./EthicsForm.pdf>]
-<ConsentForm.pdf, id=1830, 597.55246pt x 845.07718pt>
+<ConsentForm.pdf, id=1836, 597.55246pt x 845.07718pt>
 File: ConsentForm.pdf Graphic file (type pdf)
  <use ConsentForm.pdf>
 Package pdftex.def Info: ConsentForm.pdf used on input line 10.
@@ -2815,7 +2815,7 @@ File: ConsentForm.pdf Graphic file (type pdf)
 Package pdftex.def Info: ConsentForm.pdf used on input line 10.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 
-<ConsentForm.pdf, id=1833, page=1, 597.55246pt x 845.07718pt>
+<ConsentForm.pdf, id=1839, page=1, 597.55246pt x 845.07718pt>
 File: ConsentForm.pdf Graphic file (type pdf)
 
 <use ConsentForm.pdf, page 1>
@@ -2846,7 +2846,7 @@ Package pdftex.def Info: ConsentForm.pdf, page1 used on input line 10.
 
 (Appendices/AppendixGantt.tex
 Appendix B.
-<Gantt.pdf, id=1861, 705.45859pt x 1349.93335pt>
+<Gantt.pdf, id=1867, 705.45859pt x 1349.93335pt>
 File: Gantt.pdf Graphic file (type pdf)
  <use Gantt.pdf>
 Package pdftex.def Info: Gantt.pdf used on input line 5.
@@ -2856,7 +2856,7 @@ File: Gantt.pdf Graphic file (type pdf)
 <use Gantt.pdf>
 Package pdftex.def Info: Gantt.pdf used on input line 5.
 (pdftex.def)             Requested size: 705.45686pt x 1349.93007pt.
- <Gantt.pdf, id=1864, page=1, 705.45859pt x 1349.93335pt>
+ <Gantt.pdf, id=1870, page=1, 705.45859pt x 1349.93335pt>
 File: Gantt.pdf Graphic file (type pdf)
 
 <use Gantt.pdf, page 1>
@@ -3338,10 +3338,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 34325 strings out of 493334
- 682405 string characters out of 3145290
- 916851 words of memory out of 3000000
- 36832 multiletter control sequences out of 15000+200000
+ 34327 strings out of 493334
+ 682479 string characters out of 3145290
+ 917192 words of memory out of 3000000
+ 36833 multiletter control sequences out of 15000+200000
  51140 words of font info for 81 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,20n,82p,10379b,2627s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -3356,9 +3356,9 @@ blic/amsfonts/cm/cmsy8.pfb><C:/TEX/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C
 /palatino/uplbi8a.pfb><C:/TEX/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/TE
 X/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/TEX/MiKTeX/fonts/type1/urw/pal
 atino/uplri8a.pfb>
-Output written on main.pdf (176 pages, 9051683 bytes).
+Output written on main.pdf (176 pages, 9625301 bytes).
 PDF statistics:
- 2209 PDF objects out of 2487 (max. 8388607)
- 521 named destinations out of 1000 (max. 500000)
+ 2216 PDF objects out of 2487 (max. 8388607)
+ 522 named destinations out of 1000 (max. 500000)
  1158 words of extra memory for PDF output out of 10000 (max. 10000000)
 

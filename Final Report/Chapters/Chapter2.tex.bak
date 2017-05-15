@@ -87,12 +87,11 @@ In their `\textit{NUbugger}' system \cite{Annable:2014}, Annable, Budden and Men
 Augmented Reality (AR) is the term used to describe the process of super-imposing `virtual' objects and elements, in the form of computer generated graphics, on to a live video image of the real world \cite{Azuma:1997}. The general aim of any augmented reality system is to give the impression that the virtual objects being rendered are actually situated within the user's real environment, and to allow the user to interact with them as such. True AR is sometimes defined as requiring the use of a \textit{head-mounted display} (HMD), as this leads to much more immersive qualities akin to virtual reality, to which AR is closely related. However this is not a universal requirement, and in one of the most widely cited surveys of the topic, Azuma \cite{Azuma:1997} provides a definition which states only three requirements of an AR system; the combination of virtual and real content, real time interaction, and 3D rendering. Figure \ref{fig:ARBasic} shows the example image used in Azuma's \cite{Azuma:1997} survey. It includes a view of a real table, augmented by virtual furniture.
 
 \begin{figure}[h]
-	\begin{center}
-	\includegraphics[scale=1.2]{ARBasic.png}
+	\centering
+	\makebox[\textwidth][c]{\includegraphics[width=\textwidth]{ARDouble.png}}
 	\decoRule
-	\caption[Simple AR visualisation. \cite{Azuma:1997}]{A simple example of an AR lamp and chairs augmenting a real table. \cite{Azuma:1997}}
+	\caption[AR visualisations. \cite{Azuma:1997} \cite{SayDuck}]{Left: An early example of an AR lamp and chairs augmenting a real table \cite{Azuma:1997}. Right: A modern furniture visualisation app, showing a virtual chair \cite{SayDuck}.}
 	\label{fig:ARBasic}
-	\end{center}
 \end{figure}
 
 Augmented reality presents a powerful tool for debugging robots as it allows information gathered by a robot about an environment to be superimposed onto a real world view of that environment, such that discrepancies and inconsistencies between this information and the real world become inherently obvious. More generally, augmented reality can be used to create a shared space between a human and a robot. Even as early as 1997, Azuma \cite{Azuma:1997} notes that augmented reality has a potential application in robot path planning. One limitation of Azuma's survey is its age, as the two decades since its publication have seen rapid development in computing power and computer graphics, as well as augmented reality hardware. High fidelity, consumer HMDs, such as the \textit{Microsoft HoloLens} shown in figure \ref{fig:HoloLens}, have been beginning to emerge into use within real world applications since the mid-to-late 2010s \cite{HoloLens}. A more recent survey of the topic from 2014 \cite{Billinghurst:2014} agrees with many of Azuma's earlier definitions, but provides many examples of new applications of AR technologies. The author notes the power of AR as a new paradigm for human computer interaction, and the wealth of potential application areas, including robotics.
