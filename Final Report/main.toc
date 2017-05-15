@@ -100,12 +100,13 @@
 \contentsline {subsection}{\numberline {9.2.3}Expansion of Supported Hardware}{117}{subsection.264}
 \contentsline {subsection}{\numberline {9.2.4}Integration with Dedicated Augmented Reality Hardware}{118}{subsection.265}
 \contentsline {subsection}{\numberline {9.2.5}Integration with Tablet Application}{119}{subsection.266}
-\contentsline {chapter}{\numberline {A}Ethics Documents}{120}{appendix.267}
-\contentsline {section}{\numberline {A.1}Ethics Form}{120}{section.268}
-\contentsline {section}{\numberline {A.2}User Evaluation Session Consent Form}{126}{section.269}
-\contentsline {chapter}{\numberline {B}Gantt Chart}{128}{appendix.270}
-\contentsline {chapter}{\numberline {C}Source Code Files}{130}{appendix.271}
-\contentsline {chapter}{\numberline {D}Robot Side API}{133}{appendix.274}
-\contentsline {chapter}{\numberline {E}Test Results}{135}{appendix.276}
-\contentsline {section}{\numberline {E.1}Manual UI Testing Results}{135}{section.277}
-\contentsline {chapter}{Bibliography}{159}{appendix*.301}
+\contentsline {section}{\numberline {9.3}Summary}{119}{section.267}
+\contentsline {chapter}{\numberline {A}Ethics Documents}{120}{appendix.268}
+\contentsline {section}{\numberline {A.1}Ethics Form}{120}{section.269}
+\contentsline {section}{\numberline {A.2}User Evaluation Session Consent Form}{126}{section.270}
+\contentsline {chapter}{\numberline {B}Gantt Chart}{128}{appendix.271}
+\contentsline {chapter}{\numberline {C}Source Code Files}{130}{appendix.272}
+\contentsline {chapter}{\numberline {D}Robot Side API}{133}{appendix.275}
+\contentsline {chapter}{\numberline {E}Test Results}{135}{appendix.277}
+\contentsline {section}{\numberline {E.1}Manual UI Testing Results}{135}{section.278}
+\contentsline {chapter}{Bibliography}{159}{appendix*.302}
