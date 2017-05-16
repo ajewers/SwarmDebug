@@ -43,7 +43,7 @@ headsepline, % Uncomment to get a line under the header
 
 \usepackage{palatino} % Use the Palatino font by default
 
-\usepackage[backend=bibtex,style=numeric-comp,natbib=true,sorting=none]{biblatex} % Use the bibtex backend with the numeric citation style
+\usepackage[backend=bibtex,style=ieee,natbib=true,sorting=none]{biblatex} % Use the bibtex backend with the ieee citation style
 
 \addbibresource{main.bib} % The filename of the bibliography
 
@@ -165,12 +165,14 @@ headsepline, % Uncomment to get a line under the header
 \item I have acknowledged all main sources of help.
 \item Where the thesis is based on work done by myself jointly with others, I have made clear exactly what was done by others and what I have contributed myself.\\
 \end{itemize}
+
+\begin{flushright}
+\noindent  Alistair Jewers
+%\rule[0.5em]{25em}{0.5pt} % This prints a line for the signature
  
-\noindent Signed:\\
-\rule[0.5em]{25em}{0.5pt} % This prints a line for the signature
- 
-\noindent Date:\\
-\rule[0.5em]{25em}{0.5pt} % This prints a line to write the date
+\noindent \today\\
+%\rule[0.5em]{25em}{0.5pt} % This prints a line to write the date
+\end{flushright}
 \end{declaration}
 
 \cleardoublepage

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2017.5.16)  16 MAY 2017 12:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2017.5.16)  16 MAY 2017 16:27
 entering extended mode
 **./main.tex
 (main.tex
@@ -1353,7 +1353,7 @@ Package biblatex Info: ... file 'blx-dm.def' found.
 
 (C:\TEX\MiKTeX\tex\latex\biblatex\blx-dm.def)
 Package biblatex Info: Trying to load biblatex style data model...
-Package biblatex Info: ... file 'numeric-comp.dbx' not found.
+Package biblatex Info: ... file 'ieee.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \c@afterword=\count193
@@ -1463,6 +1463,11 @@ Package biblatex Info: ... file 'blx-natbib.def' found.
 (C:\TEX\MiKTeX\tex\latex\biblatex\blx-natbib.def
 File: blx-natbib.def 2016/05/14 v3.4 biblatex compatibility (PK/JW/AB)
 )
+Package biblatex Info: Trying to load bibliography style 'ieee'...
+Package biblatex Info: ... file 'ieee.bbx' found.
+
+(C:\TEX\MiKTeX\tex\latex\biblatex-ieee\ieee.bbx
+File: ieee.bbx 2016/06/27 v1.1o biblatex bibliography style
 Package biblatex Info: Trying to load bibliography style 'numeric-comp'...
 Package biblatex Info: ... file 'numeric-comp.bbx' found.
 
@@ -1480,7 +1485,12 @@ Package biblatex Info: ... file 'standard.bbx' found.
 File: standard.bbx 2016/05/14 v3.4 biblatex bibliography style (PK/JW/AB)
 \c@bbx:relatedcount=\count332
 \c@bbx:relatedtotal=\count333
-)))
+))))
+Package biblatex Info: Trying to load citation style 'ieee'...
+Package biblatex Info: ... file 'ieee.cbx' found.
+
+(C:\TEX\MiKTeX\tex\latex\biblatex-ieee\ieee.cbx
+File: ieee.cbx 2016/06/27 v1.1o biblatex citation style
 Package biblatex Info: Trying to load citation style 'numeric-comp'...
 Package biblatex Info: ... file 'numeric-comp.cbx' found.
 
@@ -1499,6 +1509,9 @@ Package biblatex Info: Redefining '\textcites'.
 Package biblatex Info: Redefining '\cites'.
 Package biblatex Info: Redefining '\parencites'.
 Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\cites'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
@@ -2159,7 +2172,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 166--167
 
 ]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 200.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 202.
  (main.toc
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 4.
@@ -3403,9 +3416,9 @@ Underfull \vbox (badness 10000) detected at line 776
 [164
 
 ])
-Overfull \hbox (11.80661pt too wide) in paragraph at lines 308--308
-\T1/pcr/m/n/10.95 collective -[] intelligence -[] swarm -[] robotics -[] pnas/$
-[][]\T1/ppl/m/n/10.95 . Re-search at Prince-
+Overfull \hbox (28.93303pt too wide) in paragraph at lines 310--310
+\T1/pcr/m/n/10.95 research / 2015 / 11 / 24 / army -[] ants -[] living -[] brid
+ges -[] span -[] collective -[]
  []
 
 1: section
@@ -3414,46 +3427,45 @@ Overfull \hbox (11.80661pt too wide) in paragraph at lines 308--308
 
 
 ]
-Overfull \hbox (1.73643pt too wide) in paragraph at lines 308--308
-\T1/ppl/m/n/10.95 Soft-ware. In: \T1/ppl/m/it/10.95 Aus-tralasian Con-fer-ence
- on Robotics and Au-toma-tion (ACRA) \T1/ppl/m/n/10.95 (2009). 
+Overfull \hbox (1.04927pt too wide) in paragraph at lines 310--310
+[]\T1/ppl/m/n/10.95 J. McLurkin, J. Smith, J. Frankel, D. Sotkowitz, D. Blau, a
+nd B. Schmidt,   Speak-
  []
 
 
-Overfull \hbox (2.49762pt too wide) in paragraph at lines 308--308
-[]\T1/ppl/m/n/10.95 Ronald T. Azuma.   A Sur-vey of Aug-mented Re-al-ity. In:
- \T1/ppl/m/it/10.95 Foun-da-tions and Trends
+Overfull \hbox (9.96938pt too wide) in paragraph at lines 310--310
+[]\T1/ppl/m/n/10.95 Sayduck Ltd. (2016). Say-duck - make your space beau-ti-ful
+. [][]$\T1/pcr/m/n/10.95 https : / / sayduck .
+ []
+
+
+Overfull \hbox (10.71407pt too wide) in paragraph at lines 310--310
+[]\T1/ppl/m/n/10.95 Microsoft Cor-po-ra-tion. (2017). Mi-crosoft hololens. [][]
+$\T1/pcr/m/n/10.95 https : / / www . microsoft .
  []
 
 [166]
-Overfull \hbox (6.22302pt too wide) in paragraph at lines 308--308
-[]\T1/ppl/m/n/10.95 B. O'Sullivan. \T1/ppl/m/it/10.95 Mer-cu-rial: The Defini-t
-ive Guide: The Defini-tive Guide\T1/ppl/m/n/10.95 . An-i-mal Guide.
+Overfull \hbox (45.69644pt too wide) in paragraph at lines 310--310
+[]\T1/ppl/m/n/10.95 S. Cha-con, \T1/ppl/m/it/10.95 Pro git\T1/ppl/m/n/10.95 , 1
+st. Berkely, CA, USA: Apress, 2009, \T1/ppl/m/sc/10.95 isbn\T1/ppl/m/n/10.95 : 
+1430218339, 9781430218333. 
  []
 
 
-Overfull \hbox (1.4218pt too wide) in paragraph at lines 308--308
-[]\T1/ppl/m/n/10.95 The Qt Com-pany Ltd. \T1/ppl/m/it/10.95 Qt Cre-ator Man-ual
-\T1/ppl/m/n/10.95 . [][]$\T1/pcr/m/n/10.95 http : / / doc . qt . io / qtcreator
-/$[][]\T1/ppl/m/n/10.95 .
- []
-
-
-Overfull \hbox (3.66933pt too wide) in paragraph at lines 308--308
-[]\T1/ppl/m/n/10.95 Deborah J. Arm-strong.   The Quarks of Object-oriented De-
-vel-op-ment. In: \T1/ppl/m/it/10.95 Com-
- []
-
-
-Overfull \hbox (5.54721pt too wide) in paragraph at lines 308--308
-[]\T1/ppl/m/n/10.95 Steve Burbeck.   Ap-pli-ca-tions Pro-gram-ming in Smalltal
-k-80: How to use Model-
+Overfull \hbox (2.53395pt too wide) in paragraph at lines 310--310
+[][]$\T1/pcr/m/n/10.95 https : / / www . agilealliance . org / agile101/$[][]\T
+1/ppl/m/n/10.95 , (vis-ited on 05/14/2017). 
  []
 
 [167]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 311.
- [168]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 311.
+Overfull \hbox (3.41898pt too wide) in paragraph at lines 310--310
+[]\T1/ppl/m/n/10.95 J. Pos-tel,   User data-gram pro-to-col, RFC 768, 1980. [
+On-line]. Avail-able: [][]$\T1/pcr/m/n/10.95 https :
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 313.
+[168]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 313.
  (main.aux (Chapters/Chapter1.aux) (Chapters/Chapter2.aux)
 (Chapters/ChapterProblemAnalysis.aux) (Chapters/Chapter3.aux)
 (Chapters/Chapter8.aux) (Chapters/Chapter9.aux) (Chapters/Chapter10.aux)
@@ -3461,26 +3473,22 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 311.
 (Appendices/AppendixEthics.aux) (Appendices/AppendixGantt.aux)
 (Appendices/AppendixSourceCodeFiles.aux) (Appendices/AppendixRobotAPI.aux)
 (Appendices/AppendixUserGuide.aux) (Appendices/AppendixTestResults.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 311.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 311.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 313.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 313.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 22F0140718638428C7C424DE3B9A1688;17427.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36452 strings out of 493334
- 712693 string characters out of 3145290
- 971492 words of memory out of 3000000
- 38875 multiletter control sequences out of 15000+200000
+ 36498 strings out of 493334
+ 713706 string characters out of 3145290
+ 972358 words of memory out of 3000000
+ 38915 multiletter control sequences out of 15000+200000
  55594 words of font info for 91 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,20n,82p,10379b,2629s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,20n,82p,10379b,2641s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/TEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<C:/TEX/MiKTeX/fonts/type1/pub
 lic/amsfonts/cm/cmbx12.pfb><C:/TEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc1
 0.pfb><C:/TEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/TEX/MiKTeX/f
@@ -3492,9 +3500,9 @@ blic/amsfonts/cm/cmsy8.pfb><C:/TEX/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C
 /palatino/uplbi8a.pfb><C:/TEX/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/TE
 X/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/TEX/MiKTeX/fonts/type1/urw/pal
 atino/uplri8a.pfb>
-Output written on main.pdf (182 pages, 10284934 bytes).
+Output written on main.pdf (182 pages, 10287499 bytes).
 PDF statistics:
- 2328 PDF objects out of 2487 (max. 8388607)
+ 2333 PDF objects out of 2487 (max. 8388607)
  568 named destinations out of 1000 (max. 500000)
  1197 words of extra memory for PDF output out of 10000 (max. 10000000)
 
