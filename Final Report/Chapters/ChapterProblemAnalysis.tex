@@ -146,11 +146,6 @@ The e-puck robotic platform, created by a team at the \textit{Ecole Polytechniqu
 
 %----------------------------------------------------------------------------------------
 
-\subsection{Processor}
-The e-puck features a \textit{dsPIC 30F6014A} microprocessor, designed and manufactured by Microchip Technology Inc. This is a general purpose 16-bit CPU, with relatively low performance by modern standards. The processor features 68 I/O pins, which are connected to the e-puck's various peripherals. Due to the use of the Linux extension board discussed in section \ref{LinuxExtensionBoard}, which features a more powerful ARM processor, the primary use of the PIC processor in this configuration is to interface with the e-puck's hardware. This involves receiving commands from the ARM processor and sending appropriate control signals to the robot's actuators, as well as reading the robot's sensors and passing the retrieved sensor data back to the ARM processor. Prior to the start of this project members of the YRL had already developed a library of low level code allowing the PIC to function in the hardware interface role described, controlled through a UART serial connection. This firmware code was used as-is on the e-pucks' PIC processors throughout the project.
-
-%----------------------------------------------------------------------------------------
-
 \subsection{Actuators}
 The e-puck robot features two wheels, independently actuated by two step motors. The wheels have a diameter of approximately 41mm. The motors can rotate the wheels at an approximate maximum speed of 1000 steps per second in either direction, where 1000 steps is one full revolution. The robot also features a ring of 8 red LEDs around the edge of the main circuit board, which can be controlled for any arbitrary purpose. 
 
@@ -171,15 +166,23 @@ The e-puck robot features a number of different sensor sets, of which only some 
 
 %----------------------------------------------------------------------------------------
 
-\subsection{Linux Extension Board} \label{LinuxExtensionBoard}
-For this project the e-pucks were fitted with an extension board featuring a 32-bit ARM9 processor running a modified Linux operating system \cite{LinuxExtensionBoard}, developed by Wenguo Liu, and Alan F.T. Winfield. In this configuration the ARM processor, an Atmel AT91, takes charge of the high level robot control logic, as well as any intensive data processing operations. The dsPIC processor is then used to control the low level actuator and sensor control, running in parallel with the ARM processor and communicating via UART. The extension board provides a USB port, and for this project a WiFi adapter was connected to each robot. The controller code running on each robot could then make use of the standard IP network layer protocol, and the standard transport protocols TCP and UDP.
+\subsection{Processors and Code Architecture}
+The standard e-puck features a \textit{dsPIC 30F6014A} microprocessor, designed and manufactured by Microchip Technology Inc. This is a general purpose 16-bit CPU, with relatively low performance by modern standards. The processor features 68 I/O pins, which are connected to the e-puck's various peripherals. For this project the PIC processor was configured to act as a simple hardware controller. In this role the PIC receives commands via a UART serial interface, activates any relevant sensors or actuators, and returns sensor data also via the UART. Prior to the start of this project members of the YRL had already developed a library of low level code allowing the PIC to function in this hardware interface role, controlled through a UART serial connection. This firmware code was used as-is on the e-pucks' PIC processors throughout the project.
 
-%----------------------------------------------------------------------------------------
+\begin{figure}
+	\begin{center}
+	\includegraphics[scale=1]{RobotArchitecture.png}
+	\decoRule
+	\caption[E-puck Code Architecture]{The architecture of the various code components running on the e-puck, organised by hardware layer and controller partition.}
+	\label{fig:RobotArchitecture}
+	\end{center}
+\end{figure}
 
-\subsection{ARGoS Robot Controllers}
-For this project, all code used to control the behaviour of the e-puck robots was implemented within the \textit{ARGoS} robot simulator framework \cite{ARGoS}. The ARGoS simulator is an exceptionally complex physics-based simulator for multi-robot and swarm robotics systems, and an in-depth explanation of its many features is beyond the scope of this report. Of relevance to this report is the fact that the ARGoS framework allows behavioural code for a robot to be implemented once, and then run both within the simulator and on the real robot. This is achieved by defining each robot as a plug-in for the ARGoS system, with two sets of the low level code to control the robot's sensors and actuators; one for use within the simulation and one for use on the real hardware. Behavioural level code can therefore be the same for both situations, with the correct low-level code being selected at compile time.
+For this project the e-pucks were fitted with an extension board featuring a 32-bit ARM9 processor running a modified Linux operating system, developed by Wenguo Liu, and Alan F.T. Winfield \cite{LinuxExtensionBoard}. In this configuration the ARM processor, an Atmel AT91, takes charge of the high level robot control logic, as well as any intensive data processing operations. When an actuator or sensor needs to be used, commands are sent to the PIC processor via the UART serial interface. The extension board provides a USB port, and for this project a WiFi adapter was connected to each robot. The controller code running on each robot could then make use of the standard IP network layer protocol, and the standard transport protocols TCP and UDP.
 
-The code for communicating data from the robot to the debugging system developed in this project was designed to be as portable as possible. For this reason it was kept fully independent of the ARGoS framework, and implemented as a stand-alone API. Calls to this API were then added to the robot's ARGoS controller code at the behavioural level.
+The code for running robot behaviours on the ARM processor, and for communicating with the PIC processor, exists as a plug-in for the ARGoS robot simulator. The ARGoS simulator is an exceptionally complex physics-based simulator for multi-robot and swarm robotics systems, and an in-depth explanation of its many features is beyond the scope of this report. Of relevance to this report is the fact that the ARGoS framework allows behavioural code for a robot to be implemented once, and then run both within the simulator and on the real robot. This is achieved by defining each robot as a plug-in for the ARGoS system, with two sets of the low level code to control the robot's sensors and actuators; one for use within the simulation and one for use on the real hardware. Behavioural level code can therefore be the same for both situations, with the correct low-level code being selected at compile time.
+
+The code for communicating data from the robot to the debugging system developed in this project was designed to be as portable as possible. For this reason it was kept fully independent of the ARGoS framework, and implemented as a stand-alone API. Calls to this API were then added to the robot's ARGoS controller code at the behavioural level. Figure \ref{fig:RobotArchitecture} shows the various layers and components of the overall e-puck architecture. The code debug data reporting code block, implemented during this project, is highlighted in green. Existing code components are highlighted in yellow.
 
 %----------------------------------------------------------------------------------------
 
