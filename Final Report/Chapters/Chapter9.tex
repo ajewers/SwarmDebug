@@ -343,6 +343,8 @@ In order to utilise this API a user should modify their robot controller code to
 
 It was potentially possible for the API to handle all data reporting in the background, without requiring the user to specify when to transmit data in the controller code, however this approach was not taken for a number of reasons. Firstly it limits the control and flexibility available to the user. Each swarm system is different, and may have different requirements, hence the API should allow the developer to make decisions regarding data reporting which are right for their specific case. It would also limit the portability of the API, as a more automatic system would likely need to hook into the lower level robot drivers, meaning much greater changes would be necessary to port the code to a different robot. Furthermore by allowing the user to have complete control over when and how frequently data is transmitted they are able to manage the amount of traffic they are putting on their network, potentially mitigating congestion issues with very large swarms. Finally allowing users to control the moments within the code when data is reported to the debugging system was deemed to be a more intuitive system, especially as many developers are already familiar with the concept of using `print' statements within code to display debugging messages in a console.
 
+The \textit{User Guide} for the system, found in appendix \ref{AppendixUserGuide} describes how to incorporate the robot side API into a robot's behavioural code.
+
 %----------------------------------------------------------------------------------------
 
 \section{Summary}

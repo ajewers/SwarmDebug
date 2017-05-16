@@ -31,14 +31,14 @@
 \contentsline {subsection}{\numberline {3.2.2}Actuators}{33}{subsection.66}
 \contentsline {subsection}{\numberline {3.2.3}Sensors}{33}{subsection.67}
 \contentsline {subsection}{\numberline {3.2.4}Linux Extension Board}{34}{subsection.69}
-\contentsline {section}{\numberline {3.3}ARGoS Robot Controllers}{34}{section.70}
-\contentsline {section}{\numberline {3.4}Hardware - Video Tracking System}{34}{section.71}
-\contentsline {subsection}{\numberline {3.4.1}Camera}{35}{subsection.74}
-\contentsline {subsection}{\numberline {3.4.2}ArUco Tracking System}{38}{subsection.76}
-\contentsline {section}{\numberline {3.5}Software Development Tools}{39}{section.79}
-\contentsline {subsection}{\numberline {3.5.1}\textit {Git} Version Control System}{40}{subsection.80}
-\contentsline {subsection}{\numberline {3.5.2}\textit {QCreator} Integrated Development Environment}{41}{subsection.81}
-\contentsline {section}{\numberline {3.6}Summary}{42}{section.82}
+\contentsline {subsection}{\numberline {3.2.5}ARGoS Robot Controllers}{34}{subsection.70}
+\contentsline {section}{\numberline {3.3}Hardware - Video Tracking System}{34}{section.71}
+\contentsline {subsection}{\numberline {3.3.1}Camera}{35}{subsection.74}
+\contentsline {subsection}{\numberline {3.3.2}ArUco Tracking System}{38}{subsection.76}
+\contentsline {section}{\numberline {3.4}Software Development Tools}{39}{section.79}
+\contentsline {subsection}{\numberline {3.4.1}\textit {Git} Version Control System}{40}{subsection.80}
+\contentsline {subsection}{\numberline {3.4.2}\textit {QCreator} Integrated Development Environment}{41}{subsection.81}
+\contentsline {section}{\numberline {3.5}Summary}{42}{section.82}
 \contentsline {chapter}{\numberline {4}Project Plan}{43}{chapter.83}
 \contentsline {section}{\numberline {4.1}Work Breakdown}{43}{section.84}
 \contentsline {section}{\numberline {4.2}Timing and Plan}{46}{section.88}
@@ -108,6 +108,10 @@
 \contentsline {chapter}{\numberline {B}Gantt Chart}{130}{appendix.273}
 \contentsline {chapter}{\numberline {C}Source Code Files}{132}{appendix.274}
 \contentsline {chapter}{\numberline {D}Robot Side API}{135}{appendix.277}
-\contentsline {chapter}{\numberline {E}Test Results}{137}{appendix.279}
-\contentsline {section}{\numberline {E.1}Manual UI Testing Results}{137}{section.280}
-\contentsline {chapter}{Bibliography}{161}{appendix*.304}
+\contentsline {chapter}{\numberline {E}User Guide}{137}{appendix.279}
+\contentsline {section}{\numberline {E.1}Overview}{137}{section.280}
+\contentsline {section}{\numberline {E.2}Incorporating the \textit {SwarmDebug} API}{138}{section.282}
+\contentsline {section}{\numberline {E.3}Using the \textit {SwarmDebug} Application}{140}{section.315}
+\contentsline {chapter}{\numberline {F}Test Results}{141}{appendix.316}
+\contentsline {section}{\numberline {F.1}Manual UI Testing Results}{141}{section.317}
+\contentsline {chapter}{Bibliography}{165}{appendix*.341}

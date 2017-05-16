@@ -52,6 +52,7 @@ headsepline, % Uncomment to get a line under the header
 \usepackage{longtable}
 \usepackage{enumitem}
 \usepackage{pdfpages}
+\usepackage{listings}
 
 \edef\restoreparindent{\parindent=\the\parindent\relax}
 \usepackage{parskip}
@@ -295,6 +296,7 @@ With thanks to my supervisor, Alan Millard, without whose help this would not ha
 \include{Appendices/AppendixGantt}
 \include{Appendices/AppendixSourceCodeFiles}
 \include{Appendices/AppendixRobotAPI}
+\include{Appendices/AppendixUserGuide}
 \include{Appendices/AppendixTestResults}
 %\include{Appendices/AppendixB}
 %\include{Appendices/AppendixC}
