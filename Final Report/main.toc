@@ -35,7 +35,7 @@
 \contentsline {subsection}{\numberline {3.3.2}ArUco Tracking System}{37}{subsection.75}
 \contentsline {section}{\numberline {3.4}Software Development Tools}{39}{section.78}
 \contentsline {subsection}{\numberline {3.4.1}\textit {Git} Version Control System}{39}{subsection.79}
-\contentsline {subsection}{\numberline {3.4.2}\textit {QCreator} Integrated Development Environment}{41}{subsection.80}
+\contentsline {subsection}{\numberline {3.4.2}\textit {Qt Creator} Integrated Development Environment}{41}{subsection.80}
 \contentsline {section}{\numberline {3.5}Summary}{42}{section.81}
 \contentsline {chapter}{\numberline {4}Project Plan}{43}{chapter.82}
 \contentsline {section}{\numberline {4.1}Work Breakdown}{43}{section.83}
