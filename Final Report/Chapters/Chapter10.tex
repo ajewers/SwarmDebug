@@ -38,7 +38,7 @@ The general approach taken to the user interface testing can be summarised as fo
 \noindent The user interface was separated into the elements described in table \ref{tab:UserInterfaceElements}. Special case elements requiring different test strategies are highlighted in bold.
 
 \begin{longtable}{ l c }
- Element & Test Strategy\\
+ \textbf{Element} & \textbf{Test Strategy}\\
  \hline
  Visualiser Panel Tab System & A \\
  \textbf{Visualiser} & \textbf{B} \\
@@ -133,7 +133,7 @@ Unit testing is a commonly used technique in professional software testing \cite
 \hline
  IR Data Test & Tests whether packets describing a robot's infra-red sensor values are correctly parsed and the data correctly stored in the data model. Supplies an IR data packet, with each sensor reading containing a different value. Asserts that the IR data in the model matches each of the values in turn. Supplies another IR data packet with new, unique values. Asserts that the IR data in the model now matches each of the new values. This process is repeated for packets of background IR data type.\\
 \hline
- Custom Data Test & Tests whether packets describing custom data key/value pairs are correctly parsed and the data correctly stored in the data mode. Supplies three custom data packets, each with a different robot ID and a different value, for a single key. Asserts that the data model now contains data for three robots, and that each robot has a custom data entry for the given key. Asserts that the value for each of these entries matches the value supplied in the relevant packet. Supplies three new packets for the same set of robots with a new key and a new value. Asserts that each robot now contains custom data for the second key, and that the values match those supplied in the packets. Supplies three more packets using the original key, with new values. Asserts that the values for the original key for each robot have been updated to match the values in the latest packet set.\\
+ Custom Data Test & Tests whether packets describing custom data key/value pairs are correctly parsed and the data correctly stored in the data model. Supplies three custom data packets, each with a different robot ID and a different value, for a single key. Asserts that the data model now contains data for three robots, and that each robot has a custom data entry for the given key. Asserts that the value for each of these entries matches the value supplied in the relevant packet. Supplies three new packets for the same set of robots with a new key and a new value. Asserts that each robot now contains custom data for the second key, and that the values match those supplied in the packets. Supplies three more packets using the original key, with new values. Asserts that the values for the original key for each robot have been updated to match the values in the latest packet set.\\
 \hline
  Position History Test & Tests whether position data supplied for a robot is correctly sampled and stored in the position history portion of the data model. Sets the position history sampling rate to 2. Supplies twenty position packets, all attributed to the same robot ID. Asserts that the position history now contains ten entries. Asserts that the x- and y-position values for each of these entries match the values in every second packet, in reverse order. Assertions involving floating point numbers are done using a tolerance comparison, with a tolerance of $ 1 \times 10^{-7} $.\\
 \hline
@@ -168,7 +168,7 @@ This approach also relies on the developer writing the tests correctly determini
 %----------------------------------------------------------------------------------------
 
 \section{Verification and Validation Testing} \label{ValidationTesting}
-Verification and validation (V\&V) testing \cite{VerificationTesting} is the process of determining whether the software implemented meets the high level requirements, and whether the individual functionalities operate correctly and without bugs. This was the last step in the testing process, and served to test the system as a whole. The approach taken was to consider the requirements of the system, as stated in the functional specification in section \ref{FunctionalSpecification}, and determine whether each requirement is satisfied by the functionality implemented. Where possible each functionality will be tested with relevant data and control inputs. The requirements, and the tests carried out for each are given below.
+Verification and validation (V\&V) testing \cite{VerificationTesting} is the process of determining whether the software implemented meets the high level requirements, and whether the individual functionalities operate correctly and without bugs. This was the last step in the testing process, and served to test the system as a whole. The approach taken was to consider the requirements of the system, as stated in the functional specification in section \ref{FunctionalSpecification}, and determine whether each requirement is satisfied by the functionality implemented. Where possible each functionality was tested with relevant data and control inputs. The requirements, and the tests carried out for each are given below.
 
 \noindent\textbf{Core Requirements}
 
@@ -217,7 +217,7 @@ Verification and validation (V\&V) testing \cite{VerificationTesting} is the pro
  \end{itemize}
 \end{enumerate}
 
-\textbf{Secondary Requirements}
+\noindent \textbf{Secondary Requirements}
 
 \begin{enumerate}[label=S\arabic*.]
  \item Should use a modularised structure.
@@ -283,7 +283,7 @@ Verification and validation (V\&V) testing \cite{VerificationTesting} is the pro
  \hline
  S2 & Utility program used to send specific UDP packets to the application via the network, mimicking the behaviour of an arbitrary robot. The system received and interpreted the packets correctly.\\\hline
  S4 & The visualisations of the data reported by six robots could be configured using the options available in the visualiser settings menu, to a moderate extent. Full customisation of all aspects of the visualisations was not possible.\\ \hline
- S6 & Custom data sent from six robots was received and displayed within a table correctly, updating in approximately real time. The custom data visualisation could be set to target any of the specific data points received. The target data point was then correctly displayed, overlaid on the video feed. Configuring the display of custom data beyond a textual representation was not possible. Displaying more than one target data point was not possible.\\\hline
+ S6 & Custom data sent from six robots was received and displayed within a table correctly, updating in approximately real time. The custom data visualisation could be set to target any of the specific data points received. The target data point was then correctly displayed, overlaid on the video feed. Configuring the display of custom data beyond a textual representation was not possible. Displaying more than one target data point within the visualiser was not possible.\\\hline
  S8 & When enabled, the average position display correctly displayed the average position of the currently tracked robots as a mark within the video feed, when tested with three, four and six robots. This data was not provided in numerical form. Other swarm-level data was not provided.\\\hline
  S9 & Was able to correctly start and stop logging whilst receiving data from six robots. The generated text file contained appropriate information. The layout of this information was, however, difficult to parse, making the data hard to understand and use. The directory to store the log files could be correctly set using the UI controls.\\\hline
  \bottomrule\\
@@ -307,4 +307,4 @@ All core requirement tests, C1 through C8, passed satisfactorily, indicating tha
 
 \section{Summary}
 
-This chapter has described the methods used to test the application software and verify its correct operation. The process of manual user interface testing was discussed, and the test strategies for this application defined. The results of these tests were presented and the resulting fixes described. The use of unit-test style code build into the application for testing the data model was also discussed. The results of the verification and validation testing were used to verify that the software satisfied the functional specification defined in section \ref{FunctionalSpecification}. Overall these tests confirmed that the application functions correctly, and only minor fixes were required.
+This chapter has described the methods used to test the application software and verify its correct operation. The process of manual user interface testing was discussed, and the test strategies for this application defined. The results of these tests were presented and the resulting fixes described. The use of unit-test style code built into the application for testing the data model was also discussed. The results of the verification and validation testing were used to verify that the software satisfied the functional specification defined in section \ref{FunctionalSpecification}. Overall these tests confirmed that the application functions correctly, and only minor fixes were required.
