@@ -110,6 +110,7 @@
 \contentsline {section}{\numberline {E.1}Overview}{138}{section.279}
 \contentsline {section}{\numberline {E.2}Incorporating the \textit {SwarmDebug} API}{139}{section.281}
 \contentsline {section}{\numberline {E.3}Using the \textit {SwarmDebug} Application}{141}{section.314}
-\contentsline {chapter}{\numberline {F}Test Results}{142}{appendix.315}
-\contentsline {section}{\numberline {F.1}Manual UI Testing Results}{142}{section.316}
-\contentsline {chapter}{Bibliography}{166}{appendix*.340}
+\contentsline {section}{\numberline {E.4}Compiling the Application from Source}{141}{section.315}
+\contentsline {chapter}{\numberline {F}Test Results}{143}{appendix.323}
+\contentsline {section}{\numberline {F.1}Manual UI Testing Results}{143}{section.324}
+\contentsline {chapter}{Bibliography}{167}{appendix*.348}

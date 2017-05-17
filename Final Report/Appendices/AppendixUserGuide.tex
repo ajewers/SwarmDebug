@@ -81,3 +81,22 @@ The \textit{SwarmDebug} application requires a Linux operating system. Start the
 The main panel in the top left of the application displays the visualiser. This should be showing a video feed of the robots, with an overlay highlighting the robot's positions and identifying them by ID, and by name if the robots have reported a name using a watch-dog packet. This visualiser component provides graphical displays for the various data regarding the robots. To configure this display, navigate to the \textit{Visualiser Settings} tab within the same panel. The different graphical displays are listed here, and can be enabled and disabled by clicking their corresponding check boxes. More detailed settings for each display can be accessed by double clicking their list entries to open a detailed settings window.
 
 If the IDs assigned to the robots do not match the IDs being reported by the tracking system, different mappings can be set in the \textit{Tracking Camera Settings} tab, found in the main panel. Data from the system can be exported to a text file by enabling logging in the \textit{Logging} tab, found in the right hand panel. Double clicking on a robot within the robot list will open a robot information window, where the robot's display colour can be set, and its data can be erased from the system if necessary.
+
+\section{Compiling the Application from Source}
+
+The \textit{SwarmDebug} application is developed using the \textit{Qt} application framework. In order to compile the application from the source the Qt libraries must be present. The easiest way to do this is to complete the following steps:
+
+\begin{enumerate}
+ \item Install Qt, and the \textit{Qt Creator} IDE from the following link: \url{https://info.qt.io/download-qt-for-application-development}
+ \item Clone the \textit{SwarmDebug} source repository from \url{https://github.com/ajewers/SwarmDebug.git}.
+ \item Open the Qt Creator IDE, and import the SwarmDebug project.
+ \item Press build and run!
+\end{enumerate}
+
+This process must be completed on a computer running the Linux operating system. The compilation relies on the presence of the \textit{Common Vision Blocks} libraries on the compiling computer. If these libraries are not present, a version of the code can be compiled with the camera feed functionality disabled. In order to do this complete the following steps:
+
+\begin{enumerate}
+ \item In the \textit{appconfig.h} file, disable the \texttt{CVB\_CAMERA\_PRESENT} definition by converting line 4 to a comment using two forward slashes.
+ \item In the \textit{SwarmDebug.pro} file, disable the inclusion of the \texttt{lCVCImg}, \texttt{lCVCDriver} and \texttt{lCVCUtilities} libraries by converting lines 94, 95 and 96 to comments by adding a hash character to the beginning of each.
+ \item Press build and run!
+\end{enumerate}
